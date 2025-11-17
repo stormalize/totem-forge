@@ -1,0 +1,1833 @@
+[
+	{
+		"id": null,
+		"name": "Aegis",
+		"icon": "https://render.guildwars2.com/file/DFB4D1B50AE4D6A275B349E15B179261EE3EB0AF/102854.png",
+		"type": "Boon",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Block the next incoming attack; stacks duration."
+	},
+	{
+		"id": null,
+		"name": "Alacrity",
+		"icon": "https://render.guildwars2.com/file/4FDAC2113B500104121753EF7E026E45C141E94D/1938787.png",
+		"type": "Boon",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Skills recharge faster."
+	},
+	{
+		"id": null,
+		"name": "Fury",
+		"icon": "https://render.guildwars2.com/file/96D90DF84CAFE008233DD1C2606A12C1A0E68048/102842.png",
+		"type": "Boon",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Critical chance increased; stacks duration."
+	},
+	{
+		"id": null,
+		"name": "Might",
+		"icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+		"type": "Boon",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Increased outgoing damage; stacks intensity."
+	},
+	{
+		"id": null,
+		"name": "Protection",
+		"icon": "https://render.guildwars2.com/file/CD77D1FAB7B270223538A8F8ECDA1CFB044D65F4/102834.png",
+		"type": "Boon",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Incoming strike damage decreased by 33%; stacks duration."
+	},
+	{
+		"id": null,
+		"name": "Quickness",
+		"icon": "https://render.guildwars2.com/file/D4AB6401A6D6917C3D4F230764452BCCE1035B0D/1012835.png",
+		"type": "Boon",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Skills and actions are faster."
+	},
+	{
+		"id": null,
+		"name": "Regeneration",
+		"icon": "https://render.guildwars2.com/file/F69996772B9E18FD18AD0AABAB25D7E3FC42F261/102835.png",
+		"type": "Boon",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Gain health every second; stacks duration."
+	},
+	{
+		"id": null,
+		"name": "Resistance",
+		"icon": "https://render.guildwars2.com/file/50BAC1B8E10CFAB9E749A5D910D4A9DCF29EBB7C/961398.png",
+		"type": "Boon",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Nondamaging conditions currently on you are ineffective; stacks duration."
+	},
+	{
+		"id": null,
+		"name": "Resolution",
+		"icon": "https://render.guildwars2.com/file/D104A6B9344A2E2096424A3C300E46BC2926E4D7/2440718.png",
+		"type": "Boon",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Incoming condition damage decreased by 33%; stacks duration."
+	},
+	{
+		"id": null,
+		"name": "Stability",
+		"icon": "https://render.guildwars2.com/file/3D3A1C2D6D791C05179AB871902D28782C65C244/415959.png",
+		"type": "Boon",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Cannot be knocked down, pushed back, pulled, launched, stunned, dazed, floated, sunk, feared, or taunted."
+	},
+	{
+		"id": null,
+		"name": "Swiftness",
+		"icon": "https://render.guildwars2.com/file/20CFC14967E67F7A3FD4A4B8722B4CF5B8565E11/102836.png",
+		"type": "Boon",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Movement speed increased by 33%; stacks duration."
+	},
+	{
+		"id": null,
+		"name": "Vigor",
+		"icon": "https://render.guildwars2.com/file/58E92EBAF0DB4DA7C4AC04D9B22BCA5ECF0100DE/102843.png",
+		"type": "Boon",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Endurance regeneration increased by 50%; stacks duration."
+	},
+	{
+		"id": null,
+		"name": "Bleeding",
+		"icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png",
+		"type": "Condition",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Deals damage every second; stacks intensity."
+	},
+	{
+		"id": null,
+		"name": "Burning",
+		"icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png",
+		"type": "Condition",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Deals damage every second; stacks intensity."
+	},
+	{
+		"id": null,
+		"name": "Confusion",
+		"icon": "https://render.guildwars2.com/file/289AA0A4644F0E044DED3D3F39CED958E1DDFF53/102880.png",
+		"type": "Condition",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Damage received on skill activation; stacks intensity."
+	},
+	{
+		"id": null,
+		"name": "Poisoned",
+		"icon": "https://render.guildwars2.com/file/559B0AF9FB5E1243D2649FAAE660CCB338AACC19/102840.png",
+		"type": "Condition",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Deals damage every second; decreases healing effectiveness by 33%; damage stacks intensity."
+	},
+	{
+		"id": null,
+		"name": "Torment",
+		"icon": "https://render.guildwars2.com/file/10BABF2708CA3575730AC662A2E72EC292565B08/598887.png",
+		"type": "Condition",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Deals damage every second. Deals additional damage to foes that aren't moving. Stacks intensity."
+	},
+	{
+		"id": null,
+		"name": "Blinded",
+		"icon": "https://render.guildwars2.com/file/09770136BB76FD0DBE1CC4267DEED54774CB20F6/102837.png",
+		"type": "Condition",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Next outgoing attack misses; stacks duration."
+	},
+	{
+		"id": null,
+		"name": "Chilled",
+		"icon": "https://render.guildwars2.com/file/28C4EC547A3516AF0242E826772DA43A5EAC3DF3/102839.png",
+		"type": "Condition",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Movement speed decreased by 66%; skill cooldown increased by 66%; stacks duration."
+	},
+	{
+		"id": null,
+		"name": "Crippled",
+		"icon": "https://render.guildwars2.com/file/070325E519C178D502A8160523766070D30C0C19/102838.png",
+		"type": "Condition",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Movement speed decreased by 50%; stacks duration."
+	},
+	{
+		"id": null,
+		"name": "Fear",
+		"icon": "https://render.guildwars2.com/file/30307A6E766D74B6EB09EDA12A4A2DE50E4D76F4/102869.png",
+		"type": "Condition",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Involuntary retreat; unable to act; stacks duration."
+	},
+	{
+		"id": null,
+		"name": "Immobile",
+		"icon": "https://render.guildwars2.com/file/397A613651BFCA2832B6469CE34735580A2C120E/102844.png",
+		"type": "Condition",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Unable to move; stacks duration."
+	},
+	{
+		"id": null,
+		"name": "Slow",
+		"icon": "https://render.guildwars2.com/file/F60D1EF5271D7B9319610855676D320CD25F01C6/961397.png",
+		"type": "Condition",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Skills and actions are slower."
+	},
+	{
+		"id": null,
+		"name": "Taunt",
+		"icon": "https://render.guildwars2.com/file/02EED459AD65FAF7DF32A260E479C625070841B9/1228472.png",
+		"type": "Condition",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Involuntarily attack foes."
+	},
+	{
+		"id": null,
+		"name": "Weakness",
+		"icon": "https://render.guildwars2.com/file/6CB0E64AF9AA292E332A38C1770CE577E2CDE0E8/102853.png",
+		"type": "Condition",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Endurance regeneration decreased by 50%. 50% of hits are Glancing Blows (50% damage). Stacks duration."
+	},
+	{
+		"id": null,
+		"name": "Vulnerability",
+		"icon": "https://render.guildwars2.com/file/3A394C1A0A3257EB27A44842DDEEF0DF000E1241/102850.png",
+		"type": "Condition",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Damage and condition damage taken are increased; stacks intensity."
+	},
+	{
+		"id": null,
+		"name": "Superspeed",
+		"icon": "https://render.guildwars2.com/file/E04392C3D8ED985125973AEB99D8460C483263F9/103458.png",
+		"type": "Common",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Movement speed is greatly increased. Maximum duration: 10s"
+	},
+	{
+		"id": null,
+		"name": "Revealed",
+		"icon": "https://render.guildwars2.com/file/62BFF65D1CE99B1B2B0928152BCC596EAC0D372B/102887.png",
+		"type": "Common",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "You cannot stealth"
+	},
+	{
+		"id": null,
+		"name": "Stealth",
+		"icon": "https://render.guildwars2.com/file/3BD4670638470439F3325B444FAF7D5FA620CCE5/62777.png",
+		"type": "Common",
+		"specialization": null,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Currently invisible. Ends if you deal damage."
+	},
+	"",
+	{
+		"id": null,
+		"name": "Arcane Lightning",
+		"icon": "https://render.guildwars2.com/file/005807D4EACC2FC562FAF2C6BABC3E38E33FC070/1012289.png",
+		"type": "Trait",
+		"specialization": 37,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Increases your ferocity."
+	},
+	{
+		"id": null,
+		"name": "Fire Aura",
+		"icon": "https://render.guildwars2.com/file/2E7050E44690AFE0A396FA0DAD526699392743F3/2261521.png",
+		"type": "Trait",
+		"specialization": 18,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Enveloped in a fiery shield that burns foes, grants might each time you are struck (1-second cooldown per attacker)."
+	},
+	{
+		"id": null,
+		"name": "Frost Aura",
+		"icon": "https://render.guildwars2.com/file/719B80E35C276D68EF0AABB79126CF4CD42E3AF6/2261522.png",
+		"type": "Trait",
+		"specialization": 48,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Chill foes that strike you (only once per second for each attacker); incoming damage is reduced by 10%."
+	},
+	{
+		"id": null,
+		"name": "Soothing Mist",
+		"icon": "https://render.guildwars2.com/file/09D12A6041622A94409F276CEEEB2C17AF35A8ED/1012327.png",
+		"type": "Trait",
+		"specialization": 17,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Regenerate health."
+	},
+	{
+		"id": null,
+		"name": "Med Kit Bonus",
+		"icon": "https://render.guildwars2.com/file/206FCC2A05035FDB306AB5136E5F3AC0FC6467F3/103395.png",
+		"type": "Trait",
+		"specialization": 29,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Increased Healing to Other Allies"
+	},
+	{
+		"id": null,
+		"name": "Virtue of Resolve",
+		"icon": "https://render.guildwars2.com/file/F12B07B5466A51AB2BFD2C0CB8F3994D3F9E610C/103652.png",
+		"type": "Trait",
+		"specialization": 46,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Regenerate health."
+	},
+	{
+		"id": null,
+		"name": "Light Aura",
+		"icon": "https://render.guildwars2.com/file/62405ED2322E80A4A95663BA6C6804DB0962E6B0/867451.png",
+		"type": "Trait",
+		"specialization": 81,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "When struck, you gain resolution. Incoming condition damage is reduced by 10%. <c=@reminder>(Cooldown: 1 Second )</c>"
+	},
+	{
+		"id": null,
+		"name": "Inspiring Virtue",
+		"icon": "https://render.guildwars2.com/file/3EC057E1739EF1F22815605956B46142D2669A6D/1466322.png",
+		"type": "Trait",
+		"specialization": 46,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Strike damage dealt is increased after activating a virtue."
+	},
+	{
+		"id": null,
+		"name": "Chaos Aura",
+		"icon": "https://render.guildwars2.com/file/FEF378D8A91D0523A04A380ED0547F0BF944A967/2261518.png",
+		"type": "Trait",
+		"specialization": 45,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Give yourself random boons and your foe random conditions whenever you are struck."
+	},
+	{
+		"id": null,
+		"name": "Illusionary Membrane",
+		"icon": "https://render.guildwars2.com/file/0DF6A27A24B01D069DCD7609ADD305C7C557A82A/1012472.png",
+		"type": "Trait",
+		"specialization": 45,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Your condition damage is increased."
+	},
+	{
+		"id": null,
+		"name": "Fencer's Finesse",
+		"icon": "https://render.guildwars2.com/file/4DEE67F2B54D37C8ACEC0F235C94D0C140A77E0F/1012503.png",
+		"type": "Trait",
+		"specialization": 1,
+		"stacking": "Intensity",
+		"maximum": 10,
+		"description": "Increased ferocity per stack."
+	},
+	{
+		"id": null,
+		"name": "Distortion",
+		"icon": "https://render.guildwars2.com/file/D0969802A76808ACD65A56A6D54F2A40E355F7C3/103284.png",
+		"type": "Trait",
+		"specialization": 24,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Reflects Projectiles"
+	},
+	{
+		"id": null,
+		"name": "Compounding Power",
+		"icon": "https://render.guildwars2.com/file/E9BA251055B444E693144A9AF5FD1CF8266BEFA6/1012520.png",
+		"type": "Trait",
+		"specialization": 24,
+		"stacking": "Intensity",
+		"maximum": 5,
+		"description": "Increased outgoing damage and condition damage per stack."
+	},
+	{
+		"id": null,
+		"name": "Phantasmal Force",
+		"icon": "https://render.guildwars2.com/file/E002FB5DEC3A010F03F2E8A7D5000DF778215F6C/1012505.png",
+		"type": "Trait",
+		"specialization": 24,
+		"stacking": "Intensity",
+		"maximum": 25,
+		"description": "Phantasm damage increased per stack."
+	},
+	{
+		"id": null,
+		"name": "Signet of the Ether",
+		"icon": "https://render.guildwars2.com/file/EE5271572B2B10FBCE95097ECD54775832E8B9EF/699528.png",
+		"type": "Trait",
+		"specialization": 23,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Increases healing."
+	},
+	{
+		"id": null,
+		"name": "Signet of Domination",
+		"icon": "https://render.guildwars2.com/file/CE55909D170BF3E2C9F9A22C559CDF43D1726CEC/103612.png",
+		"type": "Trait",
+		"specialization": 23,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Removes boons."
+	},
+	{
+		"id": null,
+		"name": "Signet of Illusions",
+		"icon": "https://render.guildwars2.com/file/24B9A56E45B7AB5AA96FF3E85505DF60EA6EBD11/103756.png",
+		"type": "Trait",
+		"specialization": 23,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Summons illusions."
+	},
+	{
+		"id": null,
+		"name": "Signet of Inspiration",
+		"icon": "https://render.guildwars2.com/file/636A59096E48DD9B01D11F74EFECAEDCC4DB300D/103750.png",
+		"type": "Trait",
+		"specialization": 23,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Increases the number of allied targets."
+	},
+	{
+		"id": null,
+		"name": "Signet of Midnight",
+		"icon": "https://render.guildwars2.com/file/6F03529059F71F0CCEC9046F1932619ECB245EC4/57900.png",
+		"type": "Trait",
+		"specialization": 23,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Removes conditions."
+	},
+	{
+		"id": null,
+		"name": "Signet of Humility",
+		"icon": "https://render.guildwars2.com/file/A8B2B2403BF7A920040EB6E0E534920DA8D27B32/1012893.png",
+		"type": "Trait",
+		"specialization": 23,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Applies vulnerability."
+	},
+	{
+		"id": null,
+		"name": "Reflection",
+		"icon": "https://render.guildwars2.com/file/A20219EB6F5FC52A0E537163B4A9051606C11B52/65735.png",
+		"type": "Trait",
+		"specialization": 23,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Reflects projectiles."
+	},
+	{
+		"id": null,
+		"name": "Taste for Blood",
+		"icon": "https://render.guildwars2.com/file/09266890E7D1517B2D634E026A67696ABDBCDBC3/1012535.png",
+		"type": "Trait",
+		"specialization": 19,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Siphon health from enemies on hit."
+	},
+	{
+		"id": null,
+		"name": "Death's Carapace",
+		"icon": "https://render.guildwars2.com/file/DC38F4623BFE773E681E37A0EAE11A364D52AACE/1012567.png",
+		"type": "Trait",
+		"specialization": 2,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Increased toughness per stack."
+	},
+	{
+		"id": null,
+		"name": "Opening Strike",
+		"icon": "https://render.guildwars2.com/file/A537B362D8AC54BC7907E050B596BA93E4CBE5F2/1012627.png",
+		"type": "Trait",
+		"specialization": 8,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Your next attack is an opening strike."
+	},
+	{
+		"id": null,
+		"name": "Quick Draw",
+		"icon": "https://render.guildwars2.com/file/CBCB2EC86BC85CC02DA7AAB25CBFB226B8956D1E/1012648.png",
+		"type": "Trait",
+		"specialization": 30,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Your next weapon skill's cooldown is reduced by 66%."
+	},
+	{
+		"id": null,
+		"name": "Attack of Opportunity",
+		"icon": "https://render.guildwars2.com/file/9B120D5A176870D4EC9F1BE44E295EAAA6EF0ABC/1012623.png",
+		"type": "Trait",
+		"specialization": 8,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": ""
+	},
+	{
+		"id": null,
+		"name": "Instant Reflexes",
+		"icon": "https://render.guildwars2.com/file/E80BD3449E33470B1ECA0FF242CC6B031B459514/1012714.png",
+		"type": "Trait",
+		"specialization": 54,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Evade all attacks."
+	},
+	{
+		"id": null,
+		"name": "Spider Venom",
+		"icon": "https://render.guildwars2.com/file/39320C2D4AED963861F4540F59AEBB5E05AD2E1C/103513.png",
+		"type": "Trait",
+		"specialization": 20,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Your attacks poison foes."
+	},
+	{
+		"id": null,
+		"name": "Lead Attacks",
+		"icon": "https://render.guildwars2.com/file/0E204D3ECBE43544E2366F250C3AEDDFC3A051FA/1012773.png",
+		"type": "Trait",
+		"specialization": 44,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "All damage dealt is increased."
+	},
+	{
+		"id": null,
+		"name": "Daze",
+		"icon": "https://render.guildwars2.com/file/9AE125E930C92FEA0DD99E7EBAEDE4CF5EC556B6/433474.png",
+		"type": "Trait",
+		"specialization": 62,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Unable to activate skills."
+	},
+	{
+		"id": null,
+		"name": "Dark Aura",
+		"icon": "https://render.guildwars2.com/file/9471B12401BB04730A0614E277FEFD6AE43C5251/2261519.png",
+		"type": "Trait",
+		"specialization": 14,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Surrounded by a dark aura that reduces incoming condition damage and causes torment each time you are struck (1-second cooldown per attacker)."
+	},
+	{
+		"id": null,
+		"name": "Hidden Killer",
+		"icon": "https://render.guildwars2.com/file/03E22FDC6642C0F4BFD197DA5470A97910EB1877/1012733.png",
+		"type": "Trait",
+		"specialization": 35,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "You have increased critical hit chance."
+	},
+	{
+		"id": null,
+		"name": "Fluid Strikes",
+		"icon": "https://render.guildwars2.com/file/64A151F4F69F7F6E36986108224DA606660EDD64/1012725.png",
+		"type": "Trait",
+		"specialization": 54,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Your damage is increased."
+	},
+	{
+		"id": null,
+		"name": "Heightened Focus",
+		"icon": "https://render.guildwars2.com/file/FC5A1E5591B670A175ED01297B48C7F2B1DC1FED/1012806.png",
+		"type": "Trait",
+		"specialization": 51,
+		"stacking": "Intensity",
+		"maximum": 4,
+		"description": "Increased outgoing healing per stack."
+	},
+	{
+		"id": null,
+		"name": "Positive Flow",
+		"icon": "https://render.guildwars2.com/file/15AA251708A19EC6E1CBA4B208D7502797C9D111/2604722.png",
+		"type": "Trait",
+		"specialization": 68,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Gain flow per second."
+	},
+	{
+		"id": null,
+		"name": "Burst Precision",
+		"icon": "https://render.guildwars2.com/file/B93F326A054F0067AA1A35BB0F5E6B5C01992FB9/1012780.png",
+		"type": "Trait",
+		"specialization": 36,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Increased critical-hit chance."
+	},
+	{
+		"id": null,
+		"name": "Signet of Ferocity",
+		"icon": "https://render.guildwars2.com/file/3D117C0158CD7A55BE740D6B072807A3121C90A1/1012775.png",
+		"type": "Trait",
+		"specialization": 36,
+		"stacking": "Intensity",
+		"maximum": 5,
+		"description": ""
+	},
+	{
+		"id": null,
+		"name": "Furious Surge",
+		"icon": "https://render.guildwars2.com/file/10E50EAACB736A66317919D274C2594597AEE893/1012781.png",
+		"type": "Trait",
+		"specialization": 36,
+		"stacking": "Intensity",
+		"maximum": 25,
+		"description": ""
+	},
+	{
+		"id": null,
+		"name": "Adrenal Health",
+		"icon": "https://render.guildwars2.com/file/32A8CA56381F242642D7193B24284F922D23A2E3/1012796.png",
+		"type": "Trait",
+		"specialization": 22,
+		"stacking": "Intensity",
+		"maximum": 4,
+		"description": "Regain health by spending adrenaline."
+	},
+	{
+		"id": null,
+		"name": "Berserker's Power",
+		"icon": "https://render.guildwars2.com/file/A795EE78B8DAA836F3C0650CFC037BB71D3517BA/1012816.png",
+		"type": "Trait",
+		"specialization": 4,
+		"stacking": "Intensity",
+		"maximum": 4,
+		"description": "Increased strike damage per stack."
+	},
+	{
+		"id": null,
+		"name": "Peak Performance",
+		"icon": "https://render.guildwars2.com/file/08F60C11F460F3236DE65A445337290B7AAED96F/1012812.png",
+		"type": "Trait",
+		"specialization": 4,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Outgoing physical damage is increased."
+	},
+	{
+		"id": null,
+		"name": "Fresh Air",
+		"icon": "https://render.guildwars2.com/file/FA64C9F2750F986E52E8376F22EDBA3844A8C603/1012277.png",
+		"type": "Trait",
+		"specialization": 41,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Critical damage is increased."
+	},
+	{
+		"id": null,
+		"name": "Persisting Flames",
+		"icon": "https://render.guildwars2.com/file/38496307B7C27BCB08D6800F2A699B4998DD1935/1012312.png",
+		"type": "Trait",
+		"specialization": 31,
+		"stacking": "Intensity",
+		"maximum": 5,
+		"description": "Deal increased strike damage per stack."
+	},
+	{
+		"id": null,
+		"name": "Grand Entrance",
+		"icon": "https://render.guildwars2.com/file/7093569DA52A64BE5C42AE0A0D0A700BAA320C0C/2261505.png",
+		"type": "Trait",
+		"specialization": 6,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Your critical-strike chance is increased."
+	},
+	{
+		"id": null,
+		"name": "Stone Heart",
+		"icon": "https://render.guildwars2.com/file/22F1BDACFBEBC8FF2BF77B22B3E535D2BA03D140/1012302.png",
+		"type": "Trait",
+		"specialization": 26,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "You cannot be critically hit."
+	},
+	{
+		"id": null,
+		"name": "Force of Will",
+		"icon": "https://render.guildwars2.com/file/AA9EDC9B5B343F27372ADDBA320702D3A19CD7D5/1012410.png",
+		"type": "Trait",
+		"specialization": 49,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": ""
+	},
+	{
+		"id": null,
+		"name": "Power Block",
+		"icon": "https://render.guildwars2.com/file/E029766272E10A957B954B12B20FD916474D5A01/1012494.png",
+		"type": "Trait",
+		"specialization": 10,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Your strike damage is increased."
+	},
+	{
+		"id": null,
+		"name": "Rising Momentum",
+		"icon": "https://render.guildwars2.com/file/BADE3878F6F5EE4247D501CE5ACDFB7BC24BA1AE/1058535.png",
+		"type": "Trait",
+		"specialization": 52,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Gain movement speed for each point of upkeep currently in use."
+	},
+	{
+		"id": null,
+		"name": "Battle Scars",
+		"icon": "https://render.guildwars2.com/file/395D7939C8DD48BE35012E319D039F545065F755/2261515.png",
+		"type": "Trait",
+		"specialization": 15,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Your next attack steals health."
+	},
+	{
+		"id": null,
+		"name": "Facet of Light",
+		"icon": "https://render.guildwars2.com/file/1F723B516AC5B614943543EECE6938E13349B90E/1012991.png",
+		"type": "Trait",
+		"specialization": 52,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": ""
+	},
+	{
+		"id": null,
+		"name": "Facet of Darkness",
+		"icon": "https://render.guildwars2.com/file/15A4F87D0E05936FF96B60F8745ADB513C5308E3/1013011.png",
+		"type": "Trait",
+		"specialization": 52,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": ""
+	},
+	{
+		"id": null,
+		"name": "Facet of Elements",
+		"icon": "https://render.guildwars2.com/file/C1EC3E559DFB120A41FD3750DABD616BBA9172F9/1013012.png",
+		"type": "Trait",
+		"specialization": 52,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": ""
+	},
+	{
+		"id": null,
+		"name": "Facet of Strength",
+		"icon": "https://render.guildwars2.com/file/26296CDACD6C4E4A785F305D47523029786B79B9/1013013.png",
+		"type": "Trait",
+		"specialization": 52,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": ""
+	},
+	{
+		"id": null,
+		"name": "Facet of Chaos",
+		"icon": "https://render.guildwars2.com/file/E5F7EC66C065EAB56631BA0CD1CF6F4D03B89270/1012986.png",
+		"type": "Trait",
+		"specialization": 52,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": ""
+	},
+	{
+		"id": null,
+		"name": "Facet of Nature",
+		"icon": "https://render.guildwars2.com/file/590F7657AB11171A35304E5DDA6FDA5B2EC70350/1058606.png",
+		"type": "Trait",
+		"specialization": 52,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": ""
+	},
+	{
+		"id": null,
+		"name": "Legendary Entity Stance",
+		"icon": "https://render.guildwars2.com/file/96D1B2FC486CB655D804B9722FC13ED623964451/3680050.png",
+		"type": "Trait",
+		"specialization": 79,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "75 to All Attributes"
+	},
+	{
+		"id": null,
+		"name": "Resolute Evasion",
+		"icon": "https://render.guildwars2.com/file/CA9478C84998F038B949E4BAD01CEFB70811386E/1012697.png",
+		"type": "Trait",
+		"specialization": 9,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Reduce incoming strike damage."
+	},
+	{
+		"id": null,
+		"name": "Steadfast Rejuvenation",
+		"icon": "https://render.guildwars2.com/file/4CB0D2FC4C01EBA3D280FFA86C907AE92055AD9B/1012698.png",
+		"type": "Trait",
+		"specialization": 9,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Heal every second based on upkeep."
+	},
+	{
+		"id": null,
+		"name": "Invoking Harmony",
+		"icon": "https://render.guildwars2.com/file/4BA0B6F2AD93F72CA3D5C3C40D30B40B14920825/2128015.png",
+		"type": "Trait",
+		"specialization": 12,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Healing done to other allies is increased for a short duration after invoking a legend."
+	},
+	{
+		"id": null,
+		"name": "Unyielding Spirit",
+		"icon": "https://render.guildwars2.com/file/11404242F05CA14C5ED90B3A0B74CDE8E3D8154C/2128014.png",
+		"type": "Trait",
+		"specialization": 12,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Reduced incoming damage."
+	},
+	{
+		"id": null,
+		"name": "Lotus Training",
+		"icon": "https://render.guildwars2.com/file/E5724D46CEE62333E00CE26905C5FDD5439F6667/1058552.png",
+		"type": "Trait",
+		"specialization": 7,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Condition damage is increased."
+	},
+	{
+		"id": null,
+		"name": "Transcendent Tempest",
+		"icon": "https://render.guildwars2.com/file/0C79A761B446E53CAB6DA4B320D12D656B5E1151/2207773.png",
+		"type": "Trait",
+		"specialization": 48,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Your damage is increased."
+	},
+	{
+		"id": null,
+		"name": "Vampiric Aura",
+		"icon": "https://render.guildwars2.com/file/22B370D754AC1D69A8FE66DCCB36BE940455E5EA/1012539.png",
+		"type": "Trait",
+		"specialization": 19,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Siphon health when you hit."
+	},
+	{
+		"id": null,
+		"name": "Kinetic Charge",
+		"icon": "https://render.guildwars2.com/file/1BE44A22FD664209636ED7E30ACF241B782E6C01/1012384.png",
+		"type": "Trait",
+		"specialization": 21,
+		"stacking": "Intensity",
+		"maximum": 5,
+		"description": "At maximum charges gain a burst of speed."
+	},
+	{
+		"id": null,
+		"name": "Weakening Strikes",
+		"icon": "https://render.guildwars2.com/file/140F77BB56B93C32BFDAC30CB332FCBAAF0921A5/1058547.png",
+		"type": "Trait",
+		"specialization": 7,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Next attack weakens enemies."
+	},
+	{
+		"id": null,
+		"name": "Tempestuous Aria",
+		"icon": "https://render.guildwars2.com/file/0C2A72B848A7FBB596DE6096B4C45814D3266EEB/1029946.png",
+		"type": "Trait",
+		"specialization": 48,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Your damage is increased."
+	},
+	{
+		"id": null,
+		"name": "Explosive Temper",
+		"icon": "https://render.guildwars2.com/file/E1D2A2466605A4BAE5AADC623AA5980FF5797693/2261520.png",
+		"type": "Trait",
+		"specialization": 6,
+		"stacking": "Intensity",
+		"maximum": 10,
+		"description": ""
+	},
+	{
+		"id": null,
+		"name": "Invigorated Bulwark",
+		"icon": "https://render.guildwars2.com/file/504B1F9EF89652FD5A00D52DE52A52B7023043E9/1012402.png",
+		"type": "Trait",
+		"specialization": 49,
+		"stacking": "Intensity",
+		"maximum": 5,
+		"description": "Increased healing to other allies when you block an attack."
+	},
+	{
+		"id": null,
+		"name": "Light on Your Feet",
+		"icon": "https://render.guildwars2.com/file/4D37A694088038DA9266F6107C9604AD9CBC2752/1012649.png",
+		"type": "Trait",
+		"specialization": 30,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Your conditions last longer, and your damage is increased."
+	},
+	{
+		"id": null,
+		"name": "Last Rites",
+		"icon": "https://render.guildwars2.com/file/FCCF489066E7F22BFECB5F165060E2A5C96B5AC9/1012545.png",
+		"type": "Trait",
+		"specialization": 19,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "You do not lose health while downed."
+	},
+	{
+		"id": null,
+		"name": "Beastly Warden",
+		"icon": "https://render.guildwars2.com/file/EF61D1061135B1EC57FDFD94795ED125D43962E1/1012612.png",
+		"type": "Trait",
+		"specialization": 32,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": ""
+	},
+	{
+		"id": null,
+		"name": "Big Boomer",
+		"icon": "https://render.guildwars2.com/file/0122FE72473C12BA0661EABA18F5B83022066EDB/2261506.png",
+		"type": "Trait",
+		"specialization": 6,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": ""
+	},
+	{
+		"id": null,
+		"name": "Unhindered Combatant",
+		"icon": "https://render.guildwars2.com/file/0D7324A22F580F3DA3F244C466770FB69292C307/1058553.png",
+		"type": "Trait",
+		"specialization": 7,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Damage dealt to you is reduced."
+	},
+	{
+		"id": null,
+		"name": "Feel No Pain",
+		"icon": "https://render.guildwars2.com/file/FDC3330B22C258587B2ED4E65204467B5836D49C/1029969.png",
+		"type": "Trait",
+		"specialization": 18,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": ""
+	},
+	{
+		"id": null,
+		"name": "Blood Reckoning",
+		"icon": "https://render.guildwars2.com/file/3E80EA264B52D3A3B3CA2E5DA41F57BF35445AF4/1058642.png",
+		"type": "Trait",
+		"specialization": 18,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Heal for a percentage of outgoing damage."
+	},
+	{
+		"id": null,
+		"name": "Thermal Vision",
+		"icon": "https://render.guildwars2.com/file/F806ACB6130CED2DACC9DD804E4303327073385A/1012358.png",
+		"type": "Trait",
+		"specialization": 38,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": ""
+	},
+	{
+		"id": null,
+		"name": "Symbolic Avenger",
+		"icon": "https://render.guildwars2.com/file/C1A6EBA29894C831AAEE0D1C47080D12F9BA3AA3/1012458.png",
+		"type": "Trait",
+		"specialization": 42,
+		"stacking": "Intensity",
+		"maximum": 5,
+		"description": "Deal increased damage per stack."
+	},
+	{
+		"id": null,
+		"name": "Mind Wrack",
+		"icon": "https://render.guildwars2.com/file/52619C5D4F9A61C8F37A0705AE36602F19E164C2/103732.png",
+		"type": "Trait",
+		"specialization": 24,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Increases critical-hit chance by 25%."
+	},
+	{
+		"id": null,
+		"name": "Cry of Frustration",
+		"icon": "https://render.guildwars2.com/file/B8E57C1F08727AF8C39066160B93D175B6A3B9BA/103731.png",
+		"type": "Trait",
+		"specialization": 24,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Cripples foes on hit."
+	},
+	{
+		"id": null,
+		"name": "Diversion",
+		"icon": "https://render.guildwars2.com/file/0BD64508BF40EFFF3299DFA3D1A63BF2F941A4C9/103769.png",
+		"type": "Trait",
+		"specialization": 24,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Strikes up to five targets within range."
+	},
+	{
+		"id": null,
+		"name": "Lively Lute",
+		"icon": "https://render.guildwars2.com/file/4CAA3750145A55B7E73D5EB9917590EC45657BE7/3680159.png",
+		"type": "Trait",
+		"specialization": 24,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Increases critical-hit chance by 25%."
+	},
+	{
+		"id": null,
+		"name": "Bladesong Harmony",
+		"icon": "https://render.guildwars2.com/file/656A0C59523A4D9D935316EA93F1EA6247C32106/2479382.png",
+		"type": "Trait",
+		"specialization": 24,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Increases critical-hit chance by 25%."
+	},
+	{
+		"id": null,
+		"name": "Split Second",
+		"icon": "https://render.guildwars2.com/file/14090D7A6472AB06125662EB12E6EC51EDE2EEBB/2175059.png",
+		"type": "Trait",
+		"specialization": 24,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Increases critical-hit chance by 25%."
+	},
+	{
+		"id": null,
+		"name": "Flustering Flute",
+		"icon": "https://render.guildwars2.com/file/CFE30B5052A2AA67D9A8AE5FC1FBA0A56C64584C/3680160.png",
+		"type": "Trait",
+		"specialization": 24,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Cripples foes on hit."
+	},
+	{
+		"id": null,
+		"name": "Bladesong Sorrow",
+		"icon": "https://render.guildwars2.com/file/EF9223543A66B8B5A8FD1C4BC4E7A218277C15C4/2479383.png",
+		"type": "Trait",
+		"specialization": 24,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Cripples foes on hit."
+	},
+	{
+		"id": null,
+		"name": "Rewinder",
+		"icon": "https://render.guildwars2.com/file/F59775A05108441C09AC03C30CAD98CC049CCC28/2175058.png",
+		"type": "Trait",
+		"specialization": 24,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Cripples foes on hit."
+	},
+	{
+		"id": null,
+		"name": "Deafening Drum",
+		"icon": "https://render.guildwars2.com/file/E061ECE20A34DC281C0E3EB8FB90094549E87941/3680161.png",
+		"type": "Trait",
+		"specialization": 24,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Weakens foes on hit."
+	},
+	{
+		"id": null,
+		"name": "Bladesong Dissonance",
+		"icon": "https://render.guildwars2.com/file/D96E115ADAB14D610215EC185C3C21B4611DC292/2479381.png",
+		"type": "Trait",
+		"specialization": 24,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Strikes up to five targets within range."
+	},
+	{
+		"id": null,
+		"name": "Time Sink",
+		"icon": "https://render.guildwars2.com/file/3A0CF805A4359A10766D1DD04FF0E7D20A05BD17/2175060.png",
+		"type": "Trait",
+		"specialization": 24,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Strikes up to five targets within range."
+	},
+	{
+		"id": null,
+		"name": "Harmonious Harp",
+		"icon": "https://render.guildwars2.com/file/C1BCF465DE1DAB00E00B0F1494ABDB2D7F57BECA/3680162.png",
+		"type": "Trait",
+		"specialization": 24,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Removes conditions from allies on use."
+	},
+	{
+		"id": null,
+		"name": "Bladeturn Requiem",
+		"icon": "https://render.guildwars2.com/file/040192EDDE9D2492D2428027E50DFC12B9044D39/2479384.png",
+		"type": "Trait",
+		"specialization": 24,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Duration increased by 1 second."
+	},
+	{
+		"id": null,
+		"name": "Continuum Shift",
+		"icon": "https://render.guildwars2.com/file/9E7CE10D0E447973F2D9175CF16A103BD076D04B/1012882.png",
+		"type": "Trait",
+		"specialization": 24,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Base duration increased by 1 second."
+	},
+	{
+		"id": null,
+		"name": "Crescendo",
+		"icon": "https://render.guildwars2.com/file/935C32505D1F4DB7D9739C2C4B4137D4346709A4/3680163.png",
+		"type": "Trait",
+		"specialization": 24,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Effectiveness per instrument is increased."
+	},
+	{
+		"id": null,
+		"name": "Bounding Dodger",
+		"icon": "https://render.guildwars2.com/file/F3E22D0FDFDB436780BD4ACBA5D135EE40507FFD/1058554.png",
+		"type": "Trait",
+		"specialization": 7,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "You deal bonus damage."
+	},
+	{
+		"id": null,
+		"name": "Natural Balance",
+		"icon": "https://render.guildwars2.com/file/5F953BAC2C7EB3340B4EAA9A7D9633320BAB29A6/1128535.png",
+		"type": "Trait",
+		"specialization": 5,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Your conditions do increased damage and have increased duration. Your concentration is increased."
+	},
+	{
+		"id": null,
+		"name": "Lingering Light",
+		"icon": "https://render.guildwars2.com/file/01BBD8CADBC6E9BBED46A2D9026976316CA8EAD9/1128537.png",
+		"type": "Trait",
+		"specialization": 5,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Reduces the cooldown of Celestial Avatar when exiting."
+	},
+	{
+		"id": null,
+		"name": "Kalla's Fervor",
+		"icon": "https://render.guildwars2.com/file/4DDE151C71EDB6120E3454036C4C3504EADB02D8/1770161.png",
+		"type": "Trait",
+		"specialization": 63,
+		"stacking": "Intensity",
+		"maximum": 5,
+		"description": "Kalla's legend inspires you, increasing all damage dealt; stacks intensity."
+	},
+	{
+		"id": null,
+		"name": "Improved Kalla's Fervor",
+		"icon": "https://render.guildwars2.com/file/4DDE151C71EDB6120E3454036C4C3504EADB02D8/1770161.png",
+		"type": "Trait",
+		"specialization": 63,
+		"stacking": "Intensity",
+		"maximum": 5,
+		"description": "Kalla's legend inspires you, increasing all damage dealt; stacks intensity."
+	},
+	{
+		"id": null,
+		"name": "Fire Attunement",
+		"icon": "https://render.guildwars2.com/file/7E6722B76FD7F8AC1B4591B2FF9B277147B13476/102801.png",
+		"type": "Trait",
+		"specialization": 56,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": ""
+	},
+	{
+		"id": null,
+		"name": "Water Attunement",
+		"icon": "https://render.guildwars2.com/file/517FE8900C72EAADBB54676E324D45D31706C277/102865.png",
+		"type": "Trait",
+		"specialization": 56,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": ""
+	},
+	{
+		"id": null,
+		"name": "Air Attunement",
+		"icon": "https://render.guildwars2.com/file/4857F59020DE3B0950B9C91F3D234A1C1932984A/103048.png",
+		"type": "Trait",
+		"specialization": 56,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": ""
+	},
+	{
+		"id": null,
+		"name": "Earth Attunement",
+		"icon": "https://render.guildwars2.com/file/4B8056D9BD080DC8E74AE6A57B2B383A2D4265C9/102870.png",
+		"type": "Trait",
+		"specialization": 56,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": ""
+	},
+	{
+		"id": null,
+		"name": "Phantom Pain",
+		"icon": "https://render.guildwars2.com/file/3999015BF80BA211F8AD463C50BEBD0826DC1D12/1769956.png",
+		"type": "Trait",
+		"specialization": 59,
+		"stacking": "Intensity",
+		"maximum": 4,
+		"description": "Increased strike and condition damage per stack."
+	},
+	{
+		"id": null,
+		"name": "Afterburner",
+		"icon": "https://render.guildwars2.com/file/19FE5C016ACFF174DE03752D40D202F9B75FB0C2/1769929.png",
+		"type": "Trait",
+		"specialization": 57,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Your next attack sets the target on fire."
+	},
+	{
+		"id": null,
+		"name": "All for One",
+		"icon": "https://render.guildwars2.com/file/9398D8F8E764A23596E17EDAA35B99961D62F061/1769993.png",
+		"type": "Trait",
+		"specialization": 63,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "You deal increased strike damage."
+	},
+	{
+		"id": null,
+		"name": "Twice as Vicious",
+		"icon": "https://render.guildwars2.com/file/42AE5234142F3045D5B665EC60D6E3FF7C564D62/1769986.png",
+		"type": "Trait",
+		"specialization": 55,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "You deal increased damage from strikes and conditions."
+	},
+	{
+		"id": null,
+		"name": "Attacker's Insight",
+		"icon": "https://render.guildwars2.com/file/211512491566A15FDCE3E1B64A010445F1EB39E5/1770023.png",
+		"type": "Trait",
+		"specialization": 61,
+		"stacking": "Intensity",
+		"maximum": 5,
+		"description": ""
+	},
+	{
+		"id": null,
+		"name": "Elements of Rage",
+		"icon": "https://render.guildwars2.com/file/4269910A34FB0FB861DAE2A13229D594523B0BA0/1769921.png",
+		"type": "Trait",
+		"specialization": 56,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Your damage is increased."
+	},
+	{
+		"id": null,
+		"name": "Mirage Cloak",
+		"icon": "https://render.guildwars2.com/file/67FA6042C903766148F46373C47B037609C4D525/1770144.png",
+		"type": "Trait",
+		"specialization": 59,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Evade incoming attacks."
+	},
+	{
+		"id": null,
+		"name": "Ashes of the Just",
+		"icon": "https://render.guildwars2.com/file/EC05420EAE5445A7069409B54D4502ED36BDF10A/1770477.png",
+		"type": "Trait",
+		"specialization": 62,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Your next strike burns with justice."
+	},
+	{
+		"id": null,
+		"name": "Weaver's Prowess",
+		"icon": "https://render.guildwars2.com/file/78DA4AC17D4EBDA04BBBD325A024C346F59ED150/1769918.png",
+		"type": "Trait",
+		"specialization": 56,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Condition damage and duration is increased."
+	},
+	{
+		"id": null,
+		"name": "Blight",
+		"icon": "https://render.guildwars2.com/file/6B797B70EF545937F677BCD463BD23DC749B0801/2479350.png",
+		"type": "Trait",
+		"specialization": 64,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Reduces your maximum health. Stacks intensity."
+	},
+	{
+		"id": null,
+		"name": "Lethal Tempo",
+		"icon": "https://render.guildwars2.com/file/08351965141B6F3013600B3B9CC7F880DEFF05D4/2479325.png",
+		"type": "Trait",
+		"specialization": 65,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Damage increase per stack."
+	},
+	{
+		"id": null,
+		"name": "Implacable Foe",
+		"icon": "https://render.guildwars2.com/file/E3ABCC0E40170F08B0BDE72378D200BC06D1AF13/2479341.png",
+		"type": "Trait",
+		"specialization": 64,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Take reduced incoming damage."
+	},
+	{
+		"id": null,
+		"name": "Deadly Blades",
+		"icon": "https://render.guildwars2.com/file/C4AFBAAA039152A302C15B805CAD980EA9B5D006/2479337.png",
+		"type": "Trait",
+		"specialization": 66,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Damage dealt is increased."
+	},
+	{
+		"id": null,
+		"name": "Hardened Auras",
+		"icon": "https://render.guildwars2.com/file/07F6DDB8129A05F6DF05E6669CE00C29FF260F80/2491519.png",
+		"type": "Trait",
+		"specialization": 67,
+		"stacking": "Intensity",
+		"maximum": 5,
+		"description": "Incoming damage is reduced."
+	},
+	{
+		"id": null,
+		"name": "Elemental Empowerment",
+		"icon": "https://render.guildwars2.com/file/C3B3C99943ECABFAA936573030C599EE2A974420/2491529.png",
+		"type": "Trait",
+		"specialization": 67,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Gain attribute increases while in combat."
+	},
+	{
+		"id": null,
+		"name": "Guns and Glory",
+		"icon": "https://render.guildwars2.com/file/0B2291AEBD4B3755F0CD9A38987797763AD34790/2491554.png",
+		"type": "Trait",
+		"specialization": 68,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": ""
+	},
+	{
+		"id": null,
+		"name": "Saint of zu Heltzer",
+		"icon": "https://render.guildwars2.com/file/42D514BF15A3F84ECECBACC7E05F95CAE03EBF6D/2491539.png",
+		"type": "Trait",
+		"specialization": 69,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Outgoing healing is increased."
+	},
+	{
+		"id": null,
+		"name": "Empowering Auras",
+		"icon": "https://render.guildwars2.com/file/C52EDB20EC120936089EC83C54A55A610A075652/2491522.png",
+		"type": "Trait",
+		"specialization": 67,
+		"stacking": "Intensity",
+		"maximum": 5,
+		"description": "Increased outgoing strike and condition damage."
+	},
+	{
+		"id": null,
+		"name": "Forerunner of Death",
+		"icon": "https://render.guildwars2.com/file/2864D963D3FC9156E6F52FA95DD34C2DE30306BE/2491537.png",
+		"type": "Trait",
+		"specialization": 69,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Outgoing strike damage is increased."
+	},
+	{
+		"id": null,
+		"name": "Reaver's Curse",
+		"icon": "https://render.guildwars2.com/file/00B56F050D44B6690427AFF77901E3074FF221AD/2491534.png",
+		"type": "Trait",
+		"specialization": 69,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Your next dodge is enhanced."
+	},
+	{
+		"id": null,
+		"name": "Exigency Protocols",
+		"icon": "https://render.guildwars2.com/file/D303A429CCF6B672E66DA12DD014FEF8A80335E7/2503631.png",
+		"type": "Trait",
+		"specialization": 70,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": ""
+	},
+	{
+		"id": null,
+		"name": "Rot Wallow Venom",
+		"icon": "https://render.guildwars2.com/file/0F0B6509C8D5023D949153929E02FD2195AF63FE/2503654.png",
+		"type": "Trait",
+		"specialization": 71,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Inflict torment on foes struck."
+	},
+	{
+		"id": null,
+		"name": "Ferocious Symbiosis",
+		"icon": "https://render.guildwars2.com/file/B367DF25F5F07C51CE5BD280C35A0E7BB19B98A3/2503640.png",
+		"type": "Trait",
+		"specialization": 72,
+		"stacking": "Intensity",
+		"maximum": 5,
+		"description": "Gain damage and movement speed per stack."
+	},
+	{
+		"id": null,
+		"name": "Biorhythm",
+		"icon": "https://render.guildwars2.com/file/44B8970EAEBCFC14E11A910C5B5D0FC512FEEBE5/2503639.png",
+		"type": "Trait",
+		"specialization": 72,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Heal for a percentage of your outgoing damage."
+	},
+	{
+		"id": null,
+		"name": "Vow of the Untamed",
+		"icon": "https://render.guildwars2.com/file/6C71F5D550E3CBACBB067376F52DE40A0148776F/2503643.png",
+		"type": "Trait",
+		"specialization": 72,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Your outgoing strike damage is increased, and your incoming strike damage is reduced."
+	},
+	{
+		"id": null,
+		"name": "Fierce as Fire",
+		"icon": "https://render.guildwars2.com/file/630362D11956CB69199DE9CE0EEA03232DC9DA38/2491547.png",
+		"type": "Trait",
+		"specialization": 68,
+		"stacking": "Intensity",
+		"maximum": 10,
+		"description": "Damage increase per stack."
+	},
+	{
+		"id": null,
+		"name": "Legendary Assassin Stance",
+		"icon": "https://render.guildwars2.com/file/67CDD35F6BC3072E0837715A5E0A90646529BAA2/1030005.png",
+		"type": "Trait",
+		"specialization": 79,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": ""
+	},
+	{
+		"id": null,
+		"name": "Legendary Centaur Stance",
+		"icon": "https://render.guildwars2.com/file/6CFF31B50AA00CAF3D35A02562964802B55AD292/1024105.png",
+		"type": "Trait",
+		"specialization": 79,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": ""
+	},
+	{
+		"id": null,
+		"name": "Legendary Demon Stance",
+		"icon": "https://render.guildwars2.com/file/1A1407F7D34E5ED41B59A25F39EBF728CC926423/961413.png",
+		"type": "Trait",
+		"specialization": 79,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": ""
+	},
+	{
+		"id": null,
+		"name": "Legendary Dwarf Stance",
+		"icon": "https://render.guildwars2.com/file/03C66FA8A89697A0C4D309484172080E3A1141EF/961410.png",
+		"type": "Trait",
+		"specialization": 79,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": ""
+	},
+	{
+		"id": null,
+		"name": "Lingering Spirits",
+		"icon": "https://render.guildwars2.com/file/473E92AE33757816B7205C4759F1F3065346E600/3680173.png",
+		"type": "Trait",
+		"specialization": 76,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Your outgoing healing is increased."
+	},
+	{
+		"id": null,
+		"name": "Electric Enchantment",
+		"icon": "https://render.guildwars2.com/file/CD54CEBF6BD8D37902E2EF0565BE0A9FF3CB9414/3680122.png",
+		"type": "Trait",
+		"specialization": 80,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Striking a foe will create a chain-lightning attack on that foe."
+	},
+	{
+		"id": null,
+		"name": "Wind Force",
+		"icon": "https://render.guildwars2.com/file/CF44234EA9D65ADAF8667CE40DCC9EF392F377DA/3680044.png",
+		"type": "Trait",
+		"specialization": 78,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Gain access to Hawkeye at the stack threshold."
+	},
+	{
+		"id": null,
+		"name": "Gale Force",
+		"icon": "https://render.guildwars2.com/file/206A95E4F6F236D824F80CF2495B4E6553ABFF34/3679998.png",
+		"type": "Trait",
+		"specialization": 78,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Increased outgoing strike damage and movement speed."
+	},
+	{
+		"id": null,
+		"name": "Explosive Growth",
+		"icon": "https://render.guildwars2.com/file/EBEED007E2F92B18B921210ACE261F279329E31F/3679981.png",
+		"type": "Trait",
+		"specialization": 76,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "You deal increased strike damage."
+	},
+	{
+		"id": null,
+		"name": "Combat High",
+		"icon": "https://render.guildwars2.com/file/394C98BFA71163D6DCB75F2294CD2B56B8126BC7/3680055.png",
+		"type": "Trait",
+		"specialization": 77,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Deal increased strike and condition damage."
+	},
+	{
+		"id": null,
+		"name": "Exhilarating Ephemera",
+		"icon": "https://render.guildwars2.com/file/CE22E9489B9754A65A750A2F07351222FDCAA17B/3680053.png",
+		"type": "Trait",
+		"specialization": 77,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "You deal increased strike damage."
+	},
+	{
+		"id": null,
+		"name": "Willing Host",
+		"icon": "https://render.guildwars2.com/file/49DEE2C90E04E876DE2517C201060E330A7D9FDE/3679954.png",
+		"type": "Trait",
+		"specialization": 75,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "You deal increased damage from strikes and conditions."
+	},
+	{
+		"id": null,
+		"name": "Brisk Pacing",
+		"icon": "https://render.guildwars2.com/file/9D35A3CED107B068AD4D20A3782BF6262FE36610/3680030.png",
+		"type": "Trait",
+		"specialization": 74,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Increased outgoing damage."
+	},
+	{
+		"id": null,
+		"name": "Chant of Action",
+		"icon": "https://render.guildwars2.com/file/4B3C78BCBC05A7FDE4DDC8624AD9D80924B3F237/3680056.png",
+		"type": "Trait",
+		"specialization": 74,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Stacks of might gained increased per level."
+	},
+	{
+		"id": null,
+		"name": "Chant of Recuperation",
+		"icon": "https://render.guildwars2.com/file/6EAB0F5614F71BA857B1797E42596FEF3E0733AE/3680058.png",
+		"type": "Trait",
+		"specialization": 74,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Healing increased per level."
+	},
+	{
+		"id": null,
+		"name": "Chant of Freedom",
+		"icon": "https://render.guildwars2.com/file/416DB03D770454152C5CAC1BE00575E075AD9571/3680057.png",
+		"type": "Trait",
+		"specialization": 74,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Boon duration increased for each boon granted per level."
+	},
+	{
+		"id": null,
+		"name": "Luminary's Blessing",
+		"icon": "https://render.guildwars2.com/file/6C920751304B14ADFFB6A70CACEA1B80D2ABFC59/3679965.png",
+		"type": "Trait",
+		"specialization": 81,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Reduced incoming strike damage. Heal when this expires. <c=@reminder>Healing will also occur if this effect is reapplied while still active."
+	},
+	{
+		"id": null,
+		"name": "Scoundrel's Luck",
+		"icon": "https://render.guildwars2.com/file/6F4E6201D89B35DDAD47EDEC453C51B70DFA409F/3680052.png",
+		"type": "Trait",
+		"specialization": 77,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Your next Double Edge skill used on cooldown will always be successful, regardless of the remaining cooldown. If used on Skritt Scuffle, it instead reduces the chance of obtaining an Unstable Skritt Bomb."
+	},
+	{
+		"id": null,
+		"name": "Prodigious Pincher",
+		"icon": "https://render.guildwars2.com/file/092ED8ABB495EFD759DA0BE64D1C285A21076D15/3680054.png",
+		"type": "Trait",
+		"specialization": 77,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "When this reaches the maximum amount of stacks, remove all stacks, then Pilfer. Overrides existing artifacts."
+	},
+	{
+		"id": null,
+		"name": "Empowered Armaments",
+		"icon": "https://render.guildwars2.com/file/37424E9DD0A3ADC61DD56BB180C96201DB61099C/3679960.png",
+		"type": "Trait",
+		"specialization": 81,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "You deal increased strike damage."
+	},
+	{
+		"id": null,
+		"name": "Lute Playing",
+		"icon": "https://render.guildwars2.com/file/4CAA3750145A55B7E73D5EB9917590EC45657BE7/3680159.png",
+		"type": "Trait",
+		"specialization": 73,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "The lute is playing in the background."
+	},
+	{
+		"id": null,
+		"name": "Flute Playing",
+		"icon": "https://render.guildwars2.com/file/CFE30B5052A2AA67D9A8AE5FC1FBA0A56C64584C/3680160.png",
+		"type": "Trait",
+		"specialization": 73,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "The flute is playing in the background."
+	},
+	{
+		"id": null,
+		"name": "Drum Playing",
+		"icon": "https://render.guildwars2.com/file/E061ECE20A34DC281C0E3EB8FB90094549E87941/3680161.png",
+		"type": "Trait",
+		"specialization": 73,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "The drum is playing in the background."
+	},
+	{
+		"id": null,
+		"name": "Harp Playing",
+		"icon": "https://render.guildwars2.com/file/C1BCF465DE1DAB00E00B0F1494ABDB2D7F57BECA/3680162.png",
+		"type": "Trait",
+		"specialization": 73,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "The harp is playing in the background."
+	},
+	{
+		"id": null,
+		"name": "Radiant Armaments",
+		"icon": "https://render.guildwars2.com/file/06735858B4DE086359A7DB1D4B2B650F97D7DD03/3680144.png",
+		"type": "Trait",
+		"specialization": 81,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Reduce incoming strike damage from nearby enemies."
+	},
+	{
+		"id": null,
+		"name": "Elemental Balance",
+		"icon": "https://render.guildwars2.com/file/6B625B190E65062542F7CCF9B1565D2AF403C2C6/3679935.png",
+		"type": "Trait",
+		"specialization": 80,
+		"stacking": "Duration",
+		"maximum": null,
+		"description": "Your next weapon skill's cooldown is reduced by 66%."
+	}
+]

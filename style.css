@@ -1,0 +1,20 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	margin: 0;
+	box-sizing: inherit;
+}
+
+html {
+	--fg: #dadbe4;
+	--bg: #262429;
+}
+
+body {
+	background-color: var(--bg);
+	color: var(--fg);
+}
