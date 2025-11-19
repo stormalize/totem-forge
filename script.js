@@ -1,5 +1,5 @@
 import { render, html, signal, effect } from "uhtml";
-import traits from "./data/traits.json" with { type: "json" };
+import traits from "./data/effects.json" with { type: "json" };
 import specializations from "./data/specializations.json" with { type: "json" };
 import professions from "./data/professions.json" with { type: "json" };
 

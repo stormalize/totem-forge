@@ -1,6 +1,6 @@
 [
 	{
-		"id": null,
+		"id": 743,
 		"name": "Aegis",
 		"icon": "https://render.guildwars2.com/file/DFB4D1B50AE4D6A275B349E15B179261EE3EB0AF/102854.png",
 		"type": "Boon",
@@ -10,7 +10,7 @@
 		"description": "Block the next incoming attack; stacks duration."
 	},
 	{
-		"id": null,
+		"id": 30328,
 		"name": "Alacrity",
 		"icon": "https://render.guildwars2.com/file/4FDAC2113B500104121753EF7E026E45C141E94D/1938787.png",
 		"type": "Boon",
@@ -20,7 +20,7 @@
 		"description": "Skills recharge faster."
 	},
 	{
-		"id": null,
+		"id": 725,
 		"name": "Fury",
 		"icon": "https://render.guildwars2.com/file/96D90DF84CAFE008233DD1C2606A12C1A0E68048/102842.png",
 		"type": "Boon",

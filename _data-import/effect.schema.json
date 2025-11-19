@@ -1,0 +1,87 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"type": "object",
+	"properties": {
+		"id": {
+			"type": "array",
+			"description": "Unique number(s) that represents this effect",
+			"items": {
+				"type": "number"
+			}
+		},
+		"name": {
+			"type": "string",
+			"description": "Primary identifier of the effect"
+		},
+		"icon": {
+			"type": "string",
+			"description": "URL of the image file as provided by ArenaNet",
+			"format": "uri"
+		},
+		"stacking": {
+			"type": "string",
+			"description": "Whether the effect stacks in duration or intensity",
+			"enum": ["Duration", "Intensity"]
+		},
+		"maximum": {
+			"type": "integer",
+			"description": "How many total intensity stacks can be applied at once or the maximum duration in seconds depending on stacking type"
+		},
+		"description": {
+			"type": "string",
+			"description": "Additional text that provides an explanation for the effect"
+		},
+		"type": {
+			"type": "string",
+			"description": "Specific categorization of the effect, which indicates how it is applied and what other properties that it may have",
+			"enum": [
+				"Boon",
+				"Condition",
+				"Common",
+				"Trait",
+				"Item",
+				"Skill",
+				"Environment"
+			]
+		}
+	},
+	"required": ["id", "name", "icon", "stacking"],
+	"allOf": [
+		{
+			"if": {
+				"properties": { "type": { "const": "Trait" } }
+			},
+			"then": {
+				"properties": {
+					"trait": {
+						"type": "integer",
+						"description": "ID of the trait that applies this effect"
+					}
+				},
+				"required": ["trait"]
+			}
+		},
+		{
+			"if": {
+				"properties": { "type": { "const": "Skill" } }
+			},
+			"then": {
+				"properties": {
+					"skill": {
+						"type": "integer",
+						"description": "ID of the skill that applies this effect"
+					},
+					"professions": {
+						"type": "array",
+						"description": "Which professions can use the related skill"
+					},
+					"slot": {
+						"type": "string",
+						"description": "Where the related skill fits into"
+					}
+				},
+				"required": ["skill"]
+			}
+		}
+	]
+}
