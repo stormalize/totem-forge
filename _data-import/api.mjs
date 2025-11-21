@@ -106,13 +106,18 @@ const dataTypes = [
 		name: "skills",
 		endpoint: "skills?ids=all",
 		transform(item) {
-			return {
+			const r = {
 				id: item.id,
 				name: item.name,
 				icon: item.icon,
 				professions: item.professions,
 				slot: item.slot,
+				type: item.type,
 			};
+			if (item.weapon_type) {
+				r.weapon_type = item.weapon_type;
+			}
+			return r;
 		},
 	},
 ];
@@ -159,7 +164,7 @@ const saveEffectsFromFacts = (item, dataType) => {
 
 					// only assign sources for non-common effects
 					if (["Trait", "Skill"].includes(type)) {
-						effect._source = `${dataType}::${item.id}::${item.name}`;
+						effect._source = `${dataType}:${item.id}:${item.name}`;
 						if ("traits" === dataType) {
 							effect.trait = item.id;
 							effect.specialization = item.specialization;
@@ -170,6 +175,9 @@ const saveEffectsFromFacts = (item, dataType) => {
 							effect.slot = item.slot;
 							effect.professions = item.professions;
 							effect.specialization = item.specialization;
+							if ("Weapon" === item.type) {
+								effect.weapon_type = item.weapon_type;
+							}
 						}
 
 						const existingEffect = effectsList.get(name);
@@ -228,7 +236,9 @@ try {
 		}
 
 		if (Array.isArray(result) && Object.hasOwn(dataType, "transform")) {
-			resultTransformed = result.map(dataType.transform);
+			resultTransformed = result
+				.map(dataType.transform)
+				.filter((item) => null !== item);
 		}
 
 		if (!fs.existsSync(TRANSFORMDIR)) {

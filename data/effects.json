@@ -54,13 +54,14 @@
 		"type": "Boon"
 	},
 	{
-		"id": null,
+		"id": 718,
 		"name": "Regeneration",
 		"icon": "https://render.guildwars2.com/file/F69996772B9E18FD18AD0AABAB25D7E3FC42F261/102835.png",
 		"stacking": "Duration",
 		"maximum": null,
 		"description": "Gain health every second; stacks duration.",
-		"type": "Boon"
+		"type": "Boon",
+		"variantIds": [17495, 17674]
 	},
 	{
 		"id": null,
@@ -340,7 +341,7 @@
 		"maximum": null,
 		"description": "Increases your ferocity.",
 		"type": "Trait",
-		"_source": "traits::263::Arcane Lightning",
+		"_source": "traits:263:Arcane Lightning",
 		"trait": 263,
 		"specialization": 37
 	},
@@ -352,7 +353,7 @@
 		"maximum": null,
 		"description": "Regenerate health.",
 		"type": "Trait",
-		"_source": "traits::350::Soothing Mist",
+		"_source": "traits:350:Soothing Mist",
 		"trait": 350,
 		"specialization": 17
 	},
@@ -364,7 +365,7 @@
 		"maximum": null,
 		"description": "Increased Healing to Other Allies",
 		"type": "Trait",
-		"_source": "traits::521::Health Insurance",
+		"_source": "traits:521:Health Insurance",
 		"trait": 521,
 		"specialization": 29
 	},
@@ -376,21 +377,21 @@
 		"maximum": null,
 		"description": "Regenerate health.",
 		"type": "Trait",
-		"_source": "traits::554::Battle Presence",
+		"_source": "traits:554:Battle Presence",
 		"trait": 554,
 		"specialization": 46,
 		"_variants": [
-			{ "_source": "traits::610::Absolute Resolve", "trait": 610 },
+			{ "_source": "traits:610:Absolute Resolve", "trait": 610 },
 			{
 				"type": "Skill",
-				"_source": "skills::9120::Virtue of Resolve",
+				"_source": "skills:9120:Virtue of Resolve",
 				"skill": 9120,
 				"slot": "Profession_2",
 				"professions": ["Guardian"]
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::9250::Virtue of Resolve",
+				"_source": "skills:9250:Virtue of Resolve",
 				"skill": 9250,
 				"slot": "Profession_2",
 				"professions": ["Guardian"]
@@ -398,7 +399,7 @@
 			{
 				"icon": "https://render.guildwars2.com/file/A054A5300BF26FBAA601611BDA07B6001830FF92/1012864.png",
 				"type": "Skill",
-				"_source": "skills::30083::Wings of Resolve",
+				"_source": "skills:30083:Wings of Resolve",
 				"skill": 30083,
 				"slot": "Profession_2",
 				"professions": ["Guardian"],
@@ -407,7 +408,7 @@
 			{
 				"icon": "https://render.guildwars2.com/file/A054A5300BF26FBAA601611BDA07B6001830FF92/1012864.png",
 				"type": "Skill",
-				"_source": "skills::30225::Wings of Resolve",
+				"_source": "skills:30225:Wings of Resolve",
 				"skill": 30225,
 				"slot": "Profession_2",
 				"professions": ["Guardian"],
@@ -416,7 +417,7 @@
 			{
 				"icon": "https://render.guildwars2.com/file/A054A5300BF26FBAA601611BDA07B6001830FF92/1012864.png",
 				"type": "Skill",
-				"_source": "skills::30286::Wings of Resolve",
+				"_source": "skills:30286:Wings of Resolve",
 				"skill": 30286,
 				"slot": "Profession_2",
 				"professions": ["Guardian"],
@@ -425,7 +426,7 @@
 			{
 				"icon": "https://render.guildwars2.com/file/A054A5300BF26FBAA601611BDA07B6001830FF92/1012864.png",
 				"type": "Skill",
-				"_source": "skills::30783::Wings of Resolve",
+				"_source": "skills:30783:Wings of Resolve",
 				"skill": 30783,
 				"slot": "Profession_2",
 				"professions": ["Guardian"],
@@ -441,7 +442,7 @@
 		"maximum": null,
 		"description": "Strike damage dealt is increased after activating a virtue.",
 		"type": "Trait",
-		"_source": "traits::603::Inspiring Virtue",
+		"_source": "traits:603:Inspiring Virtue",
 		"trait": 603,
 		"specialization": 46
 	},
@@ -453,7 +454,7 @@
 		"maximum": null,
 		"description": "Your condition damage is increased.",
 		"type": "Trait",
-		"_source": "traits::667::Illusionary Membrane",
+		"_source": "traits:667:Illusionary Membrane",
 		"trait": 667,
 		"specialization": 45
 	},
@@ -465,7 +466,7 @@
 		"maximum": 10,
 		"description": "Increased ferocity per stack.",
 		"type": "Trait",
-		"_source": "traits::708::Fencer's Finesse",
+		"_source": "traits:708:Fencer's Finesse",
 		"trait": 708,
 		"specialization": 1
 	},
@@ -477,31 +478,31 @@
 		"maximum": null,
 		"description": "Immune to conditions and damage.",
 		"type": "Trait",
-		"_source": "traits::722::Escape Artist",
+		"_source": "traits:722:Escape Artist",
 		"trait": 722,
 		"specialization": 24,
 		"_variants": [
 			{},
 			{
-				"_source": "traits::752::Blurred Inscriptions",
+				"_source": "traits:752:Blurred Inscriptions",
 				"trait": 752,
 				"specialization": 23
 			},
 			{
 				"description": "Reflects Projectiles",
-				"_source": "traits::2035::Master of Fragmentation",
+				"_source": "traits:2035:Master of Fragmentation",
 				"trait": 2035
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::10192::Distortion",
+				"_source": "skills:10192:Distortion",
 				"skill": 10192,
 				"slot": "Profession_4",
 				"professions": ["Mesmer"]
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::43343::Blade Renewal",
+				"_source": "skills:43343:Blade Renewal",
 				"skill": 43343,
 				"slot": "Utility",
 				"professions": ["Mesmer"],
@@ -509,7 +510,7 @@
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::68273::Bladesong Distortion",
+				"_source": "skills:68273:Bladesong Distortion",
 				"skill": 68273,
 				"slot": "Profession_4",
 				"professions": ["Mesmer"],
@@ -517,7 +518,7 @@
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::68273::Bladesong Distortion",
+				"_source": "skills:68273:Bladesong Distortion",
 				"skill": 68273,
 				"slot": "Profession_4",
 				"professions": ["Mesmer"],
@@ -525,7 +526,7 @@
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::76960::Harmonious Harp",
+				"_source": "skills:76960:Harmonious Harp",
 				"skill": 76960,
 				"slot": "Profession_4",
 				"professions": ["Mesmer"],
@@ -533,7 +534,7 @@
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::76960::Harmonious Harp",
+				"_source": "skills:76960:Harmonious Harp",
 				"skill": 76960,
 				"slot": "Profession_4",
 				"professions": ["Mesmer"],
@@ -541,7 +542,7 @@
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::77077::Harmonious Harp",
+				"_source": "skills:77077:Harmonious Harp",
 				"skill": 77077,
 				"slot": "Profession_4",
 				"professions": ["Mesmer"],
@@ -549,7 +550,7 @@
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::77077::Harmonious Harp",
+				"_source": "skills:77077:Harmonious Harp",
 				"skill": 77077,
 				"slot": "Profession_4",
 				"professions": ["Mesmer"],
@@ -565,7 +566,7 @@
 		"maximum": 5,
 		"description": "Increased outgoing damage and condition damage per stack.",
 		"type": "Trait",
-		"_source": "traits::723::Compounding Power",
+		"_source": "traits:723:Compounding Power",
 		"trait": 723,
 		"specialization": 24
 	},
@@ -577,7 +578,7 @@
 		"maximum": 25,
 		"description": "Phantasm damage increased per stack.",
 		"type": "Trait",
-		"_source": "traits::733::Phantasmal Force",
+		"_source": "traits:733:Phantasmal Force",
 		"trait": 733,
 		"specialization": 24
 	},
@@ -589,7 +590,7 @@
 		"maximum": null,
 		"description": "Increases healing.",
 		"type": "Trait",
-		"_source": "traits::752::Blurred Inscriptions",
+		"_source": "traits:752:Blurred Inscriptions",
 		"trait": 752,
 		"specialization": 23
 	},
@@ -601,14 +602,14 @@
 		"maximum": null,
 		"description": "Removes boons.",
 		"type": "Trait",
-		"_source": "traits::752::Blurred Inscriptions",
+		"_source": "traits:752:Blurred Inscriptions",
 		"trait": 752,
 		"specialization": 23,
 		"_variants": [
 			{
 				"description": "Improved condition damage.",
 				"type": "Skill",
-				"_source": "skills::10232::Signet of Domination",
+				"_source": "skills:10232:Signet of Domination",
 				"skill": 10232,
 				"slot": "Utility",
 				"professions": ["Mesmer"]
@@ -623,7 +624,7 @@
 		"maximum": null,
 		"description": "Summons illusions.",
 		"type": "Trait",
-		"_source": "traits::752::Blurred Inscriptions",
+		"_source": "traits:752:Blurred Inscriptions",
 		"trait": 752,
 		"specialization": 23
 	},
@@ -635,7 +636,7 @@
 		"maximum": null,
 		"description": "Increases the number of allied targets.",
 		"type": "Trait",
-		"_source": "traits::752::Blurred Inscriptions",
+		"_source": "traits:752:Blurred Inscriptions",
 		"trait": 752,
 		"specialization": 23
 	},
@@ -647,14 +648,14 @@
 		"maximum": null,
 		"description": "Removes conditions.",
 		"type": "Trait",
-		"_source": "traits::752::Blurred Inscriptions",
+		"_source": "traits:752:Blurred Inscriptions",
 		"trait": 752,
 		"specialization": 23,
 		"_variants": [
 			{
 				"description": "Improves condition duration.",
 				"type": "Skill",
-				"_source": "skills::10234::Signet of Midnight",
+				"_source": "skills:10234:Signet of Midnight",
 				"skill": 10234,
 				"slot": "Utility",
 				"professions": ["Mesmer"]
@@ -669,7 +670,7 @@
 		"maximum": null,
 		"description": "Applies vulnerability.",
 		"type": "Trait",
-		"_source": "traits::752::Blurred Inscriptions",
+		"_source": "traits:752:Blurred Inscriptions",
 		"trait": 752,
 		"specialization": 23
 	},
@@ -681,7 +682,7 @@
 		"maximum": null,
 		"description": "Reflects projectiles.",
 		"type": "Trait",
-		"_source": "traits::752::Blurred Inscriptions",
+		"_source": "traits:752:Blurred Inscriptions",
 		"trait": 752,
 		"specialization": 23
 	},
@@ -693,72 +694,81 @@
 		"maximum": null,
 		"description": "Siphon health from enemies on hit.",
 		"type": "Trait",
-		"_source": "traits::788::Overflowing Thirst",
+		"_source": "traits:788:Overflowing Thirst",
 		"trait": 788,
 		"specialization": 19,
 		"_variants": [
 			{
 				"type": "Skill",
-				"_source": "skills::10529::Dark Pact",
+				"_source": "skills:10529:Dark Pact",
 				"skill": 10529,
 				"slot": "Weapon_3",
-				"professions": ["Necromancer"]
+				"professions": ["Necromancer"],
+				"weapon_type": "Dagger"
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::10529::Dark Pact",
+				"_source": "skills:10529:Dark Pact",
 				"skill": 10529,
 				"slot": "Weapon_3",
-				"professions": ["Necromancer"]
+				"professions": ["Necromancer"],
+				"weapon_type": "Dagger"
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::10704::Necrotic Bite",
+				"_source": "skills:10704:Necrotic Bite",
 				"skill": 10704,
 				"slot": "Weapon_1",
-				"professions": ["Necromancer"]
+				"professions": ["Necromancer"],
+				"weapon_type": "Dagger"
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::10705::Deathly Swarm",
+				"_source": "skills:10705:Deathly Swarm",
 				"skill": 10705,
 				"slot": "Weapon_4",
-				"professions": ["Necromancer"]
+				"professions": ["Necromancer"],
+				"weapon_type": "Dagger"
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::10705::Deathly Swarm",
+				"_source": "skills:10705:Deathly Swarm",
 				"skill": 10705,
 				"slot": "Weapon_4",
-				"professions": ["Necromancer"]
+				"professions": ["Necromancer"],
+				"weapon_type": "Dagger"
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::10706::Enfeebling Blood",
+				"_source": "skills:10706:Enfeebling Blood",
 				"skill": 10706,
 				"slot": "Weapon_5",
-				"professions": ["Necromancer"]
+				"professions": ["Necromancer"],
+				"weapon_type": "Dagger"
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::10706::Enfeebling Blood",
+				"_source": "skills:10706:Enfeebling Blood",
 				"skill": 10706,
 				"slot": "Weapon_5",
-				"professions": ["Necromancer"]
+				"professions": ["Necromancer"],
+				"weapon_type": "Dagger"
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::69302::Life Siphon",
+				"_source": "skills:69302:Life Siphon",
 				"skill": 69302,
 				"slot": "Weapon_2",
-				"professions": ["Necromancer"]
+				"professions": ["Necromancer"],
+				"weapon_type": "Dagger"
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::69302::Life Siphon",
+				"_source": "skills:69302:Life Siphon",
 				"skill": 69302,
 				"slot": "Weapon_2",
-				"professions": ["Necromancer"]
+				"professions": ["Necromancer"],
+				"weapon_type": "Dagger"
 			}
 		]
 	},
@@ -770,15 +780,15 @@
 		"maximum": null,
 		"description": "Increased toughness per stack.",
 		"type": "Trait",
-		"_source": "traits::820::Flesh of the Master",
+		"_source": "traits:820:Flesh of the Master",
 		"trait": 820,
 		"specialization": 2,
 		"_variants": [
-			{ "_source": "traits::839::Soul Comprehension", "trait": 839 },
-			{ "_source": "traits::856::Armored Shroud", "trait": 856 },
-			{ "_source": "traits::857::Putrid Defense", "trait": 857 },
-			{ "_source": "traits::1922::Shrouded Removal", "trait": 1922 },
-			{ "_source": "traits::1940::Corrupter's Fervor", "trait": 1940 }
+			{ "_source": "traits:839:Soul Comprehension", "trait": 839 },
+			{ "_source": "traits:856:Armored Shroud", "trait": 856 },
+			{ "_source": "traits:857:Putrid Defense", "trait": 857 },
+			{ "_source": "traits:1922:Shrouded Removal", "trait": 1922 },
+			{ "_source": "traits:1940:Corrupter's Fervor", "trait": 1940 }
 		]
 	},
 	{
@@ -789,10 +799,10 @@
 		"maximum": null,
 		"description": "Your next attack is an opening strike.",
 		"type": "Trait",
-		"_source": "traits::1010::Opening Strike",
+		"_source": "traits:1010:Opening Strike",
 		"trait": 1010,
 		"specialization": 8,
-		"_variants": [{ "_source": "traits::1015::Remorseless", "trait": 1015 }]
+		"_variants": [{ "_source": "traits:1015:Remorseless", "trait": 1015 }]
 	},
 	{
 		"id": null,
@@ -802,7 +812,7 @@
 		"maximum": null,
 		"description": "Your next weapon skill's cooldown is reduced by 66%.",
 		"type": "Trait",
-		"_source": "traits::1064::Quick Draw",
+		"_source": "traits:1064:Quick Draw",
 		"trait": 1064,
 		"specialization": 30
 	},
@@ -814,25 +824,27 @@
 		"maximum": null,
 		"description": "Damage increased 50% on next attack.",
 		"type": "Trait",
-		"_source": "traits::1070::Moment of Clarity",
+		"_source": "traits:1070:Moment of Clarity",
 		"trait": 1070,
 		"specialization": 8,
 		"_variants": [
 			{ "description": "" },
 			{
 				"type": "Skill",
-				"_source": "skills::12525::Maul",
+				"_source": "skills:12525:Maul",
 				"skill": 12525,
 				"slot": "Weapon_2",
-				"professions": ["Ranger"]
+				"professions": ["Ranger"],
+				"weapon_type": "Greatsword"
 			},
 			{
 				"description": "",
 				"type": "Skill",
-				"_source": "skills::12525::Maul",
+				"_source": "skills:12525:Maul",
 				"skill": 12525,
 				"slot": "Weapon_2",
-				"professions": ["Ranger"]
+				"professions": ["Ranger"],
+				"weapon_type": "Greatsword"
 			}
 		]
 	},
@@ -844,7 +856,7 @@
 		"maximum": null,
 		"description": "Evade all attacks.",
 		"type": "Trait",
-		"_source": "traits::1112::Instant Reflexes",
+		"_source": "traits:1112:Instant Reflexes",
 		"trait": 1112,
 		"specialization": 54,
 		"_variants": [{}]
@@ -857,14 +869,14 @@
 		"maximum": null,
 		"description": "Your attacks poison foes.",
 		"type": "Trait",
-		"_source": "traits::1130::Leeching Venoms",
+		"_source": "traits:1130:Leeching Venoms",
 		"trait": 1130,
 		"specialization": 20,
 		"_variants": [
 			{},
 			{
 				"type": "Skill",
-				"_source": "skills::13037::Spider Venom",
+				"_source": "skills:13037:Spider Venom",
 				"skill": 13037,
 				"slot": "Utility",
 				"professions": ["Thief"]
@@ -879,7 +891,7 @@
 		"maximum": null,
 		"description": "All damage dealt is increased.",
 		"type": "Trait",
-		"_source": "traits::1157::Lead Attacks",
+		"_source": "traits:1157:Lead Attacks",
 		"trait": 1157,
 		"specialization": 44
 	},
@@ -891,128 +903,127 @@
 		"maximum": null,
 		"description": "Unable to activate skills.",
 		"type": "Trait",
-		"_source": "traits::1158::Sleight of Hand",
+		"_source": "traits:1158:Sleight of Hand",
 		"trait": 1158,
 		"specialization": 44,
 		"_variants": [
 			{
-				"_source": "traits::1935::Blood Moon",
+				"_source": "traits:1935:Blood Moon",
 				"trait": 1935,
 				"specialization": 5
 			},
 			{
-				"_source": "traits::1935::Blood Moon",
+				"_source": "traits:1935:Blood Moon",
 				"trait": 1935,
 				"specialization": 5
 			},
 			{
-				"_source": "traits::2075::Unrelenting Criticism",
+				"_source": "traits:2075:Unrelenting Criticism",
 				"trait": 2075,
 				"specialization": 62
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::1131::Mace Head Crack",
+				"_source": "skills:1131:Mace Head Crack",
 				"skill": 1131,
 				"slot": "Profession_2",
 				"professions": []
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::5982::Launch Personal Battering Ram",
+				"_source": "skills:5982:Launch Personal Battering Ram",
 				"skill": 5982,
 				"slot": "Toolbelt",
 				"professions": ["Engineer"]
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::5982::Launch Personal Battering Ram",
+				"_source": "skills:5982:Launch Personal Battering Ram",
 				"skill": 5982,
 				"slot": "Toolbelt",
 				"professions": ["Engineer"]
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::13012::Head Shot",
+				"_source": "skills:13012:Head Shot",
 				"skill": 13012,
 				"slot": "Weapon_4",
-				"professions": ["Thief"]
+				"professions": ["Thief"],
+				"weapon_type": "Pistol"
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::31167::Spare Capacitor",
+				"_source": "skills:31167:Spare Capacitor",
 				"skill": 31167,
 				"slot": "Toolbelt",
 				"professions": ["Engineer"]
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::31167::Spare Capacitor",
+				"_source": "skills:31167:Spare Capacitor",
 				"skill": 31167,
 				"slot": "Toolbelt",
 				"professions": ["Engineer"]
 			},
+			{ "type": "Skill", "_source": "skills:35154:Face Smash", "skill": 35154 },
 			{
 				"type": "Skill",
-				"_source": "skills::35154::Face Smash",
-				"skill": 35154
-			},
-			{
-				"type": "Skill",
-				"_source": "skills::35167::Overhead Smash",
+				"_source": "skills:35167:Overhead Smash",
 				"skill": 35167
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::40624::Symbol of Vengeance",
+				"_source": "skills:40624:Symbol of Vengeance",
 				"skill": 40624,
 				"slot": "Weapon_2",
 				"professions": ["Guardian"],
-				"specialization": 62
+				"specialization": 62,
+				"weapon_type": "Axe"
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::50594::Lightning Storm",
+				"_source": "skills:50594:Lightning Storm",
 				"skill": 50594
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::51039::Disintegration Blast",
+				"_source": "skills:51039:Disintegration Blast",
 				"skill": 51039
 			},
-			{ "type": "Skill", "_source": "skills::53707::Comet", "skill": 53707 },
+			{ "type": "Skill", "_source": "skills:53707:Comet", "skill": 53707 },
 			{
 				"type": "Skill",
-				"_source": "skills::54133::Bloody Bludgeon",
+				"_source": "skills:54133:Bloody Bludgeon",
 				"skill": 54133
 			},
-			{ "type": "Skill", "_source": "skills::54139::", "skill": 54139 },
+			{ "type": "Skill", "_source": "skills:54139:", "skill": 54139 },
 			{
 				"type": "Skill",
-				"_source": "skills::54413::Disrupting Dagger",
+				"_source": "skills:54413:Disrupting Dagger",
 				"skill": 54413
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::54532::Great Bludgeoning",
+				"_source": "skills:54532:Great Bludgeoning",
 				"skill": 54532
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::54849::Frostblades",
+				"_source": "skills:54849:Frostblades",
 				"skill": 54849
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::71802::Helmet Breaker",
+				"_source": "skills:71802:Helmet Breaker",
 				"skill": 71802,
 				"slot": "Weapon_3",
 				"professions": ["Thief"],
-				"specialization": 7
+				"specialization": 7,
+				"weapon_type": "Staff"
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::75899::Charged Ground",
+				"_source": "skills:75899:Charged Ground",
 				"skill": 75899
 			}
 		]
@@ -1025,7 +1036,7 @@
 		"maximum": null,
 		"description": "You have increased critical hit chance.",
 		"type": "Trait",
-		"_source": "traits::1215::Hidden Killer",
+		"_source": "traits:1215:Hidden Killer",
 		"trait": 1215,
 		"specialization": 35
 	},
@@ -1037,7 +1048,7 @@
 		"maximum": null,
 		"description": "Your damage is increased.",
 		"type": "Trait",
-		"_source": "traits::1242::Fluid Strikes",
+		"_source": "traits:1242:Fluid Strikes",
 		"trait": 1242,
 		"specialization": 54
 	},
@@ -1049,7 +1060,7 @@
 		"maximum": 4,
 		"description": "Increased outgoing healing per stack.",
 		"type": "Trait",
-		"_source": "traits::1317::Heightened Focus",
+		"_source": "traits:1317:Heightened Focus",
 		"trait": 1317,
 		"specialization": 51,
 		"_variants": [{}, {}, {}, {}, {}]
@@ -1062,66 +1073,70 @@
 		"maximum": null,
 		"description": "Gain flow per second.",
 		"type": "Trait",
-		"_source": "traits::1334::Opportunist",
+		"_source": "traits:1334:Opportunist",
 		"trait": 1334,
 		"specialization": 36,
 		"_variants": [
 			{
-				"_source": "traits::1367::Merciless Hammer",
+				"_source": "traits:1367:Merciless Hammer",
 				"trait": 1367,
 				"specialization": 22
 			},
 			{
-				"_source": "traits::1415::Versatile Rage",
+				"_source": "traits:1415:Versatile Rage",
 				"trait": 1415,
 				"specialization": 51
 			},
 			{
-				"_source": "traits::2237::River's Flow",
+				"_source": "traits:2237:River's Flow",
 				"trait": 2237,
 				"specialization": 68
 			},
 			{
-				"_source": "traits::2260::Swift as the Wind",
+				"_source": "traits:2260:Swift as the Wind",
 				"trait": 2260,
 				"specialization": 68
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::14400::Riposte",
+				"_source": "skills:14400:Riposte",
 				"skill": 14400,
 				"slot": "Weapon_5",
-				"professions": ["Warrior"]
+				"professions": ["Warrior"],
+				"weapon_type": "Sword"
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::14507::Counterblow",
+				"_source": "skills:14507:Counterblow",
 				"skill": 14507,
 				"slot": "Weapon_2",
-				"professions": ["Warrior"]
+				"professions": ["Warrior"],
+				"weapon_type": "Mace"
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::14548::Tactical Blow",
+				"_source": "skills:14548:Tactical Blow",
 				"skill": 14548,
 				"slot": "Weapon_2",
-				"professions": ["Warrior"]
+				"professions": ["Warrior"],
+				"weapon_type": "Mace"
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::14557::Adrenaline Rush",
+				"_source": "skills:14557:Adrenaline Rush",
 				"skill": 14557,
 				"slot": "Weapon_5",
-				"professions": ["Warrior"]
+				"professions": ["Warrior"],
+				"weapon_type": "Sword"
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::62847::Unseen Sword",
+				"_source": "skills:62847:Unseen Sword",
 				"skill": 62847
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::62967::Flow Stabilizer",
+				"_source": "skills:62967:Flow Stabilizer",
 				"skill": 62967,
 				"slot": "Utility",
 				"professions": ["Warrior"],
@@ -1137,7 +1152,7 @@
 		"maximum": null,
 		"description": "Increased critical-hit chance.",
 		"type": "Trait",
-		"_source": "traits::1336::Burst Precision",
+		"_source": "traits:1336:Burst Precision",
 		"trait": 1336,
 		"specialization": 36,
 		"_variants": [{}, {}, {}, {}, {}]
@@ -1150,7 +1165,7 @@
 		"maximum": 5,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::1344::Signet Mastery",
+		"_source": "traits:1344:Signet Mastery",
 		"trait": 1344,
 		"specialization": 36
 	},
@@ -1162,7 +1177,7 @@
 		"maximum": 25,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::1346::Furious",
+		"_source": "traits:1346:Furious",
 		"trait": 1346,
 		"specialization": 36
 	},
@@ -1174,7 +1189,7 @@
 		"maximum": 4,
 		"description": "Regain health by spending adrenaline.",
 		"type": "Trait",
-		"_source": "traits::1348::Adrenal Health",
+		"_source": "traits:1348:Adrenal Health",
 		"trait": 1348,
 		"specialization": 22,
 		"_variants": [{}, {}, {}, {}, {}]
@@ -1187,7 +1202,7 @@
 		"maximum": 4,
 		"description": "Increased strike damage per stack.",
 		"type": "Trait",
-		"_source": "traits::1437::Berserker's Power",
+		"_source": "traits:1437:Berserker's Power",
 		"trait": 1437,
 		"specialization": 4,
 		"_variants": [
@@ -1200,7 +1215,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::29644::Gun Flame",
+				"_source": "skills:29644:Gun Flame",
 				"skill": 29644,
 				"slot": "Profession_1",
 				"professions": ["Warrior"],
@@ -1210,7 +1225,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::29679::Skull Grinder",
+				"_source": "skills:29679:Skull Grinder",
 				"skill": 29679,
 				"slot": "Profession_1",
 				"professions": ["Warrior"],
@@ -1220,7 +1235,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::29852::Arc Divider",
+				"_source": "skills:29852:Arc Divider",
 				"skill": 29852,
 				"slot": "Profession_1",
 				"professions": ["Warrior"],
@@ -1230,7 +1245,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::29923::Scorched Earth",
+				"_source": "skills:29923:Scorched Earth",
 				"skill": 29923,
 				"slot": "Profession_1",
 				"professions": ["Warrior"],
@@ -1240,7 +1255,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::30682::Flaming Flurry",
+				"_source": "skills:30682:Flaming Flurry",
 				"skill": 30682,
 				"slot": "Profession_1",
 				"professions": ["Warrior"],
@@ -1250,7 +1265,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::30851::Decapitate",
+				"_source": "skills:30851:Decapitate",
 				"skill": 30851,
 				"slot": "Profession_1",
 				"professions": ["Warrior"],
@@ -1260,7 +1275,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::30879::Rupturing Smash",
+				"_source": "skills:30879:Rupturing Smash",
 				"skill": 30879,
 				"slot": "Profession_1",
 				"professions": ["Warrior"],
@@ -1270,7 +1285,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::30989::Burning Shackles",
+				"_source": "skills:30989:Burning Shackles",
 				"skill": 30989,
 				"slot": "Profession_1",
 				"professions": ["Warrior"],
@@ -1280,7 +1295,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::31048::Wild Whirl",
+				"_source": "skills:31048:Wild Whirl",
 				"skill": 31048,
 				"slot": "Profession_1",
 				"professions": ["Warrior"],
@@ -1291,7 +1306,7 @@
 				"maximum": null,
 				"description": "+10% Damage",
 				"type": "Skill",
-				"_source": "skills::39972::Silencer",
+				"_source": "skills:39972:Silencer",
 				"skill": 39972,
 				"slot": "Profession_2",
 				"professions": ["Warrior"],
@@ -1301,7 +1316,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::40601::Earthshaker",
+				"_source": "skills:40601:Earthshaker",
 				"skill": 40601,
 				"slot": "Profession_1",
 				"professions": ["Warrior"],
@@ -1311,7 +1326,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::41110::Skull Crack",
+				"_source": "skills:41110:Skull Crack",
 				"skill": 41110,
 				"slot": "Profession_1",
 				"professions": ["Warrior"],
@@ -1322,7 +1337,7 @@
 				"maximum": null,
 				"description": "+10% Damage",
 				"type": "Skill",
-				"_source": "skills::41283::Boon Crusher",
+				"_source": "skills:41283:Boon Crusher",
 				"skill": 41283,
 				"slot": "Profession_2",
 				"professions": ["Warrior"],
@@ -1332,7 +1347,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::41330::Forceful Shot",
+				"_source": "skills:41330:Forceful Shot",
 				"skill": 41330,
 				"slot": "Profession_1",
 				"professions": ["Warrior"],
@@ -1343,7 +1358,7 @@
 				"maximum": null,
 				"description": "+10% Damage",
 				"type": "Skill",
-				"_source": "skills::41543::Wounding Strike",
+				"_source": "skills:41543:Wounding Strike",
 				"skill": 41543,
 				"slot": "Profession_2",
 				"professions": ["Warrior"],
@@ -1353,7 +1368,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::41746::Whirling Strike",
+				"_source": "skills:41746:Whirling Strike",
 				"skill": 41746,
 				"slot": "Profession_1",
 				"professions": ["Warrior"],
@@ -1363,7 +1378,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::42041::Kill Shot",
+				"_source": "skills:42041:Kill Shot",
 				"skill": 42041,
 				"slot": "Profession_1",
 				"professions": ["Warrior"],
@@ -1373,7 +1388,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::42494::Flurry",
+				"_source": "skills:42494:Flurry",
 				"skill": 42494,
 				"slot": "Profession_1",
 				"professions": ["Warrior"],
@@ -1383,7 +1398,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::42707::Arcing Slice",
+				"_source": "skills:42707:Arcing Slice",
 				"skill": 42707,
 				"slot": "Profession_1",
 				"professions": ["Warrior"],
@@ -1393,7 +1408,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::42803::Combustive Shot",
+				"_source": "skills:42803:Combustive Shot",
 				"skill": 42803,
 				"slot": "Profession_1",
 				"professions": ["Warrior"],
@@ -1404,7 +1419,7 @@
 				"maximum": null,
 				"description": "+10% Damage",
 				"type": "Skill",
-				"_source": "skills::43488::Fleeting Stability",
+				"_source": "skills:43488:Fleeting Stability",
 				"skill": 43488,
 				"slot": "Profession_2",
 				"professions": ["Warrior"],
@@ -1414,7 +1429,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::43566::Eviscerate",
+				"_source": "skills:43566:Eviscerate",
 				"skill": 43566,
 				"slot": "Profession_1",
 				"professions": ["Warrior"],
@@ -1424,7 +1439,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::44165::Full Counter",
+				"_source": "skills:44165:Full Counter",
 				"skill": 44165,
 				"slot": "Profession_2",
 				"professions": ["Warrior"],
@@ -1435,7 +1450,7 @@
 				"maximum": null,
 				"description": "+10% Damage",
 				"type": "Skill",
-				"_source": "skills::44397::Dissonance",
+				"_source": "skills:44397:Dissonance",
 				"skill": 44397,
 				"slot": "Profession_2",
 				"professions": ["Warrior"],
@@ -1445,7 +1460,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::45252::Breaching Strike",
+				"_source": "skills:45252:Breaching Strike",
 				"skill": 45252,
 				"slot": "Profession_1",
 				"professions": ["Warrior"]
@@ -1455,7 +1470,7 @@
 				"maximum": null,
 				"description": "+10% Damage",
 				"type": "Skill",
-				"_source": "skills::46044::Magehunter Strike",
+				"_source": "skills:46044:Magehunter Strike",
 				"skill": 46044,
 				"slot": "Profession_2",
 				"professions": ["Warrior"],
@@ -1465,7 +1480,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::69245::Breaching Strike",
+				"_source": "skills:69245:Breaching Strike",
 				"skill": 69245,
 				"slot": "Profession_1",
 				"professions": ["Warrior"]
@@ -1474,7 +1489,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::69290::Slicing Maelstrom",
+				"_source": "skills:69290:Slicing Maelstrom",
 				"skill": 69290,
 				"slot": "Profession_1",
 				"professions": ["Warrior"],
@@ -1484,7 +1499,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::69297::Breaching Strike",
+				"_source": "skills:69297:Breaching Strike",
 				"skill": 69297,
 				"slot": "Profession_1",
 				"professions": ["Warrior"],
@@ -1494,7 +1509,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::69392::Breaching Strike",
+				"_source": "skills:69392:Breaching Strike",
 				"skill": 69392,
 				"slot": "Profession_1",
 				"professions": ["Warrior"]
@@ -1503,7 +1518,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::69433::Breaching Strike",
+				"_source": "skills:69433:Breaching Strike",
 				"skill": 69433,
 				"slot": "Profession_1",
 				"professions": ["Warrior"]
@@ -1512,7 +1527,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::73014::Harrier's Toss",
+				"_source": "skills:73014:Harrier's Toss",
 				"skill": 73014,
 				"slot": "Profession_1",
 				"professions": ["Warrior"],
@@ -1522,7 +1537,7 @@
 				"stacking": "Duration",
 				"maximum": null,
 				"type": "Skill",
-				"_source": "skills::73103::Wild Throw",
+				"_source": "skills:73103:Wild Throw",
 				"skill": 73103,
 				"slot": "Profession_1",
 				"professions": ["Warrior"],
@@ -1538,7 +1553,7 @@
 		"maximum": null,
 		"description": "Outgoing physical damage is increased.",
 		"type": "Trait",
-		"_source": "traits::1444::Peak Performance",
+		"_source": "traits:1444:Peak Performance",
 		"trait": 1444,
 		"specialization": 4,
 		"_variants": [{}]
@@ -1551,7 +1566,7 @@
 		"maximum": null,
 		"description": "Critical damage is increased.",
 		"type": "Trait",
-		"_source": "traits::1503::Fresh Air",
+		"_source": "traits:1503:Fresh Air",
 		"trait": 1503,
 		"specialization": 41
 	},
@@ -1563,7 +1578,7 @@
 		"maximum": 5,
 		"description": "Deal increased strike damage per stack.",
 		"type": "Trait",
-		"_source": "traits::1510::Persisting Flames",
+		"_source": "traits:1510:Persisting Flames",
 		"trait": 1510,
 		"specialization": 31
 	},
@@ -1575,7 +1590,7 @@
 		"maximum": null,
 		"description": "Your critical-strike chance is increased.",
 		"type": "Trait",
-		"_source": "traits::1541::Grand Entrance",
+		"_source": "traits:1541:Grand Entrance",
 		"trait": 1541,
 		"specialization": 6
 	},
@@ -1587,20 +1602,20 @@
 		"maximum": null,
 		"description": "You cannot be critically hit.",
 		"type": "Trait",
-		"_source": "traits::1674::Stone Heart",
+		"_source": "traits:1674:Stone Heart",
 		"trait": 1674,
 		"specialization": 26,
 		"_variants": [
 			{
 				"type": "Skill",
-				"_source": "skills::5495::Earth Attunement",
+				"_source": "skills:5495:Earth Attunement",
 				"skill": 5495,
 				"slot": "Profession_4",
 				"professions": ["Elementalist"]
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::77082::Earth Attunement",
+				"_source": "skills:77082:Earth Attunement",
 				"skill": 77082,
 				"slot": "Profession_1",
 				"professions": ["Elementalist"],
@@ -1616,7 +1631,7 @@
 		"maximum": null,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::1682::Force of Will",
+		"_source": "traits:1682:Force of Will",
 		"trait": 1682,
 		"specialization": 49
 	},
@@ -1628,7 +1643,7 @@
 		"maximum": null,
 		"description": "Your strike damage is increased.",
 		"type": "Trait",
-		"_source": "traits::1688::Power Block",
+		"_source": "traits:1688:Power Block",
 		"trait": 1688,
 		"specialization": 10
 	},
@@ -1640,7 +1655,7 @@
 		"maximum": null,
 		"description": "Gain movement speed for each point of upkeep currently in use.",
 		"type": "Trait",
-		"_source": "traits::1716::Rising Momentum",
+		"_source": "traits:1716:Rising Momentum",
 		"trait": 1716,
 		"specialization": 52
 	},
@@ -1652,12 +1667,12 @@
 		"maximum": null,
 		"description": "Your next attack steals health.",
 		"type": "Trait",
-		"_source": "traits::1754::Dance of Death",
+		"_source": "traits:1754:Dance of Death",
 		"trait": 1754,
 		"specialization": 15,
 		"_variants": [
-			{ "_source": "traits::1755::Battle Scarred", "trait": 1755 },
-			{ "_source": "traits::1802::Thrill of Combat", "trait": 1802 }
+			{ "_source": "traits:1755:Battle Scarred", "trait": 1755 },
+			{ "_source": "traits:1802:Thrill of Combat", "trait": 1802 }
 		]
 	},
 	{
@@ -1668,14 +1683,14 @@
 		"maximum": null,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::1772::Draconic Echo",
+		"_source": "traits:1772:Draconic Echo",
 		"trait": 1772,
 		"specialization": 52,
 		"_variants": [
 			{
 				"description": "Pulse regeneration to nearby allies every few seconds.",
 				"type": "Skill",
-				"_source": "skills::27220::Facet of Light",
+				"_source": "skills:27220:Facet of Light",
 				"skill": 27220,
 				"slot": "Heal",
 				"professions": ["Revenant"]
@@ -1683,7 +1698,7 @@
 			{
 				"description": "Pulse regeneration to nearby allies every few seconds.",
 				"type": "Skill",
-				"_source": "skills::27228::Infuse Light",
+				"_source": "skills:27228:Infuse Light",
 				"skill": 27228,
 				"slot": "Heal",
 				"professions": ["Revenant"]
@@ -1698,14 +1713,14 @@
 		"maximum": null,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::1772::Draconic Echo",
+		"_source": "traits:1772:Draconic Echo",
 		"trait": 1772,
 		"specialization": 52,
 		"_variants": [
 			{
 				"description": "Pulse fury to nearby allies every few seconds.",
 				"type": "Skill",
-				"_source": "skills::27080::Gaze of Darkness",
+				"_source": "skills:27080:Gaze of Darkness",
 				"skill": 27080,
 				"slot": "Utility",
 				"professions": ["Revenant"]
@@ -1713,7 +1728,7 @@
 			{
 				"description": "Pulse fury to nearby allies every few seconds.",
 				"type": "Skill",
-				"_source": "skills::28379::Facet of Darkness",
+				"_source": "skills:28379:Facet of Darkness",
 				"skill": 28379,
 				"slot": "Utility",
 				"professions": ["Revenant"]
@@ -1728,14 +1743,14 @@
 		"maximum": null,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::1772::Draconic Echo",
+		"_source": "traits:1772:Draconic Echo",
 		"trait": 1772,
 		"specialization": 52,
 		"_variants": [
 			{
 				"description": "Pulse swiftness to nearby allies every few seconds.",
 				"type": "Skill",
-				"_source": "skills::27014::Facet of Elements",
+				"_source": "skills:27014:Facet of Elements",
 				"skill": 27014,
 				"slot": "Utility",
 				"professions": ["Revenant"]
@@ -1743,7 +1758,7 @@
 			{
 				"description": "Pulse swiftness to nearby allies every few seconds.",
 				"type": "Skill",
-				"_source": "skills::27162::Elemental Blast",
+				"_source": "skills:27162:Elemental Blast",
 				"skill": 27162,
 				"slot": "Utility",
 				"professions": ["Revenant"]
@@ -1758,14 +1773,14 @@
 		"maximum": null,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::1772::Draconic Echo",
+		"_source": "traits:1772:Draconic Echo",
 		"trait": 1772,
 		"specialization": 52,
 		"_variants": [
 			{
 				"description": "Pulse might to nearby allies every few seconds.",
 				"type": "Skill",
-				"_source": "skills::26644::Facet of Strength",
+				"_source": "skills:26644:Facet of Strength",
 				"skill": 26644,
 				"slot": "Utility",
 				"professions": ["Revenant"]
@@ -1773,7 +1788,7 @@
 			{
 				"description": "Pulse might to nearby allies every few seconds.",
 				"type": "Skill",
-				"_source": "skills::28113::Burst of Strength",
+				"_source": "skills:28113:Burst of Strength",
 				"skill": 28113,
 				"slot": "Utility",
 				"professions": ["Revenant"]
@@ -1788,14 +1803,14 @@
 		"maximum": null,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::1772::Draconic Echo",
+		"_source": "traits:1772:Draconic Echo",
 		"trait": 1772,
 		"specialization": 52,
 		"_variants": [
 			{
 				"description": "Pulse protection to nearby allies every few seconds.",
 				"type": "Skill",
-				"_source": "skills::27760::Facet of Chaos",
+				"_source": "skills:27760:Facet of Chaos",
 				"skill": 27760,
 				"slot": "Elite",
 				"professions": ["Revenant"]
@@ -1803,7 +1818,7 @@
 			{
 				"description": "Pulse protection to nearby allies every few seconds.",
 				"type": "Skill",
-				"_source": "skills::28075::Chaotic Release",
+				"_source": "skills:28075:Chaotic Release",
 				"skill": 28075,
 				"slot": "Elite",
 				"professions": ["Revenant"]
@@ -1818,14 +1833,14 @@
 		"maximum": null,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::1772::Draconic Echo",
+		"_source": "traits:1772:Draconic Echo",
 		"trait": 1772,
 		"specialization": 52,
 		"_variants": [
 			{
 				"description": "Pulse your invoked legend's Facet of Nature to nearby allies every few seconds.",
 				"type": "Skill",
-				"_source": "skills::29371::Facet of Nature",
+				"_source": "skills:29371:Facet of Nature",
 				"skill": 29371,
 				"slot": "Profession_2",
 				"professions": ["Revenant"]
@@ -1833,7 +1848,7 @@
 			{
 				"description": "Pulse your invoked legend's Facet of Nature to nearby allies every few seconds.",
 				"type": "Skill",
-				"_source": "skills::29393::True Nature",
+				"_source": "skills:29393:True Nature",
 				"skill": 29393
 			}
 		]
@@ -1846,14 +1861,14 @@
 		"maximum": null,
 		"description": "Gain the same boons as the legend equipped in the other slot.",
 		"type": "Trait",
-		"_source": "traits::1774::Spirit Boon",
+		"_source": "traits:1774:Spirit Boon",
 		"trait": 1774,
 		"specialization": 3,
 		"_variants": [
 			{
 				"icon": "https://render.guildwars2.com/file/96D1B2FC486CB655D804B9722FC13ED623964451/3680050.png",
 				"description": "75 to All Attributes",
-				"_source": "traits::2331::Bolstered Bonds",
+				"_source": "traits:2331:Bolstered Bonds",
 				"trait": 2331,
 				"specialization": 79
 			}
@@ -1867,7 +1882,7 @@
 		"maximum": null,
 		"description": "Reduce incoming strike damage.",
 		"type": "Trait",
-		"_source": "traits::1782::Resolute Evasion",
+		"_source": "traits:1782:Resolute Evasion",
 		"trait": 1782,
 		"specialization": 9
 	},
@@ -1879,7 +1894,7 @@
 		"maximum": null,
 		"description": "Heal every second based on upkeep.",
 		"type": "Trait",
-		"_source": "traits::1790::Steadfast Rejuvenation",
+		"_source": "traits:1790:Steadfast Rejuvenation",
 		"trait": 1790,
 		"specialization": 9
 	},
@@ -1891,7 +1906,7 @@
 		"maximum": null,
 		"description": "Healing done to other allies is increased for a short duration after invoking a legend.",
 		"type": "Trait",
-		"_source": "traits::1823::Invoking Harmony",
+		"_source": "traits:1823:Invoking Harmony",
 		"trait": 1823,
 		"specialization": 12
 	},
@@ -1903,7 +1918,7 @@
 		"maximum": null,
 		"description": "Reduced incoming damage.",
 		"type": "Trait",
-		"_source": "traits::1825::Unyielding Devotion",
+		"_source": "traits:1825:Unyielding Devotion",
 		"trait": 1825,
 		"specialization": 12
 	},
@@ -1915,7 +1930,7 @@
 		"maximum": null,
 		"description": "Condition damage is increased.",
 		"type": "Trait",
-		"_source": "traits::1833::Lotus Training",
+		"_source": "traits:1833:Lotus Training",
 		"trait": 1833,
 		"specialization": 7
 	},
@@ -1927,7 +1942,7 @@
 		"maximum": null,
 		"description": "Your damage is increased.",
 		"type": "Trait",
-		"_source": "traits::1839::Transcendent Tempest",
+		"_source": "traits:1839:Transcendent Tempest",
 		"trait": 1839,
 		"specialization": 48
 	},
@@ -1939,7 +1954,7 @@
 		"maximum": null,
 		"description": "Siphon health when you hit.",
 		"type": "Trait",
-		"_source": "traits::1844::Vampiric Presence",
+		"_source": "traits:1844:Vampiric Presence",
 		"trait": 1844,
 		"specialization": 19
 	},
@@ -1951,7 +1966,7 @@
 		"maximum": 5,
 		"description": "At maximum charges gain a burst of speed.",
 		"type": "Trait",
-		"_source": "traits::1856::Kinetic Battery",
+		"_source": "traits:1856:Kinetic Battery",
 		"trait": 1856,
 		"specialization": 21
 	},
@@ -1963,7 +1978,7 @@
 		"maximum": null,
 		"description": "Next attack weakens enemies.",
 		"type": "Trait",
-		"_source": "traits::1887::Weakening Strikes",
+		"_source": "traits:1887:Weakening Strikes",
 		"trait": 1887,
 		"specialization": 7
 	},
@@ -1975,7 +1990,7 @@
 		"maximum": null,
 		"description": "Your damage is increased.",
 		"type": "Trait",
-		"_source": "traits::1891::Tempestuous Aria",
+		"_source": "traits:1891:Tempestuous Aria",
 		"trait": 1891,
 		"specialization": 48
 	},
@@ -1987,7 +2002,7 @@
 		"maximum": 10,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::1892::Explosive Temper",
+		"_source": "traits:1892:Explosive Temper",
 		"trait": 1892,
 		"specialization": 6
 	},
@@ -1999,7 +2014,7 @@
 		"maximum": 5,
 		"description": "Increased healing to other allies when you block an attack.",
 		"type": "Trait",
-		"_source": "traits::1899::Invigorated Bulwark",
+		"_source": "traits:1899:Invigorated Bulwark",
 		"trait": 1899,
 		"specialization": 49
 	},
@@ -2011,7 +2026,7 @@
 		"maximum": null,
 		"description": "Your conditions last longer, and your damage is increased.",
 		"type": "Trait",
-		"_source": "traits::1912::Light on your Feet",
+		"_source": "traits:1912:Light on your Feet",
 		"trait": 1912,
 		"specialization": 30
 	},
@@ -2023,7 +2038,7 @@
 		"maximum": null,
 		"description": "You do not lose health while downed.",
 		"type": "Trait",
-		"_source": "traits::1931::Last Rites",
+		"_source": "traits:1931:Last Rites",
 		"trait": 1931,
 		"specialization": 19
 	},
@@ -2035,7 +2050,7 @@
 		"maximum": null,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::1945::Beastly Warden",
+		"_source": "traits:1945:Beastly Warden",
 		"trait": 1945,
 		"specialization": 32
 	},
@@ -2047,7 +2062,7 @@
 		"maximum": null,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::1947::Big Boomer",
+		"_source": "traits:1947:Big Boomer",
 		"trait": 1947,
 		"specialization": 6
 	},
@@ -2059,7 +2074,7 @@
 		"maximum": null,
 		"description": "Damage dealt to you is reduced.",
 		"type": "Trait",
-		"_source": "traits::1964::Unhindered Combatant",
+		"_source": "traits:1964:Unhindered Combatant",
 		"trait": 1964,
 		"specialization": 7
 	},
@@ -2071,7 +2086,7 @@
 		"maximum": null,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::1977::Savage Instinct",
+		"_source": "traits:1977:Savage Instinct",
 		"trait": 1977,
 		"specialization": 18,
 		"_variants": [{}]
@@ -2084,7 +2099,7 @@
 		"maximum": null,
 		"description": "Heal for a percentage of outgoing damage.",
 		"type": "Trait",
-		"_source": "traits::2002::Dead or Alive",
+		"_source": "traits:2002:Dead or Alive",
 		"trait": 2002,
 		"specialization": 18
 	},
@@ -2096,7 +2111,7 @@
 		"maximum": null,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::2006::Thermal Vision",
+		"_source": "traits:2006:Thermal Vision",
 		"trait": 2006,
 		"specialization": 38
 	},
@@ -2108,7 +2123,7 @@
 		"maximum": 5,
 		"description": "Deal increased damage per stack.",
 		"type": "Trait",
-		"_source": "traits::2017::Symbolic Avenger",
+		"_source": "traits:2017:Symbolic Avenger",
 		"trait": 2017,
 		"specialization": 42
 	},
@@ -2120,7 +2135,7 @@
 		"maximum": null,
 		"description": "Increases critical-hit chance by 25%.",
 		"type": "Trait",
-		"_source": "traits::2035::Master of Fragmentation",
+		"_source": "traits:2035:Master of Fragmentation",
 		"trait": 2035,
 		"specialization": 24
 	},
@@ -2132,7 +2147,7 @@
 		"maximum": null,
 		"description": "Cripples foes on hit.",
 		"type": "Trait",
-		"_source": "traits::2035::Master of Fragmentation",
+		"_source": "traits:2035:Master of Fragmentation",
 		"trait": 2035,
 		"specialization": 24
 	},
@@ -2144,7 +2159,7 @@
 		"maximum": null,
 		"description": "Strikes up to five targets within range.",
 		"type": "Trait",
-		"_source": "traits::2035::Master of Fragmentation",
+		"_source": "traits:2035:Master of Fragmentation",
 		"trait": 2035,
 		"specialization": 24
 	},
@@ -2156,7 +2171,7 @@
 		"maximum": null,
 		"description": "Increases critical-hit chance by 25%.",
 		"type": "Trait",
-		"_source": "traits::2035::Master of Fragmentation",
+		"_source": "traits:2035:Master of Fragmentation",
 		"trait": 2035,
 		"specialization": 24
 	},
@@ -2168,7 +2183,7 @@
 		"maximum": null,
 		"description": "Increases critical-hit chance by 25%.",
 		"type": "Trait",
-		"_source": "traits::2035::Master of Fragmentation",
+		"_source": "traits:2035:Master of Fragmentation",
 		"trait": 2035,
 		"specialization": 24
 	},
@@ -2180,7 +2195,7 @@
 		"maximum": null,
 		"description": "Increases critical-hit chance by 25%.",
 		"type": "Trait",
-		"_source": "traits::2035::Master of Fragmentation",
+		"_source": "traits:2035:Master of Fragmentation",
 		"trait": 2035,
 		"specialization": 24
 	},
@@ -2192,7 +2207,7 @@
 		"maximum": null,
 		"description": "Cripples foes on hit.",
 		"type": "Trait",
-		"_source": "traits::2035::Master of Fragmentation",
+		"_source": "traits:2035:Master of Fragmentation",
 		"trait": 2035,
 		"specialization": 24
 	},
@@ -2204,7 +2219,7 @@
 		"maximum": null,
 		"description": "Cripples foes on hit.",
 		"type": "Trait",
-		"_source": "traits::2035::Master of Fragmentation",
+		"_source": "traits:2035:Master of Fragmentation",
 		"trait": 2035,
 		"specialization": 24
 	},
@@ -2216,7 +2231,7 @@
 		"maximum": null,
 		"description": "Cripples foes on hit.",
 		"type": "Trait",
-		"_source": "traits::2035::Master of Fragmentation",
+		"_source": "traits:2035:Master of Fragmentation",
 		"trait": 2035,
 		"specialization": 24
 	},
@@ -2228,7 +2243,7 @@
 		"maximum": null,
 		"description": "Weakens foes on hit.",
 		"type": "Trait",
-		"_source": "traits::2035::Master of Fragmentation",
+		"_source": "traits:2035:Master of Fragmentation",
 		"trait": 2035,
 		"specialization": 24
 	},
@@ -2240,7 +2255,7 @@
 		"maximum": null,
 		"description": "Strikes up to five targets within range.",
 		"type": "Trait",
-		"_source": "traits::2035::Master of Fragmentation",
+		"_source": "traits:2035:Master of Fragmentation",
 		"trait": 2035,
 		"specialization": 24
 	},
@@ -2252,7 +2267,7 @@
 		"maximum": null,
 		"description": "Strikes up to five targets within range.",
 		"type": "Trait",
-		"_source": "traits::2035::Master of Fragmentation",
+		"_source": "traits:2035:Master of Fragmentation",
 		"trait": 2035,
 		"specialization": 24
 	},
@@ -2264,7 +2279,7 @@
 		"maximum": null,
 		"description": "Removes conditions from allies on use.",
 		"type": "Trait",
-		"_source": "traits::2035::Master of Fragmentation",
+		"_source": "traits:2035:Master of Fragmentation",
 		"trait": 2035,
 		"specialization": 24
 	},
@@ -2276,7 +2291,7 @@
 		"maximum": null,
 		"description": "Duration increased by 1 second.",
 		"type": "Trait",
-		"_source": "traits::2035::Master of Fragmentation",
+		"_source": "traits:2035:Master of Fragmentation",
 		"trait": 2035,
 		"specialization": 24
 	},
@@ -2288,7 +2303,7 @@
 		"maximum": null,
 		"description": "Base duration increased by 1 second.",
 		"type": "Trait",
-		"_source": "traits::2035::Master of Fragmentation",
+		"_source": "traits:2035:Master of Fragmentation",
 		"trait": 2035,
 		"specialization": 24
 	},
@@ -2300,7 +2315,7 @@
 		"maximum": null,
 		"description": "Effectiveness per instrument is increased.",
 		"type": "Trait",
-		"_source": "traits::2035::Master of Fragmentation",
+		"_source": "traits:2035:Master of Fragmentation",
 		"trait": 2035,
 		"specialization": 24
 	},
@@ -2312,7 +2327,7 @@
 		"maximum": null,
 		"description": "You deal bonus damage.",
 		"type": "Trait",
-		"_source": "traits::2047::Bounding Dodger",
+		"_source": "traits:2047:Bounding Dodger",
 		"trait": 2047,
 		"specialization": 7
 	},
@@ -2324,7 +2339,7 @@
 		"maximum": null,
 		"description": "Your conditions do increased damage and have increased duration. Your concentration is increased.",
 		"type": "Trait",
-		"_source": "traits::2056::Natural Balance",
+		"_source": "traits:2056:Natural Balance",
 		"trait": 2056,
 		"specialization": 5,
 		"_variants": [{}]
@@ -2337,7 +2352,7 @@
 		"maximum": null,
 		"description": "Reduces the cooldown of Celestial Avatar when exiting.",
 		"type": "Trait",
-		"_source": "traits::2058::Lingering Light",
+		"_source": "traits:2058:Lingering Light",
 		"trait": 2058,
 		"specialization": 5
 	},
@@ -2349,33 +2364,33 @@
 		"maximum": null,
 		"description": "Kalla's legend inspires you, increasing all damage dealt; stacks intensity.",
 		"type": "Trait",
-		"_source": "traits::2079::Blood Fury",
+		"_source": "traits:2079:Blood Fury",
 		"trait": 2079,
 		"specialization": 63,
 		"_variants": [
-			{ "_source": "traits::2120::Wrought-Iron Will", "trait": 2120 },
-			{ "_source": "traits::2166::Ashen Demeanor", "trait": 2166 },
+			{ "_source": "traits:2120:Wrought-Iron Will", "trait": 2120 },
+			{ "_source": "traits:2166:Ashen Demeanor", "trait": 2166 },
 			{
 				"stacking": "Intensity",
 				"maximum": 5,
-				"_source": "traits::2181::Ambush Commander",
+				"_source": "traits:2181:Ambush Commander",
 				"trait": 2181
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::44076::Heroic Command",
+				"_source": "skills:44076:Heroic Command",
 				"skill": 44076,
 				"slot": "Profession_2",
 				"professions": ["Revenant"]
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::46849::Call of the Renegade",
+				"_source": "skills:46849:Call of the Renegade",
 				"skill": 46849
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::46849::Call of the Renegade",
+				"_source": "skills:46849:Call of the Renegade",
 				"skill": 46849
 			}
 		]
@@ -2388,34 +2403,34 @@
 		"maximum": null,
 		"description": "Kalla's legend inspires you, increasing all damage dealt; stacks intensity.",
 		"type": "Trait",
-		"_source": "traits::2079::Blood Fury",
+		"_source": "traits:2079:Blood Fury",
 		"trait": 2079,
 		"specialization": 63,
 		"_variants": [
-			{ "_source": "traits::2100::Lasting Legacy", "trait": 2100 },
-			{ "_source": "traits::2120::Wrought-Iron Will", "trait": 2120 },
-			{ "_source": "traits::2166::Ashen Demeanor", "trait": 2166 },
+			{ "_source": "traits:2100:Lasting Legacy", "trait": 2100 },
+			{ "_source": "traits:2120:Wrought-Iron Will", "trait": 2120 },
+			{ "_source": "traits:2166:Ashen Demeanor", "trait": 2166 },
 			{
 				"stacking": "Intensity",
 				"maximum": 5,
-				"_source": "traits::2181::Ambush Commander",
+				"_source": "traits:2181:Ambush Commander",
 				"trait": 2181
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::44076::Heroic Command",
+				"_source": "skills:44076:Heroic Command",
 				"skill": 44076,
 				"slot": "Profession_2",
 				"professions": ["Revenant"]
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::46849::Call of the Renegade",
+				"_source": "skills:46849:Call of the Renegade",
 				"skill": 46849
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::46849::Call of the Renegade",
+				"_source": "skills:46849:Call of the Renegade",
 				"skill": 46849
 			}
 		]
@@ -2428,14 +2443,14 @@
 		"maximum": null,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::2081::Elemental Polyphony",
+		"_source": "traits:2081:Elemental Polyphony",
 		"trait": 2081,
 		"specialization": 56,
 		"_variants": [
 			{
 				"description": "Burn enemies.",
 				"type": "Skill",
-				"_source": "skills::5506::Glyph of Elemental Power",
+				"_source": "skills:5506:Glyph of Elemental Power",
 				"skill": 5506,
 				"slot": "Utility",
 				"professions": ["Elementalist"]
@@ -2443,7 +2458,7 @@
 			{
 				"description": "Burn enemies.",
 				"type": "Skill",
-				"_source": "skills::34736::Glyph of Elemental Power",
+				"_source": "skills:34736:Glyph of Elemental Power",
 				"skill": 34736,
 				"slot": "Utility",
 				"professions": ["Elementalist"]
@@ -2458,14 +2473,14 @@
 		"maximum": null,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::2081::Elemental Polyphony",
+		"_source": "traits:2081:Elemental Polyphony",
 		"trait": 2081,
 		"specialization": 56,
 		"_variants": [
 			{
 				"description": "Remove conditions from allies.",
 				"type": "Skill",
-				"_source": "skills::5506::Glyph of Elemental Power",
+				"_source": "skills:5506:Glyph of Elemental Power",
 				"skill": 5506,
 				"slot": "Utility",
 				"professions": ["Elementalist"]
@@ -2473,7 +2488,7 @@
 			{
 				"description": "Remove conditions from allies.",
 				"type": "Skill",
-				"_source": "skills::34772::Glyph of Elemental Power",
+				"_source": "skills:34772:Glyph of Elemental Power",
 				"skill": 34772,
 				"slot": "Utility",
 				"professions": ["Elementalist"]
@@ -2488,14 +2503,14 @@
 		"maximum": null,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::2081::Elemental Polyphony",
+		"_source": "traits:2081:Elemental Polyphony",
 		"trait": 2081,
 		"specialization": 56,
 		"_variants": [
 			{
 				"description": "Daze enemies.",
 				"type": "Skill",
-				"_source": "skills::5506::Glyph of Elemental Power",
+				"_source": "skills:5506:Glyph of Elemental Power",
 				"skill": 5506,
 				"slot": "Utility",
 				"professions": ["Elementalist"]
@@ -2503,7 +2518,7 @@
 			{
 				"description": "Daze enemies.",
 				"type": "Skill",
-				"_source": "skills::34637::Glyph of Elemental Power",
+				"_source": "skills:34637:Glyph of Elemental Power",
 				"skill": 34637,
 				"slot": "Utility",
 				"professions": ["Elementalist"]
@@ -2518,14 +2533,14 @@
 		"maximum": null,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::2081::Elemental Polyphony",
+		"_source": "traits:2081:Elemental Polyphony",
 		"trait": 2081,
 		"specialization": 56,
 		"_variants": [
 			{
 				"description": "Grant barrier to allies.",
 				"type": "Skill",
-				"_source": "skills::5506::Glyph of Elemental Power",
+				"_source": "skills:5506:Glyph of Elemental Power",
 				"skill": 5506,
 				"slot": "Utility",
 				"professions": ["Elementalist"]
@@ -2533,7 +2548,7 @@
 			{
 				"description": "Grant barrier to allies.",
 				"type": "Skill",
-				"_source": "skills::34714::Glyph of Elemental Power",
+				"_source": "skills:34714:Glyph of Elemental Power",
 				"skill": 34714,
 				"slot": "Utility",
 				"professions": ["Elementalist"]
@@ -2548,7 +2563,7 @@
 		"maximum": 4,
 		"description": "Increased strike and condition damage per stack.",
 		"type": "Trait",
-		"_source": "traits::2098::Phantom Pain",
+		"_source": "traits:2098:Phantom Pain",
 		"trait": 2098,
 		"specialization": 59
 	},
@@ -2560,7 +2575,7 @@
 		"maximum": null,
 		"description": "Your next attack sets the target on fire.",
 		"type": "Trait",
-		"_source": "traits::2106::Solar Focusing Lens",
+		"_source": "traits:2106:Solar Focusing Lens",
 		"trait": 2106,
 		"specialization": 57,
 		"_variants": [
@@ -2568,19 +2583,19 @@
 			{},
 			{
 				"type": "Skill",
-				"_source": "skills::41123::Deactivate Photon Forge",
+				"_source": "skills:41123:Deactivate Photon Forge",
 				"skill": 41123,
 				"slot": "Profession_5",
 				"professions": ["Engineer"]
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::42938::Engage Photon Forge",
+				"_source": "skills:42938:Engage Photon Forge",
 				"skill": 42938,
 				"slot": "Profession_5",
 				"professions": ["Engineer"]
 			},
-			{ "type": "Skill", "_source": "skills::43937::Overheat", "skill": 43937 }
+			{ "type": "Skill", "_source": "skills:43937:Overheat", "skill": 43937 }
 		]
 	},
 	{
@@ -2591,7 +2606,7 @@
 		"maximum": null,
 		"description": "You deal increased strike damage.",
 		"type": "Trait",
-		"_source": "traits::2108::All for One",
+		"_source": "traits:2108:All for One",
 		"trait": 2108,
 		"specialization": 63
 	},
@@ -2603,7 +2618,7 @@
 		"maximum": null,
 		"description": "You deal increased damage from strikes and conditions.",
 		"type": "Trait",
-		"_source": "traits::2127::Twice as Vicious",
+		"_source": "traits:2127:Twice as Vicious",
 		"trait": 2127,
 		"specialization": 55,
 		"_variants": [{}]
@@ -2616,7 +2631,7 @@
 		"maximum": 5,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::2130::Attacker's Insight",
+		"_source": "traits:2130:Attacker's Insight",
 		"trait": 2130,
 		"specialization": 61
 	},
@@ -2628,7 +2643,7 @@
 		"maximum": null,
 		"description": "Your damage is increased.",
 		"type": "Trait",
-		"_source": "traits::2131::Elements of Rage",
+		"_source": "traits:2131:Elements of Rage",
 		"trait": 2131,
 		"specialization": 56
 	},
@@ -2640,33 +2655,33 @@
 		"maximum": null,
 		"description": "Evade incoming attacks.",
 		"type": "Trait",
-		"_source": "traits::2150::Mirage Cloak",
+		"_source": "traits:2150:Mirage Cloak",
 		"trait": 2150,
 		"specialization": 59,
 		"_variants": [
-			{ "_source": "traits::2169::Dune Cloak", "trait": 2169 },
+			{ "_source": "traits:2169:Dune Cloak", "trait": 2169 },
 			{
 				"type": "Skill",
-				"_source": "skills::42183::Reformed Mirage Mirror",
+				"_source": "skills:42183:Reformed Mirage Mirror",
 				"skill": 42183
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::43064::Sand through Glass",
+				"_source": "skills:43064:Sand through Glass",
 				"skill": 43064,
 				"slot": "Utility",
 				"professions": ["Mesmer"]
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::44677::Mirage Mirror",
+				"_source": "skills:44677:Mirage Mirror",
 				"skill": 44677,
 				"slot": "Utility",
 				"professions": ["Mesmer"]
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::45046::Illusionary Ambush",
+				"_source": "skills:45046:Illusionary Ambush",
 				"skill": 45046,
 				"slot": "Utility",
 				"professions": ["Mesmer"]
@@ -2681,7 +2696,7 @@
 		"maximum": null,
 		"description": "Your next strike burns with justice.",
 		"type": "Trait",
-		"_source": "traits::2179::Quickfire",
+		"_source": "traits:2179:Quickfire",
 		"trait": 2179,
 		"specialization": 62
 	},
@@ -2693,7 +2708,7 @@
 		"maximum": null,
 		"description": "Condition damage and duration is increased.",
 		"type": "Trait",
-		"_source": "traits::2180::Weaver's Prowess",
+		"_source": "traits:2180:Weaver's Prowess",
 		"trait": 2180,
 		"specialization": 56
 	},
@@ -2705,21 +2720,21 @@
 		"maximum": null,
 		"description": "Reduces your maximum health. Stacks intensity.",
 		"type": "Trait",
-		"_source": "traits::2183::Dark Disciple",
+		"_source": "traits:2183:Dark Disciple",
 		"trait": 2183,
 		"specialization": 64,
 		"_variants": [
 			{},
 			{
 				"type": "Skill",
-				"_source": "skills::62567::Harbinger Shroud",
+				"_source": "skills:62567:Harbinger Shroud",
 				"skill": 62567,
 				"slot": "Profession_1",
 				"professions": ["Necromancer"]
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::62567::Harbinger Shroud",
+				"_source": "skills:62567:Harbinger Shroud",
 				"skill": 62567,
 				"slot": "Profession_1",
 				"professions": ["Necromancer"]
@@ -2734,7 +2749,7 @@
 		"maximum": 5,
 		"description": "Damage increase per stack.",
 		"type": "Trait",
-		"_source": "traits::2189::Lethal Tempo",
+		"_source": "traits:2189:Lethal Tempo",
 		"trait": 2189,
 		"specialization": 65,
 		"_variants": [
@@ -2742,7 +2757,7 @@
 			{
 				"stacking": "Duration",
 				"maximum": null,
-				"_source": "traits::2201::Tyrant's Momentum",
+				"_source": "traits:2201:Tyrant's Momentum",
 				"trait": 2201
 			}
 		]
@@ -2755,7 +2770,7 @@
 		"maximum": null,
 		"description": "Take reduced incoming damage.",
 		"type": "Trait",
-		"_source": "traits::2192::Implacable Foe",
+		"_source": "traits:2192:Implacable Foe",
 		"trait": 2192,
 		"specialization": 64
 	},
@@ -2767,7 +2782,7 @@
 		"maximum": null,
 		"description": "Damage dealt is increased.",
 		"type": "Trait",
-		"_source": "traits::2204::Deadly Blades",
+		"_source": "traits:2204:Deadly Blades",
 		"trait": 2204,
 		"specialization": 66
 	},
@@ -2779,7 +2794,7 @@
 		"maximum": 5,
 		"description": "Incoming damage is reduced.",
 		"type": "Trait",
-		"_source": "traits::2230::Hardened Auras",
+		"_source": "traits:2230:Hardened Auras",
 		"trait": 2230,
 		"specialization": 67
 	},
@@ -2791,18 +2806,18 @@
 		"maximum": null,
 		"description": "Gain attribute increases while in combat.",
 		"type": "Trait",
-		"_source": "traits::2231::Elemental Epitome",
+		"_source": "traits:2231:Elemental Epitome",
 		"trait": 2231,
 		"specialization": 67,
 		"_variants": [
-			{ "_source": "traits::2249::Evasive Empowerment", "trait": 2249 },
+			{ "_source": "traits:2249:Evasive Empowerment", "trait": 2249 },
 			{
 				"stacking": "Intensity",
 				"maximum": 10,
-				"_source": "traits::2250::Elemental Empowerment",
+				"_source": "traits:2250:Elemental Empowerment",
 				"trait": 2250
 			},
-			{ "_source": "traits::2252::Vicious Empowerment", "trait": 2252 }
+			{ "_source": "traits:2252:Vicious Empowerment", "trait": 2252 }
 		]
 	},
 	{
@@ -2813,7 +2828,7 @@
 		"maximum": null,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::2236::Guns and Glory",
+		"_source": "traits:2236:Guns and Glory",
 		"trait": 2236,
 		"specialization": 68
 	},
@@ -2825,13 +2840,13 @@
 		"maximum": null,
 		"description": "Outgoing healing is increased.",
 		"type": "Trait",
-		"_source": "traits::2238::Saint of zu Heltzer",
+		"_source": "traits:2238:Saint of zu Heltzer",
 		"trait": 2238,
 		"specialization": 69,
 		"_variants": [
 			{
 				"type": "Skill",
-				"_source": "skills::62689::Saint's Shield",
+				"_source": "skills:62689:Saint's Shield",
 				"skill": 62689
 			}
 		]
@@ -2844,7 +2859,7 @@
 		"maximum": 5,
 		"description": "Increased outgoing strike and condition damage.",
 		"type": "Trait",
-		"_source": "traits::2247::Empowering Auras",
+		"_source": "traits:2247:Empowering Auras",
 		"trait": 2247,
 		"specialization": 67
 	},
@@ -2856,15 +2871,11 @@
 		"maximum": null,
 		"description": "Outgoing strike damage is increased.",
 		"type": "Trait",
-		"_source": "traits::2257::Forerunner of Death",
+		"_source": "traits:2257:Forerunner of Death",
 		"trait": 2257,
 		"specialization": 69,
 		"_variants": [
-			{
-				"type": "Skill",
-				"_source": "skills::62693::Death Drop",
-				"skill": 62693
-			}
+			{ "type": "Skill", "_source": "skills:62693:Death Drop", "skill": 62693 }
 		]
 	},
 	{
@@ -2875,7 +2886,7 @@
 		"maximum": null,
 		"description": "Your next dodge is enhanced.",
 		"type": "Trait",
-		"_source": "traits::2259::Reaver's Curse",
+		"_source": "traits:2259:Reaver's Curse",
 		"trait": 2259,
 		"specialization": 69
 	},
@@ -2887,7 +2898,7 @@
 		"maximum": null,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::2267::Exigency Protocols",
+		"_source": "traits:2267:Exigency Protocols",
 		"trait": 2267,
 		"specialization": 70
 	},
@@ -2899,7 +2910,7 @@
 		"maximum": null,
 		"description": "Inflict torment on foes struck.",
 		"type": "Trait",
-		"_source": "traits::2272::Dark Sentry",
+		"_source": "traits:2272:Dark Sentry",
 		"trait": 2272,
 		"specialization": 71
 	},
@@ -2911,7 +2922,7 @@
 		"maximum": 5,
 		"description": "Gain damage and movement speed per stack.",
 		"type": "Trait",
-		"_source": "traits::2274::Ferocious Symbiosis",
+		"_source": "traits:2274:Ferocious Symbiosis",
 		"trait": 2274,
 		"specialization": 72
 	},
@@ -2923,7 +2934,7 @@
 		"maximum": null,
 		"description": "Heal for a percentage of your outgoing damage.",
 		"type": "Trait",
-		"_source": "traits::2283::Biorhythm",
+		"_source": "traits:2283:Biorhythm",
 		"trait": 2283,
 		"specialization": 72
 	},
@@ -2935,7 +2946,7 @@
 		"maximum": null,
 		"description": "Your outgoing strike damage is increased, and your incoming strike damage is reduced.",
 		"type": "Trait",
-		"_source": "traits::2283::Biorhythm",
+		"_source": "traits:2283:Biorhythm",
 		"trait": 2283,
 		"specialization": 72
 	},
@@ -2947,7 +2958,7 @@
 		"maximum": 10,
 		"description": "Damage increase per stack.",
 		"type": "Trait",
-		"_source": "traits::2302::Fierce as Fire",
+		"_source": "traits:2302:Fierce as Fire",
 		"trait": 2302,
 		"specialization": 68
 	},
@@ -2959,7 +2970,7 @@
 		"maximum": null,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::2331::Bolstered Bonds",
+		"_source": "traits:2331:Bolstered Bonds",
 		"trait": 2331,
 		"specialization": 79
 	},
@@ -2971,7 +2982,7 @@
 		"maximum": null,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::2331::Bolstered Bonds",
+		"_source": "traits:2331:Bolstered Bonds",
 		"trait": 2331,
 		"specialization": 79
 	},
@@ -2983,7 +2994,7 @@
 		"maximum": null,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::2331::Bolstered Bonds",
+		"_source": "traits:2331:Bolstered Bonds",
 		"trait": 2331,
 		"specialization": 79
 	},
@@ -2995,7 +3006,7 @@
 		"maximum": null,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::2331::Bolstered Bonds",
+		"_source": "traits:2331:Bolstered Bonds",
 		"trait": 2331,
 		"specialization": 79
 	},
@@ -3007,7 +3018,7 @@
 		"maximum": null,
 		"description": "You deal increased strike damage.",
 		"type": "Trait",
-		"_source": "traits::2333::Lingering Spirits",
+		"_source": "traits:2333:Lingering Spirits",
 		"trait": 2333,
 		"specialization": 76,
 		"_variants": [
@@ -3029,25 +3040,25 @@
 		"maximum": null,
 		"description": "Striking a foe will create a chain-lightning attack on that foe.",
 		"type": "Trait",
-		"_source": "traits::2335::Galvanic Enchantment",
+		"_source": "traits:2335:Galvanic Enchantment",
 		"trait": 2335,
 		"specialization": 80,
 		"_variants": [
 			{
 				"type": "Skill",
-				"_source": "skills::76583::Hare's Agility",
+				"_source": "skills:76583:Hare's Agility",
 				"skill": 76583,
 				"slot": "Utility",
 				"professions": ["Elementalist"]
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::76618::Lightning Blitz",
+				"_source": "skills:76618:Lightning Blitz",
 				"skill": 76618
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::77089::Lightning Blitz",
+				"_source": "skills:77089:Lightning Blitz",
 				"skill": 77089,
 				"slot": "Profession_5",
 				"professions": ["Elementalist"]
@@ -3062,19 +3073,19 @@
 		"maximum": null,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::2336::Gale Force",
+		"_source": "traits:2336:Gale Force",
 		"trait": 2336,
 		"specialization": 78,
 		"_variants": [
 			{
 				"description": "Gain access to Hawkeye at the stack threshold.",
-				"_source": "traits::2359::Teachings of the Tengu",
+				"_source": "traits:2359:Teachings of the Tengu",
 				"trait": 2359
 			},
 			{
 				"description": "Gain access to Hawkeye at the stack threshold.",
 				"type": "Skill",
-				"_source": "skills::76722::Pelt",
+				"_source": "skills:76722:Pelt",
 				"skill": 76722,
 				"slot": "Weapon_4",
 				"professions": ["Ranger"]
@@ -3082,7 +3093,7 @@
 			{
 				"description": "Gain access to Hawkeye at the stack threshold.",
 				"type": "Skill",
-				"_source": "skills::76722::Pelt",
+				"_source": "skills:76722:Pelt",
 				"skill": 76722,
 				"slot": "Weapon_4",
 				"professions": ["Ranger"]
@@ -3090,7 +3101,7 @@
 			{
 				"description": "Gain access to Hawkeye at the stack threshold.",
 				"type": "Skill",
-				"_source": "skills::76807::Quarry's Peril",
+				"_source": "skills:76807:Quarry's Peril",
 				"skill": 76807,
 				"slot": "Weapon_4",
 				"professions": ["Ranger"]
@@ -3098,7 +3109,7 @@
 			{
 				"description": "Gain access to Hawkeye at the stack threshold.",
 				"type": "Skill",
-				"_source": "skills::76807::Quarry's Peril",
+				"_source": "skills:76807:Quarry's Peril",
 				"skill": 76807,
 				"slot": "Weapon_4",
 				"professions": ["Ranger"]
@@ -3106,7 +3117,7 @@
 			{
 				"description": "Gain access to Hawkeye at the stack threshold.",
 				"type": "Skill",
-				"_source": "skills::77012::Fleeting Zephyr",
+				"_source": "skills:77012:Fleeting Zephyr",
 				"skill": 77012,
 				"slot": "Weapon_3",
 				"professions": ["Ranger"]
@@ -3114,7 +3125,7 @@
 			{
 				"description": "Gain access to Hawkeye at the stack threshold.",
 				"type": "Skill",
-				"_source": "skills::77174::Supersonic Arrow",
+				"_source": "skills:77174:Supersonic Arrow",
 				"skill": 77174,
 				"slot": "Weapon_5",
 				"professions": ["Ranger"]
@@ -3122,7 +3133,7 @@
 			{
 				"description": "Gain access to Hawkeye at the stack threshold.",
 				"type": "Skill",
-				"_source": "skills::77270::Pelt",
+				"_source": "skills:77270:Pelt",
 				"skill": 77270,
 				"slot": "Weapon_4",
 				"professions": ["Ranger"]
@@ -3130,7 +3141,7 @@
 			{
 				"description": "Gain access to Hawkeye at the stack threshold.",
 				"type": "Skill",
-				"_source": "skills::77270::Pelt",
+				"_source": "skills:77270:Pelt",
 				"skill": 77270,
 				"slot": "Weapon_4",
 				"professions": ["Ranger"]
@@ -3138,7 +3149,7 @@
 			{
 				"description": "Gain access to Hawkeye at the stack threshold.",
 				"type": "Skill",
-				"_source": "skills::77319::Bluster",
+				"_source": "skills:77319:Bluster",
 				"skill": 77319,
 				"slot": "Weapon_2",
 				"professions": ["Ranger"]
@@ -3146,7 +3157,7 @@
 			{
 				"description": "Gain access to Hawkeye at the stack threshold.",
 				"type": "Skill",
-				"_source": "skills::77334::Quarry's Peril",
+				"_source": "skills:77334:Quarry's Peril",
 				"skill": 77334,
 				"slot": "Weapon_4",
 				"professions": ["Ranger"]
@@ -3154,7 +3165,7 @@
 			{
 				"description": "Gain access to Hawkeye at the stack threshold.",
 				"type": "Skill",
-				"_source": "skills::77334::Quarry's Peril",
+				"_source": "skills:77334:Quarry's Peril",
 				"skill": 77334,
 				"slot": "Weapon_4",
 				"professions": ["Ranger"]
@@ -3169,7 +3180,7 @@
 		"maximum": null,
 		"description": "Increased outgoing strike damage and movement speed.",
 		"type": "Trait",
-		"_source": "traits::2336::Gale Force",
+		"_source": "traits:2336:Gale Force",
 		"trait": 2336,
 		"specialization": 78
 	},
@@ -3181,7 +3192,7 @@
 		"maximum": null,
 		"description": "You deal increased strike damage.",
 		"type": "Trait",
-		"_source": "traits::2339::Explosive Growth",
+		"_source": "traits:2339:Explosive Growth",
 		"trait": 2339,
 		"specialization": 76
 	},
@@ -3193,7 +3204,7 @@
 		"maximum": null,
 		"description": "Deal increased strike and condition damage.",
 		"type": "Trait",
-		"_source": "traits::2348::Combat High",
+		"_source": "traits:2348:Combat High",
 		"trait": 2348,
 		"specialization": 77
 	},
@@ -3205,7 +3216,7 @@
 		"maximum": null,
 		"description": "You deal increased strike damage.",
 		"type": "Trait",
-		"_source": "traits::2350::Exhilarating Ephemera",
+		"_source": "traits:2350:Exhilarating Ephemera",
 		"trait": 2350,
 		"specialization": 77
 	},
@@ -3217,7 +3228,7 @@
 		"maximum": null,
 		"description": "You deal increased damage from strikes and conditions.",
 		"type": "Trait",
-		"_source": "traits::2356::Willing Host",
+		"_source": "traits:2356:Willing Host",
 		"trait": 2356,
 		"specialization": 75
 	},
@@ -3229,7 +3240,7 @@
 		"maximum": null,
 		"description": "Increased outgoing damage.",
 		"type": "Trait",
-		"_source": "traits::2375::Brisk Pacing",
+		"_source": "traits:2375:Brisk Pacing",
 		"trait": 2375,
 		"specialization": 74,
 		"_variants": [{}, {}]
@@ -3242,13 +3253,13 @@
 		"maximum": null,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::2385::Strengthening Stanzas",
+		"_source": "traits:2385:Strengthening Stanzas",
 		"trait": 2385,
 		"specialization": 74,
 		"_variants": [
 			{
 				"description": "Stacks of might gained increased per level.",
-				"_source": "traits::2428::Enduring Refrain",
+				"_source": "traits:2428:Enduring Refrain",
 				"trait": 2428
 			}
 		]
@@ -3261,13 +3272,13 @@
 		"maximum": null,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::2385::Strengthening Stanzas",
+		"_source": "traits:2385:Strengthening Stanzas",
 		"trait": 2385,
 		"specialization": 74,
 		"_variants": [
 			{
 				"description": "Healing increased per level.",
-				"_source": "traits::2428::Enduring Refrain",
+				"_source": "traits:2428:Enduring Refrain",
 				"trait": 2428
 			}
 		]
@@ -3280,13 +3291,13 @@
 		"maximum": null,
 		"description": "",
 		"type": "Trait",
-		"_source": "traits::2385::Strengthening Stanzas",
+		"_source": "traits:2385:Strengthening Stanzas",
 		"trait": 2385,
 		"specialization": 74,
 		"_variants": [
 			{
 				"description": "Boon duration increased for each boon granted per level.",
-				"_source": "traits::2428::Enduring Refrain",
+				"_source": "traits:2428:Enduring Refrain",
 				"trait": 2428
 			}
 		]
@@ -3299,7 +3310,7 @@
 		"maximum": null,
 		"description": "Reduced incoming strike damage. Heal when this expires. <c=@reminder>Healing will also occur if this effect is reapplied while still active.",
 		"type": "Trait",
-		"_source": "traits::2394::Light's Gift",
+		"_source": "traits:2394:Light's Gift",
 		"trait": 2394,
 		"specialization": 81,
 		"_variants": [
@@ -3307,66 +3318,74 @@
 			{
 				"description": "Reduced incoming strike damage. Heal when this expires. <c=@reminder>Healing will also occur if this effect is reapplied while still active.</c>",
 				"type": "Skill",
-				"_source": "skills::76708::Luminous Staff",
+				"_source": "skills:76708:Luminous Staff",
 				"skill": 76708,
 				"slot": "Weapon_3",
-				"professions": ["Guardian"]
+				"professions": ["Guardian"],
+				"weapon_type": "Staff"
 			},
 			{
 				"description": "Reduced incoming strike damage. Heal when this expires. <c=@reminder>Healing will also occur if this effect is reapplied while still active.</c>",
 				"type": "Skill",
-				"_source": "skills::76708::Luminous Staff",
+				"_source": "skills:76708:Luminous Staff",
 				"skill": 76708,
 				"slot": "Weapon_3",
-				"professions": ["Guardian"]
+				"professions": ["Guardian"],
+				"weapon_type": "Staff"
 			},
 			{
 				"description": "Reduced incoming strike damage. Heal when this expires. <c=@reminder>Healing will also occur if this effect is reapplied while still active.</c>",
 				"type": "Skill",
-				"_source": "skills::76924::Gleaming Blade",
+				"_source": "skills:76924:Gleaming Blade",
 				"skill": 76924,
 				"slot": "Weapon_4",
-				"professions": ["Guardian"]
+				"professions": ["Guardian"],
+				"weapon_type": "Staff"
 			},
 			{
 				"description": "Reduced incoming strike damage. Heal when this expires. <c=@reminder>Healing will also occur if this effect is reapplied while still active.</c>",
 				"type": "Skill",
-				"_source": "skills::76924::Gleaming Blade",
+				"_source": "skills:76924:Gleaming Blade",
 				"skill": 76924,
 				"slot": "Weapon_4",
-				"professions": ["Guardian"]
+				"professions": ["Guardian"],
+				"weapon_type": "Staff"
 			},
 			{
 				"description": "Reduced incoming strike damage. Heal when this expires. <c=@reminder>Healing will also occur if this effect is reapplied while still active.</c>",
 				"type": "Skill",
-				"_source": "skills::77197::Radiant Bulwark",
+				"_source": "skills:77197:Radiant Bulwark",
 				"skill": 77197,
 				"slot": "Weapon_5",
-				"professions": ["Guardian"]
+				"professions": ["Guardian"],
+				"weapon_type": "Staff"
 			},
 			{
 				"description": "Reduced incoming strike damage. Heal when this expires. <c=@reminder>Healing will also occur if this effect is reapplied while still active.</c>",
 				"type": "Skill",
-				"_source": "skills::77197::Radiant Bulwark",
+				"_source": "skills:77197:Radiant Bulwark",
 				"skill": 77197,
 				"slot": "Weapon_5",
-				"professions": ["Guardian"]
+				"professions": ["Guardian"],
+				"weapon_type": "Staff"
 			},
 			{
 				"description": "Reduced incoming strike damage. Heal when this expires. <c=@reminder>Healing will also occur if this effect is reapplied while still active.</c>",
 				"type": "Skill",
-				"_source": "skills::77339::Dazzling Hammer",
+				"_source": "skills:77339:Dazzling Hammer",
 				"skill": 77339,
 				"slot": "Weapon_2",
-				"professions": ["Guardian"]
+				"professions": ["Guardian"],
+				"weapon_type": "Staff"
 			},
 			{
 				"description": "Reduced incoming strike damage. Heal when this expires. <c=@reminder>Healing will also occur if this effect is reapplied while still active.</c>",
 				"type": "Skill",
-				"_source": "skills::77339::Dazzling Hammer",
+				"_source": "skills:77339:Dazzling Hammer",
 				"skill": 77339,
 				"slot": "Weapon_2",
-				"professions": ["Guardian"]
+				"professions": ["Guardian"],
+				"weapon_type": "Staff"
 			}
 		]
 	},
@@ -3378,7 +3397,7 @@
 		"maximum": null,
 		"description": "Your next Double Edge skill used on cooldown will always be successful, regardless of the remaining cooldown. If used on Skritt Scuffle, it instead reduces the chance of obtaining an Unstable Skritt Bomb.",
 		"type": "Trait",
-		"_source": "traits::2400::Scoundrel's Luck",
+		"_source": "traits:2400:Scoundrel's Luck",
 		"trait": 2400,
 		"specialization": 77
 	},
@@ -3390,7 +3409,7 @@
 		"maximum": null,
 		"description": "When this reaches the maximum amount of stacks, remove all stacks, then Pilfer. Overrides existing artifacts.",
 		"type": "Trait",
-		"_source": "traits::2409::Prodigious Pincher",
+		"_source": "traits:2409:Prodigious Pincher",
 		"trait": 2409,
 		"specialization": 77
 	},
@@ -3402,7 +3421,7 @@
 		"maximum": null,
 		"description": "You deal increased strike damage.",
 		"type": "Trait",
-		"_source": "traits::2419::Empowered Armaments",
+		"_source": "traits:2419:Empowered Armaments",
 		"trait": 2419,
 		"specialization": 81
 	},
@@ -3414,20 +3433,20 @@
 		"maximum": null,
 		"description": "The lute is playing in the background.",
 		"type": "Trait",
-		"_source": "traits::2424::Symphonic Resonance",
+		"_source": "traits:2424:Symphonic Resonance",
 		"trait": 2424,
 		"specialization": 73,
 		"_variants": [
 			{
 				"type": "Skill",
-				"_source": "skills::76552::Lively Lute",
+				"_source": "skills:76552:Lively Lute",
 				"skill": 76552,
 				"slot": "Profession_1",
 				"professions": ["Mesmer"]
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::77306::Lively Lute",
+				"_source": "skills:77306:Lively Lute",
 				"skill": 77306,
 				"slot": "Profession_1",
 				"professions": ["Mesmer"]
@@ -3442,13 +3461,13 @@
 		"maximum": null,
 		"description": "The flute is playing in the background.",
 		"type": "Trait",
-		"_source": "traits::2424::Symphonic Resonance",
+		"_source": "traits:2424:Symphonic Resonance",
 		"trait": 2424,
 		"specialization": 73,
 		"_variants": [
 			{
 				"type": "Skill",
-				"_source": "skills::76746::Flustering Flute",
+				"_source": "skills:76746:Flustering Flute",
 				"skill": 76746,
 				"slot": "Profession_2",
 				"professions": ["Mesmer"]
@@ -3463,13 +3482,13 @@
 		"maximum": null,
 		"description": "The drum is playing in the background.",
 		"type": "Trait",
-		"_source": "traits::2424::Symphonic Resonance",
+		"_source": "traits:2424:Symphonic Resonance",
 		"trait": 2424,
 		"specialization": 73,
 		"_variants": [
 			{
 				"type": "Skill",
-				"_source": "skills::77079::Deafening Drum",
+				"_source": "skills:77079:Deafening Drum",
 				"skill": 77079,
 				"slot": "Profession_3",
 				"professions": ["Mesmer"]
@@ -3484,20 +3503,20 @@
 		"maximum": null,
 		"description": "The harp is playing in the background.",
 		"type": "Trait",
-		"_source": "traits::2424::Symphonic Resonance",
+		"_source": "traits:2424:Symphonic Resonance",
 		"trait": 2424,
 		"specialization": 73,
 		"_variants": [
 			{
 				"type": "Skill",
-				"_source": "skills::76960::Harmonious Harp",
+				"_source": "skills:76960:Harmonious Harp",
 				"skill": 76960,
 				"slot": "Profession_4",
 				"professions": ["Mesmer"]
 			},
 			{
 				"type": "Skill",
-				"_source": "skills::77077::Harmonious Harp",
+				"_source": "skills:77077:Harmonious Harp",
 				"skill": 77077,
 				"slot": "Profession_4",
 				"professions": ["Mesmer"]
@@ -3512,7 +3531,7 @@
 		"maximum": null,
 		"description": "Deal increased strike damage.",
 		"type": "Trait",
-		"_source": "traits::2435::Radiant Armaments",
+		"_source": "traits:2435:Radiant Armaments",
 		"trait": 2435,
 		"specialization": 81,
 		"_variants": [
@@ -3538,7 +3557,7 @@
 		"maximum": null,
 		"description": "Your next weapon skill's cooldown is reduced by 66%.",
 		"type": "Trait",
-		"_source": "traits::2436::Elemental Balance",
+		"_source": "traits:2436:Elemental Balance",
 		"trait": 2436,
 		"specialization": 80
 	},
@@ -3550,7 +3569,7 @@
 		"maximum": null,
 		"description": "Increased power and condition damage.",
 		"type": "Skill",
-		"_source": "skills::5516::Conjure Fiery Greatsword",
+		"_source": "skills:5516:Conjure Fiery Greatsword",
 		"skill": 5516,
 		"slot": "Elite",
 		"professions": ["Elementalist"]
@@ -3563,7 +3582,7 @@
 		"maximum": null,
 		"description": "Increased power and condition damage.",
 		"type": "Skill",
-		"_source": "skills::5540::Conjure Flame Axe",
+		"_source": "skills:5540:Conjure Flame Axe",
 		"skill": 5540,
 		"slot": "Utility",
 		"professions": ["Elementalist"]
@@ -3576,7 +3595,7 @@
 		"maximum": null,
 		"description": "Improved precision.",
 		"type": "Skill",
-		"_source": "skills::5542::Signet of Fire",
+		"_source": "skills:5542:Signet of Fire",
 		"skill": 5542,
 		"slot": "Utility",
 		"professions": ["Elementalist"]
@@ -3589,7 +3608,7 @@
 		"maximum": null,
 		"description": "Increased vitality and toughness.",
 		"type": "Skill",
-		"_source": "skills::5546::Conjure Earth Shield",
+		"_source": "skills:5546:Conjure Earth Shield",
 		"skill": 5546,
 		"slot": "Utility",
 		"professions": ["Elementalist"]
@@ -3602,7 +3621,7 @@
 		"maximum": null,
 		"description": "Increased condition duration and healing power.",
 		"type": "Skill",
-		"_source": "skills::5567::Conjure Frost Bow",
+		"_source": "skills:5567:Conjure Frost Bow",
 		"skill": 5567,
 		"slot": "Utility",
 		"professions": ["Elementalist"]
@@ -3615,13 +3634,13 @@
 		"maximum": null,
 		"description": "Reduces incoming condition duration.",
 		"type": "Skill",
-		"_source": "skills::5570::Signet of Water",
+		"_source": "skills:5570:Signet of Water",
 		"skill": 5570,
 		"slot": "Utility",
 		"professions": ["Elementalist"],
 		"_variants": [
 			{
-				"_source": "skills::49056::Signet of Water",
+				"_source": "skills:49056:Signet of Water",
 				"skill": 49056,
 				"professions": ["Elementalist"]
 			}
@@ -3635,7 +3654,7 @@
 		"maximum": null,
 		"description": "Reduce incoming strike damage.",
 		"type": "Skill",
-		"_source": "skills::5571::Signet of Earth",
+		"_source": "skills:5571:Signet of Earth",
 		"skill": 5571,
 		"slot": "Utility",
 		"professions": ["Elementalist"]
@@ -3648,7 +3667,7 @@
 		"maximum": null,
 		"description": "Movement speed increased by 25%.",
 		"type": "Skill",
-		"_source": "skills::5572::Signet of Air",
+		"_source": "skills:5572:Signet of Air",
 		"skill": 5572,
 		"slot": "Utility",
 		"professions": ["Elementalist"]
@@ -3661,7 +3680,7 @@
 		"maximum": null,
 		"description": "After using a Lava Axe ability, your next Lava Axe attack fires twice.",
 		"type": "Skill",
-		"_source": "skills::5593::Explosive Lava Axe",
+		"_source": "skills:5593:Explosive Lava Axe",
 		"skill": 5593,
 		"slot": "Weapon_2",
 		"professions": [
@@ -3677,7 +3696,7 @@
 		],
 		"_variants": [
 			{
-				"_source": "skills::5717::Burning Retreat",
+				"_source": "skills:5717:Burning Retreat",
 				"skill": 5717,
 				"slot": "Weapon_3",
 				"professions": [
@@ -3693,7 +3712,7 @@
 				]
 			},
 			{
-				"_source": "skills::5718::Ring of Fire",
+				"_source": "skills:5718:Ring of Fire",
 				"skill": 5718,
 				"slot": "Weapon_4",
 				"professions": [
@@ -3709,7 +3728,7 @@
 				]
 			},
 			{
-				"_source": "skills::5719::Flame Leap",
+				"_source": "skills:5719:Flame Leap",
 				"skill": 5719,
 				"slot": "Weapon_5",
 				"professions": [
@@ -3734,7 +3753,7 @@
 		"maximum": 2,
 		"description": "Enhances Frost Bow abilities. Increases healing to others.",
 		"type": "Skill",
-		"_source": "skills::5595::Water Arrow",
+		"_source": "skills:5595:Water Arrow",
 		"skill": 5595,
 		"slot": "Weapon_1",
 		"professions": [
@@ -3757,7 +3776,7 @@
 		"maximum": null,
 		"description": "Increased precision and ferocity.",
 		"type": "Skill",
-		"_source": "skills::5624::Conjure Lightning Hammer",
+		"_source": "skills:5624:Conjure Lightning Hammer",
 		"skill": 5624,
 		"slot": "Utility",
 		"professions": ["Elementalist"]
@@ -3770,7 +3789,7 @@
 		"maximum": null,
 		"description": "Your next weapon skill will recharge faster.",
 		"type": "Skill",
-		"_source": "skills::5635::Arcane Echo",
+		"_source": "skills:5635:Arcane Echo",
 		"skill": 5635,
 		"slot": "Utility",
 		"professions": ["Elementalist"]
@@ -3783,12 +3802,12 @@
 		"maximum": null,
 		"description": "Blocks attacks. Explodes after blocking three attacks.",
 		"type": "Skill",
-		"_source": "skills::5641::Arcane Shield",
+		"_source": "skills:5641:Arcane Shield",
 		"skill": 5641,
 		"slot": "Utility",
 		"professions": ["Elementalist"],
 		"_variants": [
-			{ "_source": "skills::25579::Lesser Arcane Shield", "skill": 25579 }
+			{ "_source": "skills:25579:Lesser Arcane Shield", "skill": 25579 }
 		]
 	},
 	{
@@ -3799,10 +3818,11 @@
 		"maximum": null,
 		"description": "",
 		"type": "Skill",
-		"_source": "skills::5695::Rock Barrier",
+		"_source": "skills:5695:Rock Barrier",
 		"skill": 5695,
 		"slot": "Weapon_2",
-		"professions": ["Elementalist"]
+		"professions": ["Elementalist"],
+		"weapon_type": "Scepter"
 	},
 	{
 		"id": null,
@@ -3812,19 +3832,20 @@
 		"maximum": null,
 		"description": "Gain barrier every second.",
 		"type": "Skill",
-		"_source": "skills::5747::Magnetic Shield",
+		"_source": "skills:5747:Magnetic Shield",
 		"skill": 5747,
 		"slot": "Weapon_4",
 		"professions": [],
+		"weapon_type": "Sword",
 		"_variants": [
 			{
-				"_source": "skills::21647::Stone Sheath",
+				"_source": "skills:21647:Stone Sheath",
 				"skill": 21647,
 				"slot": "Weapon_2",
 				"professions": []
 			},
 			{
-				"_source": "skills::21647::Stone Sheath",
+				"_source": "skills:21647:Stone Sheath",
 				"skill": 21647,
 				"slot": "Weapon_2",
 				"professions": []
@@ -3839,13 +3860,13 @@
 		"maximum": null,
 		"description": "Will revive when downed.",
 		"type": "Skill",
-		"_source": "skills::5762::Renewal of Fire",
+		"_source": "skills:5762:Renewal of Fire",
 		"skill": 5762,
 		"slot": "Utility",
 		"professions": ["Elementalist"],
 		"_variants": [
 			{
-				"_source": "skills::24407::Renewal of Fire",
+				"_source": "skills:24407:Renewal of Fire",
 				"skill": 24407,
 				"professions": ["Elementalist"]
 			}
@@ -3859,7 +3880,7 @@
 		"maximum": null,
 		"description": "Transformed into a tornado.",
 		"type": "Skill",
-		"_source": "skills::5832::Elixir X",
+		"_source": "skills:5832:Elixir X",
 		"skill": 5832,
 		"slot": "Elite",
 		"professions": ["Engineer"],
@@ -3873,7 +3894,7 @@
 		"maximum": null,
 		"description": "Assumed the form of a massive juggernaut.",
 		"type": "Skill",
-		"_source": "skills::5832::Elixir X",
+		"_source": "skills:5832:Elixir X",
 		"skill": 5832,
 		"slot": "Elite",
 		"professions": ["Engineer"],
@@ -3887,7 +3908,7 @@
 		"maximum": null,
 		"description": "Assumed the form of a powerful lich.",
 		"type": "Skill",
-		"_source": "skills::5832::Elixir X",
+		"_source": "skills:5832:Elixir X",
 		"skill": 5832,
 		"slot": "Elite",
 		"professions": ["Engineer"],
@@ -3901,10 +3922,11 @@
 		"maximum": null,
 		"description": "Block attacks. Explodes when it ends.",
 		"type": "Skill",
-		"_source": "skills::9082::Shield of Wrath",
+		"_source": "skills:9082:Shield of Wrath",
 		"skill": 9082,
 		"slot": "Weapon_5",
-		"professions": ["Guardian"]
+		"professions": ["Guardian"],
+		"weapon_type": "Focus"
 	},
 	{
 		"id": null,
@@ -3914,7 +3936,7 @@
 		"maximum": null,
 		"description": "Improved power.",
 		"type": "Skill",
-		"_source": "skills::9093::Bane Signet",
+		"_source": "skills:9093:Bane Signet",
 		"skill": 9093,
 		"slot": "Utility",
 		"professions": ["Guardian"],
@@ -3928,13 +3950,14 @@
 		"maximum": null,
 		"description": "Burn nearby foes.",
 		"type": "Skill",
-		"_source": "skills::9104::Zealot's Flame",
+		"_source": "skills:9104:Zealot's Flame",
 		"skill": 9104,
 		"slot": "Weapon_4",
 		"professions": ["Guardian"],
+		"weapon_type": "Torch",
 		"_variants": [
 			{
-				"_source": "skills::72104::Zealot's Flame",
+				"_source": "skills:72104:Zealot's Flame",
 				"skill": 72104,
 				"professions": ["Guardian"]
 			}
@@ -3948,36 +3971,36 @@
 		"maximum": null,
 		"description": "Regenerate health.",
 		"type": "Skill",
-		"_source": "skills::9120::Virtue of Resolve",
+		"_source": "skills:9120:Virtue of Resolve",
 		"skill": 9120,
 		"slot": "Profession_2",
 		"professions": ["Guardian"],
 		"_variants": [
 			{
-				"_source": "skills::9250::Virtue of Resolve",
+				"_source": "skills:9250:Virtue of Resolve",
 				"skill": 9250,
 				"professions": ["Guardian"]
 			},
 			{
-				"_source": "skills::30083::Wings of Resolve",
+				"_source": "skills:30083:Wings of Resolve",
 				"skill": 30083,
 				"professions": ["Guardian"],
 				"specialization": 27
 			},
 			{
-				"_source": "skills::30225::Wings of Resolve",
+				"_source": "skills:30225:Wings of Resolve",
 				"skill": 30225,
 				"professions": ["Guardian"],
 				"specialization": 27
 			},
 			{
-				"_source": "skills::30286::Wings of Resolve",
+				"_source": "skills:30286:Wings of Resolve",
 				"skill": 30286,
 				"professions": ["Guardian"],
 				"specialization": 27
 			},
 			{
-				"_source": "skills::30783::Wings of Resolve",
+				"_source": "skills:30783:Wings of Resolve",
 				"skill": 30783,
 				"professions": ["Guardian"],
 				"specialization": 27
@@ -3992,10 +4015,11 @@
 		"maximum": null,
 		"description": "Recently struck by <c=@abilitytype>Banish</c>. <c=@abilitytype>Mighty Blow</c> will consume this effect to teleport to the target.",
 		"type": "Skill",
-		"_source": "skills::9124::Banish",
+		"_source": "skills:9124:Banish",
 		"skill": 9124,
 		"slot": "Weapon_4",
-		"professions": ["Guardian"]
+		"professions": ["Guardian"],
+		"weapon_type": "Hammer"
 	},
 	{
 		"id": null,
@@ -4005,10 +4029,11 @@
 		"maximum": null,
 		"description": "Inflicts damage over time. Activate Blinding Blade to pull foes to you.",
 		"type": "Skill",
-		"_source": "skills::9147::Binding Blade",
+		"_source": "skills:9147:Binding Blade",
 		"skill": 9147,
 		"slot": "Weapon_5",
-		"professions": ["Guardian"]
+		"professions": ["Guardian"],
+		"weapon_type": "Greatsword"
 	},
 	{
 		"id": null,
@@ -4018,7 +4043,7 @@
 		"maximum": null,
 		"description": "Take reduced damage.",
 		"type": "Skill",
-		"_source": "skills::9150::Signet of Judgment",
+		"_source": "skills:9150:Signet of Judgment",
 		"skill": 9150,
 		"slot": "Utility",
 		"professions": ["Guardian"],
@@ -4032,7 +4057,7 @@
 		"maximum": null,
 		"description": "Increased condition damage.",
 		"type": "Skill",
-		"_source": "skills::9151::Signet of Wrath",
+		"_source": "skills:9151:Signet of Wrath",
 		"skill": 9151,
 		"slot": "Utility",
 		"professions": ["Guardian"],
@@ -4046,19 +4071,19 @@
 		"maximum": null,
 		"description": "Gain improved concentration.",
 		"type": "Skill",
-		"_source": "skills::9163::Signet of Mercy",
+		"_source": "skills:9163:Signet of Mercy",
 		"skill": 9163,
 		"slot": "Utility",
 		"professions": ["Guardian"],
 		"_variants": [
 			{},
 			{
-				"_source": "skills::24414::Signet of Mercy",
+				"_source": "skills:24414:Signet of Mercy",
 				"skill": 24414,
 				"professions": ["Guardian"]
 			},
 			{
-				"_source": "skills::24414::Signet of Mercy",
+				"_source": "skills:24414:Signet of Mercy",
 				"skill": 24414,
 				"professions": ["Guardian"]
 			}
@@ -4072,7 +4097,7 @@
 		"maximum": null,
 		"description": "Reflects incoming projectiles.",
 		"type": "Skill",
-		"_source": "skills::10177::Mirror",
+		"_source": "skills:10177:Mirror",
 		"skill": 10177,
 		"slot": "Heal",
 		"professions": ["Mesmer"]
@@ -4085,18 +4110,18 @@
 		"maximum": null,
 		"description": "You are under the illusion that you are alive.",
 		"type": "Skill",
-		"_source": "skills::10244::Illusion of Life",
+		"_source": "skills:10244:Illusion of Life",
 		"skill": 10244,
 		"slot": "Utility",
 		"professions": ["Mesmer"],
 		"_variants": [
 			{
-				"_source": "skills::25541::Illusion of Life",
+				"_source": "skills:25541:Illusion of Life",
 				"skill": 25541,
 				"professions": ["Mesmer"]
 			},
 			{
-				"_source": "skills::25541::Illusion of Life",
+				"_source": "skills:25541:Illusion of Life",
 				"skill": 25541,
 				"professions": ["Mesmer"]
 			}
@@ -4110,19 +4135,21 @@
 		"maximum": null,
 		"description": "Evade all attacks.",
 		"type": "Skill",
-		"_source": "skills::10334::Blurred Frenzy",
+		"_source": "skills:10334:Blurred Frenzy",
 		"skill": 10334,
 		"slot": "Weapon_2",
 		"professions": ["Mesmer"],
+		"weapon_type": "Sword",
 		"_variants": [
 			{
-				"_source": "skills::73152::Imaginary Inversion",
+				"_source": "skills:73152:Imaginary Inversion",
 				"skill": 73152,
 				"slot": "Weapon_3",
-				"professions": ["Mesmer"]
+				"professions": ["Mesmer"],
+				"weapon_type": "Spear"
 			},
 			{
-				"_source": "skills::76583::Hare's Agility",
+				"_source": "skills:76583:Hare's Agility",
 				"skill": 76583,
 				"slot": "Utility",
 				"professions": ["Elementalist"],
@@ -4138,7 +4165,7 @@
 		"maximum": null,
 		"description": "Reduce incoming condition damage.",
 		"type": "Skill",
-		"_source": "skills::10562::Plague Signet",
+		"_source": "skills:10562:Plague Signet",
 		"skill": 10562,
 		"slot": "Utility",
 		"professions": ["Necromancer"]
@@ -4151,7 +4178,7 @@
 		"maximum": null,
 		"description": "Movement speed increased by 25%.",
 		"type": "Skill",
-		"_source": "skills::10612::Signet of the Locust",
+		"_source": "skills:10612:Signet of the Locust",
 		"skill": 10612,
 		"slot": "Utility",
 		"professions": ["Necromancer"]
@@ -4164,7 +4191,7 @@
 		"maximum": null,
 		"description": "Improved power.",
 		"type": "Skill",
-		"_source": "skills::10622::Signet of Spite",
+		"_source": "skills:10622:Signet of Spite",
 		"skill": 10622,
 		"slot": "Utility",
 		"professions": ["Necromancer"]
@@ -4177,10 +4204,11 @@
 		"maximum": null,
 		"description": "Gaining vitality.",
 		"type": "Skill",
-		"_source": "skills::10632::Grim Specter",
+		"_source": "skills:10632:Grim Specter",
 		"skill": 10632,
 		"slot": "Weapon_5",
-		"professions": []
+		"professions": [],
+		"weapon_type": "Staff"
 	},
 	{
 		"id": null,
@@ -4190,7 +4218,7 @@
 		"maximum": null,
 		"description": "Consume conditions to gain life force.",
 		"type": "Skill",
-		"_source": "skills::10685::Spectral Walk",
+		"_source": "skills:10685:Spectral Walk",
 		"skill": 10685,
 		"slot": "Utility",
 		"professions": ["Necromancer"]
@@ -4203,7 +4231,7 @@
 		"maximum": null,
 		"description": "Prowling.",
 		"type": "Skill",
-		"_source": "skills::12399::Prowl",
+		"_source": "skills:12399:Prowl",
 		"skill": 12399,
 		"slot": "Weapon_5",
 		"professions": []
@@ -4216,7 +4244,7 @@
 		"maximum": null,
 		"description": "You can't move.",
 		"type": "Skill",
-		"_source": "skills::12457::Take Root",
+		"_source": "skills:12457:Take Root",
 		"skill": 12457,
 		"slot": "Elite",
 		"professions": [
@@ -4238,7 +4266,7 @@
 		"maximum": null,
 		"description": "Increased ferocity.",
 		"type": "Skill",
-		"_source": "skills::12491::Signet of the Wild",
+		"_source": "skills:12491:Signet of the Wild",
 		"skill": 12491,
 		"slot": "Utility",
 		"professions": ["Ranger"]
@@ -4251,7 +4279,7 @@
 		"maximum": null,
 		"description": "Improved toughness.",
 		"type": "Skill",
-		"_source": "skills::12500::Signet of Stone",
+		"_source": "skills:12500:Signet of Stone",
 		"skill": 12500,
 		"slot": "Utility",
 		"professions": ["Ranger"],
@@ -4260,7 +4288,7 @@
 			{ "description": "Take no damage from incoming attacks." },
 			{
 				"description": "Take no damage from incoming attacks.",
-				"_source": "skills::42470::Lesser Signet of Stone",
+				"_source": "skills:42470:Lesser Signet of Stone",
 				"skill": 42470
 			}
 		]
@@ -4273,7 +4301,7 @@
 		"maximum": null,
 		"description": "Regenerate health.",
 		"type": "Skill",
-		"_source": "skills::12502::Signet of Renewal",
+		"_source": "skills:12502:Signet of Renewal",
 		"skill": 12502,
 		"slot": "Utility",
 		"professions": ["Ranger"]
@@ -4286,7 +4314,7 @@
 		"maximum": null,
 		"description": "Grants might to your pet when you attack.",
 		"type": "Skill",
-		"_source": "skills::12516::\"Strength of the Pack!\"",
+		"_source": "skills:12516:\"Strength of the Pack!\"",
 		"skill": 12516,
 		"slot": "Elite",
 		"professions": ["Ranger"]
@@ -4299,10 +4327,11 @@
 		"maximum": null,
 		"description": "Counterattack with a powerful kick.",
 		"type": "Skill",
-		"_source": "skills::12522::Counterattack",
+		"_source": "skills:12522:Counterattack",
 		"skill": 12522,
 		"slot": "Weapon_4",
-		"professions": ["Ranger"]
+		"professions": ["Ranger"],
+		"weapon_type": "Greatsword"
 	},
 	{
 		"id": null,
@@ -4312,7 +4341,7 @@
 		"maximum": null,
 		"description": "Attacks inflict bleeding.",
 		"type": "Skill",
-		"_source": "skills::12537::Sharpening Stone",
+		"_source": "skills:12537:Sharpening Stone",
 		"skill": 12537,
 		"slot": "Utility",
 		"professions": ["Ranger"]
@@ -4325,7 +4354,7 @@
 		"maximum": null,
 		"description": "25% increased movement speed.",
 		"type": "Skill",
-		"_source": "skills::12542::Signet of the Hunt",
+		"_source": "skills:12542:Signet of the Hunt",
 		"skill": 12542,
 		"slot": "Utility",
 		"professions": ["Ranger"]
@@ -4338,7 +4367,7 @@
 		"maximum": null,
 		"description": "Focus on a target for increased damage.",
 		"type": "Skill",
-		"_source": "skills::12633::\"Sic 'Em!\"",
+		"_source": "skills:12633:\"Sic 'Em!\"",
 		"skill": 12633,
 		"slot": "Utility",
 		"professions": ["Ranger"]
@@ -4351,7 +4380,7 @@
 		"maximum": null,
 		"description": "Your next three attacks inflict bleeding.",
 		"type": "Skill",
-		"_source": "skills::12757::Feeding Frenzy",
+		"_source": "skills:12757:Feeding Frenzy",
 		"skill": 12757,
 		"slot": "Pet",
 		"professions": []
@@ -4364,10 +4393,11 @@
 		"maximum": null,
 		"description": "Now has access to the Repeater skill. Repeater costs less initiative.",
 		"type": "Skill",
-		"_source": "skills::13010::Shadow Strike",
+		"_source": "skills:13010:Shadow Strike",
 		"skill": 13010,
 		"slot": "Weapon_3",
-		"professions": ["Thief"]
+		"professions": ["Thief"],
+		"weapon_type": "Pistol"
 	},
 	{
 		"id": null,
@@ -4377,7 +4407,7 @@
 		"maximum": null,
 		"description": "Increased power.",
 		"type": "Skill",
-		"_source": "skills::13046::Assassin's Signet",
+		"_source": "skills:13046:Assassin's Signet",
 		"skill": 13046,
 		"slot": "Utility",
 		"professions": ["Thief"],
@@ -4391,7 +4421,7 @@
 		"maximum": null,
 		"description": "Your attacks inflict vulnerability and torment.",
 		"type": "Skill",
-		"_source": "skills::13055::Skale Venom",
+		"_source": "skills:13055:Skale Venom",
 		"skill": 13055,
 		"slot": "Utility",
 		"professions": ["Thief"]
@@ -4404,7 +4434,7 @@
 		"maximum": null,
 		"description": "Increased precision.",
 		"type": "Skill",
-		"_source": "skills::13062::Signet of Agility",
+		"_source": "skills:13062:Signet of Agility",
 		"skill": 13062,
 		"slot": "Utility",
 		"professions": ["Thief"]
@@ -4417,10 +4447,11 @@
 		"maximum": null,
 		"description": "Now has access to the Hooked Spear ability.",
 		"type": "Skill",
-		"_source": "skills::13070::Tow Line",
+		"_source": "skills:13070:Tow Line",
 		"skill": 13070,
 		"slot": "Weapon_4",
-		"professions": ["Thief"]
+		"professions": ["Thief"],
+		"weapon_type": "Spear"
 	},
 	{
 		"id": null,
@@ -4430,7 +4461,7 @@
 		"maximum": null,
 		"description": "Your attacks immobilize foes.",
 		"type": "Skill",
-		"_source": "skills::13093::Devourer Venom",
+		"_source": "skills:13093:Devourer Venom",
 		"skill": 13093,
 		"slot": "Utility",
 		"professions": ["Thief"]
@@ -4443,7 +4474,7 @@
 		"maximum": null,
 		"description": "Your attacks chill foes.",
 		"type": "Skill",
-		"_source": "skills::13096::Ice Drake Venom",
+		"_source": "skills:13096:Ice Drake Venom",
 		"skill": 13096,
 		"slot": "Utility",
 		"professions": ["Thief"]
@@ -4456,7 +4487,7 @@
 		"maximum": null,
 		"description": "Your attacks turn foes to stone.",
 		"type": "Skill",
-		"_source": "skills::13132::Basilisk Venom",
+		"_source": "skills:13132:Basilisk Venom",
 		"skill": 13132,
 		"slot": "Elite",
 		"professions": ["Thief"]
@@ -4469,7 +4500,7 @@
 		"maximum": null,
 		"description": "Gain adrenaline.",
 		"type": "Skill",
-		"_source": "skills::14355::Signet of Rage",
+		"_source": "skills:14355:Signet of Rage",
 		"skill": 14355,
 		"slot": "Elite",
 		"professions": ["Warrior"],
@@ -4483,7 +4514,7 @@
 		"maximum": null,
 		"description": "You regenerate health.",
 		"type": "Skill",
-		"_source": "skills::14389::Healing Signet",
+		"_source": "skills:14389:Healing Signet",
 		"skill": 14389,
 		"slot": "Heal",
 		"professions": ["Warrior"]
@@ -4496,16 +4527,16 @@
 		"maximum": null,
 		"description": "You take no damage from incoming attacks. You are still susceptible to conditions and control effects.",
 		"type": "Skill",
-		"_source": "skills::14392::Endure Pain",
+		"_source": "skills:14392:Endure Pain",
 		"skill": 14392,
 		"slot": "Utility",
 		"professions": ["Warrior"],
 		"_variants": [
 			{},
-			{ "_source": "skills::21813::Lesser Endure Pain", "skill": 21813 },
-			{ "_source": "skills::21813::Lesser Endure Pain", "skill": 21813 },
-			{ "_source": "skills::21813::Lesser Endure Pain", "skill": 21813 },
-			{ "_source": "skills::21813::Lesser Endure Pain", "skill": 21813 }
+			{ "_source": "skills:21813:Lesser Endure Pain", "skill": 21813 },
+			{ "_source": "skills:21813:Lesser Endure Pain", "skill": 21813 },
+			{ "_source": "skills:21813:Lesser Endure Pain", "skill": 21813 },
+			{ "_source": "skills:21813:Lesser Endure Pain", "skill": 21813 }
 		]
 	},
 	{
@@ -4516,7 +4547,7 @@
 		"maximum": null,
 		"description": "Improved power.",
 		"type": "Skill",
-		"_source": "skills::14404::Signet of Might",
+		"_source": "skills:14404:Signet of Might",
 		"skill": 14404,
 		"slot": "Utility",
 		"professions": ["Warrior"]
@@ -4529,7 +4560,7 @@
 		"maximum": null,
 		"description": "Gain adrenaline every second.",
 		"type": "Skill",
-		"_source": "skills::14406::Berserker Stance",
+		"_source": "skills:14406:Berserker Stance",
 		"skill": 14406,
 		"slot": "Utility",
 		"professions": ["Warrior"],
@@ -4543,7 +4574,7 @@
 		"maximum": null,
 		"description": "Improved precision.",
 		"type": "Skill",
-		"_source": "skills::14410::Signet of Fury",
+		"_source": "skills:14410:Signet of Fury",
 		"skill": 14410,
 		"slot": "Utility",
 		"professions": ["Warrior"],
@@ -4557,7 +4588,7 @@
 		"maximum": null,
 		"description": "Periodically gain stability. Immune to critical hits.",
 		"type": "Skill",
-		"_source": "skills::14412::Balanced Stance",
+		"_source": "skills:14412:Balanced Stance",
 		"skill": 14412,
 		"slot": "Utility",
 		"professions": ["Warrior"],
@@ -4571,7 +4602,7 @@
 		"maximum": null,
 		"description": "Reduced incoming damage.",
 		"type": "Skill",
-		"_source": "skills::14413::Dolyak Signet",
+		"_source": "skills:14413:Dolyak Signet",
 		"skill": 14413,
 		"slot": "Utility",
 		"professions": ["Warrior"]
@@ -4584,7 +4615,7 @@
 		"maximum": null,
 		"description": "50% faster endurance regeneration.",
 		"type": "Skill",
-		"_source": "skills::14479::Signet of Stamina",
+		"_source": "skills:14479:Signet of Stamina",
 		"skill": 14479,
 		"slot": "Utility",
 		"professions": ["Warrior"]
@@ -4597,7 +4628,7 @@
 		"maximum": null,
 		"description": "Transformed into a whirlpool.",
 		"type": "Skill",
-		"_source": "skills::20451::Elixir X",
+		"_source": "skills:20451:Elixir X",
 		"skill": 20451,
 		"slot": "Elite",
 		"professions": ["Engineer"],
@@ -4611,7 +4642,7 @@
 		"maximum": null,
 		"description": "Assumed the form of a moving plague.",
 		"type": "Skill",
-		"_source": "skills::20451::Elixir X",
+		"_source": "skills:20451:Elixir X",
 		"skill": 20451,
 		"slot": "Elite",
 		"professions": ["Engineer"],
@@ -4625,18 +4656,18 @@
 		"maximum": null,
 		"description": "Heals when the timer expires. If lethal damage is taken, the damage is negated, you are healed for a large amount, and conditions are removed.",
 		"type": "Skill",
-		"_source": "skills::21659::A.E.D.",
+		"_source": "skills:21659:A.E.D.",
 		"skill": 21659,
 		"slot": "Heal",
 		"professions": ["Engineer"],
 		"_variants": [
 			{
-				"_source": "skills::30881::A.E.D.",
+				"_source": "skills:30881:A.E.D.",
 				"skill": 30881,
 				"professions": ["Engineer"]
 			},
 			{
-				"_source": "skills::30881::A.E.D.",
+				"_source": "skills:30881:A.E.D.",
 				"skill": 30881,
 				"professions": ["Engineer"]
 			}
@@ -4650,12 +4681,12 @@
 		"maximum": null,
 		"description": "Gain health based on damage dealt to enemies.",
 		"type": "Skill",
-		"_source": "skills::21664::Litany of Wrath",
+		"_source": "skills:21664:Litany of Wrath",
 		"skill": 21664,
 		"slot": "Heal",
 		"professions": ["Guardian"],
 		"_variants": [
-			{ "_source": "skills::71798::Lesser Litany of Wrath", "skill": 71798 }
+			{ "_source": "skills:71798:Lesser Litany of Wrath", "skill": 71798 }
 		]
 	},
 	{
@@ -4666,12 +4697,12 @@
 		"maximum": null,
 		"description": "Life is siphoned when struck by players.",
 		"type": "Skill",
-		"_source": "skills::21762::Signet of Vampirism",
+		"_source": "skills:21762:Signet of Vampirism",
 		"skill": 21762,
 		"slot": "Heal",
 		"professions": ["Necromancer"],
 		"_variants": [
-			{ "_source": "skills::29894::Lesser Signet of Vampirism", "skill": 29894 }
+			{ "_source": "skills:29894:Lesser Signet of Vampirism", "skill": 29894 }
 		]
 	},
 	{
@@ -4682,7 +4713,7 @@
 		"maximum": null,
 		"description": "Striking an enemy heals you.",
 		"type": "Skill",
-		"_source": "skills::21778::Skelk Venom",
+		"_source": "skills:21778:Skelk Venom",
 		"skill": 21778,
 		"slot": "Heal",
 		"professions": ["Thief"]
@@ -4695,7 +4726,7 @@
 		"maximum": null,
 		"description": "All incoming attacks heal you.",
 		"type": "Skill",
-		"_source": "skills::21815::Defiant Stance",
+		"_source": "skills:21815:Defiant Stance",
 		"skill": 21815,
 		"slot": "Heal",
 		"professions": ["Warrior"],
@@ -4709,19 +4740,20 @@
 		"maximum": null,
 		"description": "Unable to act.",
 		"type": "Skill",
-		"_source": "skills::25480::Shocking Bolt",
+		"_source": "skills:25480:Shocking Bolt",
 		"skill": 25480,
 		"slot": "Elite",
 		"professions": ["Elementalist"],
 		"_variants": [
 			{
-				"_source": "skills::30643::Tides of Time",
+				"_source": "skills:30643:Tides of Time",
 				"skill": 30643,
 				"slot": "Weapon_5",
 				"professions": ["Mesmer"],
-				"specialization": 40
+				"specialization": 40,
+				"weapon_type": "Shield"
 			},
-			{ "_source": "skills::50970::Bloody Feed", "skill": 50970 }
+			{ "_source": "skills:50970:Bloody Feed", "skill": 50970 }
 		]
 	},
 	{
@@ -4732,7 +4764,7 @@
 		"maximum": null,
 		"description": "You take reduced physical and condition damage.",
 		"type": "Skill",
-		"_source": "skills::26557::Vengeful Hammers",
+		"_source": "skills:26557:Vengeful Hammers",
 		"skill": 26557,
 		"slot": "Utility",
 		"professions": ["Revenant"]
@@ -4745,7 +4777,7 @@
 		"maximum": null,
 		"description": "Take less damage from taunted foes.",
 		"type": "Skill",
-		"_source": "skills::26679::Forced Engagement",
+		"_source": "skills:26679:Forced Engagement",
 		"skill": 26679,
 		"slot": "Utility",
 		"professions": ["Revenant"],
@@ -4759,7 +4791,7 @@
 		"maximum": null,
 		"description": "Your attacks gain a follow-up strike.",
 		"type": "Skill",
-		"_source": "skills::27107::Impossible Odds",
+		"_source": "skills:27107:Impossible Odds",
 		"skill": 27107,
 		"slot": "Utility",
 		"professions": ["Revenant"]
@@ -4772,7 +4804,7 @@
 		"maximum": null,
 		"description": "Inverts all incoming damage to healing.",
 		"type": "Skill",
-		"_source": "skills::27228::Infuse Light",
+		"_source": "skills:27228:Infuse Light",
 		"skill": 27228,
 		"slot": "Heal",
 		"professions": ["Revenant"],
@@ -4786,7 +4818,7 @@
 		"maximum": null,
 		"description": "Gain 50% damage reduction. You are still susceptible to conditions and control effects.",
 		"type": "Skill",
-		"_source": "skills::27975::Rite of the Great Dwarf",
+		"_source": "skills:27975:Rite of the Great Dwarf",
 		"skill": 27975,
 		"slot": "Elite",
 		"professions": ["Revenant"]
@@ -4799,7 +4831,7 @@
 		"maximum": null,
 		"description": "Inflict increased damage.",
 		"type": "Skill",
-		"_source": "skills::28113::Burst of Strength",
+		"_source": "skills:28113:Burst of Strength",
 		"skill": 28113,
 		"slot": "Utility",
 		"professions": ["Revenant"],
@@ -4813,10 +4845,11 @@
 		"maximum": null,
 		"description": "Pulse burning over time. End connective throw early to shadowstep to the target.",
 		"type": "Skill",
-		"_source": "skills::28692::Igniting Brand",
+		"_source": "skills:28692:Igniting Brand",
 		"skill": 28692,
 		"slot": "Weapon_4",
-		"professions": ["Revenant"]
+		"professions": ["Revenant"],
+		"weapon_type": "Spear"
 	},
 	{
 		"id": null,
@@ -4826,20 +4859,20 @@
 		"maximum": null,
 		"description": "Your next centaur skill is empowered.",
 		"type": "Skill",
-		"_source": "skills::29148::Project Tranquility",
+		"_source": "skills:29148:Project Tranquility",
 		"skill": 29148,
 		"slot": "Heal",
 		"professions": ["Revenant"],
 		"_variants": [
 			{
-				"_source": "skills::51713::True Nature",
+				"_source": "skills:51713:True Nature",
 				"skill": 51713,
 				"slot": "Profession_2",
 				"professions": ["Revenant"],
 				"specialization": 52
 			},
 			{
-				"_source": "skills::78501::Release Potential: Monk",
+				"_source": "skills:78501:Release Potential: Monk",
 				"skill": 78501,
 				"slot": "Profession_2",
 				"professions": ["Revenant"],
@@ -4855,7 +4888,7 @@
 		"maximum": null,
 		"description": "Transformed into a tuna fish.",
 		"type": "Skill",
-		"_source": "skills::29515::Toss Elixir X",
+		"_source": "skills:29515:Toss Elixir X",
 		"skill": 29515,
 		"slot": "Toolbelt",
 		"professions": ["Engineer"],
@@ -4868,14 +4901,14 @@
 			{
 				"icon": "https://render.guildwars2.com/file/2F16BCE7E9345968585D43CD2AC1593118370FDF/103727.png",
 				"description": "Transformed into a moa bird.",
-				"_source": "skills::30725::Toss Elixir X",
+				"_source": "skills:30725:Toss Elixir X",
 				"skill": 30725,
 				"professions": ["Engineer"]
 			},
 			{
 				"icon": "https://render.guildwars2.com/file/2F16BCE7E9345968585D43CD2AC1593118370FDF/103727.png",
 				"description": "Transformed into a moa bird.",
-				"_source": "skills::30725::Toss Elixir X",
+				"_source": "skills:30725:Toss Elixir X",
 				"skill": 30725,
 				"professions": ["Engineer"]
 			}
@@ -4889,33 +4922,33 @@
 		"maximum": null,
 		"description": "Your next utility skill will recharge faster.",
 		"type": "Skill",
-		"_source": "skills::29578::Mimic",
+		"_source": "skills:29578:Mimic",
 		"skill": 29578,
 		"slot": "Utility",
 		"professions": ["Mesmer"]
 	},
 	{
-		"id": 31487,
+		"id": null,
 		"name": "Static Charge",
 		"icon": "https://render.guildwars2.com/file/592CC2A120322000BC7234B8522BBE7BAF2F4A57/1029987.png",
 		"stacking": "Duration",
 		"maximum": null,
 		"description": "Your next attack delivers a lightning strike.",
 		"type": "Skill",
-		"_source": "skills::29719::Overload Air",
+		"_source": "skills:29719:Overload Air",
 		"skill": 29719,
 		"slot": "Profession_3",
 		"professions": ["Elementalist"]
 	},
 	{
-		"id": 30232,
+		"id": null,
 		"name": "Justice",
 		"icon": "https://render.guildwars2.com/file/77931F01AE91A00998BD286BA2930DCE1A354318/103677.png",
 		"stacking": "Duration",
 		"maximum": null,
 		"description": "Periodically applies burning as long as you are within range of the caster.",
 		"type": "Skill",
-		"_source": "skills::29887::Spear of Justice",
+		"_source": "skills:29887:Spear of Justice",
 		"skill": 29887,
 		"slot": "Profession_1",
 		"professions": ["Guardian"],
@@ -4925,7 +4958,7 @@
 			{
 				"icon": "https://render.guildwars2.com/file/2F3E006427F17D3EF747BF0F0B0E0A941964572F/2479367.png",
 				"description": "Consecutive attacks cause burning.",
-				"_source": "skills::62668::Rushing Justice",
+				"_source": "skills:62668:Rushing Justice",
 				"skill": 62668,
 				"professions": ["Guardian"],
 				"specialization": 65
@@ -4933,7 +4966,7 @@
 			{
 				"icon": "https://render.guildwars2.com/file/2F3E006427F17D3EF747BF0F0B0E0A941964572F/2479367.png",
 				"description": "Consecutive attacks cause burning.",
-				"_source": "skills::62668::Rushing Justice",
+				"_source": "skills:62668:Rushing Justice",
 				"skill": 62668,
 				"professions": ["Guardian"],
 				"specialization": 65
@@ -4948,7 +4981,7 @@
 		"maximum": null,
 		"description": "Ignore the next lethal blow and receive healing.",
 		"type": "Skill",
-		"_source": "skills::29968::\"Rebound!\"",
+		"_source": "skills:29968:\"Rebound!\"",
 		"skill": 29968,
 		"slot": "Elite",
 		"professions": ["Elementalist"],
@@ -4962,14 +4995,14 @@
 		"maximum": null,
 		"description": "Gain aegis at a set interval.",
 		"type": "Skill",
-		"_source": "skills::30029::Shield of Courage",
+		"_source": "skills:30029:Shield of Courage",
 		"skill": 30029,
 		"slot": "Profession_3",
 		"professions": ["Guardian"],
 		"specialization": 27,
 		"_variants": [
 			{
-				"_source": "skills::30039::Shield of Courage",
+				"_source": "skills:30039:Shield of Courage",
 				"skill": 30039,
 				"professions": ["Guardian"]
 			}
@@ -4983,7 +5016,7 @@
 		"maximum": null,
 		"description": "Block incoming attacks.",
 		"type": "Skill",
-		"_source": "skills::30074::Shattering Blow",
+		"_source": "skills:30074:Shattering Blow",
 		"skill": 30074,
 		"slot": "Utility",
 		"professions": ["Warrior"],
@@ -4997,7 +5030,7 @@
 		"maximum": null,
 		"description": "Your strike and condition damage is increased.",
 		"type": "Skill",
-		"_source": "skills::30568::Distracting Daggers",
+		"_source": "skills:30568:Distracting Daggers",
 		"skill": 30568,
 		"slot": "Utility",
 		"professions": ["Thief"],
@@ -5011,7 +5044,7 @@
 		"maximum": null,
 		"description": "Explosively damaging attack.",
 		"type": "Skill",
-		"_source": "skills::30693::Palm Strike",
+		"_source": "skills:30693:Palm Strike",
 		"skill": 30693,
 		"slot": "Utility",
 		"professions": ["Thief"],
@@ -5025,11 +5058,12 @@
 		"maximum": null,
 		"description": "You may block again.",
 		"type": "Skill",
-		"_source": "skills::30769::Echo of Memory",
+		"_source": "skills:30769:Echo of Memory",
 		"skill": 30769,
 		"slot": "Weapon_4",
 		"professions": ["Mesmer"],
-		"specialization": 40
+		"specialization": 40,
+		"weapon_type": "Shield"
 	},
 	{
 		"id": null,
@@ -5039,7 +5073,7 @@
 		"maximum": null,
 		"description": "You can use Palm Strike.",
 		"type": "Skill",
-		"_source": "skills::30868::Fist Flurry",
+		"_source": "skills:30868:Fist Flurry",
 		"skill": 30868,
 		"slot": "Utility",
 		"professions": ["Thief"],
@@ -5053,7 +5087,7 @@
 		"maximum": null,
 		"description": "Deal damage and inflict conditions based on your current attunements.",
 		"type": "Skill",
-		"_source": "skills::40183::Primordial Stance",
+		"_source": "skills:40183:Primordial Stance",
 		"skill": 40183,
 		"slot": "Utility",
 		"professions": ["Elementalist"],
@@ -5067,7 +5101,7 @@
 		"maximum": null,
 		"description": "Striking foes grants you might and inflicts poison.",
 		"type": "Skill",
-		"_source": "skills::40498::Vulture Stance",
+		"_source": "skills:40498:Vulture Stance",
 		"skill": 40498,
 		"slot": "Utility",
 		"professions": ["Ranger"],
@@ -5082,7 +5116,7 @@
 		"maximum": null,
 		"description": "Heal every second; stacks intensity.",
 		"type": "Skill",
-		"_source": "skills::40507::Coolant Blast",
+		"_source": "skills:40507:Coolant Blast",
 		"skill": 40507,
 		"slot": "Heal",
 		"professions": ["Engineer"],
@@ -5096,11 +5130,12 @@
 		"maximum": null,
 		"description": "Take reduced physical damage.",
 		"type": "Skill",
-		"_source": "skills::40963::Grinding Stones",
+		"_source": "skills:40963:Grinding Stones",
 		"skill": 40963,
 		"slot": "Weapon_3",
 		"professions": ["Elementalist"],
-		"specialization": 56
+		"specialization": 56,
+		"weapon_type": "Dagger"
 	},
 	{
 		"id": null,
@@ -5110,7 +5145,7 @@
 		"maximum": null,
 		"description": "",
 		"type": "Skill",
-		"_source": "skills::41218::Spectrum Shield",
+		"_source": "skills:41218:Spectrum Shield",
 		"skill": 41218,
 		"slot": "Utility",
 		"professions": ["Engineer"],
@@ -5125,24 +5160,24 @@
 		"maximum": null,
 		"description": "Regenerate health.",
 		"type": "Skill",
-		"_source": "skills::41780::Tome of Resolve",
+		"_source": "skills:41780:Tome of Resolve",
 		"skill": 41780,
 		"slot": "Profession_2",
 		"professions": ["Guardian"],
 		"specialization": 62,
 		"_variants": [
 			{
-				"_source": "skills::45023::Tome of Resolve",
+				"_source": "skills:45023:Tome of Resolve",
 				"skill": 45023,
 				"professions": ["Guardian"]
 			},
 			{
-				"_source": "skills::68648::Tome of Resolve",
+				"_source": "skills:68648:Tome of Resolve",
 				"skill": 68648,
 				"professions": ["Guardian"]
 			},
 			{
-				"_source": "skills::68649::Tome of Resolve",
+				"_source": "skills:68649:Tome of Resolve",
 				"skill": 68649,
 				"professions": ["Guardian"]
 			}
@@ -5156,11 +5191,11 @@
 		"maximum": null,
 		"description": "Periodically gain shield.",
 		"type": "Skill",
-		"_source": "skills::42913::Lesser Stone Resonance",
+		"_source": "skills:42913:Lesser Stone Resonance",
 		"skill": 42913,
 		"_variants": [
 			{
-				"_source": "skills::44926::Stone Resonance",
+				"_source": "skills:44926:Stone Resonance",
 				"skill": 44926,
 				"slot": "Utility",
 				"professions": ["Elementalist"],
@@ -5176,7 +5211,7 @@
 		"maximum": null,
 		"description": "",
 		"type": "Skill",
-		"_source": "skills::42938::Engage Photon Forge",
+		"_source": "skills:42938:Engage Photon Forge",
 		"skill": 42938,
 		"slot": "Profession_5",
 		"professions": ["Engineer"],
@@ -5190,7 +5225,7 @@
 		"maximum": null,
 		"description": "You receive no damage from incoming attacks. You remain susceptible to conditions and controlling effects.",
 		"type": "Skill",
-		"_source": "skills::43060::Defy Pain",
+		"_source": "skills:43060:Defy Pain",
 		"skill": 43060,
 		"slot": "Profession_2",
 		"professions": ["Ranger"],
@@ -5204,7 +5239,7 @@
 		"maximum": null,
 		"description": "Gather the elements to become the ultimate being.",
 		"type": "Skill",
-		"_source": "skills::43638::Weave Self",
+		"_source": "skills:43638:Weave Self",
 		"skill": 43638,
 		"slot": "Elite",
 		"professions": ["Elementalist"],
@@ -5218,7 +5253,7 @@
 		"maximum": null,
 		"description": "All elements are now tightly woven together.",
 		"type": "Skill",
-		"_source": "skills::43638::Weave Self",
+		"_source": "skills:43638:Weave Self",
 		"skill": 43638,
 		"slot": "Elite",
 		"professions": ["Elementalist"],
@@ -5232,7 +5267,7 @@
 		"maximum": null,
 		"description": "Your next attack is a critical hit.",
 		"type": "Skill",
-		"_source": "skills::43745::Sight beyond Sight",
+		"_source": "skills:43745:Sight beyond Sight",
 		"skill": 43745,
 		"slot": "Utility",
 		"professions": ["Warrior"],
@@ -5246,7 +5281,7 @@
 		"maximum": null,
 		"description": "Heal allies around enemies you strike.",
 		"type": "Skill",
-		"_source": "skills::44239::Aquatic Stance",
+		"_source": "skills:44239:Aquatic Stance",
 		"skill": 44239,
 		"slot": "Heal",
 		"professions": ["Elementalist"],
@@ -5260,7 +5295,7 @@
 		"maximum": null,
 		"description": "Fully attune to elements and temporarily lose dual attacks.",
 		"type": "Skill",
-		"_source": "skills::44612::Unravel",
+		"_source": "skills:44612:Unravel",
 		"skill": 44612,
 		"slot": "Utility",
 		"professions": ["Elementalist"],
@@ -5274,7 +5309,7 @@
 		"maximum": null,
 		"description": "Conditions are consumed for healing every second.",
 		"type": "Skill",
-		"_source": "skills::44948::Bear Stance",
+		"_source": "skills:44948:Bear Stance",
 		"skill": 44948,
 		"slot": "Heal",
 		"professions": ["Ranger"],
@@ -5289,7 +5324,7 @@
 		"maximum": null,
 		"description": "Greatly increase your endurance recovery rate. Gain might when evading attacks.",
 		"type": "Skill",
-		"_source": "skills::45142::Griffon Stance",
+		"_source": "skills:45142:Griffon Stance",
 		"skill": 45142,
 		"slot": "Utility",
 		"professions": ["Ranger"],
@@ -5304,7 +5339,7 @@
 		"maximum": null,
 		"description": "Incoming boon duration is reduced.",
 		"type": "Skill",
-		"_source": "skills::45333::Winds of Disenchantment",
+		"_source": "skills:45333:Winds of Disenchantment",
 		"skill": 45333,
 		"slot": "Elite",
 		"professions": ["Warrior"],
@@ -5318,7 +5353,7 @@
 		"maximum": null,
 		"description": "Attacks inflict bleeding.",
 		"type": "Skill",
-		"_source": "skills::45479::Sharpen Spines",
+		"_source": "skills:45479:Sharpen Spines",
 		"skill": 45479,
 		"slot": "Profession_2",
 		"professions": ["Ranger"],
@@ -5332,7 +5367,7 @@
 		"maximum": null,
 		"description": "Striking a foe will cause them to be attacked again after a short delay.",
 		"type": "Skill",
-		"_source": "skills::45717::One Wolf Pack",
+		"_source": "skills:45717:One Wolf Pack",
 		"skill": 45717,
 		"slot": "Elite",
 		"professions": ["Ranger"],
@@ -5347,7 +5382,7 @@
 		"maximum": null,
 		"description": "Your outgoing strikes deal additional damage and restore your health.",
 		"type": "Skill",
-		"_source": "skills::45773::Soulcleave's Summit",
+		"_source": "skills:45773:Soulcleave's Summit",
 		"skill": 45773,
 		"slot": "Elite",
 		"professions": ["Revenant"],
@@ -5361,7 +5396,7 @@
 		"maximum": null,
 		"description": "Reduce incoming damage while preventing movement-impeding conditions from being inflicted on you.",
 		"type": "Skill",
-		"_source": "skills::45789::Dolyak Stance",
+		"_source": "skills:45789:Dolyak Stance",
 		"skill": 45789,
 		"slot": "Utility",
 		"professions": ["Ranger"],
@@ -5376,7 +5411,7 @@
 		"maximum": null,
 		"description": "Take no damage from incoming attacks.",
 		"type": "Skill",
-		"_source": "skills::45797::Unflinching Fortitude",
+		"_source": "skills:45797:Unflinching Fortitude",
 		"skill": 45797,
 		"slot": "Profession_3",
 		"professions": ["Ranger"],
@@ -5390,7 +5425,7 @@
 		"maximum": null,
 		"description": "Increase the duration of boons you grant.",
 		"type": "Skill",
-		"_source": "skills::45970::Moa Stance",
+		"_source": "skills:45970:Moa Stance",
 		"skill": 45970,
 		"slot": "Utility",
 		"professions": ["Ranger"],
@@ -5405,11 +5440,12 @@
 		"maximum": null,
 		"description": "Gain barrier over time, and pulse damage in the area.",
 		"type": "Skill",
-		"_source": "skills::46447::Lava Skin",
+		"_source": "skills:46447:Lava Skin",
 		"skill": 46447,
 		"slot": "Weapon_3",
 		"professions": ["Elementalist"],
-		"specialization": 56
+		"specialization": 56,
+		"weapon_type": "Sword"
 	},
 	{
 		"id": null,
@@ -5419,7 +5455,7 @@
 		"maximum": null,
 		"description": "Involuntary retreat; unable to act; stacks duration.",
 		"type": "Skill",
-		"_source": "skills::48662::Howling Death",
+		"_source": "skills:48662:Howling Death",
 		"skill": 48662
 	},
 	{
@@ -5430,14 +5466,14 @@
 		"maximum": null,
 		"description": "Deals damage every second; stacks intensity; reduces incoming healing and barrier application by 70% per stack; damage is reduced by agony resistance.",
 		"type": "Skill",
-		"_source": "skills::50858::Life Reap",
+		"_source": "skills:50858:Life Reap",
 		"skill": 50858,
 		"_variants": [
-			{ "_source": "skills::50999::Storm Blast", "skill": 50999 },
-			{ "_source": "skills::51039::Disintegration Blast", "skill": 51039 },
-			{ "_source": "skills::51120::Agonizing Rune", "skill": 51120 },
-			{ "_source": "skills::51349::Shadow Blast", "skill": 51349 },
-			{ "_source": "skills::54050::Grim Lagoon", "skill": 54050 }
+			{ "_source": "skills:50999:Storm Blast", "skill": 50999 },
+			{ "_source": "skills:51039:Disintegration Blast", "skill": 51039 },
+			{ "_source": "skills:51120:Agonizing Rune", "skill": 51120 },
+			{ "_source": "skills:51349:Shadow Blast", "skill": 51349 },
+			{ "_source": "skills:54050:Grim Lagoon", "skill": 54050 }
 		]
 	},
 	{
@@ -5448,9 +5484,9 @@
 		"maximum": null,
 		"description": "Transfers health to source every second. Stacks intensity.",
 		"type": "Skill",
-		"_source": "skills::51105::Bloody Leap",
+		"_source": "skills:51105:Bloody Leap",
 		"skill": 51105,
-		"_variants": [{ "_source": "skills::51169::Bloody Slice", "skill": 51169 }]
+		"_variants": [{ "_source": "skills:51169:Bloody Slice", "skill": 51169 }]
 	},
 	{
 		"id": null,
@@ -5460,12 +5496,12 @@
 		"maximum": null,
 		"description": "As you become more waterlogged, you become more susceptible to the largos' water magic. If you become fully waterlogged at maximum stacks, you will be assassinated.",
 		"type": "Skill",
-		"_source": "skills::51825::Tidal Surge",
+		"_source": "skills:51825:Tidal Surge",
 		"skill": 51825,
 		"_variants": [
-			{ "_source": "skills::52116::Largos' Domain", "skill": 52116 },
-			{ "_source": "skills::52130::Aquatic Vortex", "skill": 52130 },
-			{ "_source": "skills::52812::Tidal Pool", "skill": 52812 }
+			{ "_source": "skills:52116:Largos' Domain", "skill": 52116 },
+			{ "_source": "skills:52130:Aquatic Vortex", "skill": 52130 },
+			{ "_source": "skills:52812:Tidal Pool", "skill": 52812 }
 		]
 	},
 	{
@@ -5476,9 +5512,9 @@
 		"maximum": null,
 		"description": "Increases incoming damage by 50% per stack.",
 		"type": "Skill",
-		"_source": "skills::52370::Conjured Slash",
+		"_source": "skills:52370:Conjured Slash",
 		"skill": 52370,
-		"_variants": [{ "_source": "skills::52933::Sword Spin", "skill": 52933 }]
+		"_variants": [{ "_source": "skills:52933:Sword Spin", "skill": 52933 }]
 	},
 	{
 		"id": null,
@@ -5488,7 +5524,7 @@
 		"maximum": null,
 		"description": "Immune to damage. Reflects incoming strikes.",
 		"type": "Skill",
-		"_source": "skills::52370::Conjured Slash",
+		"_source": "skills:52370:Conjured Slash",
 		"skill": 52370
 	},
 	{
@@ -5499,7 +5535,7 @@
 		"maximum": null,
 		"description": "",
 		"type": "Skill",
-		"_source": "skills::55024::Glyph of the Stars",
+		"_source": "skills:55024:Glyph of the Stars",
 		"skill": 55024,
 		"slot": "Elite",
 		"professions": ["Ranger"],
@@ -5513,11 +5549,11 @@
 		"maximum": null,
 		"description": "All outgoing attacks are rendered useless.",
 		"type": "Skill",
-		"_source": "skills::56042::Sand Geyser",
+		"_source": "skills:56042:Sand Geyser",
 		"skill": 56042,
 		"_variants": [
-			{ "_source": "skills::56114::Diamond Palisade", "skill": 56114 },
-			{ "_source": "skills::56648::Boulder Barrage", "skill": 56648 }
+			{ "_source": "skills:56114:Diamond Palisade", "skill": 56114 },
+			{ "_source": "skills:56648:Boulder Barrage", "skill": 56648 }
 		]
 	},
 	{
@@ -5528,7 +5564,7 @@
 		"maximum": null,
 		"description": "Grants boons and applies Erratic Energy to the attacked target.",
 		"type": "Skill",
-		"_source": "skills::56237::Cleansed Conductor",
+		"_source": "skills:56237:Cleansed Conductor",
 		"skill": 56237
 	},
 	{
@@ -5539,15 +5575,15 @@
 		"maximum": null,
 		"description": "Electrical currents surge through you, increasing incoming and outgoing damage. Stacks 5 times.\nOutgoing Damage +5%\nIncoming Damage +5%",
 		"type": "Skill",
-		"_source": "skills::56273::Tempest's Spike",
+		"_source": "skills:56273:Tempest's Spike",
 		"skill": 56273,
 		"_variants": [
-			{ "_source": "skills::56307::Storm's Edge", "skill": 56307 },
-			{ "_source": "skills::56340::Venomous Voltage", "skill": 56340 },
-			{ "_source": "skills::56391::Electrical Repulsion", "skill": 56391 },
-			{ "_source": "skills::56523::Bolt Break", "skill": 56523 },
-			{ "_source": "skills::56620::Storm's Edge", "skill": 56620 },
-			{ "_source": "skills::56629::Chain Lightning", "skill": 56629 }
+			{ "_source": "skills:56307:Storm's Edge", "skill": 56307 },
+			{ "_source": "skills:56340:Venomous Voltage", "skill": 56340 },
+			{ "_source": "skills:56391:Electrical Repulsion", "skill": 56391 },
+			{ "_source": "skills:56523:Bolt Break", "skill": 56523 },
+			{ "_source": "skills:56620:Storm's Edge", "skill": 56620 },
+			{ "_source": "skills:56629:Chain Lightning", "skill": 56629 }
 		]
 	},
 	{
@@ -5558,7 +5594,7 @@
 		"maximum": null,
 		"description": "Incoming Caustic Chaos damage is massively increased.",
 		"type": "Skill",
-		"_source": "skills::56332::Caustic Chaos",
+		"_source": "skills:56332:Caustic Chaos",
 		"skill": 56332
 	},
 	{
@@ -5569,7 +5605,7 @@
 		"maximum": null,
 		"description": "Shower of Chaos deals residual damage over time.",
 		"type": "Skill",
-		"_source": "skills::56598::Shower of Chaos",
+		"_source": "skills:56598:Shower of Chaos",
 		"skill": 56598
 	},
 	{
@@ -5580,7 +5616,7 @@
 		"maximum": null,
 		"description": "Applies conditions and reduces outgoing damage by 10%.",
 		"type": "Skill",
-		"_source": "skills::56655::Poisoned Power",
+		"_source": "skills:56655:Poisoned Power",
 		"skill": 56655
 	},
 	{
@@ -5591,24 +5627,24 @@
 		"maximum": null,
 		"description": "Consecutive attacks grant boons.",
 		"type": "Skill",
-		"_source": "skills::62532::Crashing Courage",
+		"_source": "skills:62532:Crashing Courage",
 		"skill": 62532,
 		"slot": "Profession_3",
 		"professions": ["Guardian"],
 		"specialization": 65,
 		"_variants": [
 			{
-				"_source": "skills::62555::Crashing Courage",
+				"_source": "skills:62555:Crashing Courage",
 				"skill": 62555,
 				"professions": ["Guardian"]
 			},
 			{
-				"_source": "skills::62596::Crashing Courage",
+				"_source": "skills:62596:Crashing Courage",
 				"skill": 62596,
 				"professions": ["Guardian"]
 			},
 			{
-				"_source": "skills::62648::Crashing Courage",
+				"_source": "skills:62648:Crashing Courage",
 				"skill": 62648,
 				"professions": ["Guardian"]
 			}
@@ -5622,7 +5658,7 @@
 		"maximum": null,
 		"description": "Consecutive attacks grant regenerative effects.",
 		"type": "Skill",
-		"_source": "skills::62603::Flowing Resolve",
+		"_source": "skills:62603:Flowing Resolve",
 		"skill": 62603,
 		"slot": "Profession_2",
 		"professions": ["Guardian"],
@@ -5631,7 +5667,7 @@
 			{ "description": "" },
 			{},
 			{
-				"_source": "skills::62635::Flowing Resolve",
+				"_source": "skills:62635:Flowing Resolve",
 				"skill": 62635,
 				"professions": ["Guardian"]
 			}
@@ -5645,7 +5681,7 @@
 		"maximum": null,
 		"description": "",
 		"type": "Skill",
-		"_source": "skills::62608::Flash Combo",
+		"_source": "skills:62608:Flash Combo",
 		"skill": 62608,
 		"slot": "Utility",
 		"professions": ["Guardian"],
@@ -5659,7 +5695,7 @@
 		"maximum": null,
 		"description": "",
 		"type": "Skill",
-		"_source": "skills::62622::Reversal of Fortune",
+		"_source": "skills:62622:Reversal of Fortune",
 		"skill": 62622,
 		"slot": "Heal",
 		"professions": ["Guardian"],
@@ -5673,7 +5709,7 @@
 		"maximum": null,
 		"description": "Heal nearby allies, gain increased movement speed, and receive reduced incoming damage. You take damage every second and cannot be healed.",
 		"type": "Skill",
-		"_source": "skills::62687::Urn of Saint Viktor",
+		"_source": "skills:62687:Urn of Saint Viktor",
 		"skill": 62687,
 		"slot": "Elite",
 		"professions": ["Revenant"],
@@ -5687,26 +5723,27 @@
 		"maximum": null,
 		"description": "Increased outgoing damage.",
 		"type": "Skill",
-		"_source": "skills::62758::Flame Wheel",
+		"_source": "skills:62758:Flame Wheel",
 		"skill": 62758,
 		"slot": "Weapon_3",
 		"professions": ["Elementalist"],
 		"specialization": 67,
+		"weapon_type": "Hammer",
 		"_variants": [
 			{
-				"_source": "skills::69164::Dual Orbits: Fire and Earth",
+				"_source": "skills:69164:Dual Orbits: Fire and Earth",
 				"skill": 69164,
 				"professions": ["Elementalist"],
 				"specialization": 56
 			},
 			{
-				"_source": "skills::69184::Dual Orbits: Fire and Water",
+				"_source": "skills:69184:Dual Orbits: Fire and Water",
 				"skill": 69184,
 				"professions": ["Elementalist"],
 				"specialization": 56
 			},
 			{
-				"_source": "skills::69341::Dual Orbits: Fire and Air",
+				"_source": "skills:69341:Dual Orbits: Fire and Air",
 				"skill": 69341,
 				"professions": ["Elementalist"],
 				"specialization": 56
@@ -5721,26 +5758,27 @@
 		"maximum": null,
 		"description": "Reduced incoming condition damage.",
 		"type": "Skill",
-		"_source": "skills::62834::Icy Coil",
+		"_source": "skills:62834:Icy Coil",
 		"skill": 62834,
 		"slot": "Weapon_3",
 		"professions": ["Elementalist"],
 		"specialization": 67,
+		"weapon_type": "Hammer",
 		"_variants": [
 			{
-				"_source": "skills::69184::Dual Orbits: Fire and Water",
+				"_source": "skills:69184:Dual Orbits: Fire and Water",
 				"skill": 69184,
 				"professions": ["Elementalist"],
 				"specialization": 56
 			},
 			{
-				"_source": "skills::69211::Dual Orbits: Water and Air",
+				"_source": "skills:69211:Dual Orbits: Water and Air",
 				"skill": 69211,
 				"professions": ["Elementalist"],
 				"specialization": 56
 			},
 			{
-				"_source": "skills::69413::Dual Orbits: Water and Earth",
+				"_source": "skills:69413:Dual Orbits: Water and Earth",
 				"skill": 69413,
 				"professions": ["Elementalist"],
 				"specialization": 56
@@ -5755,26 +5793,27 @@
 		"maximum": null,
 		"description": "Increased critical chance.",
 		"type": "Skill",
-		"_source": "skills::62887::Crescent Wind",
+		"_source": "skills:62887:Crescent Wind",
 		"skill": 62887,
 		"slot": "Weapon_3",
 		"professions": ["Elementalist"],
 		"specialization": 67,
+		"weapon_type": "Hammer",
 		"_variants": [
 			{
-				"_source": "skills::69211::Dual Orbits: Water and Air",
+				"_source": "skills:69211:Dual Orbits: Water and Air",
 				"skill": 69211,
 				"professions": ["Elementalist"],
 				"specialization": 56
 			},
 			{
-				"_source": "skills::69246::Dual Orbits: Air and Earth",
+				"_source": "skills:69246:Dual Orbits: Air and Earth",
 				"skill": 69246,
 				"professions": ["Elementalist"],
 				"specialization": 56
 			},
 			{
-				"_source": "skills::69341::Dual Orbits: Fire and Air",
+				"_source": "skills:69341:Dual Orbits: Fire and Air",
 				"skill": 69341,
 				"professions": ["Elementalist"],
 				"specialization": 56
@@ -5789,7 +5828,7 @@
 		"maximum": null,
 		"description": "Your next Dragon Trigger charges more quickly.",
 		"type": "Skill",
-		"_source": "skills::62901::Tactical Reload",
+		"_source": "skills:62901:Tactical Reload",
 		"skill": 62901,
 		"slot": "Elite",
 		"professions": ["Warrior"],
@@ -5803,11 +5842,12 @@
 		"maximum": 5,
 		"description": "The damage of True Strike is increased.",
 		"type": "Skill",
-		"_source": "skills::62921::Imperial Guard",
+		"_source": "skills:62921:Imperial Guard",
 		"skill": 62921,
 		"slot": "Weapon_4",
 		"professions": ["Revenant"],
-		"specialization": 69
+		"specialization": 69,
+		"weapon_type": "Greatsword"
 	},
 	{
 		"id": null,
@@ -5817,26 +5857,27 @@
 		"maximum": null,
 		"description": "Reduced incoming strike damage.",
 		"type": "Skill",
-		"_source": "skills::62975::Rocky Loop",
+		"_source": "skills:62975:Rocky Loop",
 		"skill": 62975,
 		"slot": "Weapon_3",
 		"professions": ["Elementalist"],
 		"specialization": 67,
+		"weapon_type": "Hammer",
 		"_variants": [
 			{
-				"_source": "skills::69164::Dual Orbits: Fire and Earth",
+				"_source": "skills:69164:Dual Orbits: Fire and Earth",
 				"skill": 69164,
 				"professions": ["Elementalist"],
 				"specialization": 56
 			},
 			{
-				"_source": "skills::69246::Dual Orbits: Air and Earth",
+				"_source": "skills:69246:Dual Orbits: Air and Earth",
 				"skill": 69246,
 				"professions": ["Elementalist"],
 				"specialization": 56
 			},
 			{
-				"_source": "skills::69413::Dual Orbits: Water and Earth",
+				"_source": "skills:69413:Dual Orbits: Water and Earth",
 				"skill": 69413,
 				"professions": ["Elementalist"],
 				"specialization": 56
@@ -5851,7 +5892,7 @@
 		"maximum": null,
 		"description": "When Stim State expires, you are healed.",
 		"type": "Skill",
-		"_source": "skills::62978::Combat Stimulant",
+		"_source": "skills:62978:Combat Stimulant",
 		"skill": 62978,
 		"slot": "Heal",
 		"professions": ["Warrior"],
@@ -5865,7 +5906,7 @@
 		"maximum": null,
 		"description": "Increases condition damage dealt.",
 		"type": "Skill",
-		"_source": "skills::63113::Superconducting Signet",
+		"_source": "skills:63113:Superconducting Signet",
 		"skill": 63113,
 		"slot": "Utility",
 		"professions": ["Engineer"],
@@ -5879,7 +5920,7 @@
 		"maximum": null,
 		"description": "Reduce incoming damage by 50%. Striking an enemy reduces the recharge of Forest's Fortification.",
 		"type": "Skill",
-		"_source": "skills::63163::Forest's Fortification",
+		"_source": "skills:63163:Forest's Fortification",
 		"skill": 63163,
 		"slot": "Elite",
 		"professions": ["Ranger"],
@@ -5893,7 +5934,7 @@
 		"maximum": null,
 		"description": "Increases strike damage dealt.",
 		"type": "Skill",
-		"_source": "skills::63253::Force Signet",
+		"_source": "skills:63253:Force Signet",
 		"skill": 63253,
 		"slot": "Utility",
 		"professions": ["Engineer"],
@@ -5907,7 +5948,7 @@
 		"maximum": null,
 		"description": "Damage taken is reduced.",
 		"type": "Skill",
-		"_source": "skills::63262::Barrier Signet",
+		"_source": "skills:63262:Barrier Signet",
 		"skill": 63262,
 		"slot": "Utility",
 		"professions": ["Engineer"],
@@ -5922,7 +5963,7 @@
 		"maximum": null,
 		"description": "You take no damage from incoming attacks or conditions.",
 		"type": "Skill",
-		"_source": "skills::63319::Perilous Gift",
+		"_source": "skills:63319:Perilous Gift",
 		"skill": 63319,
 		"slot": "Heal",
 		"professions": ["Ranger"],
@@ -5936,7 +5977,7 @@
 		"maximum": null,
 		"description": "Your explosions do more damage.",
 		"type": "Skill",
-		"_source": "skills::68085::Overcharged Cartridges",
+		"_source": "skills:68085:Overcharged Cartridges",
 		"skill": 68085,
 		"slot": "Utility",
 		"professions": ["Warrior"],
@@ -5950,7 +5991,7 @@
 		"maximum": null,
 		"description": "Your explosions do extreme damage.",
 		"type": "Skill",
-		"_source": "skills::68085::Overcharged Cartridges",
+		"_source": "skills:68085:Overcharged Cartridges",
 		"skill": 68085,
 		"slot": "Utility",
 		"professions": ["Warrior"],
@@ -5964,11 +6005,12 @@
 		"maximum": null,
 		"description": "You can use Death's Advance.",
 		"type": "Skill",
-		"_source": "skills::68600::Sniper's Cover",
+		"_source": "skills:68600:Sniper's Cover",
 		"skill": 68600,
 		"slot": "Weapon_4",
 		"professions": ["Thief"],
-		"specialization": 58
+		"specialization": 58,
+		"weapon_type": "Rifle"
 	},
 	{
 		"id": null,
@@ -5978,37 +6020,38 @@
 		"maximum": null,
 		"description": "Imbued with vital energy. At 5 stacks you become a Force of Nature, growing enlarged, gaining stability, increasing your outgoing damage and healing, and recharging your mace skills.",
 		"type": "Skill",
-		"_source": "skills::71841::Wild Strikes",
+		"_source": "skills:71841:Wild Strikes",
 		"skill": 71841,
 		"slot": "Weapon_5",
 		"professions": ["Ranger"],
+		"weapon_type": "Mace",
 		"_variants": [
 			{
-				"_source": "skills::71885::Cultivate",
+				"_source": "skills:71885:Cultivate",
 				"skill": 71885,
 				"slot": "Weapon_1",
 				"professions": ["Ranger"]
 			},
 			{
-				"_source": "skills::71903::Thistleguard",
+				"_source": "skills:71903:Thistleguard",
 				"skill": 71903,
 				"slot": "Weapon_4",
 				"professions": ["Ranger"]
 			},
 			{
-				"_source": "skills::71963::Oaken Cudgel",
+				"_source": "skills:71963:Oaken Cudgel",
 				"skill": 71963,
 				"slot": "Weapon_3",
 				"professions": ["Ranger"]
 			},
 			{
-				"_source": "skills::71999::Flourish",
+				"_source": "skills:71999:Flourish",
 				"skill": 71999,
 				"slot": "Weapon_2",
 				"professions": ["Ranger"]
 			},
 			{
-				"_source": "skills::72079::Rampant Growth",
+				"_source": "skills:72079:Rampant Growth",
 				"skill": 72079,
 				"slot": "Weapon_1",
 				"professions": ["Ranger"],
@@ -6024,25 +6067,26 @@
 		"maximum": null,
 		"description": "Increased outgoing damage and healing.",
 		"type": "Skill",
-		"_source": "skills::71841::Wild Strikes",
+		"_source": "skills:71841:Wild Strikes",
 		"skill": 71841,
 		"slot": "Weapon_5",
 		"professions": ["Ranger"],
+		"weapon_type": "Mace",
 		"_variants": [
 			{
-				"_source": "skills::71903::Thistleguard",
+				"_source": "skills:71903:Thistleguard",
 				"skill": 71903,
 				"slot": "Weapon_4",
 				"professions": ["Ranger"]
 			},
 			{
-				"_source": "skills::71963::Oaken Cudgel",
+				"_source": "skills:71963:Oaken Cudgel",
 				"skill": 71963,
 				"slot": "Weapon_3",
 				"professions": ["Ranger"]
 			},
 			{
-				"_source": "skills::71999::Flourish",
+				"_source": "skills:71999:Flourish",
 				"skill": 71999,
 				"slot": "Weapon_2",
 				"professions": ["Ranger"]
@@ -6057,10 +6101,11 @@
 		"maximum": null,
 		"description": "Heal each second.",
 		"type": "Skill",
-		"_source": "skills::71963::Oaken Cudgel",
+		"_source": "skills:71963:Oaken Cudgel",
 		"skill": 71963,
 		"slot": "Weapon_3",
-		"professions": ["Ranger"]
+		"professions": ["Ranger"],
+		"weapon_type": "Mace"
 	},
 	{
 		"id": null,
@@ -6070,10 +6115,11 @@
 		"maximum": null,
 		"description": "Blocks incoming attacks. Empowers Defiant Roar with each blocked attack, up to 3 stacks.",
 		"type": "Skill",
-		"_source": "skills::71975::Bullet Catcher",
+		"_source": "skills:71975:Bullet Catcher",
 		"skill": 71975,
 		"slot": "Weapon_5",
-		"professions": ["Warrior"]
+		"professions": ["Warrior"],
+		"weapon_type": "Staff"
 	},
 	{
 		"id": null,
@@ -6083,10 +6129,11 @@
 		"maximum": null,
 		"description": "Increased outgoing damage.",
 		"type": "Skill",
-		"_source": "skills::72927::Distracting Throw",
+		"_source": "skills:72927:Distracting Throw",
 		"skill": 72927,
 		"slot": "Weapon_4",
-		"professions": ["Thief"]
+		"professions": ["Thief"],
+		"weapon_type": "Spear"
 	},
 	{
 		"id": null,
@@ -6096,19 +6143,20 @@
 		"maximum": null,
 		"description": "Your next spear attack is illuminated.",
 		"type": "Skill",
-		"_source": "skills::72940::Helio Rush",
+		"_source": "skills:72940:Helio Rush",
 		"skill": 72940,
 		"slot": "Weapon_2",
 		"professions": ["Guardian"],
+		"weapon_type": "Spear",
 		"_variants": [
 			{
-				"_source": "skills::72978::Gleaming Disc",
+				"_source": "skills:72978:Gleaming Disc",
 				"skill": 72978,
 				"slot": "Weapon_3",
 				"professions": ["Guardian"]
 			},
 			{
-				"_source": "skills::73094::Solar Storm",
+				"_source": "skills:73094:Solar Storm",
 				"skill": 73094,
 				"slot": "Weapon_4",
 				"professions": ["Guardian"]
@@ -6123,10 +6171,11 @@
 		"maximum": null,
 		"description": "The cooldown of your next spear skill is reduced.",
 		"type": "Skill",
-		"_source": "skills::72967::Ripple",
+		"_source": "skills:72967:Ripple",
 		"skill": 72967,
 		"slot": "Weapon_3",
-		"professions": ["Elementalist"]
+		"professions": ["Elementalist"],
+		"weapon_type": "Spear"
 	},
 	{
 		"id": null,
@@ -6136,10 +6185,11 @@
 		"maximum": 12,
 		"description": "",
 		"type": "Skill",
-		"_source": "skills::73002::Lightning Rod",
+		"_source": "skills:73002:Lightning Rod",
 		"skill": 73002,
 		"slot": "Weapon_3",
-		"professions": ["Engineer"]
+		"professions": ["Engineer"],
+		"weapon_type": "Spear"
 	},
 	{
 		"id": null,
@@ -6149,31 +6199,32 @@
 		"maximum": null,
 		"description": "Striking an enemy with Perforate siphons health from them.",
 		"type": "Skill",
-		"_source": "skills::73007::Extirpate",
+		"_source": "skills:73007:Extirpate",
 		"skill": 73007,
 		"slot": "Weapon_5",
 		"professions": ["Necromancer"],
+		"weapon_type": "Spear",
 		"_variants": [
 			{
-				"_source": "skills::73013::Addle",
+				"_source": "skills:73013:Addle",
 				"skill": 73013,
 				"slot": "Weapon_3",
 				"professions": ["Necromancer"]
 			},
 			{
-				"_source": "skills::73040::Deadly Slice",
+				"_source": "skills:73040:Deadly Slice",
 				"skill": 73040,
 				"slot": "Weapon_1",
 				"professions": ["Necromancer"]
 			},
 			{
-				"_source": "skills::73047::Sinister Stab",
+				"_source": "skills:73047:Sinister Stab",
 				"skill": 73047,
 				"slot": "Weapon_1",
 				"professions": ["Necromancer"]
 			},
 			{
-				"_source": "skills::73116::Distress",
+				"_source": "skills:73116:Distress",
 				"skill": 73116,
 				"slot": "Weapon_4",
 				"professions": ["Necromancer"]
@@ -6188,10 +6239,11 @@
 		"maximum": null,
 		"description": "Incoming boons are negated. Remove one stack when an incoming boon is negated.",
 		"type": "Skill",
-		"_source": "skills::73007::Extirpate",
+		"_source": "skills:73007:Extirpate",
 		"skill": 73007,
 		"slot": "Weapon_5",
-		"professions": ["Necromancer"]
+		"professions": ["Necromancer"],
+		"weapon_type": "Spear"
 	},
 	{
 		"id": null,
@@ -6201,10 +6253,11 @@
 		"maximum": null,
 		"description": "Allows the use of a stealth attack even when revealed.",
 		"type": "Skill",
-		"_source": "skills::73008::Panther's Prowl",
+		"_source": "skills:73008:Panther's Prowl",
 		"skill": 73008,
 		"slot": "Weapon_5",
-		"professions": ["Ranger"]
+		"professions": ["Ranger"],
+		"weapon_type": "Spear"
 	},
 	{
 		"id": null,
@@ -6214,10 +6267,11 @@
 		"maximum": null,
 		"description": "Your next spear strike dazes.",
 		"type": "Skill",
-		"_source": "skills::73019::Harden",
+		"_source": "skills:73019:Harden",
 		"skill": 73019,
 		"slot": "Weapon_3",
-		"professions": ["Elementalist"]
+		"professions": ["Elementalist"],
+		"weapon_type": "Spear"
 	},
 	{
 		"id": null,
@@ -6227,10 +6281,11 @@
 		"maximum": null,
 		"description": "Your next spear skill always critically strikes.",
 		"type": "Skill",
-		"_source": "skills::73037::Energize",
+		"_source": "skills:73037:Energize",
 		"skill": 73037,
 		"slot": "Weapon_3",
-		"professions": ["Elementalist"]
+		"professions": ["Elementalist"],
+		"weapon_type": "Spear"
 	},
 	{
 		"id": null,
@@ -6240,10 +6295,11 @@
 		"maximum": 3,
 		"description": "Causes Abyssal Raze to have increased effect for each stack. Unleashes an Abyssal Raze when swapping weapons at maximum stacks.",
 		"type": "Skill",
-		"_source": "skills::73059::Abyssal Raze",
+		"_source": "skills:73059:Abyssal Raze",
 		"skill": 73059,
 		"slot": "Weapon_5",
-		"professions": ["Revenant"]
+		"professions": ["Revenant"],
+		"weapon_type": "Spear"
 	},
 	{
 		"id": null,
@@ -6253,10 +6309,11 @@
 		"maximum": null,
 		"description": "Inflicts damage over time.",
 		"type": "Skill",
-		"_source": "skills::73091::Fulgor",
+		"_source": "skills:73091:Fulgor",
 		"skill": 73091,
 		"slot": "Weapon_2",
-		"professions": ["Elementalist"]
+		"professions": ["Elementalist"],
+		"weapon_type": "Spear"
 	},
 	{
 		"id": null,
@@ -6266,10 +6323,11 @@
 		"maximum": null,
 		"description": "Your spear skills are empowered.",
 		"type": "Skill",
-		"_source": "skills::73093::Mind the Gap",
+		"_source": "skills:73093:Mind the Gap",
 		"skill": 73093,
 		"slot": "Weapon_2",
-		"professions": ["Mesmer"]
+		"professions": ["Mesmer"],
+		"weapon_type": "Spear"
 	},
 	{
 		"id": null,
@@ -6279,10 +6337,11 @@
 		"maximum": null,
 		"description": "Spear skills have bonus effects against Focused targets.",
 		"type": "Skill",
-		"_source": "skills::73122::Conduit Surge",
+		"_source": "skills:73122:Conduit Surge",
 		"skill": 73122,
 		"slot": "Weapon_2",
-		"professions": ["Engineer"]
+		"professions": ["Engineer"],
+		"weapon_type": "Spear"
 	},
 	{
 		"id": null,
@@ -6292,10 +6351,11 @@
 		"maximum": null,
 		"description": "All spear skills are illuminated while standing within the Symbol of Luminance.",
 		"type": "Skill",
-		"_source": "skills::73132::Symbol of Luminance",
+		"_source": "skills:73132:Symbol of Luminance",
 		"skill": 73132,
 		"slot": "Weapon_5",
-		"professions": ["Guardian"]
+		"professions": ["Guardian"],
+		"weapon_type": "Spear"
 	},
 	{
 		"id": null,
@@ -6305,10 +6365,11 @@
 		"maximum": null,
 		"description": "Your next spear skill deals additional damage.",
 		"type": "Skill",
-		"_source": "skills::73137::Seethe",
+		"_source": "skills:73137:Seethe",
 		"skill": 73137,
 		"slot": "Weapon_3",
-		"professions": ["Elementalist"]
+		"professions": ["Elementalist"],
+		"weapon_type": "Spear"
 	},
 	{
 		"id": null,
@@ -6318,18 +6379,18 @@
 		"maximum": null,
 		"description": "Decima will periodically consume stacks of this effect to target a number of nearby enemies with Chorus of Thunder.",
 		"type": "Skill",
-		"_source": "skills::74641::Chorus of Thunder",
+		"_source": "skills:74641:Chorus of Thunder",
 		"skill": 74641,
 		"_variants": [
-			{ "_source": "skills::74706::Chorus of Thunder", "skill": 74706 },
-			{ "_source": "skills::74978::Fulminate", "skill": 74978 },
-			{ "_source": "skills::75205::Fulminate", "skill": 75205 },
-			{ "_source": "skills::75249::Discordant Thunder", "skill": 75249 },
-			{ "_source": "skills::75523::Chorus of Thunder", "skill": 75523 },
-			{ "_source": "skills::75548::Fulminate", "skill": 75548 },
-			{ "_source": "skills::75561::Discordant Thunder", "skill": 75561 },
-			{ "_source": "skills::75645::Fulminate", "skill": 75645 },
-			{ "_source": "skills::75988::Fulminate", "skill": 75988 }
+			{ "_source": "skills:74706:Chorus of Thunder", "skill": 74706 },
+			{ "_source": "skills:74978:Fulminate", "skill": 74978 },
+			{ "_source": "skills:75205:Fulminate", "skill": 75205 },
+			{ "_source": "skills:75249:Discordant Thunder", "skill": 75249 },
+			{ "_source": "skills:75523:Chorus of Thunder", "skill": 75523 },
+			{ "_source": "skills:75548:Fulminate", "skill": 75548 },
+			{ "_source": "skills:75561:Discordant Thunder", "skill": 75561 },
+			{ "_source": "skills:75645:Fulminate", "skill": 75645 },
+			{ "_source": "skills:75988:Fulminate", "skill": 75988 }
 		]
 	},
 	{
@@ -6340,18 +6401,18 @@
 		"maximum": null,
 		"description": "Decima will periodically consumes stacks of this effect to target a number of conduits with Chorus of Thunder.",
 		"type": "Skill",
-		"_source": "skills::74641::Chorus of Thunder",
+		"_source": "skills:74641:Chorus of Thunder",
 		"skill": 74641,
 		"_variants": [
-			{ "_source": "skills::74706::Chorus of Thunder", "skill": 74706 },
-			{ "_source": "skills::74894::Harmonious Thunder", "skill": 74894 },
-			{ "_source": "skills::74978::Fulminate", "skill": 74978 },
-			{ "_source": "skills::75205::Fulminate", "skill": 75205 },
-			{ "_source": "skills::75518::Harmonious Thunder", "skill": 75518 },
-			{ "_source": "skills::75523::Chorus of Thunder", "skill": 75523 },
-			{ "_source": "skills::75548::Fulminate", "skill": 75548 },
-			{ "_source": "skills::75645::Fulminate", "skill": 75645 },
-			{ "_source": "skills::75988::Fulminate", "skill": 75988 }
+			{ "_source": "skills:74706:Chorus of Thunder", "skill": 74706 },
+			{ "_source": "skills:74894:Harmonious Thunder", "skill": 74894 },
+			{ "_source": "skills:74978:Fulminate", "skill": 74978 },
+			{ "_source": "skills:75205:Fulminate", "skill": 75205 },
+			{ "_source": "skills:75518:Harmonious Thunder", "skill": 75518 },
+			{ "_source": "skills:75523:Chorus of Thunder", "skill": 75523 },
+			{ "_source": "skills:75548:Fulminate", "skill": 75548 },
+			{ "_source": "skills:75645:Fulminate", "skill": 75645 },
+			{ "_source": "skills:75988:Fulminate", "skill": 75988 }
 		]
 	},
 	{
@@ -6362,22 +6423,22 @@
 		"maximum": null,
 		"description": "Recent damage from Decima's fluxlance attacks has made you more vulnerable to dancing sparks.\n\nWhen taking damage from a dancing spark, you will also take significant extra damage from Galvanic Sensitivity.\n\nGalvanic Sensitivity removes Harmonic Sensitivity and prevents it from being applied for the duration.",
 		"type": "Skill",
-		"_source": "skills::74660::Fluxlance Fusillade",
+		"_source": "skills:74660:Fluxlance Fusillade",
 		"skill": 74660,
 		"_variants": [
-			{ "_source": "skills::74705::Fluxlance Salvo", "skill": 74705 },
-			{ "_source": "skills::74725::Fluxlance Salvo", "skill": 74725 },
-			{ "_source": "skills::74742::Fluxlance Salvo", "skill": 74742 },
-			{ "_source": "skills::74973::Fluxlance Salvo", "skill": 74973 },
-			{ "_source": "skills::75155::Fluxlance", "skill": 75155 },
-			{ "_source": "skills::75348::Fluxlance Salvo", "skill": 75348 },
-			{ "_source": "skills::75450::Fluxlance", "skill": 75450 },
-			{ "_source": "skills::75524::Fluxlance Salvo", "skill": 75524 },
-			{ "_source": "skills::75569::Fluxlance Salvo", "skill": 75569 },
-			{ "_source": "skills::75637::Fluxlance Salvo", "skill": 75637 },
-			{ "_source": "skills::75870::Fluxlance Salvo", "skill": 75870 },
-			{ "_source": "skills::75954::Fluxlance Fusillade", "skill": 75954 },
-			{ "_source": "skills::76015::Fluxlance Salvo", "skill": 76015 }
+			{ "_source": "skills:74705:Fluxlance Salvo", "skill": 74705 },
+			{ "_source": "skills:74725:Fluxlance Salvo", "skill": 74725 },
+			{ "_source": "skills:74742:Fluxlance Salvo", "skill": 74742 },
+			{ "_source": "skills:74973:Fluxlance Salvo", "skill": 74973 },
+			{ "_source": "skills:75155:Fluxlance", "skill": 75155 },
+			{ "_source": "skills:75348:Fluxlance Salvo", "skill": 75348 },
+			{ "_source": "skills:75450:Fluxlance", "skill": 75450 },
+			{ "_source": "skills:75524:Fluxlance Salvo", "skill": 75524 },
+			{ "_source": "skills:75569:Fluxlance Salvo", "skill": 75569 },
+			{ "_source": "skills:75637:Fluxlance Salvo", "skill": 75637 },
+			{ "_source": "skills:75870:Fluxlance Salvo", "skill": 75870 },
+			{ "_source": "skills:75954:Fluxlance Fusillade", "skill": 75954 },
+			{ "_source": "skills:76015:Fluxlance Salvo", "skill": 76015 }
 		]
 	},
 	{
@@ -6388,10 +6449,10 @@
 		"maximum": null,
 		"description": "Thrumming Presence has made you more vulnerable to Decima's fluxlance attacks.\n\nWhen taking damage from a fluxlance attack, you will also take significant extra damage from Harmonic Sensitivity.",
 		"type": "Skill",
-		"_source": "skills::74872::Thrumming Presence",
+		"_source": "skills:74872:Thrumming Presence",
 		"skill": 74872,
 		"_variants": [
-			{ "_source": "skills::75536::Thrumming Presence", "skill": 75536 }
+			{ "_source": "skills:75536:Thrumming Presence", "skill": 75536 }
 		]
 	},
 	{
@@ -6402,7 +6463,7 @@
 		"maximum": null,
 		"description": "Your outgoing damage is reduced by 25% per stack.",
 		"type": "Skill",
-		"_source": "skills::75651::Sparking Reverberation",
+		"_source": "skills:75651:Sparking Reverberation",
 		"skill": 75651
 	},
 	{
@@ -6413,19 +6474,19 @@
 		"maximum": null,
 		"description": "Drop additional bombs at your location.",
 		"type": "Skill",
-		"_source": "skills::76550::Forged Surfer Dash",
+		"_source": "skills:76550:Forged Surfer Dash",
 		"skill": 76550,
 		"slot": "Profession_2",
 		"professions": ["Thief"],
 		"_variants": [
 			{},
 			{
-				"_source": "skills::76633::Forged Surfer Dash",
+				"_source": "skills:76633:Forged Surfer Dash",
 				"skill": 76633,
 				"professions": ["Thief"]
 			},
 			{
-				"_source": "skills::76633::Forged Surfer Dash",
+				"_source": "skills:76633:Forged Surfer Dash",
 				"skill": 76633,
 				"professions": ["Thief"]
 			}
@@ -6439,7 +6500,7 @@
 		"maximum": null,
 		"description": "Your health cannot be reduced below zero.",
 		"type": "Skill",
-		"_source": "skills::76562::\"We Will Never Yield!\"",
+		"_source": "skills:76562:\"We Will Never Yield!\"",
 		"skill": 76562,
 		"slot": "Elite",
 		"professions": ["Warrior"],
@@ -6453,7 +6514,7 @@
 		"maximum": null,
 		"description": "Healing you receive is more powerful.",
 		"type": "Skill",
-		"_source": "skills::76563::Otter's Compassion",
+		"_source": "skills:76563:Otter's Compassion",
 		"skill": 76563,
 		"slot": "Utility",
 		"professions": ["Elementalist"],
@@ -6467,20 +6528,21 @@
 		"maximum": null,
 		"description": "Your first weapon skill is replaced with your stealth attack, even when not stealthed.",
 		"type": "Skill",
-		"_source": "skills::76582::Metal Legion Guitar",
+		"_source": "skills:76582:Metal Legion Guitar",
 		"skill": 76582,
 		"slot": "Weapon_1",
 		"professions": ["Thief"],
+		"weapon_type": "Nothing",
 		"_variants": [
 			{},
 			{
-				"_source": "skills::76591::Metal Legion Guitar",
+				"_source": "skills:76591:Metal Legion Guitar",
 				"skill": 76591,
 				"slot": "Profession_2",
 				"professions": ["Thief"]
 			},
 			{
-				"_source": "skills::76591::Metal Legion Guitar",
+				"_source": "skills:76591:Metal Legion Guitar",
 				"skill": 76591,
 				"slot": "Profession_2",
 				"professions": ["Thief"]
@@ -6495,19 +6557,19 @@
 		"maximum": null,
 		"description": "Activating any weapon skill that costs initiative creates an additional healing burst at your location.",
 		"type": "Skill",
-		"_source": "skills::76601::Exalted Hammer",
+		"_source": "skills:76601:Exalted Hammer",
 		"skill": 76601,
 		"slot": "Profession_2",
 		"professions": ["Thief"],
 		"_variants": [
 			{},
 			{
-				"_source": "skills::76702::Exalted Hammer",
+				"_source": "skills:76702:Exalted Hammer",
 				"skill": 76702,
 				"professions": ["Thief"]
 			},
 			{
-				"_source": "skills::76702::Exalted Hammer",
+				"_source": "skills:76702:Exalted Hammer",
 				"skill": 76702,
 				"professions": ["Thief"]
 			}
@@ -6521,7 +6583,7 @@
 		"maximum": null,
 		"description": "Guaranteed to critically strike.",
 		"type": "Skill",
-		"_source": "skills::76618::Lightning Blitz",
+		"_source": "skills:76618:Lightning Blitz",
 		"skill": 76618
 	},
 	{
@@ -6532,7 +6594,7 @@
 		"maximum": null,
 		"description": "Heal yourself when you remove conditions.",
 		"type": "Skill",
-		"_source": "skills::76621::Resolute Stance",
+		"_source": "skills:76621:Resolute Stance",
 		"skill": 76621,
 		"slot": "Heal",
 		"professions": ["Guardian"],
@@ -6546,14 +6608,14 @@
 		"maximum": null,
 		"description": "Your attributes are increased. Gain additional effects based on the <c=@abilitytype>morph</c> skills you have slotted.",
 		"type": "Skill",
-		"_source": "skills::76642::Evolve",
+		"_source": "skills:76642:Evolve",
 		"skill": 76642,
 		"slot": "Profession_5",
 		"professions": ["Engineer"],
 		"specialization": 75,
 		"_variants": [
 			{
-				"_source": "skills::76651::Evolve",
+				"_source": "skills:76651:Evolve",
 				"skill": 76651,
 				"professions": ["Engineer"]
 			}
@@ -6567,19 +6629,19 @@
 		"maximum": null,
 		"description": "The next utility skill you use has reduced cooldown.",
 		"type": "Skill",
-		"_source": "skills::76674::Holo-Dancer Decoy",
+		"_source": "skills:76674:Holo-Dancer Decoy",
 		"skill": 76674,
 		"slot": "Profession_2",
 		"professions": ["Thief"],
 		"_variants": [
 			{},
 			{
-				"_source": "skills::76800::Holo-Dancer Decoy",
+				"_source": "skills:76800:Holo-Dancer Decoy",
 				"skill": 76800,
 				"professions": ["Thief"]
 			},
 			{
-				"_source": "skills::76800::Holo-Dancer Decoy",
+				"_source": "skills:76800:Holo-Dancer Decoy",
 				"skill": 76800,
 				"professions": ["Thief"]
 			}
@@ -6593,19 +6655,19 @@
 		"maximum": null,
 		"description": "You can use Zephyrite Sun Crystal again.",
 		"type": "Skill",
-		"_source": "skills::76733::Zephyrite Sun Crystal",
+		"_source": "skills:76733:Zephyrite Sun Crystal",
 		"skill": 76733,
 		"slot": "Profession_2",
 		"professions": ["Thief"],
 		"_variants": [
 			{},
 			{
-				"_source": "skills::76895::Zephyrite Sun Crystal",
+				"_source": "skills:76895:Zephyrite Sun Crystal",
 				"skill": 76895,
 				"professions": ["Thief"]
 			},
 			{
-				"_source": "skills::76895::Zephyrite Sun Crystal",
+				"_source": "skills:76895:Zephyrite Sun Crystal",
 				"skill": 76895,
 				"professions": ["Thief"]
 			}
@@ -6619,7 +6681,7 @@
 		"maximum": null,
 		"description": "Rapidly heal over time.",
 		"type": "Skill",
-		"_source": "skills::76738::Mitotic State",
+		"_source": "skills:76738:Mitotic State",
 		"skill": 76738,
 		"slot": "Heal",
 		"professions": ["Engineer"],
@@ -6633,7 +6695,7 @@
 		"maximum": null,
 		"description": "Striking a foe will steal life and inflict vulnerability.",
 		"type": "Skill",
-		"_source": "skills::76739::Nightmare Weapon",
+		"_source": "skills:76739:Nightmare Weapon",
 		"skill": 76739,
 		"slot": "Utility",
 		"professions": ["Necromancer"],
@@ -6647,7 +6709,7 @@
 		"maximum": null,
 		"description": "Block attacks. Gain protection when the last stack is removed.",
 		"type": "Skill",
-		"_source": "skills::76752::Weapon of Warding",
+		"_source": "skills:76752:Weapon of Warding",
 		"skill": 76752,
 		"slot": "Utility",
 		"professions": ["Necromancer"],
@@ -6661,7 +6723,7 @@
 		"maximum": null,
 		"description": "Gain stacks when striking or being struck by an enemy. When this ends, damage nearby enemies based on the number of stacks.",
 		"type": "Skill",
-		"_source": "skills::76813::Effulgent Stance",
+		"_source": "skills:76813:Effulgent Stance",
 		"skill": 76813,
 		"slot": "Utility",
 		"professions": ["Guardian"],
@@ -6675,10 +6737,11 @@
 		"maximum": null,
 		"description": "Your weapon skills that cost initiative refund all initiative.",
 		"type": "Skill",
-		"_source": "skills::76816::Chak Shield",
+		"_source": "skills:76816:Chak Shield",
 		"skill": 76816,
 		"slot": "Weapon_1",
 		"professions": ["Thief"],
+		"weapon_type": "Nothing",
 		"_variants": [{}]
 	},
 	{
@@ -6689,19 +6752,19 @@
 		"maximum": null,
 		"description": "Your strikes deal additional damage to enemies struck by the Kryptis turret.",
 		"type": "Skill",
-		"_source": "skills::76900::Summon Kryptis Turret",
+		"_source": "skills:76900:Summon Kryptis Turret",
 		"skill": 76900,
 		"slot": "Profession_2",
 		"professions": ["Thief"],
 		"_variants": [
 			{},
 			{
-				"_source": "skills::77192::Summon Kryptis Turret",
+				"_source": "skills:77192:Summon Kryptis Turret",
 				"skill": 77192,
 				"professions": ["Thief"]
 			},
 			{
-				"_source": "skills::77192::Summon Kryptis Turret",
+				"_source": "skills:77192:Summon Kryptis Turret",
 				"skill": 77192,
 				"professions": ["Thief"]
 			}
@@ -6715,10 +6778,11 @@
 		"maximum": null,
 		"description": "You take increased strike and condition damage.",
 		"type": "Skill",
-		"_source": "skills::76909::Unstable Skritt Bomb",
+		"_source": "skills:76909:Unstable Skritt Bomb",
 		"skill": 76909,
 		"slot": "Weapon_1",
-		"professions": ["Thief"]
+		"professions": ["Thief"],
+		"weapon_type": "Nothing"
 	},
 	{
 		"id": null,
@@ -6728,7 +6792,7 @@
 		"maximum": null,
 		"description": "When you take damage over a percentage of your maximum health, heal for the difference, then steal life from that foe.",
 		"type": "Skill",
-		"_source": "skills::76941::Xinrae's Weapon",
+		"_source": "skills:76941:Xinrae's Weapon",
 		"skill": 76941,
 		"slot": "Elite",
 		"professions": ["Necromancer"],
@@ -6742,7 +6806,7 @@
 		"maximum": null,
 		"description": "Striking a foe will cause additional strikes on nearby foes.",
 		"type": "Skill",
-		"_source": "skills::76975::Splinter Weapon",
+		"_source": "skills:76975:Splinter Weapon",
 		"skill": 76975,
 		"slot": "Utility",
 		"professions": ["Necromancer"],
@@ -6756,7 +6820,7 @@
 		"maximum": null,
 		"description": "Increase your movement speed and prevent movement-impairing conditions. Incoming hits become fumbles.",
 		"type": "Skill",
-		"_source": "skills::77018::Gaseous State",
+		"_source": "skills:77018:Gaseous State",
 		"skill": 77018,
 		"slot": "Utility",
 		"professions": ["Engineer"],
@@ -6770,7 +6834,7 @@
 		"maximum": null,
 		"description": "",
 		"type": "Skill",
-		"_source": "skills::77043::Shielding Hands",
+		"_source": "skills:77043:Shielding Hands",
 		"skill": 77043,
 		"slot": "Heal",
 		"professions": ["Revenant"],
@@ -6784,7 +6848,7 @@
 		"maximum": null,
 		"description": "Outgoing stun duration is increased.",
 		"type": "Skill",
-		"_source": "skills::77069::Solid State",
+		"_source": "skills:77069:Solid State",
 		"skill": 77069,
 		"slot": "Utility",
 		"professions": ["Engineer"],
@@ -6798,7 +6862,7 @@
 		"maximum": null,
 		"description": "Increased strike damage.",
 		"type": "Skill",
-		"_source": "skills::77078::Piercing Stance",
+		"_source": "skills:77078:Piercing Stance",
 		"skill": 77078,
 		"slot": "Utility",
 		"professions": ["Guardian"],
@@ -6812,7 +6876,7 @@
 		"maximum": null,
 		"description": "",
 		"type": "Skill",
-		"_source": "skills::77198::Daring Advance",
+		"_source": "skills:77198:Daring Advance",
 		"skill": 77198,
 		"slot": "Elite",
 		"professions": ["Guardian"],
@@ -6826,7 +6890,7 @@
 		"maximum": null,
 		"description": "Your damage is increased.",
 		"type": "Skill",
-		"_source": "skills::77209::Plasmatic State",
+		"_source": "skills:77209:Plasmatic State",
 		"skill": 77209,
 		"slot": "Utility",
 		"professions": ["Engineer"],
@@ -6840,20 +6904,21 @@
 		"maximum": null,
 		"description": "Your strikes additionally inflict burning on enemies.",
 		"type": "Skill",
-		"_source": "skills::77277::Mistburn Mortar",
+		"_source": "skills:77277:Mistburn Mortar",
 		"skill": 77277,
 		"slot": "Weapon_1",
 		"professions": ["Thief"],
+		"weapon_type": "Nothing",
 		"_variants": [
 			{},
 			{
-				"_source": "skills::77288::Mistburn Mortar",
+				"_source": "skills:77288:Mistburn Mortar",
 				"skill": 77288,
 				"slot": "Profession_2",
 				"professions": ["Thief"]
 			},
 			{
-				"_source": "skills::77288::Mistburn Mortar",
+				"_source": "skills:77288:Mistburn Mortar",
 				"skill": 77288,
 				"slot": "Profession_2",
 				"professions": ["Thief"]
@@ -6868,7 +6933,7 @@
 		"maximum": null,
 		"description": "Heal allies when you grant them boons.",
 		"type": "Skill",
-		"_source": "skills::77300::Valorous Stance",
+		"_source": "skills:77300:Valorous Stance",
 		"skill": 77300,
 		"slot": "Utility",
 		"professions": ["Guardian"],
@@ -6882,7 +6947,7 @@
 		"maximum": null,
 		"description": "Reduce incoming damage.",
 		"type": "Skill",
-		"_source": "skills::77321::Stalwart Stance",
+		"_source": "skills:77321:Stalwart Stance",
 		"skill": 77321,
 		"slot": "Utility",
 		"professions": ["Guardian"],
@@ -6896,14 +6961,14 @@
 		"maximum": null,
 		"description": "Gain different forms depending on which legend you are currently embodying.",
 		"type": "Skill",
-		"_source": "skills::77371::Cosmic Wisdom",
+		"_source": "skills:77371:Cosmic Wisdom",
 		"skill": 77371,
 		"slot": "Profession_3",
 		"professions": ["Revenant"],
 		"specialization": 79,
 		"_variants": [
 			{
-				"_source": "skills::78876::Cosmic Wisdom",
+				"_source": "skills:78876:Cosmic Wisdom",
 				"skill": 78876,
 				"professions": ["Revenant"]
 			}

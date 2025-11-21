@@ -90,6 +90,10 @@
 					"slot": {
 						"type": "string",
 						"description": "Where the related skill fits into"
+					},
+					"weapon_type": {
+						"type": "string",
+						"description": "Which weapon the skill is from"
 					}
 				},
 				"required": ["skill"]
