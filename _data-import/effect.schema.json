@@ -3,11 +3,8 @@
 	"type": "object",
 	"properties": {
 		"id": {
-			"type": "array",
-			"description": "Unique number(s) that represents this effect",
-			"items": {
-				"type": "number"
-			}
+			"type": "integer",
+			"description": "Primary unique number that represents this effect. For additional IDs that represent the same effect, check `variantIds`"
 		},
 		"name": {
 			"type": "string",
@@ -43,6 +40,13 @@
 				"Skill",
 				"Environment"
 			]
+		},
+		"variantIds": {
+			"type": "array",
+			"description": "Additional unique IDs for effects that are essentially duplicates of the main one",
+			"items": {
+				"type": "integer"
+			}
 		}
 	},
 	"required": ["id", "name", "icon", "stacking"],
@@ -56,9 +60,13 @@
 					"trait": {
 						"type": "integer",
 						"description": "ID of the trait that applies this effect"
+					},
+					"specialization": {
+						"type": "integer",
+						"description": "ID of the specialization that contains the related trait"
 					}
 				},
-				"required": ["trait"]
+				"required": ["trait", "specialization"]
 			}
 		},
 		{
@@ -74,6 +82,10 @@
 					"professions": {
 						"type": "array",
 						"description": "Which professions can use the related skill"
+					},
+					"specialization": {
+						"type": "integer",
+						"description": "ID of the specialization that is required to use the related skill"
 					},
 					"slot": {
 						"type": "string",

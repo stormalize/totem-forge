@@ -43,7 +43,19 @@ const BUFF_CONDITIONS = [
 	"Vulnerability",
 ];
 
-const BUFF_COMMON = ["Superspeed", "Revealed", "Stealth", "Unblockable"];
+const BUFF_COMMON = [
+	"Superspeed",
+	"Revealed",
+	"Stealth",
+	"Unblockable",
+	"Chaos Aura",
+	"Dark Aura",
+	"Fire Aura",
+	"Frost Aura",
+	"Light Aura",
+	"Magnetic Aura",
+	"Shocking Aura",
+];
 
 const effectsList = new Map();
 
@@ -150,12 +162,14 @@ const saveEffectsFromFacts = (item, dataType) => {
 						effect._source = `${dataType}::${item.id}::${item.name}`;
 						if ("traits" === dataType) {
 							effect.trait = item.id;
+							effect.specialization = item.specialization;
 						}
 
 						if ("skills" === dataType) {
 							effect.skill = item.id;
 							effect.slot = item.slot;
 							effect.professions = item.professions;
+							effect.specialization = item.specialization;
 						}
 
 						const existingEffect = effectsList.get(name);
