@@ -1,4 +1,4 @@
-import { render, html, signal, effect } from "uhtml";
+import { render, html, signal, computed, effect } from "uhtml";
 import {
 	effects,
 	effectGroups,
@@ -49,11 +49,13 @@ class TotemForge extends HTMLElement {
 
 	#filter;
 	#search;
+	#pinIndex;
 
 	constructor() {
 		super();
 		this.#anchor = signal(getURLParam("anchor") ?? "l");
 		this.#name = signal(getURLParam("name") ?? "my totem");
+		this.#pinIndex = signal(getURLParam("pin") ?? 0);
 
 		this.#effects = signal(this.decodeEffects(getURLParam("effects") ?? []));
 
@@ -66,6 +68,7 @@ class TotemForge extends HTMLElement {
 			url.searchParams.set("name", this.#name.value);
 
 			const effectsStr = this.encodeEffects(this.#effects.value);
+			url.searchParams.set("pin", this.#pinIndex.value);
 			url.searchParams.set("effects", effectsStr);
 
 			history.replaceState(null, "", url);
@@ -97,7 +100,7 @@ class TotemForge extends HTMLElement {
 		const arr = new Uint32Array(combined);
 		const arr8 = new Uint8Array(arr.buffer);
 		const str = arr8.toBase64(TotemForge.BASE64OPTIONS);
-		console.log(str);
+
 		return str;
 	}
 
@@ -130,8 +133,13 @@ class TotemForge extends HTMLElement {
 	}
 
 	connectedCallback() {
-		// eventlistener for drag
-		// eventlistener for input change
+		const activeEffectsList = computed(() => {
+			const pin = this.#pinIndex.value;
+			return this.#effects.value.toSpliced(pin, 0, "PIN");
+		});
+
+		console.log(activeEffectsList.value);
+
 		render(
 			this,
 			() =>
@@ -236,30 +244,34 @@ class TotemForge extends HTMLElement {
 					</div>
 					<hr />
 					<ul class="effects">
-						${this.#effects.value.map((savedEffect) => {
+						${activeEffectsList.value.map((savedEffect) => {
 							const effect = getEffectObject(savedEffect.id);
-							return html`<li
-								totem="effect-item"
-								onclick=${(e) => {
-									if (this.effectFind(effect.id)) {
-										this.effectRemove(effect.id);
-									} else {
-										this.effectAdd(effect.id);
-									}
-								}}
-							>
-								<img
-									slot="icon"
-									src=${effect.icon}
-									width="32"
-									height="32"
-									alt=""
-									loading="lazy"
-								/>
-								<span slot="name">${effect.name}</span>
-								<code slot="id">ID ${effect.id ?? "?"}</code>
-								<span slot="source">${this.generateSourceContent(effect)}</span>
-							</li>`;
+							return "PIN" === savedEffect
+								? html`<li>SEPARATOR</li>`
+								: html`<li
+										totem="effect-item"
+										onclick=${(e) => {
+											if (this.effectFind(effect.id)) {
+												this.effectRemove(effect.id);
+											} else {
+												this.effectAdd(effect.id);
+											}
+										}}
+								  >
+										<img
+											slot="icon"
+											src=${effect.icon}
+											width="32"
+											height="32"
+											alt=""
+											loading="lazy"
+										/>
+										<span slot="name">${effect.name}</span>
+										<code slot="id">ID ${effect.id ?? "?"}</code>
+										<span slot="source"
+											>${this.generateSourceContent(effect)}</span
+										>
+								  </li>`;
 						})}
 						<li>Some Effect</li>
 						<li>Some Effect</li>
