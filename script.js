@@ -24,9 +24,25 @@ class TotemForge extends HTMLElement {
 		},
 	};
 
+	static MASKS = {
+		effect: {
+			mask: 0b00000000000000111111111111111111,
+			offset: 0,
+		},
+		stacks: {
+			mask: 0b00000001111111000000000000000000,
+			offset: 18,
+		},
+		target: {
+			mask: 0b00011110000000000000000000000000,
+			offset: 25,
+		},
+	};
+
+	static BASE64OPTIONS = { alphabet: "base64url" };
+
 	static effects = effects;
 
-	#count;
 	#anchor;
 	#name;
 	#effects;
@@ -36,86 +52,81 @@ class TotemForge extends HTMLElement {
 
 	constructor() {
 		super();
-		this.#count = signal(getURLParam("count") ?? 0);
 		this.#anchor = signal(getURLParam("anchor") ?? "l");
 		this.#name = signal(getURLParam("name") ?? "my totem");
-		this.#effects = signal([]);
+
+		this.#effects = signal(this.decodeEffects(getURLParam("effects") ?? []));
 
 		this.#filter = signal("");
 		this.#search = signal("");
 
-		// console.log(TotemForge.traits);
-		const MASKS = {
-			effect: {
-				mask: 0b00000000000000111111111111111111,
-				offset: 0,
-			},
-			stacks: {
-				mask: 0b00000001111111000000000000000000,
-				offset: 18,
-			},
-			target: {
-				mask: 0b00011110000000000000000000000000,
-				offset: 25,
-			},
-		};
-
-		let id = 32;
-		let stacks = 9;
-		let target = 3;
-
-		console.group("Initial");
-		console.log("id", id, id.toString(2));
-		console.log("stacks", stacks, stacks.toString(2));
-		console.log("target", target, target.toString(2));
-		console.groupEnd();
-
-		let offsetTarget = target << MASKS.target.offset;
-		let offsetStacks = stacks << MASKS.stacks.offset;
-		let combined = offsetTarget + offsetStacks + id;
-
-		console.group("Combined");
-		console.log(combined);
-		console.log(combined.toString(2));
-		console.log(combined.toString(2));
-		console.groupEnd();
-
-		console.group("Read values");
-		console.log("id", combined & MASKS.effect.mask);
-		console.log(
-			"stacks",
-			(combined & MASKS.stacks.mask) >>> MASKS.stacks.offset
-		);
-		console.log(
-			"target",
-			(combined & MASKS.target.mask) >>> MASKS.target.offset
-		);
-		console.groupEnd();
-
-		const base64Options = { alphabet: "base64url" };
-
-		let arr = new Uint32Array([combined, combined, combined]);
-		let arr8 = new Uint8Array(arr.buffer);
-		let urlStr = arr8.toBase64(base64Options);
-		console.log(urlStr);
-
-		let arrFromUrl = Uint8Array.fromBase64(urlStr, base64Options);
-		let arr32FromUrl = new Uint32Array(arrFromUrl.buffer);
-
-		console.log(arr32FromUrl);
-
 		effect(() => {
-			// console.log(this.#anchor.value);
 			const url = new URL(location);
-			url.searchParams.set("count", this.#count.value);
 			url.searchParams.set("anchor", this.#anchor.value);
 			url.searchParams.set("name", this.#name.value);
+
+			const effectsStr = this.encodeEffects(this.#effects.value);
+			url.searchParams.set("effects", effectsStr);
+
 			history.replaceState(null, "", url);
 		});
 
 		effect(() => {
 			console.log(this.#effects.value);
 		});
+	}
+
+	encodeEffects(effects) {
+		const combined = [];
+
+		effects.forEach((effect) => {
+			const id = effect.id;
+			const target = effect.target ?? 0;
+			const stacks = effect.stacks ?? 0;
+
+			if (Number.isInteger(id) && id) {
+				const offsetTarget = target << TotemForge.MASKS.target.offset;
+				const offsetStacks = stacks << TotemForge.MASKS.stacks.offset;
+
+				const final = offsetTarget + offsetStacks + id;
+
+				combined.push(final);
+			}
+		});
+
+		const arr = new Uint32Array(combined);
+		const arr8 = new Uint8Array(arr.buffer);
+		const str = arr8.toBase64(TotemForge.BASE64OPTIONS);
+		console.log(str);
+		return str;
+	}
+
+	decodeEffects(str) {
+		const arrFromUrl = Uint8Array.fromBase64(str, TotemForge.BASE64OPTIONS);
+		const arr32FromUrl = new Uint32Array(arrFromUrl.buffer);
+
+		if (arr32FromUrl.length) {
+			const effects = [];
+
+			arr32FromUrl.forEach((value) => {
+				const id = value & TotemForge.MASKS.effect.mask;
+				const stacks = value & TotemForge.MASKS.stacks.mask;
+				const target = value & TotemForge.MASKS.target.mask;
+
+				const effect = getEffectObject(id);
+				if (effect) {
+					effects.push({
+						id,
+						stacks,
+						target,
+					});
+				}
+			});
+
+			return effects;
+		}
+
+		return [];
 	}
 
 	connectedCallback() {
@@ -125,7 +136,6 @@ class TotemForge extends HTMLElement {
 			this,
 			() =>
 				html`<div class="controls">
-						<p>Hello ${this.#count.value}.</p>
 						<label for="in-name">Pack Name</label>
 						<input
 							id="in-name"
@@ -134,9 +144,6 @@ class TotemForge extends HTMLElement {
 								this.#name.value = e.target.value;
 							}}
 						/>
-						<button onclick=${(e) => this.#count.value++}>
-							Clicked ${this.#count.value} times
-						</button>
 						<label for="in-anchor">Layout Anchor</label>
 						<select
 							id="in-anchor"
@@ -151,7 +158,9 @@ class TotemForge extends HTMLElement {
 							<option value="b">Bottom</option>
 						</select>
 					</div>
+					<label for="group-filter">Filter</label>
 					<select
+						id="group-filter"
 						.value=${this.#filter.value}
 						onchange=${(e) => (this.#filter.value = e.target.value)}
 					>
@@ -159,10 +168,21 @@ class TotemForge extends HTMLElement {
 							return html`<option value=${item.value}>${item.label}</option>`;
 						})}
 					</select>
+					<label for="search">Search</label>
+					<input
+						id="search"
+						type="search"
+						.value=${this.#search.value}
+						oninput=${(e) => {
+							const newValue = e.target.value;
+							this.#search.value = newValue.length >= 2 ? newValue : "";
+						}}
+					/>
 					<div role="listbox" class="effects-list">
 						${Array.from(effectGroups.values()).map((group) => {
 							return html`<ul
 								role="group"
+								hidden=${this.isGroupHidden(group.profession)}
 								aria-labelledby=${`group-${group.id}-heading`}
 							>
 								<li id=${`group-${group.id}-heading`} role="presentation">
@@ -170,6 +190,9 @@ class TotemForge extends HTMLElement {
 								</li>
 								${group.effects.map((effect) => {
 									return html`<li
+										hidden=${!effect.name
+											.toLowerCase()
+											.includes(this.#search.value)}
 										totem="effect-item"
 										id=${`effect-${effect.id}`}
 										role="option"
@@ -193,6 +216,7 @@ class TotemForge extends HTMLElement {
 											loading="lazy"
 										/>
 										<span slot="name">${effect.name}</span>
+
 										<code
 											slot="id"
 											title=${effect.variantIds
@@ -203,7 +227,7 @@ class TotemForge extends HTMLElement {
 											>ID ${effect.id ?? "?"}</code
 										>
 										<span slot="source"
-											>Source: ${this.generateSourceContent(effect)}</span
+											>${this.generateSourceContent(effect)}</span
 										>
 									</li>`;
 								})}
@@ -234,9 +258,7 @@ class TotemForge extends HTMLElement {
 								/>
 								<span slot="name">${effect.name}</span>
 								<code slot="id">ID ${effect.id ?? "?"}</code>
-								<span slot="source"
-									>Source: ${this.generateSourceContent(effect)}</span
-								>
+								<span slot="source">${this.generateSourceContent(effect)}</span>
 							</li>`;
 						})}
 						<li>Some Effect</li>
@@ -278,6 +300,19 @@ class TotemForge extends HTMLElement {
 			: base;
 	}
 
+	isGroupHidden(groupProfession) {
+		const filter = this.#filter.value;
+
+		if (!filter) {
+			// show all
+			return false;
+		} else if ("common" === filter) {
+			return null !== groupProfession;
+		} else {
+			return ![null, filter].includes(groupProfession);
+		}
+	}
+
 	effectRemove(id) {
 		this.#effects.value = this.#effects.value.filter(
 			(effect) => effect.id !== id
@@ -285,7 +320,10 @@ class TotemForge extends HTMLElement {
 	}
 
 	effectAdd(id) {
-		this.#effects.value = [...this.#effects.value, { id: id, stacks: null }];
+		this.#effects.value = [
+			...this.#effects.value,
+			{ id: id, stacks: 0, target: 0 },
+		];
 	}
 
 	effectFind(id) {

@@ -15,7 +15,7 @@ professions.forEach((profession) => {
 		id: profId,
 		label: profession.name,
 		effects: [],
-		profession: [profession.id],
+		profession: profession.id,
 	});
 
 	const profession_core_specs = specializations.filter((spec) => {
@@ -28,7 +28,7 @@ professions.forEach((profession) => {
 			id: specId,
 			label: spec.name,
 			effects: [],
-			profession: [profession.id],
+			profession: profession.id,
 		});
 	});
 
@@ -42,7 +42,7 @@ professions.forEach((profession) => {
 			id: specId,
 			label: spec.name,
 			effects: [],
-			profession: [profession.id],
+			profession: profession.id,
 		});
 	});
 });
