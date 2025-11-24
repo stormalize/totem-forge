@@ -46,6 +46,7 @@ class TotemForge extends HTMLElement {
 	#anchor;
 	#name;
 	#effects;
+	#selectedActiveEffects;
 
 	#filter;
 	#search;
@@ -57,8 +58,11 @@ class TotemForge extends HTMLElement {
 		this.#name = signal(getURLParam("name") ?? "my totem");
 		this.#pinIndex = signal(getURLParam("pin") ?? 0);
 
-		this.#effects = signal(this.decodeEffects(getURLParam("effects") ?? []));
+		this.#effects = signal(
+			this.decodeEffects(getURLParam("effects")) ?? ["PIN"]
+		);
 
+		this.#selectedActiveEffects = signal([]);
 		this.#filter = signal("");
 		this.#search = signal("");
 
@@ -83,17 +87,19 @@ class TotemForge extends HTMLElement {
 		const combined = [];
 
 		effects.forEach((effect) => {
-			const id = effect.id;
-			const target = effect.target ?? 0;
-			const stacks = effect.stacks ?? 0;
+			if (typeof effect === "object") {
+				const id = effect.id;
+				const target = effect.target ?? 0;
+				const stacks = effect.stacks ?? 0;
 
-			if (Number.isInteger(id) && id) {
-				const offsetTarget = target << TotemForge.MASKS.target.offset;
-				const offsetStacks = stacks << TotemForge.MASKS.stacks.offset;
+				if (Number.isInteger(id) && id) {
+					const offsetTarget = target << TotemForge.MASKS.target.offset;
+					const offsetStacks = stacks << TotemForge.MASKS.stacks.offset;
 
-				const final = offsetTarget + offsetStacks + id;
+					const final = offsetTarget + offsetStacks + id;
 
-				combined.push(final);
+					combined.push(final);
+				}
 			}
 		});
 
@@ -105,6 +111,10 @@ class TotemForge extends HTMLElement {
 	}
 
 	decodeEffects(str) {
+		if (!str) {
+			return null;
+		}
+
 		const arrFromUrl = Uint8Array.fromBase64(str, TotemForge.BASE64OPTIONS);
 		const arr32FromUrl = new Uint32Array(arrFromUrl.buffer);
 
@@ -126,20 +136,14 @@ class TotemForge extends HTMLElement {
 				}
 			});
 
-			return effects;
+			const pin = this.#pinIndex.value;
+			return effects.toSpliced(pin, 0, "PIN");
 		}
 
-		return [];
+		return null;
 	}
 
 	connectedCallback() {
-		const activeEffectsList = computed(() => {
-			const pin = this.#pinIndex.value;
-			return this.#effects.value.toSpliced(pin, 0, "PIN");
-		});
-
-		console.log(activeEffectsList.value);
-
 		render(
 			this,
 			() =>
@@ -166,27 +170,37 @@ class TotemForge extends HTMLElement {
 							<option value="b">Bottom</option>
 						</select>
 					</div>
-					<label for="group-filter">Filter</label>
-					<select
-						id="group-filter"
-						.value=${this.#filter.value}
-						onchange=${(e) => (this.#filter.value = e.target.value)}
+					<div class="library-filter">
+						<label for="group-filter">Filter</label>
+						<select
+							id="group-filter"
+							.value=${this.#filter.value}
+							onchange=${(e) => (this.#filter.value = e.target.value)}
+						>
+							${effectGroupsFilter.map((item) => {
+								return html`<option value=${item.value}>${item.label}</option>`;
+							})}
+						</select>
+						<label for="search">Search</label>
+						<input
+							id="search"
+							type="search"
+							.value=${this.#search.value}
+							oninput=${(e) => {
+								const newValue = e.target.value;
+								this.#search.value = newValue.length >= 2 ? newValue : "";
+							}}
+						/>
+					</div>
+					<h2 id="library-heading" class="library-heading">
+						Available Effects
+					</h2>
+					<div
+						aria="labelledby"
+						="library-heading"
+						role="listbox"
+						class="effects-library"
 					>
-						${effectGroupsFilter.map((item) => {
-							return html`<option value=${item.value}>${item.label}</option>`;
-						})}
-					</select>
-					<label for="search">Search</label>
-					<input
-						id="search"
-						type="search"
-						.value=${this.#search.value}
-						oninput=${(e) => {
-							const newValue = e.target.value;
-							this.#search.value = newValue.length >= 2 ? newValue : "";
-						}}
-					/>
-					<div role="listbox" class="effects-list">
 						${Array.from(effectGroups.values()).map((group) => {
 							return html`<ul
 								role="group"
@@ -242,20 +256,38 @@ class TotemForge extends HTMLElement {
 							</ul>`;
 						})}
 					</div>
-					<hr />
-					<ul class="effects">
-						${activeEffectsList.value.map((savedEffect) => {
+					<h2 id="selected-heading" class="selected-heading">
+						Selected Effects
+					</h2>
+					<div class="effect-actions">
+						<button>Move Up</button><button>Move Down</button
+						><button>Delete</button>
+					</div>
+					<ul
+						aria-labelledby="selected-heading"
+						role="listbox"
+						class="effects-selected"
+					>
+						${this.#effects.value.map((savedEffect) => {
 							const effect = getEffectObject(savedEffect.id);
 							return "PIN" === savedEffect
-								? html`<li>SEPARATOR</li>`
+								? html`<li
+										aria-selected=${this.isActiveEffectSelected("PIN")
+											? "true"
+											: "false"}
+										class="pin"
+										aria-label="pinned effects end marker"
+										onclick=${(e) => {
+											this.toggleActiveEffectSelected("PIN");
+										}}
+								  ></li>`
 								: html`<li
 										totem="effect-item"
+										aria-selected=${this.isActiveEffectSelected(savedEffect.id)
+											? "true"
+											: "false"}
 										onclick=${(e) => {
-											if (this.effectFind(effect.id)) {
-												this.effectRemove(effect.id);
-											} else {
-												this.effectAdd(effect.id);
-											}
+											this.toggleActiveEffectSelected(savedEffect.id);
 										}}
 								  >
 										<img
@@ -273,11 +305,6 @@ class TotemForge extends HTMLElement {
 										>
 								  </li>`;
 						})}
-						<li>Some Effect</li>
-						<li>Some Effect</li>
-						<li>---------</li>
-						<li>Some Effect</li>
-						<li>Some Effect</li>
 					</ul>
 					<textarea class="output"></textarea>`
 		);
@@ -325,6 +352,7 @@ class TotemForge extends HTMLElement {
 		}
 	}
 
+	// active effects
 	effectRemove(id) {
 		this.#effects.value = this.#effects.value.filter(
 			(effect) => effect.id !== id
@@ -343,6 +371,31 @@ class TotemForge extends HTMLElement {
 	}
 
 	effectMove(oldIndex, newIndex) {}
+
+	// selected active effects
+	selectActiveEffect(id) {
+		this.#selectedActiveEffects.value = [
+			...this.#selectedActiveEffects.value,
+			id,
+		];
+	}
+
+	deselectActiveEffect(id) {
+		this.#selectedActiveEffects.value =
+			this.#selectedActiveEffects.value.filter((effect) => effect !== id);
+	}
+
+	isActiveEffectSelected(id) {
+		return this.#selectedActiveEffects.value.find((effect) => effect === id);
+	}
+
+	toggleActiveEffectSelected(id) {
+		if (this.isActiveEffectSelected(id)) {
+			this.deselectActiveEffect(id);
+		} else {
+			this.selectActiveEffect(id);
+		}
+	}
 }
 
 customElements.define("totem-forge", TotemForge);
