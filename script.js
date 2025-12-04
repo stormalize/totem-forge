@@ -4,23 +4,61 @@ import {
 	effectGroups,
 	effectGroupsFilter,
 	getEffectObject,
+	reffectTemplates,
 } from "data";
 
 function getURLParam(name) {
 	return new URL(location).searchParams.get(name);
 }
 
+console.log(reffectTemplates);
+
 class TotemForge extends HTMLElement {
-	static schema = {
-		anchor: {
-			type: "string",
-			enum: ["l", "t", "r", "b"],
+	static PACK_METRICS = {
+		// start icon
+		start: {
+			index: 0,
+			offsetInline: -38,
+			sizeInline: 24,
+			sizeBlock: 44,
 		},
-		name: {
-			type: "string",
+		// individual pin item group
+		pinnedItem: {
+			sizeInline: 52,
 		},
-		effects: {
-			type: "array",
+		pinnedItemMax: {
+			index: 0,
+			sizeBlock: 104,
+		},
+		pinnedItemFrame: {
+			index: 1,
+			sizeBlock: 44,
+		},
+		// end group
+		end: {
+			index: -1,
+		},
+		endIcon: {
+			index: 0,
+			offsetInline: 6,
+			sizeInline: 12,
+			sizeBlock: 44,
+		},
+		restIcon: {
+			index: 1,
+			offsetInline: 24,
+			sizeInline: 48,
+			sizeBlock: 44,
+		},
+		restList: {
+			index: 2,
+			offsetInline: 32,
+		},
+		iconDirectories: {
+			r: "Right",
+			d: "Down",
+			l: "Left",
+			u: "Up",
 		},
 	};
 
@@ -43,10 +81,11 @@ class TotemForge extends HTMLElement {
 
 	static effects = effects;
 
-	#anchor;
+	#direction;
 	#name;
 	#effects;
 	#selectedActiveEffects;
+	#reffectPackObject;
 
 	#filter;
 	#search;
@@ -54,13 +93,16 @@ class TotemForge extends HTMLElement {
 
 	constructor() {
 		super();
-		this.#anchor = signal(getURLParam("anchor") ?? "l");
+		this.#direction = signal(getURLParam("direction") ?? "l");
 		this.#name = signal(getURLParam("name") ?? "my totem");
 		this.#pinIndex = signal(getURLParam("pin") ?? 0);
 
 		this.#effects = signal(
 			this.decodeEffects(getURLParam("effects")) ?? ["PIN"]
 		);
+		this.#reffectPackObject = computed(() => {
+			return this.prepareReffectTemplate(this.#effects.value);
+		});
 
 		this.#selectedActiveEffects = signal([]);
 		this.#filter = signal("");
@@ -68,7 +110,7 @@ class TotemForge extends HTMLElement {
 
 		effect(() => {
 			const url = new URL(location);
-			url.searchParams.set("anchor", this.#anchor.value);
+			url.searchParams.set("direction", this.#direction.value);
 			url.searchParams.set("name", this.#name.value);
 
 			const effectsStr = this.encodeEffects(this.#effects.value);
@@ -156,18 +198,18 @@ class TotemForge extends HTMLElement {
 								this.#name.value = e.target.value;
 							}}
 						/>
-						<label for="in-anchor">Layout Anchor</label>
+						<label for="in-direction">Layout Direction</label>
 						<select
-							id="in-anchor"
-							.value=${this.#anchor.value}
+							id="in-direction"
+							.value=${this.#direction.value}
 							onchange=${(e) => {
-								this.#anchor.value = e.target.value;
+								this.#direction.value = e.target.value;
 							}}
 						>
-							<option value="l">Left</option>
-							<option value="t">Top</option>
 							<option value="r">Right</option>
-							<option value="b">Bottom</option>
+							<option value="d">Down</option>
+							<option value="l">Left</option>
+							<option value="u">Up</option>
 						</select>
 					</div>
 					<div class="library-filter">
@@ -306,7 +348,9 @@ class TotemForge extends HTMLElement {
 								  </li>`;
 						})}
 					</ul>
-					<textarea class="output"></textarea>`
+					<pre class="output">
+${JSON.stringify(this.#reffectPackObject, null, 2)}</pre
+					>`
 		);
 	}
 
@@ -395,6 +439,37 @@ class TotemForge extends HTMLElement {
 		} else {
 			this.selectActiveEffect(id);
 		}
+	}
+
+	prepareReffectTemplate(effects) {
+		const pack = structuredClone(reffectTemplates.main);
+
+		const direction = this.#direction.value;
+
+		const INLINE_INDEX = ["r", "l"].includes(direction) ? 0 : 1;
+		const BLOCK_INDEX = ["d", "u"].includes(direction) ? 0 : 1;
+		// we need to flip offset values for "reversed" directions
+		const FLIP_OFFSET = ["l", "u"].includes(direction) ? -1 : 1;
+
+		let pinned = true;
+
+		console.log(INLINE_INDEX, BLOCK_INDEX);
+		// TODO: adjust start and end position based on direction
+		pack.name = this.#name.value;
+
+		effects.forEach((effect) => {
+			if ("PIN" === effect) {
+				pinned = false;
+			} else {
+				if (pinned) {
+					pack;
+				} else {
+					// unpinned "rest" items
+				}
+			}
+		});
+
+		return pack;
 	}
 }
 

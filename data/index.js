@@ -1,10 +1,17 @@
 import effects from "./effects.json" with { type: "json" };
 import specializations from "./specializations.json" with { type: "json" };
 import professions from "./professions.json" with { type: "json" };
+import main from "./reffect-templates/main.json" with { type: "json" };
+import parts from "./reffect-templates/parts.json" with { type: "json" };
 
 // const effects = [];
 // const specializations = [];
 // const professions = [];
+
+const reffectTemplates = {
+	main,
+	parts
+};
 
 const effectGroups = new Map();
 
@@ -125,4 +132,4 @@ const getEffectObject = (id) => {
 	return result === undefined ? false : result;
 };
 
-export { effects, effectGroups, effectGroupsFilter, getEffectObject };
+export { effects, effectGroups, effectGroupsFilter, getEffectObject, reffectTemplates };
