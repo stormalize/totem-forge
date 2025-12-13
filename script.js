@@ -96,10 +96,11 @@ class TotemForge extends HTMLElement {
 		super();
 		this.#direction = signal(getURLParam("direction") ?? "r");
 		this.#name = signal(getURLParam("name") ?? "my totem");
-		this.#pinIndex = signal(getURLParam("pin") ?? 0);
+
+		const pinIndex = getURLParam("pin") ?? 0;
 
 		this.#effects = signal(
-			this.decodeEffects(getURLParam("effects")) ?? ["PIN"]
+			this.decodeEffects(getURLParam("effects"), pinIndex) ?? ["PIN"]
 		);
 		this.#reffectPackObject = computed(() => {
 			return this.prepareReffectTemplate(this.#effects.value);
@@ -115,7 +116,9 @@ class TotemForge extends HTMLElement {
 			url.searchParams.set("name", this.#name.value);
 
 			const effectsStr = this.encodeEffects(this.#effects.value);
-			url.searchParams.set("pin", this.#pinIndex.value);
+			const pinIndex = this.#effects.value.findIndex((item) => "PIN" === item);
+
+			url.searchParams.set("pin", pinIndex);
 			url.searchParams.set("effects", effectsStr);
 
 			history.replaceState(null, "", url);
@@ -153,7 +156,7 @@ class TotemForge extends HTMLElement {
 		return str;
 	}
 
-	decodeEffects(str) {
+	decodeEffects(str, pinIndex) {
 		if (!str) {
 			return null;
 		}
@@ -179,8 +182,7 @@ class TotemForge extends HTMLElement {
 				}
 			});
 
-			const pin = this.#pinIndex.value;
-			return effects.toSpliced(pin, 0, "PIN");
+			return effects.toSpliced(pinIndex, 0, "PIN");
 		}
 
 		return null;
@@ -300,11 +302,52 @@ class TotemForge extends HTMLElement {
 						})}
 					</div>
 					<h2 id="selected-heading" class="selected-heading">
-						Selected Effects
+						Included Effects
 					</h2>
 					<div class="effect-actions">
-						<button>Move Up</button><button>Move Down</button
-						><button>Delete</button>
+						${this.#selectedActiveEffects.value.length > 0
+							? html`<span
+									>${this.#selectedActiveEffects.value.length} selected</span
+							  >`
+							: null}
+						<button
+							?disabled=${this.#selectedActiveEffects.value.length === 0}
+							onclick=${(e) => {
+								this.effectsShift();
+							}}
+						>
+							Move Up</button
+						><button
+							onclick=${(e) => {
+								this.effectsShift(true);
+							}}
+							?disabled=${this.#selectedActiveEffects.value.length === 0}
+						>
+							Move Down
+						</button>
+						<button
+							onclick=${(e) => {
+								this.#selectedActiveEffects.value = [];
+							}}
+							?disabled=${this.#selectedActiveEffects.value.length === 0}
+						>
+							Deselect All
+						</button>
+						<button
+							onclick=${(e) => {
+								if (this.#selectedActiveEffects.value.length > 0) {
+									this.#selectedActiveEffects.value.forEach((effectId) => {
+										if ("PIN" !== effectId) {
+											this.effectRemove(effectId);
+										}
+									});
+									this.#selectedActiveEffects.value = [];
+								}
+							}}
+							?disabled=${this.#selectedActiveEffects.value.length === 0}
+						>
+							Delete
+						</button>
 					</div>
 					<ul
 						aria-labelledby="selected-heading"
@@ -415,7 +458,49 @@ ${JSON.stringify(this.#reffectPackObject, null, 2)}</textarea
 		return this.#effects.value.find((effect) => effect.id === id);
 	}
 
-	effectMove(oldIndex, newIndex) {}
+	effectsShift(DOWN = false) {
+		if (this.#selectedActiveEffects.value.length > 0) {
+			const newEffects = structuredClone(this.#effects.value);
+			const locations = structuredClone(this.#selectedActiveEffects.value)
+				.map((selectedId) => {
+					const index = newEffects.findIndex((item) =>
+						selectedId === "PIN" ? item === "PIN" : selectedId === item.id
+					);
+					return [index, selectedId];
+				})
+				.sort((a, b) => a[0] - b[0]);
+
+			if (DOWN) {
+				locations.reverse();
+				console.log(locations);
+			}
+
+			locations.forEach(([effectIndex, effectId], selectIndex) => {
+				if (DOWN) {
+					// shift down
+					const reverseEffectIndex = Math.abs(
+						effectIndex - newEffects.length + 1
+					);
+
+					if (reverseEffectIndex > selectIndex && effectIndex !== -1) {
+						console.log("grooving");
+						const temp = newEffects[effectIndex];
+						newEffects.splice(effectIndex, 1);
+						newEffects.splice(effectIndex + 1, 0, temp);
+					}
+				} else {
+					// shift up
+					if (effectIndex > selectIndex && effectIndex !== -1) {
+						const temp = newEffects[effectIndex];
+						newEffects.splice(effectIndex, 1);
+						newEffects.splice(effectIndex - 1, 0, temp);
+					}
+				}
+			});
+
+			this.#effects.value = newEffects;
+		}
+	}
 
 	// selected active effects
 	selectActiveEffect(id) {
