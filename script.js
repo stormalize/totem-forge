@@ -55,7 +55,7 @@ class TotemForge extends HTMLElement {
 			index: 2,
 			offsetInline: 32,
 		},
-		iconDirectories: {
+		iconDirs: {
 			r: "Right",
 			d: "Down",
 			l: "Left",
@@ -445,31 +445,54 @@ ${JSON.stringify(this.#reffectPackObject, null, 2)}</textarea
 	prepareReffectTemplate(effectList) {
 		const pack = structuredClone(reffectTemplates.main);
 
+		const SPECS = TotemForge.PACK_METRICS;
+
+		const packStart = pack.elements[0].members[SPECS.start.index];
+		const packPinnedGroup = pack.elements[0].members[SPECS.pinned.index];
+		const packEndGroup = pack.elements[0].members[SPECS.end.index];
+		const packEndIcon = packEndGroup.members[SPECS.endIcon.index];
+		const packRestIcon = packEndGroup.members[SPECS.restIcon.index];
+		const packUnpinnedList = packEndGroup.members[SPECS.restList.index];
+
+		const pinnedItemSize = SPECS.pinnedItem.sizeInline;
+
 		const direction = this.#direction.value;
+		const directionDir = SPECS.iconDirs[direction].toLowerCase();
 
 		const INLINE_INDEX = ["r", "l"].includes(direction) ? 0 : 1;
 		const BLOCK_INDEX = ["d", "u"].includes(direction) ? 0 : 1;
 		// we need to flip offset values for "reversed" directions
 		const FLIP_OFFSET = ["l", "u"].includes(direction) ? -1 : 1;
 
+		// apply direction
+		packStart.icon.File = `totem\\${directionDir}\\totem-start.png`;
+		packStart.pos[INLINE_INDEX] = SPECS.start.offsetInline * FLIP_OFFSET;
+		packStart.pos[BLOCK_INDEX] = 0;
+		packStart.size[INLINE_INDEX] = SPECS.start.sizeInline;
+		packStart.size[BLOCK_INDEX] = SPECS.start.sizeBlock;
+
+		packEndIcon.icon.File = `totem\\${directionDir}\\totem-end.png`;
+		packEndIcon.pos[INLINE_INDEX] = SPECS.endIcon.offsetInline * FLIP_OFFSET;
+		packEndIcon.pos[BLOCK_INDEX] = 0;
+		packEndIcon.size[INLINE_INDEX] = SPECS.endIcon.sizeInline;
+		packEndIcon.size[BLOCK_INDEX] = SPECS.endIcon.sizeBlock;
+
+		packRestIcon.icon.File = `totem\\${directionDir}\\totem-rest.png`;
+		packRestIcon.pos[INLINE_INDEX] = SPECS.restIcon.offsetInline * FLIP_OFFSET;
+		packRestIcon.pos[BLOCK_INDEX] = 0;
+		packRestIcon.size[INLINE_INDEX] = SPECS.restIcon.sizeInline;
+		packRestIcon.size[BLOCK_INDEX] = SPECS.restIcon.sizeBlock;
+
+		packUnpinnedList.pos[INLINE_INDEX] =
+			SPECS.restList.offsetInline * FLIP_OFFSET;
+		packUnpinnedList.pos[BLOCK_INDEX] = 0;
+		packUnpinnedList.direction = SPECS.iconDirs[direction];
+		// end apply direction
+
 		let pinned = true;
-
-		// console.log(INLINE_INDEX, BLOCK_INDEX);
-		// TODO: adjust start and end position based on direction
-		pack.name = this.#name.value;
-
-		const packPinnedGroup =
-			pack.elements[0].members[TotemForge.PACK_METRICS.pinned.index];
-		const packEndGroup =
-			pack.elements[0].members[TotemForge.PACK_METRICS.end.index];
-		const packUnpinnedList =
-			pack.elements[0].members[TotemForge.PACK_METRICS.end.index].members[
-				TotemForge.PACK_METRICS.restList.index
-			];
-
-		const pinnedItemSize = TotemForge.PACK_METRICS.pinnedItem.sizeInline;
-
 		let pinEndIndex = 0;
+
+		pack.name = this.#name.value;
 
 		effectList.forEach((effect, index) => {
 			if ("PIN" === effect) {
@@ -494,11 +517,25 @@ ${JSON.stringify(this.#reffectPackObject, null, 2)}</textarea
 							effectDetails.maximum > 1
 						) {
 							part.members[
-								TotemForge.PACK_METRICS.pinnedItemMax.index
+								SPECS.pinnedItemMax.index
 							].trigger.threshold.threshold_type.Above = effectDetails.maximum;
 						}
 
-						part.pos[INLINE_INDEX] = index * pinnedItemSize;
+						// apply direction
+						part.pos[INLINE_INDEX] = index * pinnedItemSize * FLIP_OFFSET;
+						part.pos[BLOCK_INDEX] = 0;
+
+						const maxIcon = part.members[SPECS.pinnedItemMax.index];
+						const frameIcon = part.members[SPECS.pinnedItemFrame.index];
+
+						maxIcon.icon.File = `totem\\${directionDir}\\glow-a.png`;
+						maxIcon.size[INLINE_INDEX] = SPECS.pinnedItem.sizeInline;
+						maxIcon.size[BLOCK_INDEX] = SPECS.pinnedItemMax.sizeBlock;
+
+						frameIcon.icon.File = `totem\\${directionDir}\\totem-frame.png`;
+						frameIcon.size[INLINE_INDEX] = SPECS.pinnedItem.sizeInline;
+						frameIcon.size[BLOCK_INDEX] = SPECS.pinnedItemFrame.sizeBlock;
+						// end apply direction
 
 						packPinnedGroup.members.push(part);
 					} else {
@@ -518,10 +555,11 @@ ${JSON.stringify(this.#reffectPackObject, null, 2)}</textarea
 			}
 		});
 
-		// move end group by number of pinned items, subtracted by a half
+		// shift end group by number of pinned items, subtracted by a half
 		// since pinned items are position center on the first one
 		packEndGroup.pos[INLINE_INDEX] =
-			pinEndIndex * pinnedItemSize - pinnedItemSize / 2;
+			(pinEndIndex * pinnedItemSize - pinnedItemSize / 2) * FLIP_OFFSET;
+		packEndGroup.pos[BLOCK_INDEX] = 0;
 
 		return pack;
 	}
