@@ -11,8 +11,6 @@ function getURLParam(name) {
 	return new URL(location).searchParams.get(name);
 }
 
-console.log(reffectTemplates);
-
 class TotemForge extends HTMLElement {
 	static PACK_METRICS = {
 		// start icon
@@ -21,6 +19,9 @@ class TotemForge extends HTMLElement {
 			offsetInline: -38,
 			sizeInline: 24,
 			sizeBlock: 44,
+		},
+		pinned: {
+			index: 1,
 		},
 		// individual pin item group
 		pinnedItem: {
@@ -36,7 +37,7 @@ class TotemForge extends HTMLElement {
 		},
 		// end group
 		end: {
-			index: -1,
+			index: 2,
 		},
 		endIcon: {
 			index: 0,
@@ -93,7 +94,7 @@ class TotemForge extends HTMLElement {
 
 	constructor() {
 		super();
-		this.#direction = signal(getURLParam("direction") ?? "l");
+		this.#direction = signal(getURLParam("direction") ?? "r");
 		this.#name = signal(getURLParam("name") ?? "my totem");
 		this.#pinIndex = signal(getURLParam("pin") ?? 0);
 
@@ -348,8 +349,8 @@ class TotemForge extends HTMLElement {
 								  </li>`;
 						})}
 					</ul>
-					<pre class="output">
-${JSON.stringify(this.#reffectPackObject, null, 2)}</pre
+					<textarea class="output">
+${JSON.stringify(this.#reffectPackObject, null, 2)}</textarea
 					>`
 		);
 	}
@@ -441,7 +442,7 @@ ${JSON.stringify(this.#reffectPackObject, null, 2)}</pre
 		}
 	}
 
-	prepareReffectTemplate(effects) {
+	prepareReffectTemplate(effectList) {
 		const pack = structuredClone(reffectTemplates.main);
 
 		const direction = this.#direction.value;
@@ -453,21 +454,74 @@ ${JSON.stringify(this.#reffectPackObject, null, 2)}</pre
 
 		let pinned = true;
 
-		console.log(INLINE_INDEX, BLOCK_INDEX);
+		// console.log(INLINE_INDEX, BLOCK_INDEX);
 		// TODO: adjust start and end position based on direction
 		pack.name = this.#name.value;
 
-		effects.forEach((effect) => {
+		const packPinnedGroup =
+			pack.elements[0].members[TotemForge.PACK_METRICS.pinned.index];
+		const packEndGroup =
+			pack.elements[0].members[TotemForge.PACK_METRICS.end.index];
+		const packUnpinnedList =
+			pack.elements[0].members[TotemForge.PACK_METRICS.end.index].members[
+				TotemForge.PACK_METRICS.restList.index
+			];
+
+		const pinnedItemSize = TotemForge.PACK_METRICS.pinnedItem.sizeInline;
+
+		let pinEndIndex = 0;
+
+		effectList.forEach((effect, index) => {
 			if ("PIN" === effect) {
 				pinned = false;
+				pinEndIndex = index;
 			} else {
-				if (pinned) {
-					pack;
-				} else {
-					// unpinned "rest" items
+				const effectDetails = getEffectObject(effect.id);
+				if (effectDetails) {
+					if (pinned) {
+						// insert into pinned group
+						const part = structuredClone(reffectTemplates.parts.pinnedItem);
+
+						part.name = `${effectDetails.type}: ${effectDetails.name}`;
+						part.trigger.source.ids.push(effectDetails.id);
+
+						if (effectDetails.variantIds) {
+							part.trigger.source.ids.push(...effectDetails.variantIds);
+						}
+
+						if (
+							"Intensity" === effectDetails.stacking &&
+							effectDetails.maximum > 1
+						) {
+							part.members[
+								TotemForge.PACK_METRICS.pinnedItemMax.index
+							].trigger.threshold.threshold_type.Above = effectDetails.maximum;
+						}
+
+						part.pos[INLINE_INDEX] = index * pinnedItemSize;
+
+						packPinnedGroup.members.push(part);
+					} else {
+						// unpinned "rest" items
+						const part = structuredClone(reffectTemplates.parts.unpinnedItem);
+
+						part.name = `${effectDetails.type}: ${effectDetails.name}`;
+						part.trigger.source.ids.push(effectDetails.id);
+
+						if (effectDetails.variantIds) {
+							part.trigger.source.ids.push(...effectDetails.variantIds);
+						}
+
+						packUnpinnedList.icons.push(part);
+					}
 				}
 			}
 		});
+
+		// move end group by number of pinned items, subtracted by a half
+		// since pinned items are position center on the first one
+		packEndGroup.pos[INLINE_INDEX] =
+			pinEndIndex * pinnedItemSize - pinnedItemSize / 2;
 
 		return pack;
 	}

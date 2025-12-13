@@ -1,7 +1,7 @@
 {
 	"pinnedItem": {
 		"enabled": true,
-		"name": "trait:NAME",
+		"name": "NAME",
 		"anchor": "Parent",
 		"pos": [0.0, 0.0],
 		"opacity": 1.0,
@@ -223,6 +223,6 @@
 		"conditions": [],
 		"duration_bar": true,
 		"duration_text": false,
-		"stacks_text": false
+		"stacks_text": true
 	}
 }

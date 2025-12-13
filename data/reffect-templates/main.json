@@ -112,6 +112,39 @@
 				},
 				{
 					"enabled": true,
+					"name": "pinned",
+					"anchor": "Parent",
+					"pos": [0.0, 0.0],
+					"opacity": 1.0,
+					"trigger": {
+						"source": {
+							"type": "Inherit"
+						},
+						"threshold": {
+							"threshold_type": "Always",
+							"amount_type": "Intensity"
+						}
+					},
+					"filter": {
+						"player": {
+							"combat": null,
+							"specs": [],
+							"weapons": [],
+							"traits": [],
+							"mounts": []
+						},
+						"map": {
+							"category": [],
+							"whitelist": true,
+							"ids": []
+						}
+					},
+					"animation": null,
+					"type": "Group",
+					"members": []
+				},
+				{
+					"enabled": true,
 					"name": "end",
 					"anchor": "Parent",
 					"pos": [78.0, 0.0],
@@ -234,7 +267,7 @@
 						},
 						{
 							"enabled": true,
-							"name": "rest",
+							"name": "rest-list",
 							"anchor": "Parent",
 							"pos": [32.0, 0.0],
 							"opacity": 1.0,

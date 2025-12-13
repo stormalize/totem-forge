@@ -27,11 +27,11 @@
 		"type": "Boon"
 	},
 	{
-		"id": null,
+		"id": 740,
 		"name": "Might",
 		"icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
-		"stacking": "Duration",
-		"maximum": null,
+		"stacking": "Intensity",
+		"maximum": 25,
 		"description": "Increased outgoing damage; stacks intensity.",
 		"type": "Boon"
 	},
