@@ -171,4 +171,24 @@ totem-forge {
 		grid-area: source;
 		font-size: var(--type--300);
 	}
+
+	> [slot="draghandle"] {
+		grid-area: draghandle;
+		align-self: stretch;
+		display: block;
+		background-color: currentColor;
+	}
+
+	&[controls] {
+		grid-template-columns: 1.5rem auto 1fr auto;
+		grid-template-areas: "draghandle icon name id" "draghandle icon source source";
+	}
+}
+
+.drop-before {
+	border-block-start: 0.25rem solid currentColor;
+}
+
+.drop-after {
+	border-block-end: 0.25rem solid currentColor;
 }

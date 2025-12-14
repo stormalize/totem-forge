@@ -86,6 +86,8 @@ class TotemForge extends HTMLElement {
 	#name;
 	#effects;
 	#selectedActiveEffects;
+	#dragoverIndex;
+	#dragoverBefore;
 	#reffectPackObject;
 
 	#filter;
@@ -107,6 +109,8 @@ class TotemForge extends HTMLElement {
 		});
 
 		this.#selectedActiveEffects = signal([]);
+		this.#dragoverIndex = signal(null);
+		this.#dragoverBefore = signal(null);
 		this.#filter = signal("");
 		this.#search = signal("");
 
@@ -127,6 +131,73 @@ class TotemForge extends HTMLElement {
 		effect(() => {
 			console.log(this.#effects.value);
 		});
+
+		this.addEventListener("dragstart", (event) => {
+			console.log(event);
+			event.dataTransfer.setData("text/plain", event.target.innerText);
+		});
+
+		this.addEventListener("dragover", (event) => {
+			// console.log(event);
+			const target = event.target.closest(
+				`.effects-selected :where(li[totem="effect-item"], li.pin)`
+			);
+
+			let index = null;
+			let before = null;
+
+			if (target) {
+				index = [...target.parentElement.children].indexOf(target);
+				before = target.offsetHeight / 2 > event.offsetY;
+			}
+
+			if (null !== index) {
+				this.#dragoverIndex.value = index;
+				this.#dragoverBefore.value = before;
+			}
+		});
+
+		this.addEventListener("dragend", (event) => {
+			const target = event.target.closest(
+				`.effects-selected :where(li[totem="effect-item"], li.pin)`
+			);
+
+			if (target && null !== this.#dragoverIndex.value) {
+				const index = [...target.parentElement.children].indexOf(target);
+				const newIndex = this.#dragoverBefore.value
+					? this.#dragoverIndex.value
+					: this.#dragoverIndex.value + 1;
+				console.log(
+					index,
+					this.#dragoverBefore.value,
+					this.#dragoverIndex.value,
+					newIndex
+				);
+				this.effectMove(index, newIndex);
+			}
+
+			event.target.removeAttribute("draggable");
+			this.#dragoverBefore.value = null;
+			this.#dragoverIndex.value = null;
+		});
+
+		this.addEventListener("mousedown", (event) => {
+			if (event.target.matches(`[slot="draghandle"]`)) {
+				const effect = event.target.parentNode;
+				if (effect && effect.matches(`[totem="effect-item"]`)) {
+					effect.setAttribute("draggable", "true");
+				}
+			}
+		});
+
+		// this.addEventListener("mouseup", (event) => {
+		// 	if (event.target.matches(`[slot="draghandle"]`)) {
+		// 		const effect = event.target.parentNode;
+		// 		console.log(effect);
+		// 		if (effect && effect.matches(`[totem="effect-item"]`)) {
+		// 		}
+		// 	}
+		// });
 	}
 
 	encodeEffects(effects) {
@@ -354,14 +425,20 @@ class TotemForge extends HTMLElement {
 						role="listbox"
 						class="effects-selected"
 					>
-						${this.#effects.value.map((savedEffect) => {
+						${this.#effects.value.map((savedEffect, savedEffectIndex) => {
 							const effect = getEffectObject(savedEffect.id);
 							return "PIN" === savedEffect
 								? html`<li
 										aria-selected=${this.isActiveEffectSelected("PIN")
 											? "true"
 											: "false"}
-										class="pin"
+										class=${`pin${
+											savedEffectIndex === this.#dragoverIndex.value
+												? ` drop-${
+														this.#dragoverBefore.value ? "before" : "after"
+												  }`
+												: ""
+										}`}
 										aria-label="pinned effects end marker"
 										onclick=${(e) => {
 											this.toggleActiveEffectSelected("PIN");
@@ -369,6 +446,12 @@ class TotemForge extends HTMLElement {
 								  ></li>`
 								: html`<li
 										totem="effect-item"
+										class=${savedEffectIndex === this.#dragoverIndex.value
+											? `drop-${
+													this.#dragoverBefore.value ? "before" : "after"
+											  }`
+											: ""}
+										controls=""
 										aria-selected=${this.isActiveEffectSelected(savedEffect.id)
 											? "true"
 											: "false"}
@@ -376,6 +459,7 @@ class TotemForge extends HTMLElement {
 											this.toggleActiveEffectSelected(savedEffect.id);
 										}}
 								  >
+										<span slot="draghandle"></span>
 										<img
 											slot="icon"
 											src=${effect.icon}
@@ -456,6 +540,16 @@ ${JSON.stringify(this.#reffectPackObject, null, 2)}</textarea
 
 	effectFind(id) {
 		return this.#effects.value.find((effect) => effect.id === id);
+	}
+
+	effectMove(index, newIndex) {
+		console.log("current", index);
+		console.log("new index", newIndex);
+		const newEffects = structuredClone(this.#effects.value);
+		const temp = newEffects[index];
+		newEffects.splice(index, 1);
+		newEffects.splice(newIndex > index ? newIndex - 1 : newIndex, 0, temp);
+		this.#effects.value = newEffects;
 	}
 
 	effectsShift(DOWN = false) {
