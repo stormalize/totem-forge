@@ -13,6 +13,7 @@ html {
 html {
 	--fg: #dadbe4;
 	--bg: #262429;
+	--highlight: rgba(67, 67, 243, 0.13);
 	--type--100: 0.625rem;
 	--type--200: 0.7rem;
 	--type--300: 0.8rem;
@@ -33,13 +34,48 @@ body {
 	display: none !important;
 }
 
+:where(h1, h2, h3, h4, h5, h6) {
+	> :where([slot="suffix"], [slot="prefix"]) {
+		font-size: 1rem;
+		display: block;
+	}
+
+	> :where([slot="prefix"]) {
+		margin-block-end: 0.5rem;
+	}
+
+	> :where([slot="suffix"]) {
+		margin-block-start: 0.5rem;
+	}
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+}
+
+.intro {
+	padding: 1rem;
+
+	@container (width >= 720px) {
+		padding: 2rem;
+	}
+}
+
 totem-forge {
 	display: grid;
 	gap: 1rem;
-	padding: 2rem;
+	padding: 1rem;
 
 	grid-template-columns: 1fr;
-	grid-template-rows: auto auto auto auto auto auto auto auto;
+	grid-template-rows: auto auto auto auto auto auto auto auto auto;
 	grid-template-areas:
 		"controls"
 		"libraryheading"
@@ -48,16 +84,20 @@ totem-forge {
 		"selectedheading"
 		"actions"
 		"selected"
+		"outputheading"
 		"output";
 
 	@container (width >= 720px) {
+		padding: 2rem;
+
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto auto auto 50vh auto;
+		grid-template-rows: auto auto auto 50vh auto auto;
 		grid-template-areas:
 			"controls controls"
 			"libraryheading selectedheading"
 			"filter actions"
 			"library selected"
+			"outputheading outputheading"
 			"output output";
 	}
 }
@@ -104,6 +144,8 @@ totem-forge {
 
 .effect-actions {
 	grid-area: actions;
+	display: flex;
+	gap: 0.25rem;
 }
 
 .effects-selected {
@@ -113,10 +155,16 @@ totem-forge {
 
 	> .pin {
 		padding: 0.75rem 0.25rem;
+		cursor: grab;
 		&::before {
 			display: block;
 			border-block-start: 0.125rem dashed currentColor;
 			content: "";
+		}
+
+		&:active {
+			cursor: grabbing;
+			background-color: var(--highlight);
 		}
 	}
 
@@ -135,6 +183,10 @@ totem-forge {
 	@container (width < 720px) {
 		max-height: 50vh;
 	}
+}
+
+.output-heading {
+	grid-area: outputheading;
 }
 
 .output {
@@ -177,6 +229,16 @@ totem-forge {
 		align-self: stretch;
 		display: block;
 		background-color: currentColor;
+		cursor: grab;
+
+		&:active {
+			cursor: grabbing;
+		}
+	}
+
+	&[draggable="true"]:active {
+		cursor: grabbing;
+		background-color: var(--highlight);
 	}
 
 	&[controls] {

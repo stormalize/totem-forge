@@ -132,13 +132,13 @@ class TotemForge extends HTMLElement {
 			console.log(this.#effects.value);
 		});
 
-		this.addEventListener("dragstart", (event) => {
-			console.log(event);
-			event.dataTransfer.setData("text/plain", event.target.innerText);
-		});
-
 		this.addEventListener("dragover", (event) => {
-			// console.log(event);
+			const container = event.target.closest(`.effects-selected`);
+
+			if (container) {
+				event.preventDefault();
+			}
+
 			const target = event.target.closest(
 				`.effects-selected :where(li[totem="effect-item"], li.pin)`
 			);
@@ -167,12 +167,6 @@ class TotemForge extends HTMLElement {
 				const newIndex = this.#dragoverBefore.value
 					? this.#dragoverIndex.value
 					: this.#dragoverIndex.value + 1;
-				console.log(
-					index,
-					this.#dragoverBefore.value,
-					this.#dragoverIndex.value,
-					newIndex
-				);
 				this.effectMove(index, newIndex);
 			}
 
@@ -189,15 +183,6 @@ class TotemForge extends HTMLElement {
 				}
 			}
 		});
-
-		// this.addEventListener("mouseup", (event) => {
-		// 	if (event.target.matches(`[slot="draghandle"]`)) {
-		// 		const effect = event.target.parentNode;
-		// 		console.log(effect);
-		// 		if (effect && effect.matches(`[totem="effect-item"]`)) {
-		// 		}
-		// 	}
-		// });
 	}
 
 	encodeEffects(effects) {
@@ -429,6 +414,7 @@ class TotemForge extends HTMLElement {
 							const effect = getEffectObject(savedEffect.id);
 							return "PIN" === savedEffect
 								? html`<li
+										draggable="true"
 										aria-selected=${this.isActiveEffectSelected("PIN")
 											? "true"
 											: "false"}
@@ -476,7 +462,8 @@ class TotemForge extends HTMLElement {
 								  </li>`;
 						})}
 					</ul>
-					<textarea class="output">
+					<h2 class="output-heading">Generated Pack</h2>
+					<textarea class="output" rows="16">
 ${JSON.stringify(this.#reffectPackObject, null, 2)}</textarea
 					>`
 		);
@@ -543,8 +530,6 @@ ${JSON.stringify(this.#reffectPackObject, null, 2)}</textarea
 	}
 
 	effectMove(index, newIndex) {
-		console.log("current", index);
-		console.log("new index", newIndex);
 		const newEffects = structuredClone(this.#effects.value);
 		const temp = newEffects[index];
 		newEffects.splice(index, 1);
@@ -566,7 +551,6 @@ ${JSON.stringify(this.#reffectPackObject, null, 2)}</textarea
 
 			if (DOWN) {
 				locations.reverse();
-				console.log(locations);
 			}
 
 			locations.forEach(([effectIndex, effectId], selectIndex) => {
@@ -577,7 +561,6 @@ ${JSON.stringify(this.#reffectPackObject, null, 2)}</textarea
 					);
 
 					if (reverseEffectIndex > selectIndex && effectIndex !== -1) {
-						console.log("grooving");
 						const temp = newEffects[effectIndex];
 						newEffects.splice(effectIndex, 1);
 						newEffects.splice(effectIndex + 1, 0, temp);
