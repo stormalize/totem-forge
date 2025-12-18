@@ -18,11 +18,79 @@
 		</script>
 	</head>
 	<body>
-		<header class="intro">
-			<h1>Totem Forge<span slot="suffix">GW2 Reffect Pack Creator</span></h1>
-		</header>
 		<main>
+			<header class="intro">
+				<h1>Totem Forge<span slot="suffix">GW2 Reffect Pack Creator</span></h1>
+				<p>
+					Craft your own Reffect pack that allows you to reorder and "pin"
+					important effects for your particular build.
+				</p>
+				<p>
+					NOTE: packs created here rely on a set of custom images that are not
+					included with the main pack file! Make sure you have downloaded and
+					installed the main
+					<a href="https://github.com/stormalize/totem">Totem ZIP file</a> which
+					contains all the required images.
+				</p>
+				<p><a href="#instructions">Read Full Instructions</a></p>
+			</header>
 			<totem-forge>Loading...Make sure JavaScript is enabled.</totem-forge>
+			<section>
+				<h2>Instructions</h2>
+				<h3>Quick Start</h3>
+				<ol>
+					<li>
+						If you have not done so previously, download and install the main
+						<a href="https://github.com/stormalize/totem"
+							>Totem pack ZIP file</a
+						>
+					</li>
+					<li>
+						Click on some items under Available Effects to include in your totem
+					</li>
+					<li>
+						Reorder your included effects as needed, moving them above the "Pin"
+						marker to dilineate between pinned and unpinned effects
+					</li>
+					<li>Copy the "Generated Pack" JSON text.</li>
+				</ol>
+				<h3>Available Effects</h3>
+				<p>
+					Click on an available effect to include it in your totem, click again
+					to remove it. Effects may be filtered by category or searched by name.
+				</p>
+				<p>
+					Some effects are represented by more than one ID in-game. For those
+					effects, the full set of IDs can be seen by hovering over the "main"
+					ID number.
+				</p>
+				<h3>Included Effects</h3>
+				<p>Included effects are divided up into two presentations:</p>
+				<ul>
+					<li>
+						<strong>Pinned:</strong> these effects are permanently visible in a
+						fixed location, and have a special graphic when maximum stacks are
+						reached (for effects that stack in intensity)
+					</li>
+					<li>
+						<strong>Unpinned:</strong> these effects are placed in a dynamic
+						list and will only show up if the effect is present, while still
+						preserving order
+					</li>
+				</ul>
+				<p>
+					These two categories allow you to order effects by how important they
+					are to you, as well as pin the most important for maximum readability.
+				</p>
+				<h3>Pack Options</h3>
+				<ul>
+					<li><strong>Pack Name:</strong> the name for your totem</li>
+					<li>
+						<strong>Layout Direction:</strong> this is the direction that your
+						totem will extend as more effects are included
+					</li>
+				</ul>
+			</section>
 		</main>
 		<script type="module" src="script.js"></script>
 	</body>
