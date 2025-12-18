@@ -4,8 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta
 			name="viewport"
-			content="initial-scale=1.0, width=device-width, height=device-height, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+			content="initial-scale=1.0, width=device-width, height=device-height"
 		/>
+		<link rel="shortcut icon" href="/images/logo/totem-icon-color-grad.svg" />
 		<link href="style.css" rel="stylesheet" type="text/css" />
 		<title>Totem Forge: GW2 Reffect Pack Creator</title>
 		<script type="importmap">
@@ -19,23 +20,45 @@
 	</head>
 	<body>
 		<main>
-			<header class="intro">
-				<h1>Totem Forge<span slot="suffix">GW2 Reffect Pack Creator</span></h1>
+			<header class="intro wrap prose">
+				<h1>
+					<img
+						src="/images/logo/totem-forge-logo-color-grad.svg"
+						width="182"
+						height="78"
+						aria-hidden="true"
+						alt=""
+					/>
+					<span class="sr-only">Totem Forge</span>
+					<span slot="suffix">GW2 Reffect Pack Creator</span>
+				</h1>
 				<p>
-					Craft your own Reffect pack that allows you to reorder and "pin"
-					important effects for your particular build.
+					Craft your own pack that allows you to reorder and
+					<svg
+						class="icon"
+						xmlns="http://www.w3.org/2000/svg"
+						width="29"
+						height="29"
+						viewBox="0 0 29 29"
+					>
+						<path
+							fill-rule="evenodd"
+							d="M28.3476864,14.1344829 L28.0889888,14.3931805 C26.6602414,15.8219279 24.3412103,15.8193541 22.9092879,14.3874317 L22.3907429,13.8688867 L15.7335912,20.5260384 L16.7706812,21.5631283 C18.4889881,23.2814352 18.4920767,26.0642725 16.7775798,27.7787694 L15.9497475,28.6066017 L9.58578644,22.2426407 L4.62425386,27.180603 L0.393398282,28.6066017 L1.79582673,24.3521759 L6.75735931,19.4142136 L0.393398282,13.0502525 L1.22123061,12.2224202 C2.9357275,10.5079233 5.7185648,10.5110119 7.43687168,12.2293188 L8.47396163,13.2664088 L15.1311133,6.6092571 L14.6125683,6.09071213 C13.1806459,4.65878973 13.1780721,2.33975865 14.6068195,0.911011238 L14.8655171,0.652313635 L28.3476864,14.1344829 Z"
+						/>
+					</svg>
+					"pin" important effects for your particular build.
 				</p>
 				<p>
-					NOTE: packs created here rely on a set of custom images that are not
-					included with the main pack file! Make sure you have downloaded and
-					installed the main
+					<strong>NOTE</strong>: packs created here rely on a set of custom
+					images that are not included with the main pack file! Make sure you
+					have downloaded and installed the main
 					<a href="https://github.com/stormalize/totem">Totem ZIP file</a> which
 					contains all the required images.
 				</p>
 				<p><a href="#instructions">Read Full Instructions</a></p>
 			</header>
 			<totem-forge>Loading...Make sure JavaScript is enabled.</totem-forge>
-			<section>
+			<section id="instructions" class="wrap prose">
 				<h2>Instructions</h2>
 				<h3>Quick Start</h3>
 				<ol>
@@ -49,10 +72,31 @@
 						Click on some items under Available Effects to include in your totem
 					</li>
 					<li>
-						Reorder your included effects as needed, moving them above the "Pin"
-						marker to dilineate between pinned and unpinned effects
+						Reorder your included effects as needed, moving them above the
+						<svg
+							class="icon"
+							xmlns="http://www.w3.org/2000/svg"
+							width="29"
+							height="29"
+							viewBox="0 0 29 29"
+						>
+							<path
+								fill-rule="evenodd"
+								d="M28.3476864,14.1344829 L28.0889888,14.3931805 C26.6602414,15.8219279 24.3412103,15.8193541 22.9092879,14.3874317 L22.3907429,13.8688867 L15.7335912,20.5260384 L16.7706812,21.5631283 C18.4889881,23.2814352 18.4920767,26.0642725 16.7775798,27.7787694 L15.9497475,28.6066017 L9.58578644,22.2426407 L4.62425386,27.180603 L0.393398282,28.6066017 L1.79582673,24.3521759 L6.75735931,19.4142136 L0.393398282,13.0502525 L1.22123061,12.2224202 C2.9357275,10.5079233 5.7185648,10.5110119 7.43687168,12.2293188 L8.47396163,13.2664088 L15.1311133,6.6092571 L14.6125683,6.09071213 C13.1806459,4.65878973 13.1780721,2.33975865 14.6068195,0.911011238 L14.8655171,0.652313635 L28.3476864,14.1344829 Z"
+							/>
+						</svg>
+						"Pin" marker to dilineate between pinned and unpinned effects
 					</li>
-					<li>Copy the "Generated Pack" JSON text.</li>
+					<li>
+						Click "Download File" to save the JSON file, or alternatively copy
+						the "Generated Pack" JSON text and and paste into a file in your
+						packs folder (useful for updates).
+					</li>
+					<li>
+						Selected effects, name and layout direction are also saved to the
+						URL, which you can bookmark or share and come back to later to
+						continue editing.
+					</li>
 				</ol>
 				<h3>Available Effects</h3>
 				<p>
@@ -68,12 +112,26 @@
 				<p>Included effects are divided up into two presentations:</p>
 				<ul>
 					<li>
-						<strong>Pinned:</strong> these effects are permanently visible in a
-						fixed location, and have a special graphic when maximum stacks are
-						reached (for effects that stack in intensity)
+						<strong>
+							Pinned
+							<svg
+								class="icon"
+								xmlns="http://www.w3.org/2000/svg"
+								width="29"
+								height="29"
+								viewBox="0 0 29 29"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M28.3476864,14.1344829 L28.0889888,14.3931805 C26.6602414,15.8219279 24.3412103,15.8193541 22.9092879,14.3874317 L22.3907429,13.8688867 L15.7335912,20.5260384 L16.7706812,21.5631283 C18.4889881,23.2814352 18.4920767,26.0642725 16.7775798,27.7787694 L15.9497475,28.6066017 L9.58578644,22.2426407 L4.62425386,27.180603 L0.393398282,28.6066017 L1.79582673,24.3521759 L6.75735931,19.4142136 L0.393398282,13.0502525 L1.22123061,12.2224202 C2.9357275,10.5079233 5.7185648,10.5110119 7.43687168,12.2293188 L8.47396163,13.2664088 L15.1311133,6.6092571 L14.6125683,6.09071213 C13.1806459,4.65878973 13.1780721,2.33975865 14.6068195,0.911011238 L14.8655171,0.652313635 L28.3476864,14.1344829 Z"
+								/></svg
+						></strong>
+						- these effects are permanently visible in a fixed location, and
+						have a special graphic when maximum stacks are reached (for effects
+						that stack in intensity)
 					</li>
 					<li>
-						<strong>Unpinned:</strong> these effects are placed in a dynamic
+						<strong>Unpinned</strong> - these effects are placed in a dynamic
 						list and will only show up if the effect is present, while still
 						preserving order
 					</li>
@@ -82,14 +140,39 @@
 					These two categories allow you to order effects by how important they
 					are to you, as well as pin the most important for maximum readability.
 				</p>
+				<p>
+					Individual effects may be reordered by clicking and dragging on the
+					<svg
+						class="icon"
+						xmlns="http://www.w3.org/2000/svg"
+						width="12"
+						height="20"
+						viewBox="0 0 12 20"
+					>
+						<path
+							fill-rule="evenodd"
+							d="M0,0 L4,0 L4,4 L0,4 Z M0,8 L4,8 L4,12 L0,12 Z M0,16 L4,16 L4,20 L0,20 Z M8,0 L12,0 L12,4 L8,4 Z M8,8 L12,8 L12,12 L8,12 Z M8,16 L12,16 L12,20 L8,20 Z"
+						/>
+					</svg>
+					handle to the left of the effect icon. You can also select multiple
+					effects and use the buttons above the list to move them all at once,
+					or delete them from the included effects list.
+				</p>
 				<h3>Pack Options</h3>
 				<ul>
-					<li><strong>Pack Name:</strong> the name for your totem</li>
+					<li><strong>Pack Name</strong> - the name for your totem</li>
 					<li>
-						<strong>Layout Direction:</strong> this is the direction that your
+						<strong>Layout Direction</strong> - this is the direction that your
 						totem will extend as more effects are included
 					</li>
 				</ul>
+				<h3>Feedback</h3>
+				<p>
+					As there is no effect endpoint in the official GW2 API, I had to
+					create my own list. If there are inconsistencies you can feel free to
+					leave feedback or PRs in
+					<a href="https://github.com/stormalize/totem-forge">GitHub</a>.
+				</p>
 			</section>
 		</main>
 		<script type="module" src="script.js"></script>

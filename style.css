@@ -13,7 +13,31 @@ html {
 html {
 	--fg: #dadbe4;
 	--bg: #262429;
-	--highlight: rgba(67, 67, 243, 0.13);
+	--subsurface: #212024;
+	--yellow: #ffd78f;
+	--orange: #ff880e;
+	--red: #f70200;
+	--sienna: #ac4610;
+	--sienna: #ac4610;
+	--pink: #f00ebc;
+	--sky-blue: #3ac9ff;
+	--violet: #4343f3;
+	--grad-1-v: linear-gradient(to top, var(--sky-blue), var(--pink));
+	--grad-1-h: linear-gradient(to right, var(--sky-blue), var(--pink));
+	--grad-2-v: linear-gradient(
+		to bottom,
+		var(--yellow),
+		var(--orange) 25%,
+		var(--red) 50%,
+		var(--sienna)
+	);
+	--grad-2-h: linear-gradient(
+		to right,
+		var(--yellow),
+		var(--orange) 25%,
+		var(--red) 50%,
+		var(--sienna)
+	);
 	--type--100: 0.625rem;
 	--type--200: 0.7rem;
 	--type--300: 0.8rem;
@@ -34,9 +58,27 @@ body {
 	display: none !important;
 }
 
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+
+:focus-visible {
+	outline: 2px solid var(--fg);
+	outline-offset: 2px;
+}
+
+a {
+	color: var(--sky-blue);
+
+	&:hover {
+		text-underline-offset: 0.2em;
+	}
+}
+
 :where(h1, h2, h3, h4, h5, h6) {
 	> :where([slot="suffix"], [slot="prefix"]) {
-		font-size: 1rem;
+		font-size: 1.25rem;
 		display: block;
 	}
 
@@ -61,18 +103,53 @@ h3 {
 	font-size: 1.125rem;
 }
 
-.intro {
-	padding: 1rem;
+.wrap {
+	padding: 1rem max(1rem, calc(50vw - 24rem));
 
 	@container (width >= 720px) {
-		padding: 2rem;
+		padding: 2rem max(2rem, calc(50vw - 24rem));
 	}
+}
+
+.intro {
+	border-block-end: 2px solid color-mix(in oklab, var(--fg), transparent 75%);
+
+	h1 {
+		text-align: center;
+	}
+
+	> * {
+		margin-inline: auto;
+	}
+}
+
+#instructions {
+	border-block-start: 2px solid color-mix(in oklab, var(--fg), transparent 75%);
+}
+
+.prose {
+	& > *:not(:first-child) {
+		margin-block-start: 1rem;
+	}
+	> p,
+	:where(ul, ol) > li {
+		max-width: 60ch;
+	}
+}
+
+.icon {
+	height: 1em;
+	width: auto;
+	vertical-align: -0.125em;
+	fill: currentColor;
 }
 
 totem-forge {
 	display: grid;
 	gap: 1rem;
 	padding: 1rem;
+	max-width: calc(48rem + 4rem);
+	margin-inline: auto;
 
 	grid-template-columns: 1fr;
 	grid-template-rows: auto auto auto auto auto auto auto auto auto;
@@ -85,7 +162,8 @@ totem-forge {
 		"actions"
 		"selected"
 		"outputheading"
-		"output";
+		"output"
+		"outputcontrols";
 
 	@container (width >= 720px) {
 		padding: 2rem;
@@ -98,24 +176,55 @@ totem-forge {
 			"filter actions"
 			"library selected"
 			"outputheading outputheading"
-			"output output";
+			"output output"
+			"outputcontrols outputcontrols";
 	}
 }
 
 .controls {
 	grid-area: controls;
+	display: flex;
+	flex-flow: row wrap;
+	gap: 0.5rem;
+
+	> div {
+		display: flex;
+		gap: 0.5rem;
+	}
 }
 
 .library-heading {
 	grid-area: libraryheading;
 }
 
+.toolbar {
+	display: flex;
+	flex-flow: row;
+	gap: 0.5rem;
+
+	@container (width < 720px) {
+		flex-wrap: wrap;
+	}
+
+	> div {
+		display: flex;
+		gap: 0.5rem;
+	}
+}
+
 .library-filter {
 	grid-area: filter;
+
+	#search {
+		display: inline-block;
+		width: 4rem;
+		flex: 1 1 auto;
+	}
 }
 
 .effects-library {
 	grid-area: library;
+	border: 2px solid color-mix(in oklab, currentColor, transparent 80%);
 
 	/* group */
 	> ul {
@@ -152,19 +261,44 @@ totem-forge {
 	grid-area: selected;
 	list-style: none;
 	padding: 0;
+	border-style: solid;
+	border-image-slice: 1;
+	border-width: 2px;
+	border-image-source: var(--grad-2-v);
 
 	> .pin {
-		padding: 0.75rem 0.25rem;
+		padding: 0.25rem 0.25rem;
 		cursor: grab;
-		&::before {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		border-radius: 2px;
+
+		&::before,
+		&::after {
 			display: block;
 			border-block-start: 0.125rem dashed currentColor;
 			content: "";
+			flex: 1;
+		}
+
+		> svg {
+			flex: 0 0 auto;
+			fill: currentColor;
+			height: 20px;
+			width: auto;
+			margin-block-end: 2px;
+		}
+
+		&:hover {
+			/* background-image: var(--grad-1-h); */
+			background-color: var(--sky-blue);
+			color: var(--bg);
 		}
 
 		&:active {
 			cursor: grabbing;
-			background-color: var(--highlight);
+			background-color: color-mix(in oklab, var(--sky-blue), transparent 75%);
 		}
 	}
 
@@ -177,20 +311,49 @@ totem-forge {
 .effects-library,
 .effects-selected {
 	overflow-y: scroll;
-	border: 2px solid currentColor;
+	background-color: var(--subsurface);
 	padding: 0.125rem;
 
 	@container (width < 720px) {
 		max-height: 50vh;
 	}
+
+	&:focus-visible {
+		[totem="effect-item"].focused {
+			background-color: var(--sky-blue);
+			color: var(--bg);
+		}
+	}
 }
 
 .output-heading {
 	grid-area: outputheading;
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
 }
 
 .output {
 	grid-area: output;
+	border-style: solid;
+	border-image-slice: 1;
+	border-width: 2px;
+	border-image-source: var(--grad-1-h);
+	background-color: var(--subsurface);
+	color: inherit;
+	font-family: monospace;
+	padding: 0.5rem;
+}
+
+.output-controls {
+	grid-area: outputcontrols;
+	display: flex;
+	gap: 0.25rem;
+
+	> button {
+		width: 100%;
+		flex: 1;
+	}
 }
 
 [totem="effect-item"] {
@@ -227,9 +390,27 @@ totem-forge {
 	> [slot="draghandle"] {
 		grid-area: draghandle;
 		align-self: stretch;
-		display: block;
-		background-color: currentColor;
+		display: flex;
 		cursor: grab;
+		border-radius: 2px;
+
+		&::before {
+			content: "";
+			flex: 1;
+			background-color: currentColor;
+			mask-image: url("/images/icons/drag-handle.svg");
+			mask-position: center center;
+			mask-repeat: no-repeat;
+		}
+
+		&:hover {
+			/* background-image: var(--grad-1-v); */
+			background-color: var(--sky-blue);
+
+			&::before {
+				background-color: var(--bg);
+			}
+		}
 
 		&:active {
 			cursor: grabbing;
@@ -238,7 +419,7 @@ totem-forge {
 
 	&[draggable="true"]:active {
 		cursor: grabbing;
-		background-color: var(--highlight);
+		background-color: color-mix(in oklab, var(--sky-blue), transparent 75%);
 	}
 
 	&[controls] {
@@ -253,4 +434,13 @@ totem-forge {
 
 .drop-after {
 	border-block-end: 0.25rem solid currentColor;
+}
+
+.sr-only {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
 }

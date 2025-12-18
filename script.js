@@ -1,4 +1,4 @@
-import { render, html, signal, computed, effect } from "uhtml";
+import { render, html, svg, signal, computed, effect } from "uhtml";
 import {
 	effects,
 	effectGroups,
@@ -88,6 +88,8 @@ class TotemForge extends HTMLElement {
 	#selectedActiveEffects;
 	#dragoverIndex;
 	#dragoverBefore;
+	#availableFocusId;
+	#selectedFocusId;
 	#reffectPackObject;
 
 	#filter;
@@ -111,6 +113,8 @@ class TotemForge extends HTMLElement {
 		this.#selectedActiveEffects = signal([]);
 		this.#dragoverIndex = signal(null);
 		this.#dragoverBefore = signal(null);
+		this.#availableFocusId = signal(null);
+		this.#selectedFocusId = signal(null);
 		this.#filter = signal("");
 		this.#search = signal("");
 
@@ -249,39 +253,50 @@ class TotemForge extends HTMLElement {
 			this,
 			() =>
 				html`<div class="controls">
-						<label for="in-name">Pack Name</label>
-						<input
-							id="in-name"
-							.value=${this.#name}
-							onchange=${(e) => {
-								this.#name.value = e.target.value;
-							}}
-						/>
-						<label for="in-direction">Layout Direction</label>
-						<select
-							id="in-direction"
-							.value=${this.#direction.value}
-							onchange=${(e) => {
-								this.#direction.value = e.target.value;
-							}}
-						>
-							<option value="r">Right</option>
-							<option value="d">Down</option>
-							<option value="l">Left</option>
-							<option value="u">Up</option>
-						</select>
+						<div>
+							<label for="in-name">Pack Name</label>
+							<input
+								id="in-name"
+								.value=${this.#name}
+								onchange=${(e) => {
+									this.#name.value = e.target.value;
+								}}
+							/>
+						</div>
+						<div>
+							<label for="in-direction">Layout Direction</label>
+							<select
+								id="in-direction"
+								.value=${this.#direction.value}
+								onchange=${(e) => {
+									this.#direction.value = e.target.value;
+								}}
+							>
+								<option value="r">Right</option>
+								<option value="d">Down</option>
+								<option value="l">Left</option>
+								<option value="u">Up</option>
+							</select>
+						</div>
 					</div>
-					<div class="library-filter">
-						<label for="group-filter">Filter</label>
-						<select
-							id="group-filter"
-							.value=${this.#filter.value}
-							onchange=${(e) => (this.#filter.value = e.target.value)}
-						>
-							${effectGroupsFilter.map((item) => {
-								return html`<option value=${item.value}>${item.label}</option>`;
-							})}
-						</select>
+					<h2 id="library-heading" class="library-heading">
+						Available Effects
+					</h2>
+					<div class="library-filter toolbar">
+						<div>
+							<label for="group-filter">Filter</label>
+							<select
+								id="group-filter"
+								.value=${this.#filter.value}
+								onchange=${(e) => (this.#filter.value = e.target.value)}
+							>
+								${effectGroupsFilter.map((item) => {
+									return html`<option value=${item.value}>
+										${item.label}
+									</option>`;
+								})}
+							</select>
+						</div>
 						<label for="search">Search</label>
 						<input
 							id="search"
@@ -293,14 +308,76 @@ class TotemForge extends HTMLElement {
 							}}
 						/>
 					</div>
-					<h2 id="library-heading" class="library-heading">
-						Available Effects
-					</h2>
 					<div
-						aria="labelledby"
-						="library-heading"
+						aria-labelledby="library-heading"
 						role="listbox"
 						class="effects-library"
+						tabindex="0"
+						aria-activedescendant=${this.#availableFocusId.value
+							? this.#availableFocusId.value
+							: ""}
+						onkeydown=${(event) => {
+							const items = event.target.querySelectorAll(
+								"ul:not([hidden]) > li:not(:where([hidden],[role='presentation']))"
+							);
+							const firstItem = items ? items[0] : null;
+							const lastItem = items ? items[items.length - 1] : null;
+							const currentItem = document.getElementById(
+								this.#availableFocusId.value
+							);
+
+							let nextItem = null;
+
+							const currentItemIndex = Array.from(items).findIndex(
+								(item) => item === currentItem
+							);
+							const isCurrentItemHidden = -1 === currentItemIndex;
+
+							if (["ArrowUp", "ArrowDown"].includes(event.key)) {
+								event.preventDefault();
+							}
+
+							console.log(event);
+
+							if (
+								["ArrowUp", "ArrowDown"].includes(event.key) &&
+								(null === this.#availableFocusId.value || isCurrentItemHidden)
+							) {
+								// set to first if none are already focused
+								this.#availableFocusId.value = firstItem.id;
+							} else {
+								switch (event.code) {
+									case "ArrowDown":
+										nextItem =
+											items.length > currentItemIndex
+												? items[currentItemIndex + 1]
+												: firstItem;
+										if (nextItem) {
+											this.#availableFocusId.value = nextItem.id;
+										}
+										break;
+
+									case "ArrowUp":
+										nextItem =
+											0 === currentItemIndex
+												? lastItem
+												: items[currentItemIndex - 1];
+
+										if (nextItem) {
+											this.#availableFocusId.value = nextItem.id;
+										}
+										break;
+
+									case "Space":
+										event.preventDefault();
+										currentItem.click();
+										break;
+
+									default:
+										break;
+								}
+							}
+						}}
 					>
 						${Array.from(effectGroups.values()).map((group) => {
 							return html`<ul
@@ -322,6 +399,10 @@ class TotemForge extends HTMLElement {
 										aria-selected=${this.effectFind(effect.id)
 											? "true"
 											: "false"}
+										class=${`effect-${effect.id}` ===
+										this.#availableFocusId.value
+											? "focused"
+											: ""}
 										onclick=${(e) => {
 											if (this.effectFind(effect.id)) {
 												this.effectRemove(effect.id);
@@ -360,7 +441,7 @@ class TotemForge extends HTMLElement {
 					<h2 id="selected-heading" class="selected-heading">
 						Included Effects
 					</h2>
-					<div class="effect-actions">
+					<div class="effect-actions toolbar">
 						${this.#selectedActiveEffects.value.length > 0
 							? html`<span
 									>${this.#selectedActiveEffects.value.length} selected</span
@@ -429,7 +510,11 @@ class TotemForge extends HTMLElement {
 										onclick=${(e) => {
 											this.toggleActiveEffectSelected("PIN");
 										}}
-								  ></li>`
+								  >
+										${svg`<svg xmlns="http://www.w3.org/2000/svg" width="78" height="29" viewBox="0 0 78 29">
+											<path fill-rule="evenodd" d="M55.3476864,14.1344829 L55.0889888,14.3931805 C53.6602414,15.8219279 51.3412103,15.8193541 49.9092879,14.3874317 L49.3907429,13.8688867 L42.7335912,20.5260384 L43.7706812,21.5631283 C45.4889881,23.2814352 45.4920767,26.0642725 43.7775798,27.7787694 L42.9497475,28.6066017 L36.5857864,22.2426407 L31.6242539,27.180603 L27.3933983,28.6066017 L28.7958267,24.3521759 L33.7573593,19.4142136 L27.3933983,13.0502525 L28.2212306,12.2224202 C29.9357275,10.5079233 32.7185648,10.5110119 34.4368717,12.2293188 L35.4739616,13.2664088 L42.1311133,6.6092571 L41.6125683,6.09071213 C40.1806459,4.65878973 40.1780721,2.33975865 41.6068195,0.911011238 L41.8655171,0.652313635 L55.3476864,14.1344829 Z M62,20 L70,12 L78,20 L62,20 Z M0,20 L8,12 L16,20 L0,20 Z"/>
+										</svg>`}
+								  </li>`
 								: html`<li
 										totem="effect-item"
 										class=${savedEffectIndex === this.#dragoverIndex.value
@@ -462,10 +547,38 @@ class TotemForge extends HTMLElement {
 								  </li>`;
 						})}
 					</ul>
-					<h2 class="output-heading">Generated Pack</h2>
-					<textarea class="output" rows="16">
+					<h2 class="output-heading">
+						<img
+							src="/images/logo/totem-forge-icon-color-grad.svg"
+							width="39"
+							height="44"
+						/>Generated Pack
+					</h2>
+					<textarea readonly="" class="output" rows="16">
 ${JSON.stringify(this.#reffectPackObject, null, 2)}</textarea
-					>`
+					>
+					<div class="output-controls">
+						<button
+							onclick=${(event) => {
+								this.saveFile();
+							}}
+						>
+							Download File
+						</button>
+						<button
+							onclick=${(event) => {
+								const success = this.saveToClipboard();
+								if (success) {
+									event.target.innerText = "Copied!";
+									setTimeout(() => {
+										event.target.innerText = "Copy to Clipboard";
+									}, 1000);
+								}
+							}}
+						>
+							Copy to Clipboard
+						</button>
+					</div>`
 		);
 	}
 
@@ -724,6 +837,37 @@ ${JSON.stringify(this.#reffectPackObject, null, 2)}</textarea
 		packEndGroup.pos[BLOCK_INDEX] = 0;
 
 		return pack;
+	}
+
+	async saveToClipboard() {
+		try {
+			const packStr = JSON.stringify(this.#reffectPackObject, null, 2);
+			await navigator.clipboard.writeText(packStr);
+			return true;
+		} catch (error) {
+			console.error(error.message);
+			return false;
+		}
+	}
+
+	saveFile() {
+		const packStr = JSON.stringify(this.#reffectPackObject, null, 2);
+		if (packStr) {
+			const blob = new Blob([packStr], { type: "text/plain" });
+			const blobURL = URL.createObjectURL(blob);
+			const a = document.createElement("a");
+			a.href = blobURL;
+			a.download = `${this.#name}.json`;
+			a.style.display = "none";
+			document.body.append(a);
+			a.click();
+
+			// cleanup
+			setTimeout(() => {
+				URL.revokeObjectURL(blobURL);
+				a.remove();
+			}, 1000);
+		}
 	}
 }
 
