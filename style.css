@@ -237,11 +237,17 @@ totem-forge {
 		[role="presentation"] {
 			font-weight: 700;
 			font-size: var(--type--500);
+			padding-block: 0.25rem;
+			margin: 0.25rem;
+			border-block-end: 1px solid
+				color-mix(in oklab, currentColor, transparent 80%);
 		}
 
 		[role="option"] {
 			&[aria-selected="true"] {
-				opacity: 0.7;
+				opacity: 0.8;
+				padding-inline-start: 1rem;
+				background-color: color-mix(in oklab, var(--violet), transparent 80%);
 			}
 		}
 	}
@@ -319,7 +325,7 @@ totem-forge {
 	}
 
 	&:focus-visible {
-		[totem="effect-item"].focused {
+		:is([totem="effect-item"], .pin).focused {
 			background-color: var(--sky-blue);
 			color: var(--bg);
 		}

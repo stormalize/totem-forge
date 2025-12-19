@@ -288,7 +288,9 @@ class TotemForge extends HTMLElement {
 							<select
 								id="group-filter"
 								.value=${this.#filter.value}
-								onchange=${(e) => (this.#filter.value = e.target.value)}
+								onchange=${(e) => {
+									this.#filter.value = e.target.value;
+								}}
 							>
 								${effectGroupsFilter.map((item) => {
 									return html`<option value=${item.value}>
@@ -317,66 +319,7 @@ class TotemForge extends HTMLElement {
 							? this.#availableFocusId.value
 							: ""}
 						onkeydown=${(event) => {
-							const items = event.target.querySelectorAll(
-								"ul:not([hidden]) > li:not(:where([hidden],[role='presentation']))"
-							);
-							const firstItem = items ? items[0] : null;
-							const lastItem = items ? items[items.length - 1] : null;
-							const currentItem = document.getElementById(
-								this.#availableFocusId.value
-							);
-
-							let nextItem = null;
-
-							const currentItemIndex = Array.from(items).findIndex(
-								(item) => item === currentItem
-							);
-							const isCurrentItemHidden = -1 === currentItemIndex;
-
-							if (["ArrowUp", "ArrowDown"].includes(event.key)) {
-								event.preventDefault();
-							}
-
-							console.log(event);
-
-							if (
-								["ArrowUp", "ArrowDown"].includes(event.key) &&
-								(null === this.#availableFocusId.value || isCurrentItemHidden)
-							) {
-								// set to first if none are already focused
-								this.#availableFocusId.value = firstItem.id;
-							} else {
-								switch (event.code) {
-									case "ArrowDown":
-										nextItem =
-											items.length > currentItemIndex
-												? items[currentItemIndex + 1]
-												: firstItem;
-										if (nextItem) {
-											this.#availableFocusId.value = nextItem.id;
-										}
-										break;
-
-									case "ArrowUp":
-										nextItem =
-											0 === currentItemIndex
-												? lastItem
-												: items[currentItemIndex - 1];
-
-										if (nextItem) {
-											this.#availableFocusId.value = nextItem.id;
-										}
-										break;
-
-									case "Space":
-										event.preventDefault();
-										currentItem.click();
-										break;
-
-									default:
-										break;
-								}
-							}
+							this.handleListboxKeys(event);
 						}}
 					>
 						${Array.from(effectGroups.values()).map((group) => {
@@ -404,6 +347,7 @@ class TotemForge extends HTMLElement {
 											? "focused"
 											: ""}
 										onclick=${(e) => {
+											this.#availableFocusId.value = `effect-${effect.id}`;
 											if (this.effectFind(effect.id)) {
 												this.effectRemove(effect.id);
 											} else {
@@ -489,12 +433,21 @@ class TotemForge extends HTMLElement {
 					<ul
 						aria-labelledby="selected-heading"
 						role="listbox"
+						aria-multiselectable="true"
 						class="effects-selected"
+						tabindex="0"
+						aria-activedescendant=${this.#selectedFocusId.value
+							? this.#selectedFocusId.value
+							: ""}
+						onkeydown=${(event) => {
+							this.handleListboxKeys(event, true);
+						}}
 					>
 						${this.#effects.value.map((savedEffect, savedEffectIndex) => {
 							const effect = getEffectObject(savedEffect.id);
 							return "PIN" === savedEffect
 								? html`<li
+										id="selected-effect-PIN"
 										draggable="true"
 										aria-selected=${this.isActiveEffectSelected("PIN")
 											? "true"
@@ -504,6 +457,10 @@ class TotemForge extends HTMLElement {
 												? ` drop-${
 														this.#dragoverBefore.value ? "before" : "after"
 												  }`
+												: ""
+										}${
+											`selected-effect-PIN` === this.#selectedFocusId.value
+												? " focused"
 												: ""
 										}`}
 										aria-label="pinned effects end marker"
@@ -516,6 +473,7 @@ class TotemForge extends HTMLElement {
 										</svg>`}
 								  </li>`
 								: html`<li
+										id=${`selected-effect-${savedEffect.id}`}
 										totem="effect-item"
 										class=${savedEffectIndex === this.#dragoverIndex.value
 											? `drop-${
@@ -523,6 +481,10 @@ class TotemForge extends HTMLElement {
 											  }`
 											: ""}
 										controls=""
+										class=${`selected-effect-${effect.id}` ===
+										this.#selectedFocusId.value
+											? "focused"
+											: ""}
 										aria-selected=${this.isActiveEffectSelected(savedEffect.id)
 											? "true"
 											: "false"}
@@ -622,6 +584,89 @@ ${JSON.stringify(this.#reffectPackObject, null, 2)}</textarea
 		} else {
 			return ![null, filter].includes(groupProfession);
 		}
+	}
+
+	handleListboxKeys(event, isSelectedList = false) {
+		const items = event.target.querySelectorAll(
+			isSelectedList
+				? "li"
+				: "ul:not([hidden]) > li:not(:where([hidden],[role='presentation']))"
+		);
+		const focusId = isSelectedList
+			? this.#selectedFocusId.value
+			: this.#availableFocusId.value;
+
+		const firstItem = items ? items[0] : null;
+		const lastItem = items ? items[items.length - 1] : null;
+		const currentItem = document.getElementById(focusId);
+
+		let nextItem = null;
+
+		const currentItemIndex = Array.from(items).findIndex(
+			(item) => item === currentItem
+		);
+		const isCurrentItemHidden = -1 === currentItemIndex;
+
+		if (["ArrowUp", "ArrowDown"].includes(event.key)) {
+			event.preventDefault();
+		}
+		console.group("key");
+
+		console.log(focusId);
+		if (
+			["ArrowUp", "ArrowDown"].includes(event.key) &&
+			(null === focusId || isCurrentItemHidden) &&
+			firstItem
+		) {
+			// set to first if none are already focused
+			nextItem = firstItem;
+		} else {
+			switch (event.key) {
+				case "ArrowDown":
+					nextItem =
+						items.length - 1 > currentItemIndex
+							? items[currentItemIndex + 1]
+							: firstItem;
+					console.log(items.length);
+					console.log(currentItemIndex);
+					break;
+
+				case "ArrowUp":
+					nextItem =
+						0 === currentItemIndex ? lastItem : items[currentItemIndex - 1];
+					break;
+
+				case "Home":
+					nextItem = firstItem;
+					break;
+
+				case "End":
+					nextItem = lastItem;
+					break;
+
+				case " ":
+					event.preventDefault();
+					if (!isCurrentItemHidden) {
+						currentItem.click();
+					}
+					break;
+
+				default:
+					break;
+			}
+		}
+		if (nextItem) {
+			if (isSelectedList) {
+				this.#selectedFocusId.value = nextItem.id;
+			} else {
+				this.#availableFocusId.value = nextItem.id;
+			}
+			nextItem.scrollIntoView({
+				block: "nearest",
+				inline: "nearest",
+			});
+		}
+		console.groupEnd();
 	}
 
 	// active effects
