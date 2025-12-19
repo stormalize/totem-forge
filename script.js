@@ -416,14 +416,7 @@ class TotemForge extends HTMLElement {
 						</button>
 						<button
 							onclick=${(e) => {
-								if (this.#selectedActiveEffects.value.length > 0) {
-									this.#selectedActiveEffects.value.forEach((effectId) => {
-										if ("PIN" !== effectId) {
-											this.effectRemove(effectId);
-										}
-									});
-									this.#selectedActiveEffects.value = [];
-								}
+								this.deleteSelectedActiveEffects();
 							}}
 							?disabled=${this.#selectedActiveEffects.value.length === 0}
 						>
@@ -465,6 +458,7 @@ class TotemForge extends HTMLElement {
 										}`}
 										aria-label="pinned effects end marker"
 										onclick=${(e) => {
+											this.#selectedFocusId.value = "selected-effect-PIN";
 											this.toggleActiveEffectSelected("PIN");
 										}}
 								  >
@@ -489,6 +483,7 @@ class TotemForge extends HTMLElement {
 											? "true"
 											: "false"}
 										onclick=${(e) => {
+											this.#selectedFocusId.value = `selected-effect-${savedEffect.id}`;
 											this.toggleActiveEffectSelected(savedEffect.id);
 										}}
 								  >
@@ -610,11 +605,10 @@ ${JSON.stringify(this.#reffectPackObject, null, 2)}</textarea
 		if (["ArrowUp", "ArrowDown"].includes(event.key)) {
 			event.preventDefault();
 		}
-		console.group("key");
 
-		console.log(focusId);
 		if (
 			["ArrowUp", "ArrowDown"].includes(event.key) &&
+			event.altKey === false &&
 			(null === focusId || isCurrentItemHidden) &&
 			firstItem
 		) {
@@ -623,21 +617,32 @@ ${JSON.stringify(this.#reffectPackObject, null, 2)}</textarea
 		} else {
 			switch (event.key) {
 				case "ArrowDown":
-					nextItem =
-						items.length - 1 > currentItemIndex
-							? items[currentItemIndex + 1]
-							: firstItem;
-					console.log(items.length);
-					console.log(currentItemIndex);
+					if (isSelectedList && event.altKey) {
+						this.effectsShift(true);
+					} else {
+						nextItem =
+							items.length - 1 > currentItemIndex
+								? items[currentItemIndex + 1]
+								: firstItem;
+					}
+
 					break;
 
 				case "ArrowUp":
-					nextItem =
-						0 === currentItemIndex ? lastItem : items[currentItemIndex - 1];
+					if (isSelectedList && event.altKey) {
+						this.effectsShift();
+					} else {
+						nextItem =
+							0 === currentItemIndex ? lastItem : items[currentItemIndex - 1];
+					}
 					break;
 
 				case "Home":
 					nextItem = firstItem;
+					break;
+
+				case "Delete":
+					this.deleteSelectedActiveEffects();
 					break;
 
 				case "End":
@@ -666,7 +671,6 @@ ${JSON.stringify(this.#reffectPackObject, null, 2)}</textarea
 				inline: "nearest",
 			});
 		}
-		console.groupEnd();
 	}
 
 	// active effects
@@ -748,6 +752,17 @@ ${JSON.stringify(this.#reffectPackObject, null, 2)}</textarea
 	deselectActiveEffect(id) {
 		this.#selectedActiveEffects.value =
 			this.#selectedActiveEffects.value.filter((effect) => effect !== id);
+	}
+
+	deleteSelectedActiveEffects() {
+		if (this.#selectedActiveEffects.value.length > 0) {
+			this.#selectedActiveEffects.value.forEach((effectId) => {
+				if ("PIN" !== effectId) {
+					this.effectRemove(effectId);
+				}
+			});
+			this.#selectedActiveEffects.value = [];
+		}
 	}
 
 	isActiveEffectSelected(id) {
