@@ -16,9 +16,9 @@
 			"format": "uri"
 		},
 		"stacking": {
-			"type": "string",
-			"description": "Whether the effect stacks in duration or intensity",
-			"enum": ["Duration", "Intensity"]
+			"type": ["string", "boolean"],
+			"description": "Whether the effect stacks in duration, intensity, discrete charges, simply refreshes duration, or does not stack at all",
+			"enum": ["Duration", "Intensity", "Refresh", false]
 		},
 		"maxStacks": {
 			"type": ["integer", "null"],

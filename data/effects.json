@@ -294,92 +294,94 @@
 		"variantIds": [26142, 32747, 58026]
 	},
 	{
-		"id": null,
+		"id": 18843,
 		"name": "Unblockable",
 		"icon": "https://render.guildwars2.com/file/BD6C4CEEC95711F20FC62A4CA310C5A6574F9664/2261523.png",
 		"stacking": "Duration",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your attacks are unblockable",
-		"type": "Common"
+		"type": "Common",
+		"variantIds": [29896]
 	},
 	{
-		"id": null,
+		"id": 10332,
 		"name": "Chaos Aura",
 		"icon": "https://render.guildwars2.com/file/FEF378D8A91D0523A04A380ED0547F0BF944A967/2261518.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Give yourself random boons and your foe random conditions whenever you are struck.",
 		"type": "Common"
 	},
 	{
-		"id": null,
+		"id": 39978,
 		"name": "Dark Aura",
 		"icon": "https://render.guildwars2.com/file/9471B12401BB04730A0614E277FEFD6AE43C5251/2261519.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Surrounded by a dark aura that reduces incoming condition damage and causes torment each time you are struck (1-second cooldown per attacker).",
 		"type": "Common"
 	},
 	{
-		"id": null,
+		"id": 5677,
 		"name": "Fire Aura",
 		"icon": "https://render.guildwars2.com/file/2E7050E44690AFE0A396FA0DAD526699392743F3/2261521.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Enveloped in a fiery shield that burns foes, grants might each time you are struck (1-second cooldown per attacker).",
 		"type": "Common"
 	},
 	{
-		"id": null,
+		"id": 5579,
 		"name": "Frost Aura",
 		"icon": "https://render.guildwars2.com/file/719B80E35C276D68EF0AABB79126CF4CD42E3AF6/2261522.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Chill foes that strike you (only once per second for each attacker); incoming damage is reduced by 10%.",
 		"type": "Common"
 	},
 	{
-		"id": null,
+		"id": 25518,
 		"name": "Light Aura",
 		"icon": "https://render.guildwars2.com/file/62405ED2322E80A4A95663BA6C6804DB0962E6B0/867451.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "When struck, you gain resolution. Incoming condition damage is reduced by 10%. <c=@reminder>(Cooldown: 1 Second )</c>",
-		"type": "Common"
+		"type": "Common",
+		"variantIds": [68927]
 	},
 	{
-		"id": null,
+		"id": 5684,
 		"name": "Magnetic Aura",
 		"icon": "https://render.guildwars2.com/file/33D27C7FE0017F70749DE84576F56F381DDF0C30/2261524.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Reflect projectiles with magnetic energy.",
 		"type": "Common"
 	},
 	{
-		"id": null,
+		"id": 5577,
 		"name": "Shocking Aura",
 		"icon": "https://render.guildwars2.com/file/79F60BF40AB3F306E7367CF3479A4163F76F3944/2261527.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Stun nearby attacking foes with an electric shock (only once per 2 seconds for each attacker).",
 		"type": "Common"
 	},
 	{
-		"id": null,
+		"id": 13423,
 		"name": "Arcane Lightning",
 		"icon": "https://render.guildwars2.com/file/005807D4EACC2FC562FAF2C6BABC3E38E33FC070/1012289.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
-		"maxDuration": null,
+		"maxDuration": 15,
 		"description": "Increases your ferocity.",
 		"type": "Trait",
 		"_source": "traits:263:Arcane Lightning",
@@ -387,10 +389,10 @@
 		"specialization": 37
 	},
 	{
-		"id": null,
+		"id": 5587,
 		"name": "Soothing Mist",
 		"icon": "https://render.guildwars2.com/file/09D12A6041622A94409F276CEEEB2C17AF35A8ED/1012327.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Regenerate health.",
@@ -400,31 +402,21 @@
 		"specialization": 17
 	},
 	{
-		"id": null,
-		"name": "Med Kit Bonus",
-		"icon": "https://render.guildwars2.com/file/206FCC2A05035FDB306AB5136E5F3AC0FC6467F3/103395.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Increased Healing to Other Allies",
-		"type": "Trait",
-		"_source": "traits:521:Health Insurance",
-		"trait": 521,
-		"specialization": 29
-	},
-	{
-		"id": null,
+		"id": 9119,
 		"name": "Virtue of Resolve",
 		"icon": "https://render.guildwars2.com/file/F12B07B5466A51AB2BFD2C0CB8F3994D3F9E610C/103652.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Regenerate health.",
-		"type": "Trait",
-		"_source": "traits:554:Battle Presence",
-		"trait": 554,
-		"specialization": 46,
+		"type": "Skill",
+
+		"skill": 9120,
+		"slot": "Profession_2",
+		"professions": ["Guardian"],
+		"variantIds": [17046, 17047, 9249],
 		"_variants": [
+			{ "_source": "traits:554:Battle Presence" },
 			{ "_source": "traits:610:Absolute Resolve", "trait": 610 },
 			{
 				"type": "Skill",
@@ -479,12 +471,12 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 59592,
 		"name": "Inspiring Virtue",
 		"icon": "https://render.guildwars2.com/file/3EC057E1739EF1F22815605956B46142D2669A6D/1466322.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
-		"maxDuration": null,
+		"maxDuration": 6,
 		"description": "Strike damage dealt is increased after activating a virtue.",
 		"type": "Trait",
 		"_source": "traits:603:Inspiring Virtue",
@@ -492,12 +484,12 @@
 		"specialization": 46
 	},
 	{
-		"id": null,
+		"id": 76074,
 		"name": "Illusionary Membrane",
 		"icon": "https://render.guildwars2.com/file/0DF6A27A24B01D069DCD7609ADD305C7C557A82A/1012472.png",
 		"stacking": "Duration",
 		"maxStacks": null,
-		"maxDuration": null,
+		"maxDuration": 15,
 		"description": "Your condition damage is increased.",
 		"type": "Trait",
 		"_source": "traits:667:Illusionary Membrane",
@@ -505,11 +497,12 @@
 		"specialization": 45
 	},
 	{
-		"id": null,
+		"id": 30426,
 		"name": "Fencer's Finesse",
 		"icon": "https://render.guildwars2.com/file/4DEE67F2B54D37C8ACEC0F235C94D0C140A77E0F/1012503.png",
 		"stacking": "Intensity",
-		"maximum": 10,
+		"maxStacks": 10,
+		"maxDuration": null,
 		"description": "Increased ferocity per stack.",
 		"type": "Trait",
 		"_source": "traits:708:Fencer's Finesse",
@@ -517,19 +510,24 @@
 		"specialization": 1
 	},
 	{
-		"id": null,
+		"id": 10243,
 		"name": "Distortion",
 		"icon": "https://render.guildwars2.com/file/D0969802A76808ACD65A56A6D54F2A40E355F7C3/103284.png",
 		"stacking": "Duration",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Immune to conditions and damage.",
-		"type": "Trait",
-		"_source": "traits:722:Escape Artist",
-		"trait": 722,
-		"specialization": 24,
+		"type": "Skill",
+		"_source": "skills:10192:Distortion",
+		"skill": 10192,
+		"slot": "Profession_4",
+		"professions": ["Mesmer"],
 		"_variants": [
-			{},
+			{
+				"_source": "traits:722:Escape Artist",
+				"trait": 722,
+				"specialization": 24
+			},
 			{
 				"_source": "traits:752:Blurred Inscriptions",
 				"trait": 752,
@@ -606,11 +604,12 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 49058,
 		"name": "Compounding Power",
 		"icon": "https://render.guildwars2.com/file/E9BA251055B444E693144A9AF5FD1CF8266BEFA6/1012520.png",
 		"stacking": "Intensity",
-		"maximum": 5,
+		"maxStacks": 5,
+		"maxDuration": null,
 		"description": "Increased outgoing damage and condition damage per stack.",
 		"type": "Trait",
 		"_source": "traits:723:Compounding Power",
@@ -618,11 +617,12 @@
 		"specialization": 24
 	},
 	{
-		"id": null,
+		"id": 44691,
 		"name": "Phantasmal Force",
 		"icon": "https://render.guildwars2.com/file/E002FB5DEC3A010F03F2E8A7D5000DF778215F6C/1012505.png",
 		"stacking": "Intensity",
-		"maximum": 25,
+		"maxStacks": 25,
+		"maxDuration": null,
 		"description": "Phantasm damage increased per stack.",
 		"type": "Trait",
 		"_source": "traits:733:Phantasmal Force",
@@ -630,105 +630,140 @@
 		"specialization": 24
 	},
 	{
-		"id": null,
+		"id": 21751,
 		"name": "Signet of the Ether",
 		"icon": "https://render.guildwars2.com/file/EE5271572B2B10FBCE95097ECD54775832E8B9EF/699528.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
-		"description": "Increases healing.",
-		"type": "Trait",
-		"_source": "traits:752:Blurred Inscriptions",
-		"trait": 752,
-		"specialization": 23
+		"description": "Heal yourself whenever you summon an illusion.",
+		"type": "Skill",
+		"skill": 21750,
+		"slot": "Heal",
+		"professions": ["Mesmer"],
+		"_variants": [
+			{
+				"description": "Increases healing.",
+				"type": "Trait",
+				"_source": "traits:752:Blurred Inscriptions",
+				"trait": 752,
+				"specialization": 23
+			}
+		]
 	},
 	{
-		"id": null,
+		"id": 10231,
 		"name": "Signet of Domination",
 		"icon": "https://render.guildwars2.com/file/CE55909D170BF3E2C9F9A22C559CDF43D1726CEC/103612.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
-		"description": "Removes boons.",
-		"type": "Trait",
-		"_source": "traits:752:Blurred Inscriptions",
-		"trait": 752,
-		"specialization": 23,
+		"description": "Improved condition damage.",
+		"type": "Skill",
+		"_source": "skills:10232:Signet of Domination",
+		"skill": 10232,
+		"slot": "Utility",
+		"professions": ["Mesmer"],
 		"_variants": [
 			{
-				"description": "Improved condition damage.",
-				"type": "Skill",
-				"_source": "skills:10232:Signet of Domination",
-				"skill": 10232,
-				"slot": "Utility",
-				"professions": ["Mesmer"]
+				"description": "Removes boons.",
+				"type": "Trait",
+				"_source": "traits:752:Blurred Inscriptions",
+				"trait": 752,
+				"specialization": 23
 			}
 		]
 	},
 	{
-		"id": null,
+		"id": 10246,
 		"name": "Signet of Illusions",
 		"icon": "https://render.guildwars2.com/file/24B9A56E45B7AB5AA96FF3E85505DF60EA6EBD11/103756.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
-		"description": "Summons illusions.",
-		"type": "Trait",
-		"_source": "traits:752:Blurred Inscriptions",
-		"trait": 752,
-		"specialization": 23
-	},
-	{
-		"id": null,
-		"name": "Signet of Inspiration",
-		"icon": "https://render.guildwars2.com/file/636A59096E48DD9B01D11F74EFECAEDCC4DB300D/103750.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Increases the number of allied targets.",
-		"type": "Trait",
-		"_source": "traits:752:Blurred Inscriptions",
-		"trait": 752,
-		"specialization": 23
-	},
-	{
-		"id": null,
-		"name": "Signet of Midnight",
-		"icon": "https://render.guildwars2.com/file/6F03529059F71F0CCEC9046F1932619ECB245EC4/57900.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Removes conditions.",
-		"type": "Trait",
-		"_source": "traits:752:Blurred Inscriptions",
-		"trait": 752,
-		"specialization": 23,
+		"description": "Periodically summon an illusion while in combat.",
+		"type": "Skill",
+		"skill": 10247,
+		"slot": "Utility",
+		"professions": ["Mesmer"],
 		"_variants": [
 			{
-				"description": "Improves condition duration.",
-				"type": "Skill",
-				"_source": "skills:10234:Signet of Midnight",
-				"skill": 10234,
-				"slot": "Utility",
-				"professions": ["Mesmer"]
+				"description": "Periodically summon an illusion while in combat.",
+				"type": "Trait",
+				"_source": "traits:752:Blurred Inscriptions",
+				"trait": 752,
+				"specialization": 23
 			}
 		]
 	},
 	{
-		"id": null,
-		"name": "Signet of Humility",
-		"icon": "https://render.guildwars2.com/file/A8B2B2403BF7A920040EB6E0E534920DA8D27B32/1012893.png",
-		"stacking": "Duration",
+		"id": 10236,
+		"name": "Signet of Inspiration",
+		"icon": "https://render.guildwars2.com/file/636A59096E48DD9B01D11F74EFECAEDCC4DB300D/103750.png",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
-		"description": "Applies vulnerability.",
-		"type": "Trait",
-		"_source": "traits:752:Blurred Inscriptions",
-		"trait": 752,
-		"specialization": 23
+		"description": "Gain a random boon every ten seconds.",
+		"type": "Skill",
+		"skill": 10247,
+		"slot": "Utility",
+		"professions": ["Mesmer"],
+		"_variants": [
+			{
+				"description": "Gain a random boon every ten seconds.",
+				"type": "Trait",
+				"_source": "traits:752:Blurred Inscriptions",
+				"trait": 752,
+				"specialization": 23
+			}
+		]
 	},
 	{
-		"id": null,
+		"id": 10233,
+		"name": "Signet of Midnight",
+		"icon": "https://render.guildwars2.com/file/6F03529059F71F0CCEC9046F1932619ECB245EC4/57900.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Improves condition duration.",
+		"type": "Skill",
+		"_source": "skills:10234:Signet of Midnight",
+		"skill": 10234,
+		"slot": "Utility",
+		"professions": ["Mesmer"],
+		"_variants": [
+			{
+				"description": "Improves condition duration..",
+				"type": "Trait",
+				"_source": "traits:752:Blurred Inscriptions",
+				"trait": 752,
+				"specialization": 23
+			}
+		]
+	},
+	{
+		"id": 30739,
+		"name": "Signet of Humility",
+		"icon": "https://render.guildwars2.com/file/A8B2B2403BF7A920040EB6E0E534920DA8D27B32/1012893.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"type": "Skill",
+		"skill": 29519,
+		"slot": "Utility",
+		"professions": ["Mesmer"],
+		"_variants": [
+			{
+				"description": "Applies vulnerability.",
+				"type": "Trait",
+				"_source": "traits:752:Blurred Inscriptions",
+				"trait": 752,
+				"specialization": 23
+			}
+		]
+	},
+	{
+		"id": 10225,
 		"name": "Reflection",
 		"icon": "https://render.guildwars2.com/file/A20219EB6F5FC52A0E537163B4A9051606C11B52/65735.png",
 		"stacking": "Duration",
@@ -738,13 +773,14 @@
 		"type": "Trait",
 		"_source": "traits:752:Blurred Inscriptions",
 		"trait": 752,
-		"specialization": 23
+		"specialization": 23,
+		"variantIds": [24014]
 	},
 	{
-		"id": null,
+		"id": 75397,
 		"name": "Taste for Blood",
 		"icon": "https://render.guildwars2.com/file/09266890E7D1517B2D634E026A67696ABDBCDBC3/1012535.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Siphon health from enemies on hit.",
@@ -828,11 +864,11 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 30845,
 		"name": "Death's Carapace",
 		"icon": "https://render.guildwars2.com/file/DC38F4623BFE773E681E37A0EAE11A364D52AACE/1012567.png",
-		"stacking": "Duration",
-		"maxStacks": null,
+		"stacking": "Intensity",
+		"maxStacks": 30,
 		"maxDuration": null,
 		"description": "Increased toughness per stack.",
 		"type": "Trait",
