@@ -132,10 +132,6 @@ class TotemForge extends HTMLElement {
 			history.replaceState(null, "", url);
 		});
 
-		effect(() => {
-			console.log(this.#effects.value);
-		});
-
 		this.addEventListener("dragover", (event) => {
 			const container = event.target.closest(`.effects-selected`);
 
@@ -849,11 +845,12 @@ ${JSON.stringify(this.#reffectPackObject, null, 2)}</textarea
 
 						if (
 							"Intensity" === effectDetails.stacking &&
-							effectDetails.maximum > 1
+							effectDetails.maxStacks > 1
 						) {
 							part.members[
 								SPECS.pinnedItemMax.index
-							].trigger.threshold.threshold_type.Above = effectDetails.maximum;
+							].trigger.threshold.threshold_type.Above =
+								effectDetails.maxStacks;
 						}
 
 						// apply direction

@@ -20,9 +20,13 @@
 			"description": "Whether the effect stacks in duration or intensity",
 			"enum": ["Duration", "Intensity"]
 		},
-		"maximum": {
-			"type": "integer",
-			"description": "How many total intensity stacks can be applied at once or the maximum duration in seconds depending on stacking type"
+		"maxStacks": {
+			"type": ["integer", "null"],
+			"description": "How many total stacks can be applied at once"
+		},
+		"maxDuration": {
+			"type": ["integer", "null"],
+			"description": "The maximum duration in seconds of the effect"
 		},
 		"description": {
 			"type": "string",

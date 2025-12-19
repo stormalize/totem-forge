@@ -157,7 +157,8 @@ const saveEffectsFromFacts = (item, dataType) => {
 						name: name,
 						icon: fact.icon,
 						stacking: maxStacks ? "Intensity" : "Duration",
-						maximum: maxStacks ?? null,
+						maxStacks: maxStacks ?? null,
+						maxDuration: null,
 						description: fact.description ?? "",
 						type: type,
 					};
