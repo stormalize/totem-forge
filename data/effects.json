@@ -2670,10 +2670,10 @@
 		"specialization": 77
 	},
 	{
-		"id": null,
+		"id": 76885,
 		"name": "Willing Host",
 		"icon": "https://render.guildwars2.com/file/49DEE2C90E04E876DE2517C201060E330A7D9FDE/3679954.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "You deal increased damage from strikes and conditions.",
@@ -2683,52 +2683,89 @@
 		"specialization": 75
 	},
 	{
-		"id": null,
-		"name": "Brisk Pacing",
+		"id": 79083,
+		"name": "Brisk Pacing (1-3 Motivation)",
 		"icon": "https://render.guildwars2.com/file/9D35A3CED107B068AD4D20A3782BF6262FE36610/3680030.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Increased outgoing damage.",
 		"type": "Trait",
 		"_source": "traits:2375:Brisk Pacing",
 		"trait": 2375,
-		"specialization": 74,
-		"_variants": [{}, {}]
+		"specialization": 74
 	},
 	{
-		"id": null,
+		"id": 78486,
+		"name": "Brisk Pacing (4-6 Motivation)",
+		"icon": "https://render.guildwars2.com/file/9D35A3CED107B068AD4D20A3782BF6262FE36610/3680030.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Increased outgoing damage.",
+		"type": "Trait",
+		"_source": "traits:2375:Brisk Pacing",
+		"trait": 2375,
+		"specialization": 74
+	},
+	{
+		"id": 78740,
+		"name": "Brisk Pacing (7-10 Motivation)",
+		"icon": "https://render.guildwars2.com/file/9D35A3CED107B068AD4D20A3782BF6262FE36610/3680030.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Increased outgoing damage.",
+		"type": "Trait",
+		"_source": "traits:2375:Brisk Pacing",
+		"trait": 2375,
+		"specialization": 74
+	},
+	{
+		"id": 76865,
 		"name": "Chant of Action",
 		"icon": "https://render.guildwars2.com/file/4B3C78BCBC05A7FDE4DDC8624AD9D80924B3F237/3680056.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "",
-		"type": "Trait",
-		"_source": "traits:2385:Strengthening Stanzas",
-		"trait": 2385,
+		"type": "Skill",
+		"skill": 77342,
+		"slot": "Profession_2",
+		"professions": ["Warrior"],
 		"specialization": 74,
 		"_variants": [
 			{
 				"description": "Stacks of might gained increased per level.",
 				"_source": "traits:2428:Enduring Refrain",
 				"trait": 2428
+			},
+			{
+				"type": "Trait",
+				"_source": "traits:2385:Strengthening Stanzas",
+				"trait": 2385
 			}
 		]
 	},
 	{
-		"id": null,
+		"id": 77378,
 		"name": "Chant of Recuperation",
 		"icon": "https://render.guildwars2.com/file/6EAB0F5614F71BA857B1797E42596FEF3E0733AE/3680058.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "",
-		"type": "Trait",
-		"_source": "traits:2385:Strengthening Stanzas",
-		"trait": 2385,
+		"type": "Skill",
+		"skill": 76782,
+		"slot": "Profession_3",
+		"professions": ["Warrior"],
 		"specialization": 74,
 		"_variants": [
+			{
+				"type": "Trait",
+				"_source": "traits:2385:Strengthening Stanzas",
+				"trait": 2385
+			},
 			{
 				"description": "Healing increased per level.",
 				"_source": "traits:2428:Enduring Refrain",
@@ -2737,18 +2774,24 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 76972,
 		"name": "Chant of Freedom",
 		"icon": "https://render.guildwars2.com/file/416DB03D770454152C5CAC1BE00575E075AD9571/3680057.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "",
-		"type": "Trait",
-		"_source": "traits:2385:Strengthening Stanzas",
-		"trait": 2385,
+		"type": "Skill",
+		"skill": 77155,
+		"slot": "Profession_4",
+		"professions": ["Warrior"],
 		"specialization": 74,
 		"_variants": [
+			{
+				"type": "Trait",
+				"_source": "traits:2385:Strengthening Stanzas",
+				"trait": 2385
+			},
 			{
 				"description": "Boon duration increased for each boon granted per level.",
 				"_source": "traits:2428:Enduring Refrain",
@@ -2757,10 +2800,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 77333,
 		"name": "Luminary's Blessing",
 		"icon": "https://render.guildwars2.com/file/6C920751304B14ADFFB6A70CACEA1B80D2ABFC59/3679965.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Reduced incoming strike damage. Heal when this expires. <c=@reminder>Healing will also occur if this effect is reapplied while still active.",
@@ -2845,10 +2888,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 76848,
 		"name": "Scoundrel's Luck",
 		"icon": "https://render.guildwars2.com/file/6F4E6201D89B35DDAD47EDEC453C51B70DFA409F/3680052.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your next Double Edge skill used on cooldown will always be successful, regardless of the remaining cooldown. If used on Skritt Scuffle, it instead reduces the chance of obtaining an Unstable Skritt Bomb.",
@@ -2858,11 +2901,11 @@
 		"specialization": 77
 	},
 	{
-		"id": null,
+		"id": 76573,
 		"name": "Prodigious Pincher",
 		"icon": "https://render.guildwars2.com/file/092ED8ABB495EFD759DA0BE64D1C285A21076D15/3680054.png",
-		"stacking": "Duration",
-		"maxStacks": null,
+		"stacking": "Intensity",
+		"maxStacks": 15,
 		"maxDuration": null,
 		"description": "When this reaches the maximum amount of stacks, remove all stacks, then Pilfer. Overrides existing artifacts.",
 		"type": "Trait",
@@ -2871,12 +2914,12 @@
 		"specialization": 77
 	},
 	{
-		"id": null,
+		"id": 77169,
 		"name": "Empowered Armaments",
 		"icon": "https://render.guildwars2.com/file/37424E9DD0A3ADC61DD56BB180C96201DB61099C/3679960.png",
 		"stacking": "Duration",
 		"maxStacks": null,
-		"maxDuration": null,
+		"maxDuration": 20,
 		"description": "You deal increased strike damage.",
 		"type": "Trait",
 		"_source": "traits:2419:Empowered Armaments",
@@ -2884,24 +2927,25 @@
 		"specialization": 81
 	},
 	{
-		"id": null,
+		"id": 77297,
 		"name": "Lute Playing",
 		"icon": "https://render.guildwars2.com/file/4CAA3750145A55B7E73D5EB9917590EC45657BE7/3680159.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "The lute is playing in the background.",
-		"type": "Trait",
-		"_source": "traits:2424:Symphonic Resonance",
-		"trait": 2424,
+		"type": "Skill",
+		"_source": "skills:76552:Lively Lute",
+		"skill": 76552,
+		"slot": "Profession_1",
+		"professions": ["Mesmer"],
+
 		"specialization": 73,
 		"_variants": [
 			{
-				"type": "Skill",
-				"_source": "skills:76552:Lively Lute",
-				"skill": 76552,
-				"slot": "Profession_1",
-				"professions": ["Mesmer"]
+				"type": "Trait",
+				"_source": "traits:2424:Symphonic Resonance",
+				"trait": 2424
 			},
 			{
 				"type": "Skill",
@@ -2913,68 +2957,68 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 77118,
 		"name": "Flute Playing",
 		"icon": "https://render.guildwars2.com/file/CFE30B5052A2AA67D9A8AE5FC1FBA0A56C64584C/3680160.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "The flute is playing in the background.",
-		"type": "Trait",
-		"_source": "traits:2424:Symphonic Resonance",
-		"trait": 2424,
+		"type": "Skill",
+		"_source": "skills:76746:Flustering Flute",
+		"skill": 76746,
+		"slot": "Profession_2",
+		"professions": ["Mesmer"],
 		"specialization": 73,
 		"_variants": [
 			{
-				"type": "Skill",
-				"_source": "skills:76746:Flustering Flute",
-				"skill": 76746,
-				"slot": "Profession_2",
-				"professions": ["Mesmer"]
+				"type": "Trait",
+				"_source": "traits:2424:Symphonic Resonance",
+				"trait": 2424
 			}
 		]
 	},
 	{
-		"id": null,
+		"id": 76719,
 		"name": "Drum Playing",
 		"icon": "https://render.guildwars2.com/file/E061ECE20A34DC281C0E3EB8FB90094549E87941/3680161.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "The drum is playing in the background.",
-		"type": "Trait",
-		"_source": "traits:2424:Symphonic Resonance",
-		"trait": 2424,
+		"type": "Skill",
+		"_source": "skills:77079:Deafening Drum",
+		"skill": 77079,
+		"slot": "Profession_3",
+		"professions": ["Mesmer"],
 		"specialization": 73,
 		"_variants": [
 			{
-				"type": "Skill",
-				"_source": "skills:77079:Deafening Drum",
-				"skill": 77079,
-				"slot": "Profession_3",
-				"professions": ["Mesmer"]
+				"type": "Trait",
+				"_source": "traits:2424:Symphonic Resonance",
+				"trait": 2424
 			}
 		]
 	},
 	{
-		"id": null,
+		"id": 76624,
 		"name": "Harp Playing",
 		"icon": "https://render.guildwars2.com/file/C1BCF465DE1DAB00E00B0F1494ABDB2D7F57BECA/3680162.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "The harp is playing in the background.",
-		"type": "Trait",
-		"_source": "traits:2424:Symphonic Resonance",
-		"trait": 2424,
+		"type": "Skill",
+		"_source": "skills:76960:Harmonious Harp",
+		"skill": 76960,
+		"slot": "Profession_4",
+		"professions": ["Mesmer"],
 		"specialization": 73,
 		"_variants": [
 			{
-				"type": "Skill",
-				"_source": "skills:76960:Harmonious Harp",
-				"skill": 76960,
-				"slot": "Profession_4",
-				"professions": ["Mesmer"]
+				"type": "Trait",
+				"_source": "traits:2424:Symphonic Resonance",
+				"trait": 2424
 			},
 			{
 				"type": "Skill",
@@ -2986,10 +3030,10 @@
 		]
 	},
 	{
-		"id": null,
-		"name": "Radiant Armaments",
+		"id": 77207,
+		"name": "Radiant Armaments (Hammer)",
 		"icon": "https://render.guildwars2.com/file/4ECA0C916F5D54C3C12AC135AB5A1E2D4BC792E5/3680142.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Deal increased strike damage.",
@@ -2997,6 +3041,7 @@
 		"_source": "traits:2435:Radiant Armaments",
 		"trait": 2435,
 		"specialization": 81,
+		"variantIds": [77360],
 		"_variants": [
 			{
 				"icon": "https://render.guildwars2.com/file/06BD9362B2F9FAE403181D0F9BE96A12664C22CA/3680148.png",
@@ -3013,10 +3058,52 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 76812,
+		"name": "Radiant Armaments (Staff)",
+		"icon": "https://render.guildwars2.com/file/06BD9362B2F9FAE403181D0F9BE96A12664C22CA/3680148.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Increased outgoing healing.",
+		"type": "Trait",
+		"_source": "traits:2435:Radiant Armaments",
+		"trait": 2435,
+		"specialization": 81,
+		"variantIds": [76858]
+	},
+	{
+		"id": 76690,
+		"name": "Radiant Armaments (Sword)",
+		"icon": "https://render.guildwars2.com/file/79B0DCC5E4A0A8BBE04AC0024D01A0F36D0B0C79/3680151.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Increased movement speed",
+		"type": "Trait",
+		"_source": "traits:2435:Radiant Armaments",
+		"trait": 2435,
+		"specialization": 81,
+		"variantIds": [77088]
+	},
+	{
+		"id": 76804,
+		"name": "Radiant Armaments (Shield)",
+		"icon": "https://render.guildwars2.com/file/06735858B4DE086359A7DB1D4B2B650F97D7DD03/3680144.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Reduce incoming strike damage from nearby enemies.",
+		"type": "Trait",
+		"_source": "traits:2435:Radiant Armaments",
+		"trait": 2435,
+		"specialization": 81,
+		"variantIds": [77276]
+	},
+	{
+		"id": 78631,
 		"name": "Elemental Balance",
 		"icon": "https://render.guildwars2.com/file/6B625B190E65062542F7CCF9B1565D2AF403C2C6/3679935.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your next weapon skill's cooldown is reduced by 66%.",
@@ -3026,10 +3113,10 @@
 		"specialization": 80
 	},
 	{
-		"id": null,
+		"id": 15792,
 		"name": "Conjure Fire Attributes",
 		"icon": "https://render.guildwars2.com/file/EEDA0B1847077DE93DBB0575D44BE0615FBCE728/103328.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Increased power and condition damage.",
@@ -3040,10 +3127,10 @@
 		"professions": ["Elementalist"]
 	},
 	{
-		"id": null,
+		"id": 15789,
 		"name": "Conjure Flame Attributes",
 		"icon": "https://render.guildwars2.com/file/D171D89609420B0C11B52FD8632897B76D60F305/103338.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Increased power and condition damage.",
@@ -3054,10 +3141,10 @@
 		"professions": ["Elementalist"]
 	},
 	{
-		"id": null,
+		"id": 5544,
 		"name": "Signet of Fire",
 		"icon": "https://render.guildwars2.com/file/78F000A3121FCFF9B56EA62625186F0E06D8A458/103340.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Improved precision.",
@@ -3065,13 +3152,14 @@
 		"_source": "skills:5542:Signet of Fire",
 		"skill": 5542,
 		"slot": "Utility",
-		"professions": ["Elementalist"]
+		"professions": ["Elementalist"],
+		"variantIds": [5798]
 	},
 	{
-		"id": null,
+		"id": 15788,
 		"name": "Conjure Earth Attributes",
 		"icon": "https://render.guildwars2.com/file/B4BCCD185B24380C953EAD0E5702BFAB96F3BF08/103342.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Increased vitality and toughness.",
@@ -3082,10 +3170,10 @@
 		"professions": ["Elementalist"]
 	},
 	{
-		"id": null,
+		"id": 15790,
 		"name": "Conjure Frost Attributes",
 		"icon": "https://render.guildwars2.com/file/CC6D556B7C3F95C49E54D697CC2B4E79105DC594/103348.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Increased condition duration and healing power.",
@@ -3096,10 +3184,10 @@
 		"professions": ["Elementalist"]
 	},
 	{
-		"id": null,
+		"id": 5591,
 		"name": "Signet of Water",
 		"icon": "https://render.guildwars2.com/file/950EABEE51A5B7E116609A2C4869B2BDF3760ED1/103351.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Reduces incoming condition duration.",
@@ -3108,6 +3196,7 @@
 		"skill": 5570,
 		"slot": "Utility",
 		"professions": ["Elementalist"],
+		"variantIds": [5799],
 		"_variants": [
 			{
 				"_source": "skills:49056:Signet of Water",
@@ -3117,10 +3206,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 5592,
 		"name": "Signet of Earth",
 		"icon": "https://render.guildwars2.com/file/DC27E04D9F9CE5627D953752B5F334C7A304B7F5/103352.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Reduce incoming strike damage.",
@@ -3128,13 +3217,14 @@
 		"_source": "skills:5571:Signet of Earth",
 		"skill": 5571,
 		"slot": "Utility",
-		"professions": ["Elementalist"]
+		"professions": ["Elementalist"],
+		"variantIds": [5797]
 	},
 	{
-		"id": null,
+		"id": 5590,
 		"name": "Signet of Air",
 		"icon": "https://render.guildwars2.com/file/2995072EFD05AC80581CCEEB64BC592B3B6DE724/103353.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Movement speed increased by 25%.",
@@ -3142,13 +3232,14 @@
 		"_source": "skills:5572:Signet of Air",
 		"skill": 5572,
 		"slot": "Utility",
-		"professions": ["Elementalist"]
+		"professions": ["Elementalist"],
+		"variantIds": [5796]
 	},
 	{
-		"id": null,
+		"id": 43443,
 		"name": "Fired Up!",
 		"icon": "https://render.guildwars2.com/file/0D0451ADE6BA5B4864DF0A0DE62108AA45914747/103339.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "After using a Lava Axe ability, your next Lava Axe attack fires twice.",
@@ -3156,96 +3247,47 @@
 		"_source": "skills:5593:Explosive Lava Axe",
 		"skill": 5593,
 		"slot": "Weapon_2",
-		"professions": [
-			"Thief",
-			"Mesmer",
-			"Warrior",
-			"Elementalist",
-			"Necromancer",
-			"Guardian",
-			"Ranger",
-			"Engineer",
-			"Revenant"
-		],
+		"professions": ["Elementalist"],
 		"_variants": [
 			{
 				"_source": "skills:5717:Burning Retreat",
 				"skill": 5717,
 				"slot": "Weapon_3",
-				"professions": [
-					"Thief",
-					"Mesmer",
-					"Warrior",
-					"Elementalist",
-					"Necromancer",
-					"Guardian",
-					"Ranger",
-					"Engineer",
-					"Revenant"
-				]
+				"professions": ["Elementalist"]
 			},
 			{
 				"_source": "skills:5718:Ring of Fire",
 				"skill": 5718,
 				"slot": "Weapon_4",
-				"professions": [
-					"Thief",
-					"Mesmer",
-					"Warrior",
-					"Elementalist",
-					"Necromancer",
-					"Guardian",
-					"Ranger",
-					"Engineer",
-					"Revenant"
-				]
+				"professions": ["Elementalist"]
 			},
 			{
 				"_source": "skills:5719:Flame Leap",
 				"skill": 5719,
 				"slot": "Weapon_5",
-				"professions": [
-					"Thief",
-					"Mesmer",
-					"Warrior",
-					"Elementalist",
-					"Necromancer",
-					"Guardian",
-					"Ranger",
-					"Engineer",
-					"Revenant"
-				]
+				"professions": ["Elementalist"]
 			}
 		]
 	},
 	{
-		"id": null,
+		"id": 46431,
 		"name": "Water Arrow",
 		"icon": "https://render.guildwars2.com/file/DCF09BD74F77D6A9ADDADDA4A4B75005E752FCFF/103359.png",
 		"stacking": "Intensity",
-		"maximum": 2,
+		"maxDuration": null,
+		"maxStacks": 2,
 		"description": "Enhances Frost Bow abilities. Increases healing to others.",
 		"type": "Skill",
 		"_source": "skills:5595:Water Arrow",
 		"skill": 5595,
 		"slot": "Weapon_1",
-		"professions": [
-			"Thief",
-			"Mesmer",
-			"Warrior",
-			"Elementalist",
-			"Necromancer",
-			"Guardian",
-			"Ranger",
-			"Engineer",
-			"Revenant"
-		]
+		"professions": ["Elementalist"]
 	},
 	{
-		"id": null,
+		"id": 15791,
 		"name": "Conjure Lightning Attributes",
 		"icon": "https://render.guildwars2.com/file/C3DA6AC980062B0A0EEA14CE51393748CFAE01CA/103369.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Increased precision and ferocity.",
@@ -3256,10 +3298,10 @@
 		"professions": ["Elementalist"]
 	},
 	{
-		"id": null,
+		"id": 76507,
 		"name": "Arcane Echo",
 		"icon": "https://render.guildwars2.com/file/AD24BD1B231424D2A8F223A6F899AC34D6AAAB26/103356.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your next weapon skill will recharge faster.",
@@ -3270,27 +3312,28 @@
 		"professions": ["Elementalist"]
 	},
 	{
-		"id": null,
+		"id": 2785,
 		"name": "Arcane Shield",
 		"icon": "https://render.guildwars2.com/file/A20219EB6F5FC52A0E537163B4A9051606C11B52/65735.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
-		"maxDuration": null,
+		"maxDuration": 5,
 		"description": "Blocks attacks. Explodes after blocking three attacks.",
 		"type": "Skill",
 		"_source": "skills:5641:Arcane Shield",
 		"skill": 5641,
 		"slot": "Utility",
 		"professions": ["Elementalist"],
+		"variantIds": [5640],
 		"_variants": [
 			{ "_source": "skills:25579:Lesser Arcane Shield", "skill": 25579 }
 		]
 	},
 	{
-		"id": null,
+		"id": 750,
 		"name": "Rock Barrier",
 		"icon": "https://render.guildwars2.com/file/C5CB69247473AE2DEB35DB5F952A0C3832CC14F2/102858.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "",
