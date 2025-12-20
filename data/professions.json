@@ -1,11 +1,11 @@
 [
 	{ "id": "Guardian", "name": "Guardian" },
+	{ "id": "Revenant", "name": "Revenant" },
 	{ "id": "Warrior", "name": "Warrior" },
 	{ "id": "Engineer", "name": "Engineer" },
 	{ "id": "Ranger", "name": "Ranger" },
 	{ "id": "Thief", "name": "Thief" },
 	{ "id": "Elementalist", "name": "Elementalist" },
 	{ "id": "Mesmer", "name": "Mesmer" },
-	{ "id": "Necromancer", "name": "Necromancer" },
-	{ "id": "Revenant", "name": "Revenant" }
+	{ "id": "Necromancer", "name": "Necromancer" }
 ]

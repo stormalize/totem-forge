@@ -771,9 +771,9 @@
 		"maxDuration": null,
 		"description": "Reflects projectiles.",
 		"type": "Trait",
-		"_source": "traits:752:Blurred Inscriptions",
-		"trait": 752,
-		"specialization": 23,
+		"_source": "traits:2035:Master of Fragmentation",
+		"trait": 2035,
+		"specialization": 24,
 		"variantIds": [24014]
 	},
 	{
@@ -884,10 +884,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 13988,
 		"name": "Opening Strike",
 		"icon": "https://render.guildwars2.com/file/A537B362D8AC54BC7907E050B596BA93E4CBE5F2/1012627.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your next attack is an opening strike.",
@@ -898,10 +898,10 @@
 		"_variants": [{ "_source": "traits:1015:Remorseless", "trait": 1015 }]
 	},
 	{
-		"id": null,
+		"id": 29703,
 		"name": "Quick Draw",
 		"icon": "https://render.guildwars2.com/file/CBCB2EC86BC85CC02DA7AAB25CBFB226B8956D1E/1012648.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your next weapon skill's cooldown is reduced by 66%.",
@@ -911,10 +911,10 @@
 		"specialization": 30
 	},
 	{
-		"id": null,
+		"id": 12574,
 		"name": "Attack of Opportunity",
 		"icon": "https://render.guildwars2.com/file/9B120D5A176870D4EC9F1BE44E295EAAA6EF0ABC/1012623.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Damage increased 50% on next attack.",
@@ -944,7 +944,7 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 34283,
 		"name": "Instant Reflexes",
 		"icon": "https://render.guildwars2.com/file/E80BD3449E33470B1ECA0FF242CC6B031B459514/1012714.png",
 		"stacking": "Duration",
@@ -958,34 +958,34 @@
 		"_variants": [{}]
 	},
 	{
-		"id": null,
+		"id": 13036,
 		"name": "Spider Venom",
 		"icon": "https://render.guildwars2.com/file/39320C2D4AED963861F4540F59AEBB5E05AD2E1C/103513.png",
-		"stacking": "Duration",
-		"maxStacks": null,
+		"stacking": "Intensity",
+		"maxStacks": 25,
 		"maxDuration": null,
 		"description": "Your attacks poison foes.",
-		"type": "Trait",
-		"_source": "traits:1130:Leeching Venoms",
-		"trait": 1130,
-		"specialization": 20,
+		"type": "Skill",
+		"_source": "skills:13037:Spider Venom",
+		"skill": 13037,
+		"slot": "Utility",
+		"professions": ["Thief"],
 		"_variants": [
-			{},
 			{
-				"type": "Skill",
-				"_source": "skills:13037:Spider Venom",
-				"skill": 13037,
-				"slot": "Utility",
-				"professions": ["Thief"]
-			}
+				"type": "Trait",
+				"_source": "traits:1130:Leeching Venoms",
+				"trait": 1130,
+				"specialization": 20
+			},
+			{}
 		]
 	},
 	{
-		"id": null,
+		"id": 34659,
 		"name": "Lead Attacks",
 		"icon": "https://render.guildwars2.com/file/0E204D3ECBE43544E2366F250C3AEDDFC3A051FA/1012773.png",
-		"stacking": "Duration",
-		"maxStacks": null,
+		"stacking": "Intensity",
+		"maxStacks": 15,
 		"maxDuration": null,
 		"description": "All damage dealt is increased.",
 		"type": "Trait",
@@ -994,144 +994,10 @@
 		"specialization": 44
 	},
 	{
-		"id": null,
-		"name": "Daze",
-		"icon": "https://render.guildwars2.com/file/9AE125E930C92FEA0DD99E7EBAEDE4CF5EC556B6/433474.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Unable to activate skills.",
-		"type": "Trait",
-		"_source": "traits:1158:Sleight of Hand",
-		"trait": 1158,
-		"specialization": 44,
-		"_variants": [
-			{
-				"_source": "traits:1935:Blood Moon",
-				"trait": 1935,
-				"specialization": 5
-			},
-			{
-				"_source": "traits:1935:Blood Moon",
-				"trait": 1935,
-				"specialization": 5
-			},
-			{
-				"_source": "traits:2075:Unrelenting Criticism",
-				"trait": 2075,
-				"specialization": 62
-			},
-			{
-				"type": "Skill",
-				"_source": "skills:1131:Mace Head Crack",
-				"skill": 1131,
-				"slot": "Profession_2",
-				"professions": []
-			},
-			{
-				"type": "Skill",
-				"_source": "skills:5982:Launch Personal Battering Ram",
-				"skill": 5982,
-				"slot": "Toolbelt",
-				"professions": ["Engineer"]
-			},
-			{
-				"type": "Skill",
-				"_source": "skills:5982:Launch Personal Battering Ram",
-				"skill": 5982,
-				"slot": "Toolbelt",
-				"professions": ["Engineer"]
-			},
-			{
-				"type": "Skill",
-				"_source": "skills:13012:Head Shot",
-				"skill": 13012,
-				"slot": "Weapon_4",
-				"professions": ["Thief"],
-				"weapon_type": "Pistol"
-			},
-			{
-				"type": "Skill",
-				"_source": "skills:31167:Spare Capacitor",
-				"skill": 31167,
-				"slot": "Toolbelt",
-				"professions": ["Engineer"]
-			},
-			{
-				"type": "Skill",
-				"_source": "skills:31167:Spare Capacitor",
-				"skill": 31167,
-				"slot": "Toolbelt",
-				"professions": ["Engineer"]
-			},
-			{ "type": "Skill", "_source": "skills:35154:Face Smash", "skill": 35154 },
-			{
-				"type": "Skill",
-				"_source": "skills:35167:Overhead Smash",
-				"skill": 35167
-			},
-			{
-				"type": "Skill",
-				"_source": "skills:40624:Symbol of Vengeance",
-				"skill": 40624,
-				"slot": "Weapon_2",
-				"professions": ["Guardian"],
-				"specialization": 62,
-				"weapon_type": "Axe"
-			},
-			{
-				"type": "Skill",
-				"_source": "skills:50594:Lightning Storm",
-				"skill": 50594
-			},
-			{
-				"type": "Skill",
-				"_source": "skills:51039:Disintegration Blast",
-				"skill": 51039
-			},
-			{ "type": "Skill", "_source": "skills:53707:Comet", "skill": 53707 },
-			{
-				"type": "Skill",
-				"_source": "skills:54133:Bloody Bludgeon",
-				"skill": 54133
-			},
-			{ "type": "Skill", "_source": "skills:54139:", "skill": 54139 },
-			{
-				"type": "Skill",
-				"_source": "skills:54413:Disrupting Dagger",
-				"skill": 54413
-			},
-			{
-				"type": "Skill",
-				"_source": "skills:54532:Great Bludgeoning",
-				"skill": 54532
-			},
-			{
-				"type": "Skill",
-				"_source": "skills:54849:Frostblades",
-				"skill": 54849
-			},
-			{
-				"type": "Skill",
-				"_source": "skills:71802:Helmet Breaker",
-				"skill": 71802,
-				"slot": "Weapon_3",
-				"professions": ["Thief"],
-				"specialization": 7,
-				"weapon_type": "Staff"
-			},
-			{
-				"type": "Skill",
-				"_source": "skills:75899:Charged Ground",
-				"skill": 75899
-			}
-		]
-	},
-	{
-		"id": null,
+		"id": 42720,
 		"name": "Hidden Killer",
 		"icon": "https://render.guildwars2.com/file/03E22FDC6642C0F4BFD197DA5470A97910EB1877/1012733.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "You have increased critical hit chance.",
@@ -1141,10 +1007,10 @@
 		"specialization": 35
 	},
 	{
-		"id": null,
+		"id": 69291,
 		"name": "Fluid Strikes",
 		"icon": "https://render.guildwars2.com/file/64A151F4F69F7F6E36986108224DA606660EDD64/1012725.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your damage is increased.",
@@ -1154,31 +1020,36 @@
 		"specialization": 54
 	},
 	{
-		"id": null,
+		"id": 72970,
 		"name": "Heightened Focus",
 		"icon": "https://render.guildwars2.com/file/FC5A1E5591B670A175ED01297B48C7F2B1DC1FED/1012806.png",
 		"stacking": "Intensity",
-		"maximum": 4,
+		"maxStacks": 4,
+		"maxDuration": null,
 		"description": "Increased outgoing healing per stack.",
 		"type": "Trait",
 		"_source": "traits:1317:Heightened Focus",
 		"trait": 1317,
-		"specialization": 51,
-		"_variants": [{}, {}, {}, {}, {}]
+		"specialization": 51
 	},
 	{
-		"id": null,
+		"id": 62836,
 		"name": "Positive Flow",
 		"icon": "https://render.guildwars2.com/file/15AA251708A19EC6E1CBA4B208D7502797C9D111/2604722.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Gain flow per second.",
 		"type": "Trait",
-		"_source": "traits:1334:Opportunist",
-		"trait": 1334,
-		"specialization": 36,
+		"_source": "traits:2226:Gun X Sword",
+		"trait": 2226,
+		"specialization": 68,
 		"_variants": [
+			{
+				"_source": "traits:1334:Opportunist",
+				"trait": 1334,
+				"specialization": 36
+			},
 			{
 				"_source": "traits:1367:Merciless Hammer",
 				"trait": 1367,
@@ -1247,25 +1118,25 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 44412,
 		"name": "Burst Precision",
 		"icon": "https://render.guildwars2.com/file/B93F326A054F0067AA1A35BB0F5E6B5C01992FB9/1012780.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Increased critical-hit chance.",
 		"type": "Trait",
 		"_source": "traits:1336:Burst Precision",
 		"trait": 1336,
-		"specialization": 36,
-		"_variants": [{}, {}, {}, {}, {}]
+		"specialization": 36
 	},
 	{
-		"id": null,
+		"id": 41922,
 		"name": "Signet of Ferocity",
 		"icon": "https://render.guildwars2.com/file/3D117C0158CD7A55BE740D6B072807A3121C90A1/1012775.png",
 		"stacking": "Intensity",
-		"maximum": 5,
+		"maxStacks": 5,
+		"maxDuration": null,
 		"description": "",
 		"type": "Trait",
 		"_source": "traits:1344:Signet Mastery",
@@ -1273,11 +1144,12 @@
 		"specialization": 36
 	},
 	{
-		"id": null,
+		"id": 30204,
 		"name": "Furious Surge",
 		"icon": "https://render.guildwars2.com/file/10E50EAACB736A66317919D274C2594597AEE893/1012781.png",
 		"stacking": "Intensity",
-		"maximum": 25,
+		"maxStacks": 25,
+		"maxDuration": null,
 		"description": "",
 		"type": "Trait",
 		"_source": "traits:1346:Furious",
@@ -1285,421 +1157,49 @@
 		"specialization": 36
 	},
 	{
-		"id": null,
+		"id": 34766,
 		"name": "Adrenal Health",
 		"icon": "https://render.guildwars2.com/file/32A8CA56381F242642D7193B24284F922D23A2E3/1012796.png",
 		"stacking": "Intensity",
-		"maximum": 4,
+		"maxStacks": 4,
+		"maxDuration": null,
 		"description": "Regain health by spending adrenaline.",
 		"type": "Trait",
 		"_source": "traits:1348:Adrenal Health",
 		"trait": 1348,
-		"specialization": 22,
-		"_variants": [{}, {}, {}, {}, {}]
+		"specialization": 22
 	},
 	{
-		"id": null,
+		"id": 42539,
 		"name": "Berserker's Power",
 		"icon": "https://render.guildwars2.com/file/A795EE78B8DAA836F3C0650CFC037BB71D3517BA/1012816.png",
 		"stacking": "Intensity",
-		"maximum": 4,
+		"maxStacks": 4,
+		"maxDuration": null,
 		"description": "Increased strike damage per stack.",
 		"type": "Trait",
 		"_source": "traits:1437:Berserker's Power",
 		"trait": 1437,
-		"specialization": 4,
-		"_variants": [
-			{},
-			{},
-			{},
-			{},
-			{},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:29644:Gun Flame",
-				"skill": 29644,
-				"slot": "Profession_1",
-				"professions": ["Warrior"],
-				"specialization": 18
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:29679:Skull Grinder",
-				"skill": 29679,
-				"slot": "Profession_1",
-				"professions": ["Warrior"],
-				"specialization": 18
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:29852:Arc Divider",
-				"skill": 29852,
-				"slot": "Profession_1",
-				"professions": ["Warrior"],
-				"specialization": 18
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:29923:Scorched Earth",
-				"skill": 29923,
-				"slot": "Profession_1",
-				"professions": ["Warrior"],
-				"specialization": 18
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:30682:Flaming Flurry",
-				"skill": 30682,
-				"slot": "Profession_1",
-				"professions": ["Warrior"],
-				"specialization": 18
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:30851:Decapitate",
-				"skill": 30851,
-				"slot": "Profession_1",
-				"professions": ["Warrior"],
-				"specialization": 18
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:30879:Rupturing Smash",
-				"skill": 30879,
-				"slot": "Profession_1",
-				"professions": ["Warrior"],
-				"specialization": 18
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:30989:Burning Shackles",
-				"skill": 30989,
-				"slot": "Profession_1",
-				"professions": ["Warrior"],
-				"specialization": 18
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:31048:Wild Whirl",
-				"skill": 31048,
-				"slot": "Profession_1",
-				"professions": ["Warrior"],
-				"specialization": 18
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"description": "+10% Damage",
-				"type": "Skill",
-				"_source": "skills:39972:Silencer",
-				"skill": 39972,
-				"slot": "Profession_2",
-				"professions": ["Warrior"],
-				"specialization": 61
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:40601:Earthshaker",
-				"skill": 40601,
-				"slot": "Profession_1",
-				"professions": ["Warrior"],
-				"specialization": 61
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:41110:Skull Crack",
-				"skill": 41110,
-				"slot": "Profession_1",
-				"professions": ["Warrior"],
-				"specialization": 61
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"description": "+10% Damage",
-				"type": "Skill",
-				"_source": "skills:41283:Boon Crusher",
-				"skill": 41283,
-				"slot": "Profession_2",
-				"professions": ["Warrior"],
-				"specialization": 61
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:41330:Forceful Shot",
-				"skill": 41330,
-				"slot": "Profession_1",
-				"professions": ["Warrior"],
-				"specialization": 61
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"description": "+10% Damage",
-				"type": "Skill",
-				"_source": "skills:41543:Wounding Strike",
-				"skill": 41543,
-				"slot": "Profession_2",
-				"professions": ["Warrior"],
-				"specialization": 61
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:41746:Whirling Strike",
-				"skill": 41746,
-				"slot": "Profession_1",
-				"professions": ["Warrior"],
-				"specialization": 61
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:42041:Kill Shot",
-				"skill": 42041,
-				"slot": "Profession_1",
-				"professions": ["Warrior"],
-				"specialization": 61
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:42494:Flurry",
-				"skill": 42494,
-				"slot": "Profession_1",
-				"professions": ["Warrior"],
-				"specialization": 61
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:42707:Arcing Slice",
-				"skill": 42707,
-				"slot": "Profession_1",
-				"professions": ["Warrior"],
-				"specialization": 61
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:42803:Combustive Shot",
-				"skill": 42803,
-				"slot": "Profession_1",
-				"professions": ["Warrior"],
-				"specialization": 61
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"description": "+10% Damage",
-				"type": "Skill",
-				"_source": "skills:43488:Fleeting Stability",
-				"skill": 43488,
-				"slot": "Profession_2",
-				"professions": ["Warrior"],
-				"specialization": 61
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:43566:Eviscerate",
-				"skill": 43566,
-				"slot": "Profession_1",
-				"professions": ["Warrior"],
-				"specialization": 61
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:44165:Full Counter",
-				"skill": 44165,
-				"slot": "Profession_2",
-				"professions": ["Warrior"],
-				"specialization": 61
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"description": "+10% Damage",
-				"type": "Skill",
-				"_source": "skills:44397:Dissonance",
-				"skill": 44397,
-				"slot": "Profession_2",
-				"professions": ["Warrior"],
-				"specialization": 61
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:45252:Breaching Strike",
-				"skill": 45252,
-				"slot": "Profession_1",
-				"professions": ["Warrior"]
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"description": "+10% Damage",
-				"type": "Skill",
-				"_source": "skills:46044:Magehunter Strike",
-				"skill": 46044,
-				"slot": "Profession_2",
-				"professions": ["Warrior"],
-				"specialization": 61
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:69245:Breaching Strike",
-				"skill": 69245,
-				"slot": "Profession_1",
-				"professions": ["Warrior"]
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:69290:Slicing Maelstrom",
-				"skill": 69290,
-				"slot": "Profession_1",
-				"professions": ["Warrior"],
-				"specialization": 18
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:69297:Breaching Strike",
-				"skill": 69297,
-				"slot": "Profession_1",
-				"professions": ["Warrior"],
-				"specialization": 61
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:69392:Breaching Strike",
-				"skill": 69392,
-				"slot": "Profession_1",
-				"professions": ["Warrior"]
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:69433:Breaching Strike",
-				"skill": 69433,
-				"slot": "Profession_1",
-				"professions": ["Warrior"]
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:73014:Harrier's Toss",
-				"skill": 73014,
-				"slot": "Profession_1",
-				"professions": ["Warrior"],
-				"specialization": 61
-			},
-			{
-				"stacking": "Duration",
-				"maxStacks": null,
-				"maxDuration": null,
-				"type": "Skill",
-				"_source": "skills:73103:Wild Throw",
-				"skill": 73103,
-				"slot": "Profession_1",
-				"professions": ["Warrior"],
-				"specialization": 18
-			}
-		]
+		"specialization": 4
 	},
 	{
-		"id": null,
+		"id": 46853,
 		"name": "Peak Performance",
 		"icon": "https://render.guildwars2.com/file/08F60C11F460F3236DE65A445337290B7AAED96F/1012812.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Outgoing physical damage is increased.",
 		"type": "Trait",
 		"_source": "traits:1444:Peak Performance",
 		"trait": 1444,
-		"specialization": 4,
-		"_variants": [{}]
+		"specialization": 4
 	},
 	{
-		"id": null,
+		"id": 34241,
 		"name": "Fresh Air",
 		"icon": "https://render.guildwars2.com/file/FA64C9F2750F986E52E8376F22EDBA3844A8C603/1012277.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Critical damage is increased.",
@@ -1709,11 +1209,12 @@
 		"specialization": 41
 	},
 	{
-		"id": null,
+		"id": 13342,
 		"name": "Persisting Flames",
 		"icon": "https://render.guildwars2.com/file/38496307B7C27BCB08D6800F2A699B4998DD1935/1012312.png",
 		"stacking": "Intensity",
-		"maximum": 5,
+		"maxStacks": 5,
+		"maxDuration": null,
 		"description": "Deal increased strike damage per stack.",
 		"type": "Trait",
 		"_source": "traits:1510:Persisting Flames",
@@ -1721,10 +1222,10 @@
 		"specialization": 31
 	},
 	{
-		"id": null,
+		"id": 76519,
 		"name": "Grand Entrance",
 		"icon": "https://render.guildwars2.com/file/7093569DA52A64BE5C42AE0A0D0A700BAA320C0C/2261505.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your critical-strike chance is increased.",
@@ -1734,10 +1235,10 @@
 		"specialization": 6
 	},
 	{
-		"id": null,
+		"id": 24304,
 		"name": "Stone Heart",
 		"icon": "https://render.guildwars2.com/file/22F1BDACFBEBC8FF2BF77B22B3E535D2BA03D140/1012302.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "You cannot be critically hit.",
@@ -1764,10 +1265,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 29485,
 		"name": "Force of Will",
 		"icon": "https://render.guildwars2.com/file/AA9EDC9B5B343F27372ADDBA320702D3A19CD7D5/1012410.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "",
@@ -1777,10 +1278,10 @@
 		"specialization": 49
 	},
 	{
-		"id": null,
+		"id": 76483,
 		"name": "Power Block",
 		"icon": "https://render.guildwars2.com/file/E029766272E10A957B954B12B20FD916474D5A01/1012494.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your strike damage is increased.",
@@ -1790,11 +1291,11 @@
 		"specialization": 10
 	},
 	{
-		"id": null,
+		"id": 51683,
 		"name": "Rising Momentum",
 		"icon": "https://render.guildwars2.com/file/BADE3878F6F5EE4247D501CE5ACDFB7BC24BA1AE/1058535.png",
-		"stacking": "Duration",
-		"maxStacks": null,
+		"stacking": "Intensity",
+		"maxStacks": 10,
 		"maxDuration": null,
 		"description": "Gain movement speed for each point of upkeep currently in use.",
 		"type": "Trait",
@@ -1803,42 +1304,42 @@
 		"specialization": 52
 	},
 	{
-		"id": null,
+		"id": 26646,
 		"name": "Battle Scars",
 		"icon": "https://render.guildwars2.com/file/395D7939C8DD48BE35012E319D039F545065F755/2261515.png",
-		"stacking": "Duration",
-		"maxStacks": null,
+		"stacking": "Intensity",
+		"maxStacks": 25,
 		"maxDuration": null,
 		"description": "Your next attack steals health.",
 		"type": "Trait",
-		"_source": "traits:1754:Dance of Death",
-		"trait": 1754,
+		"_source": "traits:1755:Battle Scarred",
+		"trait": 1755,
 		"specialization": 15,
 		"_variants": [
-			{ "_source": "traits:1755:Battle Scarred", "trait": 1755 },
+			{ "_source": "traits:1754:Dance of Death", "trait": 1754 },
 			{ "_source": "traits:1802:Thrill of Combat", "trait": 1802 }
 		]
 	},
 	{
-		"id": null,
+		"id": 27336,
 		"name": "Facet of Light",
 		"icon": "https://render.guildwars2.com/file/1F723B516AC5B614943543EECE6938E13349B90E/1012991.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
-		"description": "",
-		"type": "Trait",
-		"_source": "traits:1772:Draconic Echo",
-		"trait": 1772,
+		"description": "Pulse regeneration to nearby allies every few seconds.",
+		"type": "Skill",
+		"_source": "skills:27220:Facet of Light",
+		"skill": 27220,
+		"slot": "Heal",
+		"professions": ["Revenant"],
 		"specialization": 52,
 		"_variants": [
 			{
-				"description": "Pulse regeneration to nearby allies every few seconds.",
-				"type": "Skill",
-				"_source": "skills:27220:Facet of Light",
-				"skill": 27220,
-				"slot": "Heal",
-				"professions": ["Revenant"]
+				"description": "",
+				"type": "Trait",
+				"_source": "traits:1772:Draconic Echo",
+				"trait": 1772
 			},
 			{
 				"description": "Pulse regeneration to nearby allies every few seconds.",
@@ -1851,18 +1352,27 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 28036,
 		"name": "Facet of Darkness",
 		"icon": "https://render.guildwars2.com/file/15A4F87D0E05936FF96B60F8745ADB513C5308E3/1013011.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
-		"description": "",
-		"type": "Trait",
-		"_source": "traits:1772:Draconic Echo",
-		"trait": 1772,
+		"description": "Pulse fury to nearby allies every few seconds.",
+		"type": "Skill",
+		"_source": "skills:28379:Facet of Darkness",
+		"skill": 28379,
+
+		"slot": "Utility",
+		"professions": ["Revenant"],
 		"specialization": 52,
 		"_variants": [
+			{
+				"description": "",
+				"type": "Trait",
+				"_source": "traits:1772:Draconic Echo",
+				"trait": 1772
+			},
 			{
 				"description": "Pulse fury to nearby allies every few seconds.",
 				"type": "Skill",
@@ -1870,37 +1380,29 @@
 				"skill": 27080,
 				"slot": "Utility",
 				"professions": ["Revenant"]
-			},
-			{
-				"description": "Pulse fury to nearby allies every few seconds.",
-				"type": "Skill",
-				"_source": "skills:28379:Facet of Darkness",
-				"skill": 28379,
-				"slot": "Utility",
-				"professions": ["Revenant"]
 			}
 		]
 	},
 	{
-		"id": null,
+		"id": 28243,
 		"name": "Facet of Elements",
 		"icon": "https://render.guildwars2.com/file/C1EC3E559DFB120A41FD3750DABD616BBA9172F9/1013012.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
-		"description": "",
-		"type": "Trait",
-		"_source": "traits:1772:Draconic Echo",
-		"trait": 1772,
+		"description": "Pulse swiftness to nearby allies every few seconds.",
+		"type": "Skill",
+		"_source": "skills:27014:Facet of Elements",
+		"skill": 27014,
+		"slot": "Utility",
+		"professions": ["Revenant"],
 		"specialization": 52,
 		"_variants": [
 			{
-				"description": "Pulse swiftness to nearby allies every few seconds.",
-				"type": "Skill",
-				"_source": "skills:27014:Facet of Elements",
-				"skill": 27014,
-				"slot": "Utility",
-				"professions": ["Revenant"]
+				"description": "",
+				"type": "Trait",
+				"_source": "traits:1772:Draconic Echo",
+				"trait": 1772
 			},
 			{
 				"description": "Pulse swiftness to nearby allies every few seconds.",
@@ -1913,25 +1415,26 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 27376,
 		"name": "Facet of Strength",
 		"icon": "https://render.guildwars2.com/file/26296CDACD6C4E4A785F305D47523029786B79B9/1013013.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
-		"description": "",
-		"type": "Trait",
-		"_source": "traits:1772:Draconic Echo",
-		"trait": 1772,
+		"description": "Pulse might to nearby allies every few seconds.",
+		"type": "Skill",
+		"_source": "skills:26644:Facet of Strength",
+		"skill": 26644,
+		"slot": "Utility",
+		"professions": ["Revenant"],
 		"specialization": 52,
+		"variantIds": [33740],
 		"_variants": [
 			{
-				"description": "Pulse might to nearby allies every few seconds.",
-				"type": "Skill",
-				"_source": "skills:26644:Facet of Strength",
-				"skill": 26644,
-				"slot": "Utility",
-				"professions": ["Revenant"]
+				"description": "",
+				"type": "Trait",
+				"_source": "traits:1772:Draconic Echo",
+				"trait": 1772
 			},
 			{
 				"description": "Pulse might to nearby allies every few seconds.",
@@ -1944,25 +1447,25 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 27983,
 		"name": "Facet of Chaos",
 		"icon": "https://render.guildwars2.com/file/E5F7EC66C065EAB56631BA0CD1CF6F4D03B89270/1012986.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
-		"description": "",
-		"type": "Trait",
-		"_source": "traits:1772:Draconic Echo",
-		"trait": 1772,
+		"description": "Pulse protection to nearby allies every few seconds.",
+		"type": "Skill",
+		"_source": "skills:27760:Facet of Chaos",
+		"skill": 27760,
+		"slot": "Elite",
+		"professions": ["Revenant"],
 		"specialization": 52,
 		"_variants": [
 			{
-				"description": "Pulse protection to nearby allies every few seconds.",
-				"type": "Skill",
-				"_source": "skills:27760:Facet of Chaos",
-				"skill": 27760,
-				"slot": "Elite",
-				"professions": ["Revenant"]
+				"description": "",
+				"type": "Trait",
+				"_source": "traits:1772:Draconic Echo",
+				"trait": 1772
 			},
 			{
 				"description": "Pulse protection to nearby allies every few seconds.",
@@ -1975,25 +1478,25 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 29275,
 		"name": "Facet of Nature",
 		"icon": "https://render.guildwars2.com/file/590F7657AB11171A35304E5DDA6FDA5B2EC70350/1058606.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
-		"description": "",
-		"type": "Trait",
-		"_source": "traits:1772:Draconic Echo",
-		"trait": 1772,
+		"description": "Pulse your invoked legend's Facet of Nature to nearby allies every few seconds.",
+		"type": "Skill",
+		"_source": "skills:29371:Facet of Nature",
+		"skill": 29371,
+		"slot": "Profession_2",
+		"professions": ["Revenant"],
 		"specialization": 52,
 		"_variants": [
 			{
-				"description": "Pulse your invoked legend's Facet of Nature to nearby allies every few seconds.",
-				"type": "Skill",
-				"_source": "skills:29371:Facet of Nature",
-				"skill": 29371,
-				"slot": "Profession_2",
-				"professions": ["Revenant"]
+				"description": "",
+				"type": "Trait",
+				"_source": "traits:1772:Draconic Echo",
+				"trait": 1772
 			},
 			{
 				"description": "Pulse your invoked legend's Facet of Nature to nearby allies every few seconds.",
@@ -2004,17 +1507,17 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 77234,
 		"name": "Legendary Entity Stance",
 		"icon": "https://render.guildwars2.com/file/3FEE4B97282956F1F3654BE36119A0030E08C1D7/3680200.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
-		"description": "Gain the same boons as the legend equipped in the other slot.",
-		"type": "Trait",
-		"_source": "traits:1774:Spirit Boon",
-		"trait": 1774,
-		"specialization": 3,
+		"description": "Currently invoking the power of Razah.",
+		"type": "Skill",
+		"slot": "Profession_1",
+		"professions": ["Revenant"],
+		"specialization": 79,
 		"_variants": [
 			{
 				"icon": "https://render.guildwars2.com/file/96D1B2FC486CB655D804B9722FC13ED623964451/3680050.png",
@@ -2026,10 +1529,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 74632,
 		"name": "Resolute Evasion",
 		"icon": "https://render.guildwars2.com/file/CA9478C84998F038B949E4BAD01CEFB70811386E/1012697.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Reduce incoming strike damage.",
@@ -2039,11 +1542,11 @@
 		"specialization": 9
 	},
 	{
-		"id": null,
+		"id": 53500,
 		"name": "Steadfast Rejuvenation",
 		"icon": "https://render.guildwars2.com/file/4CB0D2FC4C01EBA3D280FFA86C907AE92055AD9B/1012698.png",
-		"stacking": "Duration",
-		"maxStacks": null,
+		"stacking": "Intensity",
+		"maxStacks": 10,
 		"maxDuration": null,
 		"description": "Heal every second based on upkeep.",
 		"type": "Trait",
@@ -2052,10 +1555,10 @@
 		"specialization": 9
 	},
 	{
-		"id": null,
+		"id": 29025,
 		"name": "Invoking Harmony",
 		"icon": "https://render.guildwars2.com/file/4BA0B6F2AD93F72CA3D5C3C40D30B40B14920825/2128015.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Healing done to other allies is increased for a short duration after invoking a legend.",
@@ -2065,10 +1568,10 @@
 		"specialization": 12
 	},
 	{
-		"id": null,
+		"id": 55044,
 		"name": "Unyielding Spirit",
 		"icon": "https://render.guildwars2.com/file/11404242F05CA14C5ED90B3A0B74CDE8E3D8154C/2128014.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Reduced incoming damage.",
@@ -2078,10 +1581,10 @@
 		"specialization": 12
 	},
 	{
-		"id": null,
+		"id": 32200,
 		"name": "Lotus Training",
 		"icon": "https://render.guildwars2.com/file/E5724D46CEE62333E00CE26905C5FDD5439F6667/1058552.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Condition damage is increased.",
@@ -2091,10 +1594,10 @@
 		"specialization": 7
 	},
 	{
-		"id": null,
+		"id": 31353,
 		"name": "Transcendent Tempest",
 		"icon": "https://render.guildwars2.com/file/0C79A761B446E53CAB6DA4B320D12D656B5E1151/2207773.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your damage is increased.",
@@ -2104,10 +1607,10 @@
 		"specialization": 48
 	},
 	{
-		"id": null,
+		"id": 30285,
 		"name": "Vampiric Aura",
 		"icon": "https://render.guildwars2.com/file/22B370D754AC1D69A8FE66DCCB36BE940455E5EA/1012539.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Siphon health when you hit.",
@@ -2117,11 +1620,12 @@
 		"specialization": 19
 	},
 	{
-		"id": null,
+		"id": 30433,
 		"name": "Kinetic Charge",
 		"icon": "https://render.guildwars2.com/file/1BE44A22FD664209636ED7E30ACF241B782E6C01/1012384.png",
 		"stacking": "Intensity",
-		"maximum": 5,
+		"maxDuration": null,
+		"maxStacks": 5,
 		"description": "At maximum charges gain a burst of speed.",
 		"type": "Trait",
 		"_source": "traits:1856:Kinetic Battery",
@@ -2129,10 +1633,10 @@
 		"specialization": 21
 	},
 	{
-		"id": null,
+		"id": 34081,
 		"name": "Weakening Strikes",
 		"icon": "https://render.guildwars2.com/file/140F77BB56B93C32BFDAC30CB332FCBAAF0921A5/1058547.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Next attack weakens enemies.",
@@ -2142,10 +1646,10 @@
 		"specialization": 7
 	},
 	{
-		"id": null,
+		"id": 69427,
 		"name": "Tempestuous Aria",
 		"icon": "https://render.guildwars2.com/file/0C2A72B848A7FBB596DE6096B4C45814D3266EEB/1029946.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your damage is increased.",
@@ -2155,11 +1659,12 @@
 		"specialization": 48
 	},
 	{
-		"id": null,
+		"id": 59528,
 		"name": "Explosive Temper",
 		"icon": "https://render.guildwars2.com/file/E1D2A2466605A4BAE5AADC623AA5980FF5797693/2261520.png",
 		"stacking": "Intensity",
-		"maximum": 10,
+		"maxDuration": null,
+		"maxStacks": 10,
 		"description": "",
 		"type": "Trait",
 		"_source": "traits:1892:Explosive Temper",
@@ -2167,11 +1672,12 @@
 		"specialization": 6
 	},
 	{
-		"id": null,
+		"id": 30207,
 		"name": "Invigorated Bulwark",
 		"icon": "https://render.guildwars2.com/file/504B1F9EF89652FD5A00D52DE52A52B7023043E9/1012402.png",
 		"stacking": "Intensity",
-		"maximum": 5,
+		"maxDuration": null,
+		"maxStacks": 5,
 		"description": "Increased healing to other allies when you block an attack.",
 		"type": "Trait",
 		"_source": "traits:1899:Invigorated Bulwark",
@@ -2179,7 +1685,7 @@
 		"specialization": 49
 	},
 	{
-		"id": null,
+		"id": 30673,
 		"name": "Light on Your Feet",
 		"icon": "https://render.guildwars2.com/file/4D37A694088038DA9266F6107C9604AD9CBC2752/1012649.png",
 		"stacking": "Duration",
@@ -2192,10 +1698,10 @@
 		"specialization": 30
 	},
 	{
-		"id": null,
+		"id": 29726,
 		"name": "Last Rites",
 		"icon": "https://render.guildwars2.com/file/FCCF489066E7F22BFECB5F165060E2A5C96B5AC9/1012545.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "You do not lose health while downed.",
@@ -2205,23 +1711,10 @@
 		"specialization": 19
 	},
 	{
-		"id": null,
-		"name": "Beastly Warden",
-		"icon": "https://render.guildwars2.com/file/EF61D1061135B1EC57FDFD94795ED125D43962E1/1012612.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "",
-		"type": "Trait",
-		"_source": "traits:1945:Beastly Warden",
-		"trait": 1945,
-		"specialization": 32
-	},
-	{
-		"id": null,
+		"id": 59601,
 		"name": "Big Boomer",
 		"icon": "https://render.guildwars2.com/file/0122FE72473C12BA0661EABA18F5B83022066EDB/2261506.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "",
@@ -2231,7 +1724,7 @@
 		"specialization": 6
 	},
 	{
-		"id": null,
+		"id": 32931,
 		"name": "Unhindered Combatant",
 		"icon": "https://render.guildwars2.com/file/0D7324A22F580F3DA3F244C466770FB69292C307/1058553.png",
 		"stacking": "Duration",
@@ -2244,7 +1737,7 @@
 		"specialization": 7
 	},
 	{
-		"id": null,
+		"id": 55030,
 		"name": "Feel No Pain",
 		"icon": "https://render.guildwars2.com/file/FDC3330B22C258587B2ED4E65204467B5836D49C/1029969.png",
 		"stacking": "Duration",
@@ -2254,27 +1747,34 @@
 		"type": "Trait",
 		"_source": "traits:1977:Savage Instinct",
 		"trait": 1977,
-		"specialization": 18,
-		"_variants": [{}]
+		"specialization": 18
 	},
 	{
-		"id": null,
+		"id": 29466,
 		"name": "Blood Reckoning",
 		"icon": "https://render.guildwars2.com/file/3E80EA264B52D3A3B3CA2E5DA41F57BF35445AF4/1058642.png",
 		"stacking": "Duration",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Heal for a percentage of outgoing damage.",
-		"type": "Trait",
-		"_source": "traits:2002:Dead or Alive",
-		"trait": 2002,
-		"specialization": 18
+		"type": "Skill",
+		"slot": "Heal",
+		"_source": "skills:30189:Blood Reckoning",
+		"skill": 30189,
+		"specialization": 18,
+		"_variants": [
+			{
+				"type": "Trait",
+				"_source": "traits:2002:Dead or Alive",
+				"trait": 2002
+			}
+		]
 	},
 	{
-		"id": null,
+		"id": 51389,
 		"name": "Thermal Vision",
 		"icon": "https://render.guildwars2.com/file/F806ACB6130CED2DACC9DD804E4303327073385A/1012358.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "",
@@ -2284,11 +1784,12 @@
 		"specialization": 38
 	},
 	{
-		"id": null,
+		"id": 56890,
 		"name": "Symbolic Avenger",
 		"icon": "https://render.guildwars2.com/file/C1A6EBA29894C831AAEE0D1C47080D12F9BA3AA3/1012458.png",
 		"stacking": "Intensity",
-		"maximum": 5,
+		"maxDuration": null,
+		"maxStacks": 5,
 		"description": "Deal increased damage per stack.",
 		"type": "Trait",
 		"_source": "traits:2017:Symbolic Avenger",
@@ -2296,218 +1797,10 @@
 		"specialization": 42
 	},
 	{
-		"id": null,
-		"name": "Mind Wrack",
-		"icon": "https://render.guildwars2.com/file/52619C5D4F9A61C8F37A0705AE36602F19E164C2/103732.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Increases critical-hit chance by 25%.",
-		"type": "Trait",
-		"_source": "traits:2035:Master of Fragmentation",
-		"trait": 2035,
-		"specialization": 24
-	},
-	{
-		"id": null,
-		"name": "Cry of Frustration",
-		"icon": "https://render.guildwars2.com/file/B8E57C1F08727AF8C39066160B93D175B6A3B9BA/103731.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Cripples foes on hit.",
-		"type": "Trait",
-		"_source": "traits:2035:Master of Fragmentation",
-		"trait": 2035,
-		"specialization": 24
-	},
-	{
-		"id": null,
-		"name": "Diversion",
-		"icon": "https://render.guildwars2.com/file/0BD64508BF40EFFF3299DFA3D1A63BF2F941A4C9/103769.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Strikes up to five targets within range.",
-		"type": "Trait",
-		"_source": "traits:2035:Master of Fragmentation",
-		"trait": 2035,
-		"specialization": 24
-	},
-	{
-		"id": null,
-		"name": "Lively Lute",
-		"icon": "https://render.guildwars2.com/file/4CAA3750145A55B7E73D5EB9917590EC45657BE7/3680159.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Increases critical-hit chance by 25%.",
-		"type": "Trait",
-		"_source": "traits:2035:Master of Fragmentation",
-		"trait": 2035,
-		"specialization": 24
-	},
-	{
-		"id": null,
-		"name": "Bladesong Harmony",
-		"icon": "https://render.guildwars2.com/file/656A0C59523A4D9D935316EA93F1EA6247C32106/2479382.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Increases critical-hit chance by 25%.",
-		"type": "Trait",
-		"_source": "traits:2035:Master of Fragmentation",
-		"trait": 2035,
-		"specialization": 24
-	},
-	{
-		"id": null,
-		"name": "Split Second",
-		"icon": "https://render.guildwars2.com/file/14090D7A6472AB06125662EB12E6EC51EDE2EEBB/2175059.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Increases critical-hit chance by 25%.",
-		"type": "Trait",
-		"_source": "traits:2035:Master of Fragmentation",
-		"trait": 2035,
-		"specialization": 24
-	},
-	{
-		"id": null,
-		"name": "Flustering Flute",
-		"icon": "https://render.guildwars2.com/file/CFE30B5052A2AA67D9A8AE5FC1FBA0A56C64584C/3680160.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Cripples foes on hit.",
-		"type": "Trait",
-		"_source": "traits:2035:Master of Fragmentation",
-		"trait": 2035,
-		"specialization": 24
-	},
-	{
-		"id": null,
-		"name": "Bladesong Sorrow",
-		"icon": "https://render.guildwars2.com/file/EF9223543A66B8B5A8FD1C4BC4E7A218277C15C4/2479383.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Cripples foes on hit.",
-		"type": "Trait",
-		"_source": "traits:2035:Master of Fragmentation",
-		"trait": 2035,
-		"specialization": 24
-	},
-	{
-		"id": null,
-		"name": "Rewinder",
-		"icon": "https://render.guildwars2.com/file/F59775A05108441C09AC03C30CAD98CC049CCC28/2175058.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Cripples foes on hit.",
-		"type": "Trait",
-		"_source": "traits:2035:Master of Fragmentation",
-		"trait": 2035,
-		"specialization": 24
-	},
-	{
-		"id": null,
-		"name": "Deafening Drum",
-		"icon": "https://render.guildwars2.com/file/E061ECE20A34DC281C0E3EB8FB90094549E87941/3680161.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Weakens foes on hit.",
-		"type": "Trait",
-		"_source": "traits:2035:Master of Fragmentation",
-		"trait": 2035,
-		"specialization": 24
-	},
-	{
-		"id": null,
-		"name": "Bladesong Dissonance",
-		"icon": "https://render.guildwars2.com/file/D96E115ADAB14D610215EC185C3C21B4611DC292/2479381.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Strikes up to five targets within range.",
-		"type": "Trait",
-		"_source": "traits:2035:Master of Fragmentation",
-		"trait": 2035,
-		"specialization": 24
-	},
-	{
-		"id": null,
-		"name": "Time Sink",
-		"icon": "https://render.guildwars2.com/file/3A0CF805A4359A10766D1DD04FF0E7D20A05BD17/2175060.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Strikes up to five targets within range.",
-		"type": "Trait",
-		"_source": "traits:2035:Master of Fragmentation",
-		"trait": 2035,
-		"specialization": 24
-	},
-	{
-		"id": null,
-		"name": "Harmonious Harp",
-		"icon": "https://render.guildwars2.com/file/C1BCF465DE1DAB00E00B0F1494ABDB2D7F57BECA/3680162.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Removes conditions from allies on use.",
-		"type": "Trait",
-		"_source": "traits:2035:Master of Fragmentation",
-		"trait": 2035,
-		"specialization": 24
-	},
-	{
-		"id": null,
-		"name": "Bladeturn Requiem",
-		"icon": "https://render.guildwars2.com/file/040192EDDE9D2492D2428027E50DFC12B9044D39/2479384.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Duration increased by 1 second.",
-		"type": "Trait",
-		"_source": "traits:2035:Master of Fragmentation",
-		"trait": 2035,
-		"specialization": 24
-	},
-	{
-		"id": null,
-		"name": "Continuum Shift",
-		"icon": "https://render.guildwars2.com/file/9E7CE10D0E447973F2D9175CF16A103BD076D04B/1012882.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Base duration increased by 1 second.",
-		"type": "Trait",
-		"_source": "traits:2035:Master of Fragmentation",
-		"trait": 2035,
-		"specialization": 24
-	},
-	{
-		"id": null,
-		"name": "Crescendo",
-		"icon": "https://render.guildwars2.com/file/935C32505D1F4DB7D9739C2C4B4137D4346709A4/3680163.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Effectiveness per instrument is increased.",
-		"type": "Trait",
-		"_source": "traits:2035:Master of Fragmentation",
-		"trait": 2035,
-		"specialization": 24
-	},
-	{
-		"id": null,
+		"id": 33162,
 		"name": "Bounding Dodger",
 		"icon": "https://render.guildwars2.com/file/F3E22D0FDFDB436780BD4ACBA5D135EE40507FFD/1058554.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "You deal bonus damage.",
@@ -2517,21 +1810,20 @@
 		"specialization": 7
 	},
 	{
-		"id": null,
+		"id": 69314,
 		"name": "Natural Balance",
 		"icon": "https://render.guildwars2.com/file/5F953BAC2C7EB3340B4EAA9A7D9633320BAB29A6/1128535.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your conditions do increased damage and have increased duration. Your concentration is increased.",
 		"type": "Trait",
 		"_source": "traits:2056:Natural Balance",
 		"trait": 2056,
-		"specialization": 5,
-		"_variants": [{}]
+		"specialization": 5
 	},
 	{
-		"id": null,
+		"id": 32248,
 		"name": "Lingering Light",
 		"icon": "https://render.guildwars2.com/file/01BBD8CADBC6E9BBED46A2D9026976316CA8EAD9/1128537.png",
 		"stacking": "Duration",
@@ -2544,25 +1836,23 @@
 		"specialization": 5
 	},
 	{
-		"id": null,
+		"id": 42883,
 		"name": "Kalla's Fervor",
 		"icon": "https://render.guildwars2.com/file/4DDE151C71EDB6120E3454036C4C3504EADB02D8/1770161.png",
-		"stacking": "Duration",
-		"maxStacks": null,
+		"stacking": "Intensity",
+		"maxStacks": 5,
 		"maxDuration": null,
 		"description": "Kalla's legend inspires you, increasing all damage dealt; stacks intensity.",
 		"type": "Trait",
-		"_source": "traits:2079:Blood Fury",
-		"trait": 2079,
+		"_source": "traits:2181:Ambush Commander",
+		"trait": 2181,
 		"specialization": 63,
 		"_variants": [
 			{ "_source": "traits:2120:Wrought-Iron Will", "trait": 2120 },
 			{ "_source": "traits:2166:Ashen Demeanor", "trait": 2166 },
 			{
-				"stacking": "Intensity",
-				"maximum": 5,
-				"_source": "traits:2181:Ambush Commander",
-				"trait": 2181
+				"_source": "traits:2079:Blood Fury",
+				"trait": 2079
 			},
 			{
 				"type": "Skill",
@@ -2584,7 +1874,7 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 45614,
 		"name": "Improved Kalla's Fervor",
 		"icon": "https://render.guildwars2.com/file/4DDE151C71EDB6120E3454036C4C3504EADB02D8/1770161.png",
 		"stacking": "Duration",
@@ -2592,11 +1882,11 @@
 		"maxDuration": null,
 		"description": "Kalla's legend inspires you, increasing all damage dealt; stacks intensity.",
 		"type": "Trait",
-		"_source": "traits:2079:Blood Fury",
-		"trait": 2079,
+		"_source": "traits:2100:Lasting Legacy",
+		"trait": 2100,
 		"specialization": 63,
 		"_variants": [
-			{ "_source": "traits:2100:Lasting Legacy", "trait": 2100 },
+			{ "_source": "traits:2079:Blood Fury", "trait": 2079 },
 			{ "_source": "traits:2120:Wrought-Iron Will", "trait": 2120 },
 			{ "_source": "traits:2166:Ashen Demeanor", "trait": 2166 },
 			{
