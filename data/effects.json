@@ -1915,135 +1915,64 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 5585,
 		"name": "Fire Attunement",
 		"icon": "https://render.guildwars2.com/file/7E6722B76FD7F8AC1B4591B2FF9B277147B13476/102801.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
-		"description": "",
-		"type": "Trait",
-		"_source": "traits:2081:Elemental Polyphony",
-		"trait": 2081,
-		"specialization": 56,
-		"_variants": [
-			{
-				"description": "Burn enemies.",
-				"type": "Skill",
-				"_source": "skills:5506:Glyph of Elemental Power",
-				"skill": 5506,
-				"slot": "Utility",
-				"professions": ["Elementalist"]
-			},
-			{
-				"description": "Burn enemies.",
-				"type": "Skill",
-				"_source": "skills:34736:Glyph of Elemental Power",
-				"skill": 34736,
-				"slot": "Utility",
-				"professions": ["Elementalist"]
-			}
-		]
+		"description": "Cast fire spells.",
+		"type": "Skill",
+		"slot": "Profession_1",
+		"skill": 5492,
+		"professions": ["Elementalist"]
 	},
 	{
-		"id": null,
+		"id": 5586,
 		"name": "Water Attunement",
 		"icon": "https://render.guildwars2.com/file/517FE8900C72EAADBB54676E324D45D31706C277/102865.png",
 		"stacking": "Duration",
 		"maxStacks": null,
 		"maxDuration": null,
-		"description": "",
-		"type": "Trait",
-		"_source": "traits:2081:Elemental Polyphony",
-		"trait": 2081,
-		"specialization": 56,
-		"_variants": [
-			{
-				"description": "Remove conditions from allies.",
-				"type": "Skill",
-				"_source": "skills:5506:Glyph of Elemental Power",
-				"skill": 5506,
-				"slot": "Utility",
-				"professions": ["Elementalist"]
-			},
-			{
-				"description": "Remove conditions from allies.",
-				"type": "Skill",
-				"_source": "skills:34772:Glyph of Elemental Power",
-				"skill": 34772,
-				"slot": "Utility",
-				"professions": ["Elementalist"]
-			}
-		]
+		"description": "Cast water spells.",
+		"type": "Skill",
+		"slot": "Profession_2",
+		"skill": 5493,
+		"professions": ["Elementalist"]
 	},
 	{
-		"id": null,
+		"id": 5575,
 		"name": "Air Attunement",
 		"icon": "https://render.guildwars2.com/file/4857F59020DE3B0950B9C91F3D234A1C1932984A/103048.png",
 		"stacking": "Duration",
 		"maxStacks": null,
 		"maxDuration": null,
-		"description": "",
-		"type": "Trait",
-		"_source": "traits:2081:Elemental Polyphony",
-		"trait": 2081,
-		"specialization": 56,
-		"_variants": [
-			{
-				"description": "Daze enemies.",
-				"type": "Skill",
-				"_source": "skills:5506:Glyph of Elemental Power",
-				"skill": 5506,
-				"slot": "Utility",
-				"professions": ["Elementalist"]
-			},
-			{
-				"description": "Daze enemies.",
-				"type": "Skill",
-				"_source": "skills:34637:Glyph of Elemental Power",
-				"skill": 34637,
-				"slot": "Utility",
-				"professions": ["Elementalist"]
-			}
-		]
+		"description": "Cast air spells.",
+		"type": "Skill",
+		"slot": "Profession_3",
+		"skill": 5494,
+		"professions": ["Elementalist"]
 	},
 	{
-		"id": null,
+		"id": 5580,
 		"name": "Earth Attunement",
 		"icon": "https://render.guildwars2.com/file/4B8056D9BD080DC8E74AE6A57B2B383A2D4265C9/102870.png",
 		"stacking": "Duration",
 		"maxStacks": null,
 		"maxDuration": null,
-		"description": "",
-		"type": "Trait",
-		"_source": "traits:2081:Elemental Polyphony",
-		"trait": 2081,
-		"specialization": 56,
-		"_variants": [
-			{
-				"description": "Grant barrier to allies.",
-				"type": "Skill",
-				"_source": "skills:5506:Glyph of Elemental Power",
-				"skill": 5506,
-				"slot": "Utility",
-				"professions": ["Elementalist"]
-			},
-			{
-				"description": "Grant barrier to allies.",
-				"type": "Skill",
-				"_source": "skills:34714:Glyph of Elemental Power",
-				"skill": 34714,
-				"slot": "Utility",
-				"professions": ["Elementalist"]
-			}
-		]
+		"description": "Cast earth spells.",
+		"type": "Skill",
+		"slot": "Profession_4",
+		"skill": 5495,
+		"professions": ["Elementalist"]
 	},
 	{
-		"id": null,
+		"id": 76505,
 		"name": "Phantom Pain",
 		"icon": "https://render.guildwars2.com/file/3999015BF80BA211F8AD463C50BEBD0826DC1D12/1769956.png",
 		"stacking": "Intensity",
-		"maximum": 4,
+		"maxDuration": null,
+		"maxStacks": 4,
 		"description": "Increased strike and condition damage per stack.",
 		"type": "Trait",
 		"_source": "traits:2098:Phantom Pain",
@@ -2051,44 +1980,25 @@
 		"specialization": 59
 	},
 	{
-		"id": null,
+		"id": 42210,
 		"name": "Afterburner",
 		"icon": "https://render.guildwars2.com/file/19FE5C016ACFF174DE03752D40D202F9B75FB0C2/1769929.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your next attack sets the target on fire.",
 		"type": "Trait",
 		"_source": "traits:2106:Solar Focusing Lens",
 		"trait": 2106,
-		"specialization": 57,
-		"_variants": [
-			{},
-			{},
-			{
-				"type": "Skill",
-				"_source": "skills:41123:Deactivate Photon Forge",
-				"skill": 41123,
-				"slot": "Profession_5",
-				"professions": ["Engineer"]
-			},
-			{
-				"type": "Skill",
-				"_source": "skills:42938:Engage Photon Forge",
-				"skill": 42938,
-				"slot": "Profession_5",
-				"professions": ["Engineer"]
-			},
-			{ "type": "Skill", "_source": "skills:43937:Overheat", "skill": 43937 }
-		]
+		"specialization": 57
 	},
 	{
-		"id": null,
+		"id": 73157,
 		"name": "All for One",
 		"icon": "https://render.guildwars2.com/file/9398D8F8E764A23596E17EDAA35B99961D62F061/1769993.png",
 		"stacking": "Duration",
 		"maxStacks": null,
-		"maxDuration": null,
+		"maxDuration": 20,
 		"description": "You deal increased strike damage.",
 		"type": "Trait",
 		"_source": "traits:2108:All for One",
@@ -2096,25 +2006,25 @@
 		"specialization": 63
 	},
 	{
-		"id": null,
+		"id": 45600,
 		"name": "Twice as Vicious",
 		"icon": "https://render.guildwars2.com/file/42AE5234142F3045D5B665EC60D6E3FF7C564D62/1769986.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "You deal increased damage from strikes and conditions.",
 		"type": "Trait",
 		"_source": "traits:2127:Twice as Vicious",
 		"trait": 2127,
-		"specialization": 55,
-		"_variants": [{}]
+		"specialization": 55
 	},
 	{
-		"id": null,
+		"id": 41963,
 		"name": "Attacker's Insight",
 		"icon": "https://render.guildwars2.com/file/211512491566A15FDCE3E1B64A010445F1EB39E5/1770023.png",
 		"stacking": "Intensity",
-		"maximum": 5,
+		"maxDuration": null,
+		"maxStacks": 5,
 		"description": "",
 		"type": "Trait",
 		"_source": "traits:2130:Attacker's Insight",
@@ -2122,10 +2032,10 @@
 		"specialization": 61
 	},
 	{
-		"id": null,
+		"id": 42416,
 		"name": "Elements of Rage",
 		"icon": "https://render.guildwars2.com/file/4269910A34FB0FB861DAE2A13229D594523B0BA0/1769921.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your damage is increased.",
@@ -2135,10 +2045,10 @@
 		"specialization": 56
 	},
 	{
-		"id": null,
+		"id": 40408,
 		"name": "Mirage Cloak",
 		"icon": "https://render.guildwars2.com/file/67FA6042C903766148F46373C47B037609C4D525/1770144.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Evade incoming attacks.",
@@ -2177,10 +2087,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 41957,
 		"name": "Ashes of the Just",
 		"icon": "https://render.guildwars2.com/file/EC05420EAE5445A7069409B54D4502ED36BDF10A/1770477.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your next strike burns with justice.",
@@ -2190,10 +2100,10 @@
 		"specialization": 62
 	},
 	{
-		"id": null,
+		"id": 42061,
 		"name": "Weaver's Prowess",
 		"icon": "https://render.guildwars2.com/file/78DA4AC17D4EBDA04BBBD325A024C346F59ED150/1769918.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Condition damage and duration is increased.",
@@ -2203,41 +2113,49 @@
 		"specialization": 56
 	},
 	{
-		"id": null,
+		"id": 62653,
 		"name": "Blight",
 		"icon": "https://render.guildwars2.com/file/6B797B70EF545937F677BCD463BD23DC749B0801/2479350.png",
 		"stacking": "Duration",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Reduces your maximum health. Stacks intensity.",
-		"type": "Trait",
-		"_source": "traits:2183:Dark Disciple",
-		"trait": 2183,
+		"type": "Skill",
+		"_source": "skills:62567:Harbinger Shroud",
+		"skill": 62567,
+		"slot": "Profession_1",
+		"professions": ["Necromancer"],
 		"specialization": 64,
 		"_variants": [
-			{},
+			{
+				"type": "Trait",
+				"_source": "traits:2183:Dark Disciple",
+				"trait": 2183
+			},
 			{
 				"type": "Skill",
-				"_source": "skills:62567:Harbinger Shroud",
-				"skill": 62567,
-				"slot": "Profession_1",
+				"slot": "Heal",
 				"professions": ["Necromancer"]
 			},
 			{
 				"type": "Skill",
-				"_source": "skills:62567:Harbinger Shroud",
-				"skill": 62567,
-				"slot": "Profession_1",
+				"slot": "Utility",
+				"professions": ["Necromancer"]
+			},
+			{
+				"type": "Skill",
+				"slot": "Elite",
 				"professions": ["Necromancer"]
 			}
 		]
 	},
 	{
-		"id": null,
+		"id": 62509,
 		"name": "Lethal Tempo",
 		"icon": "https://render.guildwars2.com/file/08351965141B6F3013600B3B9CC7F880DEFF05D4/2479325.png",
 		"stacking": "Intensity",
-		"maximum": 5,
+		"maxDuration": null,
+		"maxStacks": 5,
 		"description": "Damage increase per stack.",
 		"type": "Trait",
 		"_source": "traits:2189:Lethal Tempo",
@@ -2255,10 +2173,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 73113,
 		"name": "Implacable Foe",
 		"icon": "https://render.guildwars2.com/file/E3ABCC0E40170F08B0BDE72378D200BC06D1AF13/2479341.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Take reduced incoming damage.",
@@ -2268,10 +2186,10 @@
 		"specialization": 64
 	},
 	{
-		"id": null,
+		"id": 63409,
 		"name": "Deadly Blades",
 		"icon": "https://render.guildwars2.com/file/C4AFBAAA039152A302C15B805CAD980EA9B5D006/2479337.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Damage dealt is increased.",
@@ -2281,11 +2199,12 @@
 		"specialization": 66
 	},
 	{
-		"id": null,
+		"id": 62986,
 		"name": "Hardened Auras",
 		"icon": "https://render.guildwars2.com/file/07F6DDB8129A05F6DF05E6669CE00C29FF260F80/2491519.png",
 		"stacking": "Intensity",
-		"maximum": 5,
+		"maxStacks": 5,
+		"maxDuration": null,
 		"description": "Incoming damage is reduced.",
 		"type": "Trait",
 		"_source": "traits:2230:Hardened Auras",
@@ -2293,35 +2212,33 @@
 		"specialization": 67
 	},
 	{
-		"id": null,
+		"id": 62733,
 		"name": "Elemental Empowerment",
 		"icon": "https://render.guildwars2.com/file/C3B3C99943ECABFAA936573030C599EE2A974420/2491529.png",
-		"stacking": "Duration",
-		"maxStacks": null,
+		"stacking": "Intensity",
+		"maxStacks": 10,
 		"maxDuration": null,
 		"description": "Gain attribute increases while in combat.",
 		"type": "Trait",
-		"_source": "traits:2231:Elemental Epitome",
-		"trait": 2231,
+		"_source": "traits:2250:Elemental Empowerment",
+		"trait": 2250,
 		"specialization": 67,
 		"_variants": [
 			{ "_source": "traits:2249:Evasive Empowerment", "trait": 2249 },
 			{
-				"stacking": "Intensity",
-				"maximum": 10,
-				"_source": "traits:2250:Elemental Empowerment",
-				"trait": 2250
+				"_source": "traits:2231:Elemental Epitome",
+				"trait": 2231
 			},
 			{ "_source": "traits:2252:Vicious Empowerment", "trait": 2252 }
 		]
 	},
 	{
-		"id": null,
+		"id": 62743,
 		"name": "Guns and Glory",
 		"icon": "https://render.guildwars2.com/file/0B2291AEBD4B3755F0CD9A38987797763AD34790/2491554.png",
 		"stacking": "Duration",
 		"maxStacks": null,
-		"maxDuration": null,
+		"maxDuration": 12,
 		"description": "",
 		"type": "Trait",
 		"_source": "traits:2236:Guns and Glory",
@@ -2329,10 +2246,10 @@
 		"specialization": 68
 	},
 	{
-		"id": null,
+		"id": 62994,
 		"name": "Saint of zu Heltzer",
 		"icon": "https://render.guildwars2.com/file/42D514BF15A3F84ECECBACC7E05F95CAE03EBF6D/2491539.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Outgoing healing is increased.",
@@ -2349,11 +2266,12 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 62939,
 		"name": "Empowering Auras",
 		"icon": "https://render.guildwars2.com/file/C52EDB20EC120936089EC83C54A55A610A075652/2491522.png",
 		"stacking": "Intensity",
-		"maximum": 5,
+		"maxDuration": null,
+		"maxStacks": 5,
 		"description": "Increased outgoing strike and condition damage.",
 		"type": "Trait",
 		"_source": "traits:2247:Empowering Auras",
@@ -2361,10 +2279,10 @@
 		"specialization": 67
 	},
 	{
-		"id": null,
+		"id": 62811,
 		"name": "Forerunner of Death",
 		"icon": "https://render.guildwars2.com/file/2864D963D3FC9156E6F52FA95DD34C2DE30306BE/2491537.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Outgoing strike damage is increased.",
@@ -2377,10 +2295,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 71983,
 		"name": "Reaver's Curse",
 		"icon": "https://render.guildwars2.com/file/00B56F050D44B6690427AFF77901E3074FF221AD/2491534.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your next dodge is enhanced.",
@@ -2390,10 +2308,10 @@
 		"specialization": 69
 	},
 	{
-		"id": null,
+		"id": 63361,
 		"name": "Exigency Protocols",
 		"icon": "https://render.guildwars2.com/file/D303A429CCF6B672E66DA12DD014FEF8A80335E7/2503631.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "",
@@ -2403,10 +2321,10 @@
 		"specialization": 70
 	},
 	{
-		"id": null,
+		"id": 63168,
 		"name": "Rot Wallow Venom",
 		"icon": "https://render.guildwars2.com/file/0F0B6509C8D5023D949153929E02FD2195AF63FE/2503654.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Inflict torment on foes struck.",
@@ -2416,11 +2334,43 @@
 		"specialization": 71
 	},
 	{
-		"id": null,
+		"id": 63317,
+		"name": "Unleashed",
+		"icon": "https://render.guildwars2.com/file/EFC812F33C2A9ECA91F0C1F966E1715FF35E2BDF/2503729.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Your outgoing strike damage is increased.",
+		"type": "Skill",
+		"_source": "skills:2283:Unleash Ranger",
+		"slot": "Profession_5",
+		"skill": 63147,
+		"specialization": 72,
+		"professions": ["Ranger"],
+		"variantIds": [63232]
+	},
+	{
+		"id": 63145,
+		"name": "Pet Unleashed",
+		"icon": "https://render.guildwars2.com/file/A5E324616977BF624698CA610628B7C3D73ADB1C/2503728.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Your incoming strike damage is reduced.",
+		"type": "Skill",
+		"_source": "skills:2283:Unleash Pet",
+		"slot": "Profession_5",
+		"skill": 63344,
+		"specialization": 72,
+		"professions": ["Ranger"]
+	},
+	{
+		"id": 63191,
 		"name": "Ferocious Symbiosis",
 		"icon": "https://render.guildwars2.com/file/B367DF25F5F07C51CE5BD280C35A0E7BB19B98A3/2503640.png",
 		"stacking": "Intensity",
-		"maximum": 5,
+		"maxDuration": null,
+		"maxStacks": 5,
 		"description": "Gain damage and movement speed per stack.",
 		"type": "Trait",
 		"_source": "traits:2274:Ferocious Symbiosis",
@@ -2428,11 +2378,11 @@
 		"specialization": 72
 	},
 	{
-		"id": null,
+		"id": 69193,
 		"name": "Biorhythm",
 		"icon": "https://render.guildwars2.com/file/44B8970EAEBCFC14E11A910C5B5D0FC512FEEBE5/2503639.png",
-		"stacking": "Duration",
-		"maxStacks": null,
+		"stacking": "Intensity",
+		"maxStacks": 5,
 		"maxDuration": null,
 		"description": "Heal for a percentage of your outgoing damage.",
 		"type": "Trait",
@@ -2441,10 +2391,10 @@
 		"specialization": 72
 	},
 	{
-		"id": null,
+		"id": 69193,
 		"name": "Vow of the Untamed",
 		"icon": "https://render.guildwars2.com/file/6C71F5D550E3CBACBB067376F52DE40A0148776F/2503643.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your outgoing strike damage is increased, and your incoming strike damage is reduced.",
@@ -2454,11 +2404,12 @@
 		"specialization": 72
 	},
 	{
-		"id": null,
+		"id": 63433,
 		"name": "Fierce as Fire",
 		"icon": "https://render.guildwars2.com/file/630362D11956CB69199DE9CE0EEA03232DC9DA38/2491547.png",
 		"stacking": "Intensity",
-		"maximum": 10,
+		"maxDuration": null,
+		"maxStacks": 10,
 		"description": "Damage increase per stack.",
 		"type": "Trait",
 		"_source": "traits:2302:Fierce as Fire",
@@ -2466,131 +2417,128 @@
 		"specialization": 68
 	},
 	{
-		"id": null,
+		"id": 27890,
 		"name": "Legendary Assassin Stance",
 		"icon": "https://render.guildwars2.com/file/67CDD35F6BC3072E0837715A5E0A90646529BAA2/1030005.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
-		"description": "",
-		"type": "Trait",
-		"_source": "traits:2331:Bolstered Bonds",
-		"trait": 2331,
-		"specialization": 79
+		"description": "Currently invoking the power of Shiro Tagachi.",
+		"type": "Skill",
+		"slot": "Profession_1",
+		"professions": ["Revenant"]
 	},
 	{
-		"id": null,
+		"id": 27972,
 		"name": "Legendary Centaur Stance",
 		"icon": "https://render.guildwars2.com/file/6CFF31B50AA00CAF3D35A02562964802B55AD292/1024105.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
-		"description": "",
-		"type": "Trait",
-		"_source": "traits:2331:Bolstered Bonds",
-		"trait": 2331,
-		"specialization": 79
+		"description": "Currently invoking the power of Ventari.",
+		"type": "Skill",
+		"slot": "Profession_1",
+		"professions": ["Revenant"]
 	},
 	{
-		"id": null,
+		"id": 27928,
 		"name": "Legendary Demon Stance",
 		"icon": "https://render.guildwars2.com/file/1A1407F7D34E5ED41B59A25F39EBF728CC926423/961413.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
-		"description": "",
-		"type": "Trait",
-		"_source": "traits:2331:Bolstered Bonds",
-		"trait": 2331,
-		"specialization": 79
+		"description": "Currently invoking the power of Mallyx the Unyielding.",
+		"type": "Skill",
+		"slot": "Profession_1",
+		"professions": ["Revenant"]
 	},
 	{
-		"id": null,
+		"id": 27205,
 		"name": "Legendary Dwarf Stance",
 		"icon": "https://render.guildwars2.com/file/03C66FA8A89697A0C4D309484172080E3A1141EF/961410.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
-		"description": "",
-		"type": "Trait",
-		"_source": "traits:2331:Bolstered Bonds",
-		"trait": 2331,
-		"specialization": 79
+		"description": "Currently invoking the power of King Jalis Ironhammer.",
+		"type": "Skill",
+		"slot": "Profession_1",
+		"professions": ["Revenant"]
 	},
 	{
-		"id": null,
-		"name": "Lingering Spirits",
+		"id": 78172,
+		"name": "Lingering Spirits (Anguish)",
 		"icon": "https://render.guildwars2.com/file/9CA8D4479BEE9A28C810CCB0E234BAC7712104A0/3680170.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "You deal increased strike damage.",
 		"type": "Trait",
 		"_source": "traits:2333:Lingering Spirits",
 		"trait": 2333,
-		"specialization": 76,
-		"_variants": [
-			{
-				"icon": "https://render.guildwars2.com/file/604BAC974ED4C76FE95E32BEE6BDB3DE594F9F6C/3680178.png",
-				"description": "Your movement speed is increased."
-			},
-			{
-				"icon": "https://render.guildwars2.com/file/473E92AE33757816B7205C4759F1F3065346E600/3680173.png",
-				"description": "Your outgoing healing is increased."
-			}
-		]
+		"specialization": 76
 	},
 	{
-		"id": null,
+		"id": 78987,
+		"name": "Lingering Spirits (Wanderlust)",
+		"icon": "https://render.guildwars2.com/file/604BAC974ED4C76FE95E32BEE6BDB3DE594F9F6C/3680178.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Your movement speed is increased.",
+		"type": "Trait",
+		"_source": "traits:2333:Lingering Spirits",
+		"trait": 2333,
+		"specialization": 76
+	},
+	{
+		"id": 77976,
+		"name": "Lingering Spirits (Preservation)",
+		"icon": "https://render.guildwars2.com/file/473E92AE33757816B7205C4759F1F3065346E600/3680173.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Your outgoing healing is increased.",
+		"type": "Trait",
+		"_source": "traits:2333:Lingering Spirits",
+		"trait": 2333,
+		"specialization": 76
+	},
+	{
+		"id": 76922,
 		"name": "Electric Enchantment",
 		"icon": "https://render.guildwars2.com/file/CD54CEBF6BD8D37902E2EF0565BE0A9FF3CB9414/3680122.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Striking a foe will create a chain-lightning attack on that foe.",
 		"type": "Trait",
 		"_source": "traits:2335:Galvanic Enchantment",
 		"trait": 2335,
-		"specialization": 80,
-		"_variants": [
-			{
-				"type": "Skill",
-				"_source": "skills:76583:Hare's Agility",
-				"skill": 76583,
-				"slot": "Utility",
-				"professions": ["Elementalist"]
-			},
-			{
-				"type": "Skill",
-				"_source": "skills:76618:Lightning Blitz",
-				"skill": 76618
-			},
-			{
-				"type": "Skill",
-				"_source": "skills:77089:Lightning Blitz",
-				"skill": 77089,
-				"slot": "Profession_5",
-				"professions": ["Elementalist"]
-			}
-		]
+		"specialization": 80
 	},
 	{
-		"id": null,
+		"id": 76855,
 		"name": "Wind Force",
 		"icon": "https://render.guildwars2.com/file/CF44234EA9D65ADAF8667CE40DCC9EF392F377DA/3680044.png",
-		"stacking": "Duration",
-		"maxStacks": null,
+		"stacking": "Intensity",
+		"maxStacks": 5,
 		"maxDuration": null,
-		"description": "",
-		"type": "Trait",
-		"_source": "traits:2336:Gale Force",
-		"trait": 2336,
+		"description": "Gain access to Hawkeye at the stack threshold.",
+		"type": "Skill",
+		"skill": 76787,
+		"slot": "Profession_5",
 		"specialization": 78,
+		"professions": ["Ranger"],
 		"_variants": [
 			{
-				"description": "Gain access to Hawkeye at the stack threshold.",
+				"type": "Trait",
 				"_source": "traits:2359:Teachings of the Tengu",
 				"trait": 2359
+			},
+			{
+				"description": "",
+				"_source": "traits:2336:Gale Force",
+				"trait": 2336
 			},
 			{
 				"description": "Gain access to Hawkeye at the stack threshold.",
@@ -2683,10 +2631,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 77330,
 		"name": "Gale Force",
 		"icon": "https://render.guildwars2.com/file/206A95E4F6F236D824F80CF2495B4E6553ABFF34/3679998.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Increased outgoing strike damage and movement speed.",
@@ -2696,25 +2644,12 @@
 		"specialization": 78
 	},
 	{
-		"id": null,
-		"name": "Explosive Growth",
-		"icon": "https://render.guildwars2.com/file/EBEED007E2F92B18B921210ACE261F279329E31F/3679981.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "You deal increased strike damage.",
-		"type": "Trait",
-		"_source": "traits:2339:Explosive Growth",
-		"trait": 2339,
-		"specialization": 76
-	},
-	{
-		"id": null,
+		"id": 76785,
 		"name": "Combat High",
 		"icon": "https://render.guildwars2.com/file/394C98BFA71163D6DCB75F2294CD2B56B8126BC7/3680055.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
+		"stacking": "Intensity",
+		"maxStacks": 10,
+		"maxDuration": 20,
 		"description": "Deal increased strike and condition damage.",
 		"type": "Trait",
 		"_source": "traits:2348:Combat High",
@@ -2722,10 +2657,10 @@
 		"specialization": 77
 	},
 	{
-		"id": null,
+		"id": 76768,
 		"name": "Exhilarating Ephemera",
 		"icon": "https://render.guildwars2.com/file/CE22E9489B9754A65A750A2F07351222FDCAA17B/3680053.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "You deal increased strike damage.",
