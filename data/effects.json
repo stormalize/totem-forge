@@ -3345,7 +3345,7 @@
 		"weapon_type": "Scepter"
 	},
 	{
-		"id": null,
+		"id": 46851,
 		"name": "Tectonic Shift",
 		"icon": "https://render.guildwars2.com/file/B4BCCD185B24380C953EAD0E5702BFAB96F3BF08/103342.png",
 		"stacking": "Duration",
@@ -3356,28 +3356,27 @@
 		"_source": "skills:5747:Magnetic Shield",
 		"skill": 5747,
 		"slot": "Weapon_4",
-		"professions": [],
-		"weapon_type": "Sword",
+		"professions": ["Elementalist"],
 		"_variants": [
 			{
 				"_source": "skills:21647:Stone Sheath",
 				"skill": 21647,
 				"slot": "Weapon_2",
-				"professions": []
+				"professions": ["Elementalist"]
 			},
 			{
 				"_source": "skills:21647:Stone Sheath",
 				"skill": 21647,
 				"slot": "Weapon_2",
-				"professions": []
+				"professions": ["Elementalist"]
 			}
 		]
 	},
 	{
-		"id": null,
+		"id": 5764,
 		"name": "Renewal of Fire",
 		"icon": "https://render.guildwars2.com/file/3D61BEC4D7F15D070666D7DF355EDC07E4D023A8/1424232.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Will revive when downed.",
@@ -3395,7 +3394,7 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 5583,
 		"name": "Tornado",
 		"icon": "https://render.guildwars2.com/file/22EDF7A7D620040CE1520552F45DE962AA625DA6/103281.png",
 		"stacking": "Duration",
@@ -3403,14 +3402,13 @@
 		"maxDuration": null,
 		"description": "Transformed into a tornado.",
 		"type": "Skill",
-		"_source": "skills:5832:Elixir X",
-		"skill": 5832,
+		"_source": "skills:5534:Tornado",
+		"skill": 5534,
 		"slot": "Elite",
-		"professions": ["Engineer"],
-		"_variants": [{}, {}, {}]
+		"professions": ["Elementalist"]
 	},
 	{
-		"id": null,
+		"id": 7734,
 		"name": "Rampage",
 		"icon": "https://render.guildwars2.com/file/D59294B049BF3412990AA9BAAF50809A0AA3EF0F/103571.png",
 		"stacking": "Duration",
@@ -3418,14 +3416,14 @@
 		"maxDuration": null,
 		"description": "Assumed the form of a massive juggernaut.",
 		"type": "Skill",
-		"_source": "skills:5832:Elixir X",
-		"skill": 5832,
+		"_source": "skills:14483:Rampage",
+		"skill": 14483,
 		"slot": "Elite",
-		"professions": ["Engineer"],
-		"_variants": [{}, {}, {}]
+		"professions": ["Warrior"],
+		"variantIds": [14484]
 	},
 	{
-		"id": null,
+		"id": 10631,
 		"name": "Lich Form",
 		"icon": "https://render.guildwars2.com/file/05440954B9C0A2D8C13463196C64BB6777E6F79C/103807.png",
 		"stacking": "Duration",
@@ -3433,17 +3431,17 @@
 		"maxDuration": null,
 		"description": "Assumed the form of a powerful lich.",
 		"type": "Skill",
-		"_source": "skills:5832:Elixir X",
-		"skill": 5832,
+		"_source": "skills:10550:Lich Form",
+		"skill": 10550,
 		"slot": "Elite",
-		"professions": ["Engineer"],
-		"_variants": [{}, {}, {}]
+		"professions": ["Necromancer"],
+		"variantIds": [48151]
 	},
 	{
-		"id": null,
+		"id": 9123,
 		"name": "Shield of Wrath",
 		"icon": "https://render.guildwars2.com/file/C2065BFF78BB134197076A2C7450013EE390E409/103634.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Block attacks. Explodes when it ends.",
@@ -3455,10 +3453,10 @@
 		"weapon_type": "Focus"
 	},
 	{
-		"id": null,
+		"id": 9240,
 		"name": "Bane Signet",
 		"icon": "https://render.guildwars2.com/file/9FF294A9CC489D4FE8CED934A0C4359964B67443/103638.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Improved power.",
@@ -3467,13 +3465,13 @@
 		"skill": 9093,
 		"slot": "Utility",
 		"professions": ["Guardian"],
-		"_variants": [{}]
+		"variantIds": [9092]
 	},
 	{
-		"id": null,
+		"id": 9103,
 		"name": "Zealot's Flame",
 		"icon": "https://render.guildwars2.com/file/3CB42772DD937ACF48EF5FE4615EF33F49035450/103231.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Burn nearby foes.",
@@ -3492,10 +3490,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 9249,
 		"name": "Resolve",
 		"icon": "https://render.guildwars2.com/file/F12B07B5466A51AB2BFD2C0CB8F3994D3F9E610C/103652.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Regenerate health.",
@@ -3503,44 +3501,13 @@
 		"_source": "skills:9120:Virtue of Resolve",
 		"skill": 9120,
 		"slot": "Profession_2",
-		"professions": ["Guardian"],
-		"_variants": [
-			{
-				"_source": "skills:9250:Virtue of Resolve",
-				"skill": 9250,
-				"professions": ["Guardian"]
-			},
-			{
-				"_source": "skills:30083:Wings of Resolve",
-				"skill": 30083,
-				"professions": ["Guardian"],
-				"specialization": 27
-			},
-			{
-				"_source": "skills:30225:Wings of Resolve",
-				"skill": 30225,
-				"professions": ["Guardian"],
-				"specialization": 27
-			},
-			{
-				"_source": "skills:30286:Wings of Resolve",
-				"skill": 30286,
-				"professions": ["Guardian"],
-				"specialization": 27
-			},
-			{
-				"_source": "skills:30783:Wings of Resolve",
-				"skill": 30783,
-				"professions": ["Guardian"],
-				"specialization": 27
-			}
-		]
+		"professions": ["Guardian"]
 	},
 	{
-		"id": null,
+		"id": 68668,
 		"name": "Banished",
 		"icon": "https://render.guildwars2.com/file/080F4AC49809C32040C80512EAEA769EE7EA4FB7/103109.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Recently struck by <c=@abilitytype>Banish</c>. <c=@abilitytype>Mighty Blow</c> will consume this effect to teleport to the target.",
@@ -3552,10 +3519,10 @@
 		"weapon_type": "Hammer"
 	},
 	{
-		"id": null,
+		"id": 9225,
 		"name": "Binding Blade",
 		"icon": "https://render.guildwars2.com/file/B975D6E5B32392524C034114E2A2201097BFDA35/103274.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Inflicts damage over time. Activate Blinding Blade to pull foes to you.",
@@ -3564,13 +3531,14 @@
 		"skill": 9147,
 		"slot": "Weapon_5",
 		"professions": ["Guardian"],
-		"weapon_type": "Greatsword"
+		"weapon_type": "Greatsword",
+		"variantIds": [9148]
 	},
 	{
-		"id": null,
+		"id": 9156,
 		"name": "Signet of Judgment",
 		"icon": "https://render.guildwars2.com/file/2A0C7B5FED084FCEE050BE9D6EB5B054A416E607/103662.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Take reduced damage.",
@@ -3579,13 +3547,13 @@
 		"skill": 9150,
 		"slot": "Utility",
 		"professions": ["Guardian"],
-		"_variants": [{}]
+		"variantIds": [9239]
 	},
 	{
-		"id": null,
+		"id": 9237,
 		"name": "Signet of Wrath",
 		"icon": "https://render.guildwars2.com/file/7F660CD006085D42B5A9F16A281D0E15434A2304/103643.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Increased condition damage.",
@@ -3593,14 +3561,13 @@
 		"_source": "skills:9151:Signet of Wrath",
 		"skill": 9151,
 		"slot": "Utility",
-		"professions": ["Guardian"],
-		"_variants": [{}]
+		"professions": ["Guardian"]
 	},
 	{
-		"id": null,
+		"id": 9238,
 		"name": "Signet of Mercy",
 		"icon": "https://render.guildwars2.com/file/9FCB1995DC9106F6A1C9741142D4FF7DB407414F/103667.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Gain improved concentration.",
@@ -3609,25 +3576,13 @@
 		"skill": 9163,
 		"slot": "Utility",
 		"professions": ["Guardian"],
-		"_variants": [
-			{},
-			{
-				"_source": "skills:24414:Signet of Mercy",
-				"skill": 24414,
-				"professions": ["Guardian"]
-			},
-			{
-				"_source": "skills:24414:Signet of Mercy",
-				"skill": 24414,
-				"professions": ["Guardian"]
-			}
-		]
+		"variantIds": [9162]
 	},
 	{
-		"id": null,
+		"id": 10357,
 		"name": "Mirror",
 		"icon": "https://render.guildwars2.com/file/CED3F1AE9294F9C5045DA8017F25170CE87C0AE2/103726.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Reflects incoming projectiles.",
@@ -3638,7 +3593,7 @@
 		"professions": ["Mesmer"]
 	},
 	{
-		"id": null,
+		"id": 10346,
 		"name": "Illusion of Life",
 		"icon": "https://render.guildwars2.com/file/2D5057DE154D99382F4C6D6E1E6B06CCFEAA7AEF/103754.png",
 		"stacking": "Duration",
@@ -3664,7 +3619,7 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 10335,
 		"name": "Blur",
 		"icon": "https://render.guildwars2.com/file/D0969802A76808ACD65A56A6D54F2A40E355F7C3/103284.png",
 		"stacking": "Duration",
@@ -3684,21 +3639,14 @@
 				"slot": "Weapon_3",
 				"professions": ["Mesmer"],
 				"weapon_type": "Spear"
-			},
-			{
-				"_source": "skills:76583:Hare's Agility",
-				"skill": 76583,
-				"slot": "Utility",
-				"professions": ["Elementalist"],
-				"specialization": 80
 			}
 		]
 	},
 	{
-		"id": null,
+		"id": 72368,
 		"name": "Plague Signet",
 		"icon": "https://render.guildwars2.com/file/7BA4196DCAD2BED2D4E7EF23B1CB4806DABC0C56/103812.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Reduce incoming condition damage.",
@@ -3709,10 +3657,10 @@
 		"professions": ["Necromancer"]
 	},
 	{
-		"id": null,
+		"id": 10614,
 		"name": "Signet of the Locust",
 		"icon": "https://render.guildwars2.com/file/E9779110A24733AEAC403E48D6ADF00F9F3A0507/58463.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Movement speed increased by 25%.",
@@ -3723,10 +3671,10 @@
 		"professions": ["Necromancer"]
 	},
 	{
-		"id": null,
+		"id": 10621,
 		"name": "Signet of Spite",
 		"icon": "https://render.guildwars2.com/file/596707B904509879083B6F6697012448A7420A63/58459.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Improved power.",
@@ -3737,10 +3685,10 @@
 		"professions": ["Necromancer"]
 	},
 	{
-		"id": null,
+		"id": 42651,
 		"name": "Grim Specter",
 		"icon": "https://render.guildwars2.com/file/A6CAF2146D9DF2EBEFD9285CB0E9E3617A659071/1770528.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Gaining vitality.",
@@ -3748,14 +3696,13 @@
 		"_source": "skills:10632:Grim Specter",
 		"skill": 10632,
 		"slot": "Weapon_5",
-		"professions": [],
-		"weapon_type": "Staff"
+		"professions": ["Necromancer"]
 	},
 	{
-		"id": null,
+		"id": 15083,
 		"name": "Spectral Walk",
 		"icon": "https://render.guildwars2.com/file/5C04E817070BDB27A4196C9AD5CFB0AE059FFC54/103846.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Consume conditions to gain life force.",
@@ -3763,50 +3710,28 @@
 		"_source": "skills:10685:Spectral Walk",
 		"skill": 10685,
 		"slot": "Utility",
+		"professions": ["Necromancer"],
+		"variantIds": [53476]
+	},
+	{
+		"id": 10686,
+		"name": "Spectral Walk (tether)",
+		"icon": "https://render.guildwars2.com/file/BBAA911903B9E640DD6D02B14A6F6D58F2ADFE0C/103308.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Walking in the shadows, leaving behind a spectral trail.",
+		"type": "Skill",
+		"_source": "skills:10685:Spectral Walk",
+		"skill": 10685,
+		"slot": "Utility",
 		"professions": ["Necromancer"]
 	},
 	{
-		"id": null,
-		"name": "Prowl",
-		"icon": "https://render.guildwars2.com/file/15780BCEBC0C20E7403191DEA92DB365AB380AE6/103960.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Prowling.",
-		"type": "Skill",
-		"_source": "skills:12399:Prowl",
-		"skill": 12399,
-		"slot": "Weapon_5",
-		"professions": []
-	},
-	{
-		"id": null,
-		"name": "Take Root",
-		"icon": "https://render.guildwars2.com/file/F0050C0A64BAA86D650029D2052A55260CD8E513/240703.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "You can't move.",
-		"type": "Skill",
-		"_source": "skills:12457:Take Root",
-		"skill": 12457,
-		"slot": "Elite",
-		"professions": [
-			"Guardian",
-			"Warrior",
-			"Engineer",
-			"Ranger",
-			"Thief",
-			"Elementalist",
-			"Mesmer",
-			"Necromancer"
-		]
-	},
-	{
-		"id": null,
+		"id": 12518,
 		"name": "Signet of the Wild",
 		"icon": "https://render.guildwars2.com/file/C5C6F15A60FA590B2810DE5023E7402964190496/103542.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Increased ferocity.",
@@ -3814,13 +3739,14 @@
 		"_source": "skills:12491:Signet of the Wild",
 		"skill": 12491,
 		"slot": "Utility",
-		"professions": ["Ranger"]
+		"professions": ["Ranger"],
+		"variantIds": [12636]
 	},
 	{
-		"id": null,
-		"name": "Signet of Stone",
+		"id": 12543,
+		"name": "Signet of Stone (passive)",
 		"icon": "https://render.guildwars2.com/file/0419F0A9D9494B4273F31FA1E92A551AA67246B8/102886.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Improved toughness.",
@@ -3840,10 +3766,33 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 883,
+		"name": "Signet of Stone (active)",
+		"icon": "https://render.guildwars2.com/file/0419F0A9D9494B4273F31FA1E92A551AA67246B8/102886.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Take no damage from incoming attacks.",
+		"type": "Skill",
+		"_source": "skills:12500:Signet of Stone",
+		"skill": 12500,
+		"slot": "Utility",
+		"professions": ["Ranger"],
+		"_variants": [
+			{ "description": "Take no damage from incoming attacks." },
+			{ "description": "Take no damage from incoming attacks." },
+			{
+				"description": "Take no damage from incoming attacks.",
+				"_source": "skills:42470:Lesser Signet of Stone",
+				"skill": 42470
+			}
+		]
+	},
+	{
+		"id": 12538,
 		"name": "Signet of Renewal",
 		"icon": "https://render.guildwars2.com/file/B83DDE1DD9F3DC65590D7EA207F0604F26B1BCA7/103590.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Regenerate health.",
@@ -3854,10 +3803,10 @@
 		"professions": ["Ranger"]
 	},
 	{
-		"id": null,
+		"id": 12554,
 		"name": "Strength of the Pack",
 		"icon": "https://render.guildwars2.com/file/B77111BD4468FB297D560A44EE5F023425915FBF/103606.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Grants might to your pet when you attack.",
@@ -3868,7 +3817,7 @@
 		"professions": ["Ranger"]
 	},
 	{
-		"id": null,
+		"id": 58085,
 		"name": "Counter Ready",
 		"icon": "https://render.guildwars2.com/file/AD43D7CDEBF83C23B799E94A649794181F6208DA/103124.png",
 		"stacking": "Duration",
@@ -3883,10 +3832,10 @@
 		"weapon_type": "Greatsword"
 	},
 	{
-		"id": null,
+		"id": 12536,
 		"name": "Sharpening Stone",
 		"icon": "https://render.guildwars2.com/file/662329DDE4D8C7DFB30DD3D1E8CAB807FACBF66A/104004.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Attacks inflict bleeding.",
@@ -3897,10 +3846,10 @@
 		"professions": ["Ranger"]
 	},
 	{
-		"id": null,
+		"id": 12541,
 		"name": "Signet of the Hunt",
 		"icon": "https://render.guildwars2.com/file/4008F219B5DA1B0BF059EA7CF6CD3157C8ED76F8/104005.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "25% increased movement speed.",
@@ -3911,10 +3860,10 @@
 		"professions": ["Ranger"]
 	},
 	{
-		"id": null,
+		"id": 33902,
 		"name": "\"Sic 'Em!\"",
 		"icon": "https://render.guildwars2.com/file/0D6B235E679346723414607E61DE052576097545/104025.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Focus on a target for increased damage.",
@@ -3922,27 +3871,14 @@
 		"_source": "skills:12633:\"Sic 'Em!\"",
 		"skill": 12633,
 		"slot": "Utility",
-		"professions": ["Ranger"]
+		"professions": ["Ranger"],
+		"variantIds": [12650]
 	},
 	{
-		"id": null,
-		"name": "Feeding Frenzy",
-		"icon": "https://render.guildwars2.com/file/05365CD3720551805D3F9645924AE3E4EB3E5F06/104036.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Your next three attacks inflict bleeding.",
-		"type": "Skill",
-		"_source": "skills:12757:Feeding Frenzy",
-		"skill": 12757,
-		"slot": "Pet",
-		"professions": []
-	},
-	{
-		"id": null,
+		"id": 54967,
 		"name": "Repeater",
 		"icon": "https://render.guildwars2.com/file/9B4E1B72A86C0F3FCB0B9E272E2A2AEC45669E92/103878.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Now has access to the Repeater skill. Repeater costs less initiative.",
