@@ -3890,10 +3890,10 @@
 		"weapon_type": "Pistol"
 	},
 	{
-		"id": null,
-		"name": "Assassin's Signet",
+		"id": 13047,
+		"name": "Assassin's Signet (passive)",
 		"icon": "https://render.guildwars2.com/file/16BAE223E268B19ABFE66040F11706B7BC00EF79/104076.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Increased power.",
@@ -3901,15 +3901,28 @@
 		"_source": "skills:13046:Assassin's Signet",
 		"skill": 13046,
 		"slot": "Utility",
-		"professions": ["Thief"],
-		"_variants": [{}]
+		"professions": ["Thief"]
 	},
 	{
-		"id": null,
+		"id": 44597,
+		"name": "Assassin's Signet (active)",
+		"icon": "https://render.guildwars2.com/file/16BAE223E268B19ABFE66040F11706B7BC00EF79/104076.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Increased power.",
+		"type": "Skill",
+		"_source": "skills:13046:Assassin's Signet",
+		"skill": 13046,
+		"slot": "Utility",
+		"professions": ["Thief"]
+	},
+	{
+		"id": 13054,
 		"name": "Skale Venom",
 		"icon": "https://render.guildwars2.com/file/A71B05C116B677EF620780B3D5BC58287EBC6D4B/104078.png",
-		"stacking": "Duration",
-		"maxStacks": null,
+		"stacking": "Intensity",
+		"maxStacks": 25,
 		"maxDuration": null,
 		"description": "Your attacks inflict vulnerability and torment.",
 		"type": "Skill",
@@ -3919,10 +3932,10 @@
 		"professions": ["Thief"]
 	},
 	{
-		"id": null,
+		"id": 13061,
 		"name": "Signet of Agility",
 		"icon": "https://render.guildwars2.com/file/EBE194955CE4A25AD7B9D85EA6260CF8FD54ED0C/104081.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Increased precision.",
@@ -3933,7 +3946,7 @@
 		"professions": ["Thief"]
 	},
 	{
-		"id": null,
+		"id": 50489,
 		"name": "Hooked Spear",
 		"icon": "https://render.guildwars2.com/file/DFA6DEE3E74108975609ED1A1A080732A32197FE/104084.png",
 		"stacking": "Duration",
@@ -3948,11 +3961,11 @@
 		"weapon_type": "Spear"
 	},
 	{
-		"id": null,
+		"id": 13094,
 		"name": "Devourer Venom",
 		"icon": "https://render.guildwars2.com/file/C9A1784C4333E851F69AC53BC6E1EE1FF5FEB577/104097.png",
-		"stacking": "Duration",
-		"maxStacks": null,
+		"stacking": "Intensity",
+		"maxStacks": 10,
 		"maxDuration": null,
 		"description": "Your attacks immobilize foes.",
 		"type": "Skill",
@@ -3962,11 +3975,11 @@
 		"professions": ["Thief"]
 	},
 	{
-		"id": null,
+		"id": 13095,
 		"name": "Ice Drake Venom",
 		"icon": "https://render.guildwars2.com/file/77F6B7A22D4BD264C108A2083F0637D0DC520C0D/104098.png",
-		"stacking": "Duration",
-		"maxStacks": null,
+		"stacking": "Intensity",
+		"maxStacks": 25,
 		"maxDuration": null,
 		"description": "Your attacks chill foes.",
 		"type": "Skill",
@@ -3976,12 +3989,12 @@
 		"professions": ["Thief"]
 	},
 	{
-		"id": null,
+		"id": 13133,
 		"name": "Basilisk Venom",
 		"icon": "https://render.guildwars2.com/file/535F5CFC1D9C09F437A3B05F39CFD044434CDDBC/104109.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
+		"stacking": "Intensity",
+		"maxStacks": 2,
+		"maxDuration": 30,
 		"description": "Your attacks turn foes to stone.",
 		"type": "Skill",
 		"_source": "skills:13132:Basilisk Venom",
@@ -3990,10 +4003,10 @@
 		"professions": ["Thief"]
 	},
 	{
-		"id": null,
+		"id": 14496,
 		"name": "Signet of Rage",
 		"icon": "https://render.guildwars2.com/file/7A530D5434F9E9E80ED14DBE48EEE90427E33A2B/104113.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Gain adrenaline.",
@@ -4005,7 +4018,7 @@
 		"_variants": [{ "description": "Gain flow." }]
 	},
 	{
-		"id": null,
+		"id": 786,
 		"name": "Healing Signet",
 		"icon": "https://render.guildwars2.com/file/BFED9DC9065E01B726E6CF629A5642164B382BA6/102866.png",
 		"stacking": "Duration",
@@ -4019,7 +4032,7 @@
 		"professions": ["Warrior"]
 	},
 	{
-		"id": null,
+		"id": 787,
 		"name": "Enduring Pain",
 		"icon": "https://render.guildwars2.com/file/9D66F0BCCEC7A7C344170659D4CF7C7E3ECF0C60/102867.png",
 		"stacking": "Duration",
@@ -4040,7 +4053,7 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 14444,
 		"name": "Signet of Might",
 		"icon": "https://render.guildwars2.com/file/450973A6DE4D0BEE580256F5759F632B7EBC7ADD/103798.png",
 		"stacking": "Duration",
@@ -4054,10 +4067,10 @@
 		"professions": ["Warrior"]
 	},
 	{
-		"id": null,
+		"id": 14453,
 		"name": "Berserker's Stance",
 		"icon": "https://render.guildwars2.com/file/076E24B408AADF15ECE3537453F9E1FCB93843F5/103864.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Gain adrenaline every second.",
@@ -4069,10 +4082,10 @@
 		"_variants": [{}, { "description": "Gain flow every second." }]
 	},
 	{
-		"id": null,
-		"name": "Signet of Fury",
+		"id": 14459,
+		"name": "Signet of Fury (passive)",
 		"icon": "https://render.guildwars2.com/file/2F34F119A12F4608685DF0B76106F7B6EABCCBF8/104119.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Improved precision.",
@@ -4084,10 +4097,24 @@
 		"_variants": [{ "description": "Improves precision and ferocity." }]
 	},
 	{
-		"id": null,
+		"id": 51664,
+		"name": "Signet of Fury (active)",
+		"icon": "https://render.guildwars2.com/file/2F34F119A12F4608685DF0B76106F7B6EABCCBF8/104119.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Improves precision and ferocity.",
+		"type": "Skill",
+		"_source": "skills:14410:Signet of Fury",
+		"skill": 14410,
+		"slot": "Utility",
+		"professions": ["Warrior"]
+	},
+	{
+		"id": 34778,
 		"name": "Balanced Stance",
 		"icon": "https://render.guildwars2.com/file/EE276A936FB880E44B2B310D56E6A9E22034E301/104112.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Periodically gain stability. Immune to critical hits.",
@@ -4095,14 +4122,13 @@
 		"_source": "skills:14412:Balanced Stance",
 		"skill": 14412,
 		"slot": "Utility",
-		"professions": ["Warrior"],
-		"_variants": [{}]
+		"professions": ["Warrior"]
 	},
 	{
-		"id": null,
+		"id": 14458,
 		"name": "Dolyak Signet",
 		"icon": "https://render.guildwars2.com/file/456FAF783E6E99056F490F6BC105DEAE5958412F/104121.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Reduced incoming damage.",
@@ -4113,10 +4139,10 @@
 		"professions": ["Warrior"]
 	},
 	{
-		"id": null,
+		"id": 14478,
 		"name": "Signet of Stamina",
 		"icon": "https://render.guildwars2.com/file/3763DF075356FE2A22A56915EB0B982B32F3FBA3/104128.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "50% faster endurance regeneration.",
