@@ -28,6 +28,10 @@
 			"type": ["integer", "null"],
 			"description": "The maximum duration in seconds of the effect"
 		},
+		"target": {
+			"type": "integer",
+			"description": "Who receives the effect as related to the source"
+		},
 		"description": {
 			"type": "string",
 			"description": "Additional text that provides an explanation for the effect"

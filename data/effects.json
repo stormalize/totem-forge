@@ -471,6 +471,34 @@
 		]
 	},
 	{
+		"id": 30308,
+		"name": "Virtue of Resolve (Dragonhunter)",
+		"icon": "https://render.guildwars2.com/file/A054A5300BF26FBAA601611BDA07B6001830FF92/1012864.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Regenerate health.",
+		"type": "Skill",
+		"skill": 30783,
+		"slot": "Profession_2",
+		"professions": ["Guardian"],
+		"specialization": 27
+	},
+	{
+		"id": 30498,
+		"name": "Resolve (Dragonhunter)",
+		"icon": "https://render.guildwars2.com/file/A054A5300BF26FBAA601611BDA07B6001830FF92/1012864.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Regenerate health.",
+		"type": "Skill",
+		"skill": 30783,
+		"slot": "Profession_2",
+		"professions": ["Guardian"],
+		"specialization": 27
+	},
+	{
 		"id": 59592,
 		"name": "Inspiring Virtue",
 		"icon": "https://render.guildwars2.com/file/3EC057E1739EF1F22815605956B46142D2669A6D/1466322.png",
@@ -2512,8 +2540,8 @@
 		"maxDuration": null,
 		"description": "Striking a foe will create a chain-lightning attack on that foe.",
 		"type": "Trait",
-		"_source": "traits:2335:Galvanic Enchantment",
-		"trait": 2335,
+		"_source": "skills:77038:Hare's Agility",
+		"trait": 77038,
 		"specialization": 80
 	},
 	{
@@ -3510,6 +3538,7 @@
 		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
+		"target": 1,
 		"description": "Recently struck by <c=@abilitytype>Banish</c>. <c=@abilitytype>Mighty Blow</c> will consume this effect to teleport to the target.",
 		"type": "Skill",
 		"_source": "skills:9124:Banish",
@@ -4478,12 +4507,41 @@
 		"professions": ["Elementalist"]
 	},
 	{
-		"id": null,
-		"name": "Justice",
-		"icon": "https://render.guildwars2.com/file/77931F01AE91A00998BD286BA2930DCE1A354318/103677.png",
-		"stacking": "Duration",
+		"id": 9114,
+		"name": "Virtue of Justice",
+		"icon": "https://render.guildwars2.com/file/0E4C27902671FBCB33713E3677604B0880EF0D60/103034.png",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
+		"description": "Consecutive attacks cause burning.",
+		"type": "Skill",
+		"_source": "skills:9115:Virtue of Justice",
+		"skill": 9115,
+		"slot": "Profession_1",
+		"professions": ["Guardian"]
+	},
+	{
+		"id": 9116,
+		"name": "Justice",
+		"icon": "https://render.guildwars2.com/file/0E4C27902671FBCB33713E3677604B0880EF0D60/103034.png",
+		"stacking": "Refresh",
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Next attack inflicts burning.",
+		"type": "Skill",
+		"_source": "skills:9115:Virtue of Justice",
+		"skill": 9115,
+		"slot": "Profession_1",
+		"professions": ["Guardian"]
+	},
+	{
+		"id": 30232,
+		"name": "Justice (Dragonhunter)",
+		"icon": "https://render.guildwars2.com/file/77931F01AE91A00998BD286BA2930DCE1A354318/103677.png",
+		"stacking": "Refresh",
+		"maxStacks": null,
+		"maxDuration": null,
+		"target": 1,
 		"description": "Periodically applies burning as long as you are within range of the caster.",
 		"type": "Skill",
 		"_source": "skills:29887:Spear of Justice",
@@ -4512,7 +4570,22 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 62529,
+		"name": "Justice (Willbender)",
+		"icon": "https://render.guildwars2.com/file/2F3E006427F17D3EF747BF0F0B0E0A941964572F/2479367.png",
+		"stacking": "Refresh",
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Consecutive attacks cause burning.",
+		"type": "Skill",
+		"_source": "skills:62668:Rushing Justice",
+		"skill": 62668,
+		"slot": "Profession_1",
+		"professions": ["Guardian"],
+		"specialization": 65
+	},
+	{
+		"id": 31337,
 		"name": "Rebound",
 		"icon": "https://render.guildwars2.com/file/7B1B6E07A10B0FE8CED391354390EE993F51C3F7/1029984.png",
 		"stacking": "Duration",
@@ -4527,10 +4600,31 @@
 		"specialization": 48
 	},
 	{
-		"id": null,
+		"id": 9113,
 		"name": "Virtue of Courage",
 		"icon": "https://render.guildwars2.com/file/1B55CBCB3E1165FD5D0C7BC3CBEEB65C5BD9D07C/103258.png",
-		"stacking": "Duration",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Gain aegis periodically.",
+		"type": "Skill",
+		"_source": "skills:9118:Virtue of Courage",
+		"skill": 9118,
+		"slot": "Profession_3",
+		"professions": ["Guardian"],
+		"_variants": [
+			{
+				"_source": "skills:9268:Virtue of Courage",
+				"skill": 9268,
+				"professions": ["Guardian"]
+			}
+		]
+	},
+	{
+		"id": 29523,
+		"name": "Virtue of Courage (Dragonhunter)",
+		"icon": "https://render.guildwars2.com/file/09DE3F47930AFF2B2B3F4C20A401DCA9DC7344CC/1012865.png",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Gain aegis at a set interval.",
@@ -4549,10 +4643,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 34256,
 		"name": "Rock Guard",
 		"icon": "https://render.guildwars2.com/file/317AAB9736A32EBBE8A54FA6519FAD7510A71672/1058650.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Block incoming attacks.",
@@ -4564,7 +4658,7 @@
 		"specialization": 18
 	},
 	{
-		"id": null,
+		"id": 29900,
 		"name": "Distracting Daggers",
 		"icon": "https://render.guildwars2.com/file/F3F3FD0EFBEE58CDE70B290C380C1D4102E9600B/1058630.png",
 		"stacking": "Duration",
@@ -4579,12 +4673,13 @@
 		"specialization": 7
 	},
 	{
-		"id": null,
+		"id": 30510,
 		"name": "Pulmonary Impact",
 		"icon": "https://render.guildwars2.com/file/96580AB413D9791D53D45093063F54CD9F56C513/1058634.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
 		"maxDuration": null,
+		"target": 1,
 		"description": "Explosively damaging attack.",
 		"type": "Skill",
 		"_source": "skills:30693:Palm Strike",
@@ -4594,7 +4689,7 @@
 		"specialization": 7
 	},
 	{
-		"id": null,
+		"id": 29582,
 		"name": "Time Echo",
 		"icon": "https://render.guildwars2.com/file/1D7202A8359923DDF74119BFB663AF077DBC7CCD/1012896.png",
 		"stacking": "Duration",
@@ -4610,10 +4705,10 @@
 		"weapon_type": "Shield"
 	},
 	{
-		"id": null,
+		"id": 30423,
 		"name": "Palm Strike",
 		"icon": "https://render.guildwars2.com/file/3B267195CECDF50705092272D0190CA9A391B507/1058631.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "You can use Palm Strike.",
@@ -4625,7 +4720,7 @@
 		"specialization": 7
 	},
 	{
-		"id": null,
+		"id": 42086,
 		"name": "Primordial Stance",
 		"icon": "https://render.guildwars2.com/file/9A03F9CFBBE6154A41B1B5CAC4060092C11FABDA/1770332.png",
 		"stacking": "Duration",
@@ -4640,7 +4735,7 @@
 		"specialization": 56
 	},
 	{
-		"id": null,
+		"id": 44651,
 		"name": "Vulture Stance",
 		"icon": "https://render.guildwars2.com/file/77A65F535049BFB5F209186B1E9BA125E6BE32B2/1770571.png",
 		"stacking": "Duration",
@@ -4652,14 +4747,13 @@
 		"skill": 40498,
 		"slot": "Utility",
 		"professions": ["Ranger"],
-		"specialization": 55,
-		"_variants": [{}, {}, {}]
+		"specialization": 55
 	},
 	{
-		"id": null,
+		"id": 46444,
 		"name": "Cooling Vapor",
 		"icon": "https://render.guildwars2.com/file/FC409CF9B0063964C23A62311EF52B71A6F064D9/1770388.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Heal every second; stacks intensity.",
@@ -4671,10 +4765,10 @@
 		"specialization": 57
 	},
 	{
-		"id": null,
+		"id": 51658,
 		"name": "Grinding Stones",
 		"icon": "https://render.guildwars2.com/file/1D3206560916B0ADD3AD2B3242732F4F1E4EE496/1770334.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Take reduced physical damage.",
@@ -4687,10 +4781,10 @@
 		"weapon_type": "Dagger"
 	},
 	{
-		"id": null,
+		"id": 43066,
 		"name": "Spectrum Shield",
 		"icon": "https://render.guildwars2.com/file/C8BD97D81A9BD3F93A2B2F54907454F1DCC8A823/1770414.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "",
@@ -4699,14 +4793,13 @@
 		"skill": 41218,
 		"slot": "Utility",
 		"professions": ["Engineer"],
-		"specialization": 57,
-		"_variants": [{}, {}]
+		"specialization": 57
 	},
 	{
-		"id": null,
+		"id": 46298,
 		"name": "Tome of Resolve",
 		"icon": "https://render.guildwars2.com/file/E206770FD62BB63B71F56209F34BF99392BADF9E/1770478.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Regenerate health.",
@@ -4735,10 +4828,42 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 68640,
+		"name": "Dormant Resolve",
+		"icon": "https://render.guildwars2.com/file/CA747F315578704ED2ED9CB76E48083828CE730C/2779164.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Resolve traits are recharging.",
+		"type": "Skill",
+		"_source": "skills:41780:Tome of Resolve",
+		"skill": 41780,
+		"slot": "Profession_2",
+		"professions": ["Guardian"],
+		"specialization": 62,
+		"_variants": [
+			{
+				"_source": "skills:45023:Tome of Resolve",
+				"skill": 45023,
+				"professions": ["Guardian"]
+			},
+			{
+				"_source": "skills:68648:Tome of Resolve",
+				"skill": 68648,
+				"professions": ["Guardian"]
+			},
+			{
+				"_source": "skills:68649:Tome of Resolve",
+				"skill": 68649,
+				"professions": ["Guardian"]
+			}
+		]
+	},
+	{
+		"id": 45097,
 		"name": "Stone Resonance",
 		"icon": "https://render.guildwars2.com/file/FD3E5345025CBBB73C3F04E1997EDCBDD09C08F3/1770329.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Periodically gain shield.",
@@ -4756,10 +4881,26 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 43708,
 		"name": "Photon Forge",
 		"icon": "https://render.guildwars2.com/file/1C35CD2D504EC3C5D25C43DFF808956751713E72/1770391.png",
-		"stacking": "Duration",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "",
+		"type": "Skill",
+		"_source": "skills:42938:Engage Photon Forge",
+		"skill": 42938,
+		"slot": "Profession_5",
+		"professions": ["Engineer"],
+		"specialization": 57,
+		"variantIds": [41331, 67627]
+	},
+	{
+		"id": 41037,
+		"name": "Overheat",
+		"icon": "https://render.guildwars2.com/file/5DC4E10CE03E4D78EFACEEDB6F5FCF4F206BA7E3/1770392.png",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "",
@@ -4771,10 +4912,10 @@
 		"specialization": 57
 	},
 	{
-		"id": null,
+		"id": 45910,
 		"name": "Defy Pain",
 		"icon": "https://render.guildwars2.com/file/2A79C7DD0AFEEFC9C1D1C9E20845CA140734CE27/103951.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "You receive no damage from incoming attacks. You remain susceptible to conditions and controlling effects.",
@@ -4786,10 +4927,10 @@
 		"specialization": 55
 	},
 	{
-		"id": null,
+		"id": 42951,
 		"name": "Weave Self",
 		"icon": "https://render.guildwars2.com/file/E656D3A8B1339603A70BBB7237F2BA004258ED55/1770326.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Gather the elements to become the ultimate being.",
@@ -4801,10 +4942,70 @@
 		"specialization": 56
 	},
 	{
-		"id": null,
+		"id": 45110,
+		"name": "Woven Fire",
+		"icon": "https://render.guildwars2.com/file/0597C2D6803EBDB3E309A1AEA1F5B7D414D208D9/1770336.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "+20% Condition Damage",
+		"type": "Skill",
+		"_source": "skills:43638:Weave Self",
+		"skill": 43638,
+		"slot": "Elite",
+		"professions": ["Elementalist"],
+		"specialization": 56
+	},
+	{
+		"id": 43499,
+		"name": "Woven Water",
+		"icon": "https://render.guildwars2.com/file/490A54586F7D28AEE6E9A551F6B4DC0841B81AD0/1770340.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "+20% Boon Duration, +20% Healing Increase to Others",
+		"type": "Skill",
+		"_source": "skills:43638:Weave Self",
+		"skill": 43638,
+		"slot": "Elite",
+		"professions": ["Elementalist"],
+		"specialization": 56
+	},
+	{
+		"id": 43038,
+		"name": "Woven Air",
+		"icon": "https://render.guildwars2.com/file/CEE660D6BB939A06695643F5CEBA1F295B022305/1770333.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "+50% Movement Speed, +10% Damage",
+		"type": "Skill",
+		"_source": "skills:43638:Weave Self",
+		"skill": 43638,
+		"slot": "Elite",
+		"professions": ["Elementalist"],
+		"specialization": 56
+	},
+	{
+		"id": 45662,
+		"name": "Woven Earth",
+		"icon": "https://render.guildwars2.com/file/2DDE45C45EFBF5CC6D0C0562AB730FBB58021547/1770342.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Incoming damage is reduced.",
+		"type": "Skill",
+		"_source": "skills:43638:Weave Self",
+		"skill": 43638,
+		"slot": "Elite",
+		"professions": ["Elementalist"],
+		"specialization": 56
+	},
+	{
+		"id": 45267,
 		"name": "Perfect Weave",
 		"icon": "https://render.guildwars2.com/file/E656D3A8B1339603A70BBB7237F2BA004258ED55/1770326.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "All elements are now tightly woven together.",
@@ -4816,10 +5017,10 @@
 		"specialization": 56
 	},
 	{
-		"id": null,
+		"id": 40616,
 		"name": "Sight beyond Sight",
 		"icon": "https://render.guildwars2.com/file/B52152CBC82E492696D90460090366D7EC31022C/1770666.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your next attack is a critical hit.",
@@ -4831,7 +5032,7 @@
 		"specialization": 61
 	},
 	{
-		"id": null,
+		"id": 42026,
 		"name": "Aquatic Stance",
 		"icon": "https://render.guildwars2.com/file/9C99AE9FFAFE0EFE34F52377D7DAE3375A2F989B/1770328.png",
 		"stacking": "Duration",
@@ -4843,13 +5044,14 @@
 		"skill": 44239,
 		"slot": "Heal",
 		"professions": ["Elementalist"],
-		"specialization": 56
+		"specialization": 56,
+		"variantIds": [42486]
 	},
 	{
-		"id": null,
+		"id": 42683,
 		"name": "Unravel",
 		"icon": "https://render.guildwars2.com/file/A3E26A4A4FF0C974B4AAACA6B310060CFBC2D007/1770330.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Fully attune to elements and temporarily lose dual attacks.",
@@ -4861,7 +5063,7 @@
 		"specialization": 56
 	},
 	{
-		"id": null,
+		"id": 40045,
 		"name": "Bear Stance",
 		"icon": "https://render.guildwars2.com/file/07944CB363A391A26B21C16F76F52111B32D96CD/1770561.png",
 		"stacking": "Duration",
@@ -4873,11 +5075,10 @@
 		"skill": 44948,
 		"slot": "Heal",
 		"professions": ["Ranger"],
-		"specialization": 55,
-		"_variants": [{}, {}, {}, {}, {}]
+		"specialization": 55
 	},
 	{
-		"id": null,
+		"id": 46280,
 		"name": "Griffon Stance",
 		"icon": "https://render.guildwars2.com/file/BFD6BD2D9D60F1B25C3B2ECAAF902F07F7424C5C/1770569.png",
 		"stacking": "Duration",
@@ -4889,11 +5090,10 @@
 		"skill": 45142,
 		"slot": "Utility",
 		"professions": ["Ranger"],
-		"specialization": 55,
-		"_variants": [{}, {}, {}]
+		"specialization": 55
 	},
 	{
-		"id": null,
+		"id": 44636,
 		"name": "Disenchantment",
 		"icon": "https://render.guildwars2.com/file/0C185490CB6D7215360704CA345150D807444968/1770659.png",
 		"stacking": "Duration",
@@ -4905,13 +5105,14 @@
 		"skill": 45333,
 		"slot": "Elite",
 		"professions": ["Warrior"],
-		"specialization": 61
+		"specialization": 61,
+		"variantIds": [44633]
 	},
 	{
-		"id": null,
+		"id": 43266,
 		"name": "Sharpen Spines",
 		"icon": "https://render.guildwars2.com/file/D99AA4CC69C7D510A6632D9FC87852A13524BA7F/1128607.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Attacks inflict bleeding.",
@@ -4923,7 +5124,7 @@
 		"specialization": 55
 	},
 	{
-		"id": null,
+		"id": 44139,
 		"name": "One Wolf Pack",
 		"icon": "https://render.guildwars2.com/file/4E137B09B5CC545211977BFDCEC76119195AC7C9/1770558.png",
 		"stacking": "Duration",
@@ -4935,14 +5136,13 @@
 		"skill": 45717,
 		"slot": "Elite",
 		"professions": ["Ranger"],
-		"specialization": 55,
-		"_variants": [{}, {}, {}, {}, {}]
+		"specialization": 55
 	},
 	{
-		"id": null,
+		"id": 45026,
 		"name": "Soulcleave's Summit",
 		"icon": "https://render.guildwars2.com/file/CFD1582E6B180CA2DE6AD205981CBBAFC7480294/1770589.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your outgoing strikes deal additional damage and restore your health.",
@@ -4954,10 +5154,10 @@
 		"specialization": 63
 	},
 	{
-		"id": null,
+		"id": 41815,
 		"name": "Dolyak Stance",
 		"icon": "https://render.guildwars2.com/file/134103AEE929B7F0B4CE9B380A48B7A2DFB863FB/1770568.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Reduce incoming damage while preventing movement-impeding conditions from being inflicted on you.",
@@ -4966,14 +5166,13 @@
 		"skill": 45789,
 		"slot": "Utility",
 		"professions": ["Ranger"],
-		"specialization": 55,
-		"_variants": [{}, {}, {}, {}, {}]
+		"specialization": 55
 	},
 	{
-		"id": null,
+		"id": 43401,
 		"name": "Unflinching Fortitude",
 		"icon": "https://render.guildwars2.com/file/0A0059CF0F036DBBE3EDAAFBC6136EA5F01E43CD/1770567.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Take no damage from incoming attacks.",
@@ -4985,7 +5184,7 @@
 		"specialization": 55
 	},
 	{
-		"id": null,
+		"id": 45038,
 		"name": "Moa Stance",
 		"icon": "https://render.guildwars2.com/file/12571D4103DE1DF91BB5D20E7DE34D4998337DDE/1770570.png",
 		"stacking": "Duration",
@@ -4997,14 +5196,13 @@
 		"skill": 45970,
 		"slot": "Utility",
 		"professions": ["Ranger"],
-		"specialization": 55,
-		"_variants": [{}, {}, {}]
+		"specialization": 55
 	},
 	{
-		"id": null,
+		"id": 43586,
 		"name": "Molten Armor",
 		"icon": "https://render.guildwars2.com/file/C328476928DFDE7FF3C2F65143FC7852C3F69CF9/1770377.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Gain barrier over time, and pulse damage in the area.",
@@ -5014,102 +5212,27 @@
 		"slot": "Weapon_3",
 		"professions": ["Elementalist"],
 		"specialization": 56,
-		"weapon_type": "Sword"
+		"weapon_type": "Sword",
+		"variantIds": [41276]
 	},
 	{
-		"id": null,
-		"name": "Unbridled Fear",
-		"icon": "https://render.guildwars2.com/file/B5CC9DE75CF17898541694C1AD2FEB33CCE00FB2/1770100.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Involuntary retreat; unable to act; stacks duration.",
-		"type": "Skill",
-		"_source": "skills:48662:Howling Death",
-		"skill": 48662
-	},
-	{
-		"id": null,
+		"id": 15773,
 		"name": "Agony",
 		"icon": "https://render.guildwars2.com/file/C0B3EB17FEA2B0C4481333F36AA619EB9ABD1CD6/514400.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Deals damage every second; stacks intensity; reduces incoming healing and barrier application by 70% per stack; damage is reduced by agony resistance.",
-		"type": "Skill",
-		"_source": "skills:50858:Life Reap",
-		"skill": 50858,
-		"_variants": [
-			{ "_source": "skills:50999:Storm Blast", "skill": 50999 },
-			{ "_source": "skills:51039:Disintegration Blast", "skill": 51039 },
-			{ "_source": "skills:51120:Agonizing Rune", "skill": 51120 },
-			{ "_source": "skills:51349:Shadow Blast", "skill": 51349 },
-			{ "_source": "skills:54050:Grim Lagoon", "skill": 54050 }
-		]
+		"type": "Common"
 	},
 	{
-		"id": null,
-		"name": "Vampiric Infection",
-		"icon": "https://render.guildwars2.com/file/A35F4434E6CAEF5623F7FB9FE3A5E9A103E40FCD/514408.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Transfers health to source every second. Stacks intensity.",
-		"type": "Skill",
-		"_source": "skills:51105:Bloody Leap",
-		"skill": 51105,
-		"_variants": [{ "_source": "skills:51169:Bloody Slice", "skill": 51169 }]
-	},
-	{
-		"id": null,
-		"name": "Waterlogged",
-		"icon": "https://render.guildwars2.com/file/FB5C627D1A6A46807AF77165604A27FE804B056F/2039793.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "As you become more waterlogged, you become more susceptible to the largos' water magic. If you become fully waterlogged at maximum stacks, you will be assassinated.",
-		"type": "Skill",
-		"_source": "skills:51825:Tidal Surge",
-		"skill": 51825,
-		"_variants": [
-			{ "_source": "skills:52116:Largos' Domain", "skill": 52116 },
-			{ "_source": "skills:52130:Aquatic Vortex", "skill": 52130 },
-			{ "_source": "skills:52812:Tidal Pool", "skill": 52812 }
-		]
-	},
-	{
-		"id": null,
-		"name": "Fractured",
-		"icon": "https://render.guildwars2.com/file/983429402A443DE00A6002EA92E45A08395AD027/1770069.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Increases incoming damage by 50% per stack.",
-		"type": "Skill",
-		"_source": "skills:52370:Conjured Slash",
-		"skill": 52370,
-		"_variants": [{ "_source": "skills:52933:Sword Spin", "skill": 52933 }]
-	},
-	{
-		"id": null,
-		"name": "Conjured Barrier",
-		"icon": "https://render.guildwars2.com/file/A2D3C65BE1A9AC083048272FF07E1C145E922480/2039792.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Immune to damage. Reflects incoming strikes.",
-		"type": "Skill",
-		"_source": "skills:52370:Conjured Slash",
-		"skill": 52370
-	},
-	{
-		"id": null,
-		"name": "You do not lose health from being downed.",
+		"id": 55026,
+		"name": "Glyph of the Stars (Celestial Avatar)",
 		"icon": "https://render.guildwars2.com/file/045471E55B24643A19C40B0D78593007AA1BE665/1128631.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
-		"description": "",
+		"description": "You do not lose health from being downed.",
 		"type": "Skill",
 		"_source": "skills:55024:Glyph of the Stars",
 		"skill": 55024,
@@ -5118,94 +5241,10 @@
 		"specialization": 5
 	},
 	{
-		"id": null,
-		"name": "Radiant Blindness",
-		"icon": "https://render.guildwars2.com/file/392DC06DB4E50627B0DDF13A449D666B3B30A16D/1770068.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "All outgoing attacks are rendered useless.",
-		"type": "Skill",
-		"_source": "skills:56042:Sand Geyser",
-		"skill": 56042,
-		"_variants": [
-			{ "_source": "skills:56114:Diamond Palisade", "skill": 56114 },
-			{ "_source": "skills:56648:Boulder Barrage", "skill": 56648 }
-		]
-	},
-	{
-		"id": null,
-		"name": "Kinetic Abundance",
-		"icon": "https://render.guildwars2.com/file/514B5C1C503548FC71182EAC979A936DA6253717/2156519.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Grants boons and applies Erratic Energy to the attacked target.",
-		"type": "Skill",
-		"_source": "skills:56237:Cleansed Conductor",
-		"skill": 56237
-	},
-	{
-		"id": null,
-		"name": "Violent Currents",
-		"icon": "https://render.guildwars2.com/file/C19D125EF74E717AC62D330228A8A45D1CC00224/2156520.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Electrical currents surge through you, increasing incoming and outgoing damage. Stacks 5 times.\nOutgoing Damage +5%\nIncoming Damage +5%",
-		"type": "Skill",
-		"_source": "skills:56273:Tempest's Spike",
-		"skill": 56273,
-		"_variants": [
-			{ "_source": "skills:56307:Storm's Edge", "skill": 56307 },
-			{ "_source": "skills:56340:Venomous Voltage", "skill": 56340 },
-			{ "_source": "skills:56391:Electrical Repulsion", "skill": 56391 },
-			{ "_source": "skills:56523:Bolt Break", "skill": 56523 },
-			{ "_source": "skills:56620:Storm's Edge", "skill": 56620 },
-			{ "_source": "skills:56629:Chain Lightning", "skill": 56629 }
-		]
-	},
-	{
-		"id": null,
-		"name": "Chaos Corrosion",
-		"icon": "https://render.guildwars2.com/file/609EB6A5A39827A1410773EFACFFBB7F98AB08FF/2039773.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Incoming Caustic Chaos damage is massively increased.",
-		"type": "Skill",
-		"_source": "skills:56332:Caustic Chaos",
-		"skill": 56332
-	},
-	{
-		"id": null,
-		"name": "Unbridled Chaos",
-		"icon": "https://render.guildwars2.com/file/11089CFF98086A316D09116537FE0D0A2ED28030/1896037.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Shower of Chaos deals residual damage over time.",
-		"type": "Skill",
-		"_source": "skills:56598:Shower of Chaos",
-		"skill": 56598
-	},
-	{
-		"id": null,
-		"name": "Enfeebled Force",
-		"icon": "https://render.guildwars2.com/file/DC4B190B7601AE06454E2178574606D51F2B4F1D/2156518.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Applies conditions and reduces outgoing damage by 10%.",
-		"type": "Skill",
-		"_source": "skills:56655:Poisoned Power",
-		"skill": 56655
-	},
-	{
-		"id": null,
+		"id": 62615,
 		"name": "Crashing Courage",
 		"icon": "https://render.guildwars2.com/file/3AD50BA43AA00EA97C6152D5EC6092FE0F0979D0/2479369.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Consecutive attacks grant boons.",
@@ -5234,10 +5273,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 62632,
 		"name": "Flowing Resolve",
 		"icon": "https://render.guildwars2.com/file/E7DB54CE0FA25D3476405E083DBA25033C18FDA3/2479368.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Consecutive attacks grant regenerative effects.",
@@ -5248,8 +5287,6 @@
 		"professions": ["Guardian"],
 		"specialization": 65,
 		"_variants": [
-			{ "description": "" },
-			{},
 			{
 				"_source": "skills:62635:Flowing Resolve",
 				"skill": 62635,
@@ -5258,10 +5295,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 62638,
 		"name": "Repose",
 		"icon": "https://render.guildwars2.com/file/3D9C99D66E6CD2B0529DED46AC38AA51F4E2A61E/2479374.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "",
@@ -5273,10 +5310,10 @@
 		"specialization": 65
 	},
 	{
-		"id": null,
+		"id": 62663,
 		"name": "Reversal of Fortune",
 		"icon": "https://render.guildwars2.com/file/769AAD7FC9A2EDDD5658514C7717940BA5DEB5D1/2479366.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "",
@@ -5288,7 +5325,7 @@
 		"specialization": 65
 	},
 	{
-		"id": null,
+		"id": 62864,
 		"name": "Urn of Saint Viktor",
 		"icon": "https://render.guildwars2.com/file/317EB806A8487B77040BC0C673A59096F396EEE4/2491625.png",
 		"stacking": "Duration",
@@ -5303,10 +5340,10 @@
 		"specialization": 69
 	},
 	{
-		"id": null,
+		"id": 62931,
 		"name": "Flame Wheel",
 		"icon": "https://render.guildwars2.com/file/0EEEDE3EC37F7A6E1BC9BE20B69E3B2C09F5072F/2491582.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Increased outgoing damage.",
@@ -5339,10 +5376,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 62984,
 		"name": "Icy Coil",
 		"icon": "https://render.guildwars2.com/file/4CEE16E97EF99A6C4DEF356CE8650DB73B062A04/2491583.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Reduced incoming condition damage.",
@@ -5375,10 +5412,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 62707,
 		"name": "Crescent Wind",
 		"icon": "https://render.guildwars2.com/file/A1154443E7FB75409FC77711E50D186D449670CF/2491579.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Increased critical chance.",
@@ -5411,10 +5448,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 68126,
 		"name": "Tactical Reload",
 		"icon": "https://render.guildwars2.com/file/B106D2281F245403F23CD2C2E766D39A05400916/2491632.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your next Dragon Trigger charges more quickly.",
@@ -5426,7 +5463,7 @@
 		"specialization": 68
 	},
 	{
-		"id": null,
+		"id": 62819,
 		"name": "Imperial Guard",
 		"icon": "https://render.guildwars2.com/file/D5A565D79131641339353276C1FA6DEDDABEFA0D/2491624.png",
 		"stacking": "Intensity",
@@ -5441,10 +5478,10 @@
 		"weapon_type": "Greatsword"
 	},
 	{
-		"id": null,
+		"id": 62768,
 		"name": "Rocky Loop",
 		"icon": "https://render.guildwars2.com/file/CF074C005D9E2B231B9260140C05201EDAFCB66D/2491581.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Reduced incoming strike damage.",
@@ -5477,10 +5514,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 62846,
 		"name": "Stim State",
 		"icon": "https://render.guildwars2.com/file/C341A614F4D4E59D4103AD30073A7F18DE54BF03/2491640.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "When Stim State expires, you are healed.",
@@ -5492,10 +5529,10 @@
 		"specialization": 68
 	},
 	{
-		"id": null,
+		"id": 63322,
 		"name": "Superconducting Signet",
 		"icon": "https://render.guildwars2.com/file/99C42595B3D1FA7C96C3703B66F241792F08B107/2503691.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Increases condition damage dealt.",
@@ -5507,10 +5544,10 @@
 		"specialization": 70
 	},
 	{
-		"id": null,
+		"id": 63240,
 		"name": "Forest's Fortification",
 		"icon": "https://render.guildwars2.com/file/387423FEEF4639CFF0A4532C06CBCB5701933331/2503712.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Reduce incoming damage by 50%. Striking an enemy reduces the recharge of Forest's Fortification.",
@@ -5522,7 +5559,7 @@
 		"specialization": 72
 	},
 	{
-		"id": null,
+		"id": 63243,
 		"name": "Force Signet",
 		"icon": "https://render.guildwars2.com/file/C540CA603AE4BDE57698082CE62396075699DD63/2503690.png",
 		"stacking": "Duration",
@@ -5537,7 +5574,7 @@
 		"specialization": 70
 	},
 	{
-		"id": null,
+		"id": 63064,
 		"name": "Barrier Signet",
 		"icon": "https://render.guildwars2.com/file/EB737C0D4462F5C5572166DEC2801DD56148AFE6/2503688.png",
 		"stacking": "Duration",
@@ -5549,11 +5586,10 @@
 		"skill": 63262,
 		"slot": "Utility",
 		"professions": ["Engineer"],
-		"specialization": 70,
-		"_variants": [{}]
+		"specialization": 70
 	},
 	{
-		"id": null,
+		"id": 63284,
 		"name": "Perilous Gift",
 		"icon": "https://render.guildwars2.com/file/CF914B52D8B0B47D19245203726BF6C7366F33B5/2503724.png",
 		"stacking": "Duration",
@@ -5568,10 +5604,10 @@
 		"specialization": 72
 	},
 	{
-		"id": null,
+		"id": 68095,
 		"name": "Overcharged Cartridges",
 		"icon": "https://render.guildwars2.com/file/EF1D6D09A1B403972F721F1A073154E2F01CD0A5/2491652.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your explosions do more damage.",
@@ -5583,10 +5619,10 @@
 		"specialization": 68
 	},
 	{
-		"id": null,
+		"id": 76513,
 		"name": "Supercharged Cartridges",
 		"icon": "https://render.guildwars2.com/file/EF1D6D09A1B403972F721F1A073154E2F01CD0A5/2491652.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your explosions do extreme damage.",
@@ -5598,10 +5634,10 @@
 		"specialization": 68
 	},
 	{
-		"id": null,
+		"id": 68621,
 		"name": "Death's Advance",
 		"icon": "https://render.guildwars2.com/file/F66C0938F052950905AE804BB4C495CBF6AD36AF/2779165.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "You can use Death's Advance.",
@@ -5614,12 +5650,12 @@
 		"weapon_type": "Rifle"
 	},
 	{
-		"id": null,
+		"id": 71976,
 		"name": "Nature's Strength",
 		"icon": "https://render.guildwars2.com/file/B8D91BDCD577469CF7C74FC498E708E193135FBE/3256319.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
+		"stacking": "Intensity",
+		"maxStacks": 5,
+		"maxDuration": 25,
 		"description": "Imbued with vital energy. At 5 stacks you become a Force of Nature, growing enlarged, gaining stability, increasing your outgoing damage and healing, and recharging your mace skills.",
 		"type": "Skill",
 		"_source": "skills:71841:Wild Strikes",
@@ -5662,12 +5698,12 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 12579,
 		"name": "Force of Nature",
 		"icon": "https://render.guildwars2.com/file/4016A1FF035FC6F8A95809B5ABDAF50A92BC029B/3256318.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
-		"maxDuration": null,
+		"maxDuration": 5,
 		"description": "Increased outgoing damage and healing.",
 		"type": "Skill",
 		"_source": "skills:71841:Wild Strikes",
@@ -5697,10 +5733,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 72309,
 		"name": "Oaken Cudgel",
 		"icon": "https://render.guildwars2.com/file/AF04C49117A8634CDDAA1AB3B35B25111B394FEC/3256385.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Heal each second.",
@@ -5712,11 +5748,11 @@
 		"weapon_type": "Mace"
 	},
 	{
-		"id": null,
+		"id": 71973,
 		"name": "Bullet Catcher",
 		"icon": "https://render.guildwars2.com/file/934CF9B2F451750E35CBFB6DC39734B2D05BBB17/3256404.png",
-		"stacking": "Duration",
-		"maxStacks": null,
+		"stacking": "Intensity",
+		"maxStacks": 3,
 		"maxDuration": null,
 		"description": "Blocks incoming attacks. Empowers Defiant Roar with each blocked attack, up to 3 stacks.",
 		"type": "Skill",
@@ -5727,12 +5763,12 @@
 		"weapon_type": "Staff"
 	},
 	{
-		"id": null,
+		"id": 73119,
 		"name": "Distracting Throw",
 		"icon": "https://render.guildwars2.com/file/D778C3EF460E2F960DA2153F7A3326C13DAD18E7/3379195.png",
 		"stacking": "Duration",
 		"maxStacks": null,
-		"maxDuration": null,
+		"maxDuration": 10,
 		"description": "Increased outgoing damage.",
 		"type": "Skill",
 		"_source": "skills:72927:Distracting Throw",
@@ -5742,10 +5778,10 @@
 		"weapon_type": "Spear"
 	},
 	{
-		"id": null,
+		"id": 73101,
 		"name": "Illuminated",
 		"icon": "https://render.guildwars2.com/file/0A200D7371125E9E9ADE1FA9F71C5528AFC5A5DE/3379001.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your next spear attack is illuminated.",
@@ -5771,7 +5807,7 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 73117,
 		"name": "Ripple",
 		"icon": "https://render.guildwars2.com/file/D246C6CE0468F2484643935675010B0A963EC9D8/3379088.png",
 		"stacking": "Duration",
@@ -5786,11 +5822,12 @@
 		"weapon_type": "Spear"
 	},
 	{
-		"id": null,
+		"id": 73129,
 		"name": "Lightning Rod Charges",
 		"icon": "https://render.guildwars2.com/file/F3B4056D042BC2573D054F49ACF40FFA16014CB8/3379115.png",
 		"stacking": "Intensity",
-		"maximum": 12,
+		"maxStacks": 12,
+		"maxDuration": 14,
 		"description": "",
 		"type": "Skill",
 		"_source": "skills:73002:Lightning Rod",
@@ -5800,11 +5837,26 @@
 		"weapon_type": "Spear"
 	},
 	{
-		"id": null,
+		"id": 72902,
+		"name": "Electric Artillery",
+		"icon": "https://render.guildwars2.com/file/0CB823345DA0D01FB64C39485242D408C75C2E05/3379116.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "",
+		"type": "Skill",
+		"_source": "skills:73143:Electric Artillery",
+		"skill": 73143,
+		"slot": "Weapon_3",
+		"professions": ["Engineer"],
+		"weapon_type": "Spear"
+	},
+	{
+		"id": 72975,
 		"name": "Soul Shards",
 		"icon": "https://render.guildwars2.com/file/7FD7260567C1DAD4A2ACE5B6E8B57078E17A3E0A/3379000.png",
-		"stacking": "Duration",
-		"maxStacks": null,
+		"stacking": "Intensity",
+		"maxStacks": 6,
 		"maxDuration": null,
 		"description": "Striking an enemy with Perforate siphons health from them.",
 		"type": "Skill",
@@ -5841,10 +5893,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 72941,
 		"name": "Extirpation",
 		"icon": "https://render.guildwars2.com/file/7209CFEA65160A2F0154D015B12167744AD814FC/3379166.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Incoming boons are negated. Remove one stack when an incoming boon is negated.",
@@ -5856,10 +5908,10 @@
 		"weapon_type": "Spear"
 	},
 	{
-		"id": null,
+		"id": 73541,
 		"name": "Hunter's Prowess",
 		"icon": "https://render.guildwars2.com/file/07F83EAFE63F1BBD31ABE1C954BED3D1C5CB090C/3379180.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Allows the use of a stealth attack even when revealed.",
@@ -5871,10 +5923,10 @@
 		"weapon_type": "Spear"
 	},
 	{
-		"id": null,
+		"id": 72963,
 		"name": "Harden",
 		"icon": "https://render.guildwars2.com/file/08F199900A0613B465DF63D1DA4D6647A954DE0B/3379086.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your next spear strike dazes.",
@@ -5886,10 +5938,10 @@
 		"weapon_type": "Spear"
 	},
 	{
-		"id": null,
+		"id": 73071,
 		"name": "Energize",
 		"icon": "https://render.guildwars2.com/file/0BA3490023A82B4B5FCA597C3CB965E21D3CE504/3379085.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your next spear skill always critically strikes.",
@@ -5901,11 +5953,12 @@
 		"weapon_type": "Spear"
 	},
 	{
-		"id": null,
+		"id": 72962,
 		"name": "Crushing Abyss",
 		"icon": "https://render.guildwars2.com/file/632F757C2309C12BCFE99FCCE4BB761FA59AECEE/3379187.png",
 		"stacking": "Intensity",
-		"maximum": 3,
+		"maxStacks": 3,
+		"maxDuration": null,
 		"description": "Causes Abyssal Raze to have increased effect for each stack. Unleashes an Abyssal Raze when swapping weapons at maximum stacks.",
 		"type": "Skill",
 		"_source": "skills:73059:Abyssal Raze",
@@ -5915,12 +5968,13 @@
 		"weapon_type": "Spear"
 	},
 	{
-		"id": null,
+		"id": 73125,
 		"name": "Fulgor",
 		"icon": "https://render.guildwars2.com/file/ECE34CA514D057F0166EC50EF9AB19751C53BE96/3379081.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
+		"target": 1,
 		"description": "Inflicts damage over time.",
 		"type": "Skill",
 		"_source": "skills:73091:Fulgor",
@@ -5930,10 +5984,10 @@
 		"weapon_type": "Spear"
 	},
 	{
-		"id": null,
+		"id": 73048,
 		"name": "Clarity",
 		"icon": "https://render.guildwars2.com/file/A45B1CCBE523E6A13D05E4C1BBE769ED0C18C993/3379004.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your spear skills are empowered.",
@@ -5945,10 +5999,10 @@
 		"weapon_type": "Spear"
 	},
 	{
-		"id": null,
+		"id": 74447,
 		"name": "Focusing",
 		"icon": "https://render.guildwars2.com/file/F3764E03FFEE05BB56BDE47B44027CB3A36FC67C/3378998.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Spear skills have bonus effects against Focused targets.",
@@ -5960,10 +6014,10 @@
 		"weapon_type": "Spear"
 	},
 	{
-		"id": null,
+		"id": 73025,
 		"name": "Symbol of Luminance",
 		"icon": "https://render.guildwars2.com/file/BB2FE03FB5DE0DDD47B1053CCC5639C3DC173F98/3379002.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "All spear skills are illuminated while standing within the Symbol of Luminance.",
@@ -5975,10 +6029,10 @@
 		"weapon_type": "Spear"
 	},
 	{
-		"id": null,
+		"id": 73011,
 		"name": "Seethe",
 		"icon": "https://render.guildwars2.com/file/409EE1CC3F41C1FC20B71D0944063179BB94C471/3379087.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your next spear skill deals additional damage.",
@@ -5989,111 +6043,12 @@
 		"professions": ["Elementalist"],
 		"weapon_type": "Spear"
 	},
+
 	{
-		"id": null,
-		"name": "Peal of Discord",
-		"icon": "https://render.guildwars2.com/file/563F3A97A568FA3BC49BCC27FEA14DDF16EA69C7/831712.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Decima will periodically consume stacks of this effect to target a number of nearby enemies with Chorus of Thunder.",
-		"type": "Skill",
-		"_source": "skills:74641:Chorus of Thunder",
-		"skill": 74641,
-		"_variants": [
-			{ "_source": "skills:74706:Chorus of Thunder", "skill": 74706 },
-			{ "_source": "skills:74978:Fulminate", "skill": 74978 },
-			{ "_source": "skills:75205:Fulminate", "skill": 75205 },
-			{ "_source": "skills:75249:Discordant Thunder", "skill": 75249 },
-			{ "_source": "skills:75523:Chorus of Thunder", "skill": 75523 },
-			{ "_source": "skills:75548:Fulminate", "skill": 75548 },
-			{ "_source": "skills:75561:Discordant Thunder", "skill": 75561 },
-			{ "_source": "skills:75645:Fulminate", "skill": 75645 },
-			{ "_source": "skills:75988:Fulminate", "skill": 75988 }
-		]
-	},
-	{
-		"id": null,
-		"name": "Peal of Harmony",
-		"icon": "https://render.guildwars2.com/file/514B5C1C503548FC71182EAC979A936DA6253717/2156519.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Decima will periodically consumes stacks of this effect to target a number of conduits with Chorus of Thunder.",
-		"type": "Skill",
-		"_source": "skills:74641:Chorus of Thunder",
-		"skill": 74641,
-		"_variants": [
-			{ "_source": "skills:74706:Chorus of Thunder", "skill": 74706 },
-			{ "_source": "skills:74894:Harmonious Thunder", "skill": 74894 },
-			{ "_source": "skills:74978:Fulminate", "skill": 74978 },
-			{ "_source": "skills:75205:Fulminate", "skill": 75205 },
-			{ "_source": "skills:75518:Harmonious Thunder", "skill": 75518 },
-			{ "_source": "skills:75523:Chorus of Thunder", "skill": 75523 },
-			{ "_source": "skills:75548:Fulminate", "skill": 75548 },
-			{ "_source": "skills:75645:Fulminate", "skill": 75645 },
-			{ "_source": "skills:75988:Fulminate", "skill": 75988 }
-		]
-	},
-	{
-		"id": null,
-		"name": "Galvanic Sensitivity",
-		"icon": "https://render.guildwars2.com/file/11089CFF98086A316D09116537FE0D0A2ED28030/1896037.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Recent damage from Decima's fluxlance attacks has made you more vulnerable to dancing sparks.\n\nWhen taking damage from a dancing spark, you will also take significant extra damage from Galvanic Sensitivity.\n\nGalvanic Sensitivity removes Harmonic Sensitivity and prevents it from being applied for the duration.",
-		"type": "Skill",
-		"_source": "skills:74660:Fluxlance Fusillade",
-		"skill": 74660,
-		"_variants": [
-			{ "_source": "skills:74705:Fluxlance Salvo", "skill": 74705 },
-			{ "_source": "skills:74725:Fluxlance Salvo", "skill": 74725 },
-			{ "_source": "skills:74742:Fluxlance Salvo", "skill": 74742 },
-			{ "_source": "skills:74973:Fluxlance Salvo", "skill": 74973 },
-			{ "_source": "skills:75155:Fluxlance", "skill": 75155 },
-			{ "_source": "skills:75348:Fluxlance Salvo", "skill": 75348 },
-			{ "_source": "skills:75450:Fluxlance", "skill": 75450 },
-			{ "_source": "skills:75524:Fluxlance Salvo", "skill": 75524 },
-			{ "_source": "skills:75569:Fluxlance Salvo", "skill": 75569 },
-			{ "_source": "skills:75637:Fluxlance Salvo", "skill": 75637 },
-			{ "_source": "skills:75870:Fluxlance Salvo", "skill": 75870 },
-			{ "_source": "skills:75954:Fluxlance Fusillade", "skill": 75954 },
-			{ "_source": "skills:76015:Fluxlance Salvo", "skill": 76015 }
-		]
-	},
-	{
-		"id": null,
-		"name": "Harmonic Sensitivity",
-		"icon": "https://render.guildwars2.com/file/C05BBF7DAC50A55F2DDCE60701635FCC05997BF9/563472.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Thrumming Presence has made you more vulnerable to Decima's fluxlance attacks.\n\nWhen taking damage from a fluxlance attack, you will also take significant extra damage from Harmonic Sensitivity.",
-		"type": "Skill",
-		"_source": "skills:74872:Thrumming Presence",
-		"skill": 74872,
-		"_variants": [
-			{ "_source": "skills:75536:Thrumming Presence", "skill": 75536 }
-		]
-	},
-	{
-		"id": null,
-		"name": "Debilitated",
-		"icon": "https://render.guildwars2.com/file/3415104C2CEB01FD90D4351CC8F4E7E2BD9C70B8/2678688.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Your outgoing damage is reduced by 25% per stack.",
-		"type": "Skill",
-		"_source": "skills:75651:Sparking Reverberation",
-		"skill": 75651
-	},
-	{
-		"id": null,
+		"id": 77749,
 		"name": "Forged Surfer Dash",
 		"icon": "https://render.guildwars2.com/file/D0B941DA2CC221B9AB17090E035C485E0EF26128/3713067.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Drop additional bombs at your location.",
@@ -6102,6 +6057,7 @@
 		"skill": 76550,
 		"slot": "Profession_2",
 		"professions": ["Thief"],
+		"specialization": 77,
 		"_variants": [
 			{},
 			{
@@ -6117,7 +6073,7 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 77242,
 		"name": "\"We Will Never Yield!\"",
 		"icon": "https://render.guildwars2.com/file/C5740F0D6446CA01FCAA302D352D7F453E6A0709/3680223.png",
 		"stacking": "Duration",
@@ -6132,7 +6088,7 @@
 		"specialization": 74
 	},
 	{
-		"id": null,
+		"id": 76710,
 		"name": "Otter's Compassion",
 		"icon": "https://render.guildwars2.com/file/A610AEA522CED36771B60B24C635DD37CAA9231A/3680123.png",
 		"stacking": "Duration",
@@ -6147,19 +6103,19 @@
 		"specialization": 80
 	},
 	{
-		"id": null,
+		"id": 77875,
 		"name": "Metal Legion Guitar",
 		"icon": "https://render.guildwars2.com/file/9524D56A509B1E4E23C831AC3B41252271024E73/3713070.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your first weapon skill is replaced with your stealth attack, even when not stealthed.",
 		"type": "Skill",
 		"_source": "skills:76582:Metal Legion Guitar",
 		"skill": 76582,
-		"slot": "Weapon_1",
+		"slot": "Profession_2",
 		"professions": ["Thief"],
-		"weapon_type": "Nothing",
+		"specialization": 77,
 		"_variants": [
 			{},
 			{
@@ -6177,10 +6133,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 77830,
 		"name": "Exalted Hammer",
 		"icon": "https://render.guildwars2.com/file/7EDFAACCDADF9BC9FDCEFF767E6C50A8484BE2FE/3713066.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Activating any weapon skill that costs initiative creates an additional healing burst at your location.",
@@ -6189,6 +6145,7 @@
 		"skill": 76601,
 		"slot": "Profession_2",
 		"professions": ["Thief"],
+		"specialization": 77,
 		"_variants": [
 			{},
 			{
@@ -6204,22 +6161,66 @@
 		]
 	},
 	{
-		"id": null,
-		"name": "Lightning Blitz",
-		"icon": "https://render.guildwars2.com/file/AD24BD1B231424D2A8F223A6F899AC34D6AAAB26/103356.png",
-		"stacking": "Duration",
+		"id": 77175,
+		"name": "Fox Passive",
+		"icon": "https://render.guildwars2.com/file/3C20D2FF75DA624828651AD5CEB463AC90A01207/3680117.png",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
-		"description": "Guaranteed to critically strike.",
+		"description": "Gain might when you inflict burning.",
 		"type": "Skill",
-		"_source": "skills:76618:Lightning Blitz",
-		"skill": 76618
+		"skill": 76643,
+		"slot": "Profession_5",
+		"professions": ["Elementalist"],
+		"specialization": 80
 	},
 	{
-		"id": null,
+		"id": 77060,
+		"name": "Otter Passive",
+		"icon": "https://render.guildwars2.com/file/2C4C57C5B721422A66D3CEAB4ACE753E4FE69355/3680119.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Heal allies when you grant them regeneration.",
+		"type": "Skill",
+		"skill": 77225,
+		"slot": "Profession_5",
+		"professions": ["Elementalist"],
+		"specialization": 80
+	},
+	{
+		"id": 76792,
+		"name": "Hare Passive",
+		"icon": "https://render.guildwars2.com/file/234FFB056E376AEE0D6D150A3C23C669BEC0359A/3680120.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Increased ferocity while under the effects of fury",
+		"type": "Skill",
+		"skill": 77370,
+		"slot": "Profession_5",
+		"professions": ["Elementalist"],
+		"specialization": 80
+	},
+	{
+		"id": 77139,
+		"name": "Toad Passive",
+		"icon": "https://render.guildwars2.com/file/C938A2442A5508F415AB72F70AA9A85AFA57FCDD/3680114.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "",
+		"type": "Skill",
+		"skill": 77226,
+		"slot": "Profession_5",
+		"professions": ["Elementalist"],
+		"specialization": 80
+	},
+	{
+		"id": 76751,
 		"name": "Resolute Stance",
 		"icon": "https://render.guildwars2.com/file/C0267DCD064328C6C4CF33CF08714FB1DC1171BC/3680141.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Heal yourself when you remove conditions.",
@@ -6231,12 +6232,12 @@
 		"specialization": 81
 	},
 	{
-		"id": null,
+		"id": 77008,
 		"name": "Evolved",
 		"icon": "https://render.guildwars2.com/file/AB3AECD2B14403E948785279971DECCA4A7846E0/3680040.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
-		"maxDuration": null,
+		"maxDuration": 8,
 		"description": "Your attributes are increased. Gain additional effects based on the <c=@abilitytype>morph</c> skills you have slotted.",
 		"type": "Skill",
 		"_source": "skills:76642:Evolve",
@@ -6253,10 +6254,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 78060,
 		"name": "Holo-Dancer Decoy",
 		"icon": "https://render.guildwars2.com/file/DDB6802D6BA2DF512CDB329207DB6F3C9C0B2CFD/3713068.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "The next utility skill you use has reduced cooldown.",
@@ -6265,6 +6266,7 @@
 		"skill": 76674,
 		"slot": "Profession_2",
 		"professions": ["Thief"],
+		"specialization": 77,
 		"_variants": [
 			{},
 			{
@@ -6280,10 +6282,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 77876,
 		"name": "Zephyrite Sun Crystal",
 		"icon": "https://render.guildwars2.com/file/239FA80668274B013C9ECE63DBF0730574FDA75D/3713072.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "You can use Zephyrite Sun Crystal again.",
@@ -6292,6 +6294,7 @@
 		"skill": 76733,
 		"slot": "Profession_2",
 		"professions": ["Thief"],
+		"specialization": 77,
 		"_variants": [
 			{},
 			{
@@ -6307,10 +6310,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 76837,
 		"name": "Mitotic State",
 		"icon": "https://render.guildwars2.com/file/09CFEF929045EFB4D86014E21C021B2104F7060B/3680039.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Rapidly heal over time.",
@@ -6322,25 +6325,26 @@
 		"specialization": 75
 	},
 	{
-		"id": null,
+		"id": 76923,
 		"name": "Nightmare Weapon",
 		"icon": "https://render.guildwars2.com/file/B3CF370B0E35DA07C023A4BFAA791809C6A67437/3680180.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
-		"maxDuration": null,
+		"maxDuration": 10,
 		"description": "Striking a foe will steal life and inflict vulnerability.",
 		"type": "Skill",
 		"_source": "skills:76739:Nightmare Weapon",
 		"skill": 76739,
 		"slot": "Utility",
 		"professions": ["Necromancer"],
-		"specialization": 76
+		"specialization": 76,
+		"variantIds": [79077]
 	},
 	{
-		"id": null,
+		"id": 77011,
 		"name": "Weapon of Warding",
 		"icon": "https://render.guildwars2.com/file/3D185FB008E701F359D3E5FCDE9477309C5C3530/3680183.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Block attacks. Gain protection when the last stack is removed.",
@@ -6349,13 +6353,14 @@
 		"skill": 76752,
 		"slot": "Utility",
 		"professions": ["Necromancer"],
-		"specialization": 76
+		"specialization": 76,
+		"variantIds": [78624]
 	},
 	{
-		"id": null,
+		"id": 77095,
 		"name": "Effulgent Stance",
 		"icon": "https://render.guildwars2.com/file/59A7E145B5D6DC4CB9642F80007644791D302FA2/3680156.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Gain stacks when striking or being struck by an enemy. When this ends, damage nearby enemies based on the number of stacks.",
@@ -6367,26 +6372,25 @@
 		"specialization": 81
 	},
 	{
-		"id": null,
+		"id": 78288,
 		"name": "Chak Shield",
 		"icon": "https://render.guildwars2.com/file/94C86D0BE526CA5C28C8A26ECF070976947F3FBD/3713065.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your weapon skills that cost initiative refund all initiative.",
 		"type": "Skill",
 		"_source": "skills:76816:Chak Shield",
 		"skill": 76816,
-		"slot": "Weapon_1",
+		"slot": "Profession_2",
 		"professions": ["Thief"],
-		"weapon_type": "Nothing",
-		"_variants": [{}]
+		"specialization": 77
 	},
 	{
-		"id": null,
+		"id": 77931,
 		"name": "Summon Kryptis Turret",
 		"icon": "https://render.guildwars2.com/file/DF25F9FF999A31109974C52CC93537132E5A2C40/3713069.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your strikes deal additional damage to enemies struck by the Kryptis turret.",
@@ -6395,6 +6399,7 @@
 		"skill": 76900,
 		"slot": "Profession_2",
 		"professions": ["Thief"],
+		"specialization": 77,
 		"_variants": [
 			{},
 			{
@@ -6410,57 +6415,59 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 78896,
 		"name": "Unstable Skritt Bomb",
 		"icon": "https://render.guildwars2.com/file/3DF1DFCA9C39F6603B5DC1965F140A459BF6646D/3713064.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "You take increased strike and condition damage.",
 		"type": "Skill",
 		"_source": "skills:76909:Unstable Skritt Bomb",
 		"skill": 76909,
-		"slot": "Weapon_1",
+		"slot": "Profession_2",
 		"professions": ["Thief"],
-		"weapon_type": "Nothing"
+		"specialization": 77
 	},
 	{
-		"id": null,
+		"id": 76764,
 		"name": "Xinrae's Weapon",
 		"icon": "https://render.guildwars2.com/file/1AC290EA0B56F4B1141A53F062140F0AFB65D6CE/3680168.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
-		"maxDuration": null,
+		"maxDuration": 6,
 		"description": "When you take damage over a percentage of your maximum health, heal for the difference, then steal life from that foe.",
 		"type": "Skill",
 		"_source": "skills:76941:Xinrae's Weapon",
 		"skill": 76941,
 		"slot": "Elite",
 		"professions": ["Necromancer"],
-		"specialization": 76
+		"specialization": 76,
+		"variantIds": [78313]
 	},
 	{
-		"id": null,
+		"id": 76566,
 		"name": "Splinter Weapon",
 		"icon": "https://render.guildwars2.com/file/04294CE6BE3BBB314032BD430A631BC614D1E279/3680182.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
-		"maxDuration": null,
+		"maxDuration": 10,
 		"description": "Striking a foe will cause additional strikes on nearby foes.",
 		"type": "Skill",
 		"_source": "skills:76975:Splinter Weapon",
 		"skill": 76975,
 		"slot": "Utility",
 		"professions": ["Necromancer"],
-		"specialization": 76
+		"specialization": 76,
+		"variantIds": [78857]
 	},
 	{
-		"id": null,
+		"id": 77362,
 		"name": "Gaseous State",
 		"icon": "https://render.guildwars2.com/file/0074C630BF0B05E6B600240F4BD1A3DDBD0F0838/3680041.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
-		"maxDuration": null,
+		"maxDuration": 5,
 		"description": "Increase your movement speed and prevent movement-impairing conditions. Incoming hits become fumbles.",
 		"type": "Skill",
 		"_source": "skills:77018:Gaseous State",
@@ -6470,10 +6477,10 @@
 		"specialization": 75
 	},
 	{
-		"id": null,
+		"id": 77322,
 		"name": "Shielding Hands",
 		"icon": "https://render.guildwars2.com/file/DA3B1C1E3557AEC12FEECC7E9E343E1B5B5CA85A/3680051.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "",
@@ -6485,10 +6492,10 @@
 		"specialization": 79
 	},
 	{
-		"id": null,
+		"id": 76680,
 		"name": "Solid State",
 		"icon": "https://render.guildwars2.com/file/2C565BE063F2DCDC3608CFCFDA0FCBEA10389323/3680043.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Outgoing stun duration is increased.",
@@ -6500,10 +6507,10 @@
 		"specialization": 75
 	},
 	{
-		"id": null,
+		"id": 77143,
 		"name": "Piercing Stance",
 		"icon": "https://render.guildwars2.com/file/E5805F3477ED5618E348043475FFA442C7C791E3/3680154.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Increased strike damage.",
@@ -6515,12 +6522,13 @@
 		"specialization": 81
 	},
 	{
-		"id": null,
+		"id": 77094,
 		"name": "Daring Advance",
 		"icon": "https://render.guildwars2.com/file/2E24D2089501C663801BF7CC567E1CC0F5714AD7/3680140.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
+		"target": 1,
 		"description": "",
 		"type": "Skill",
 		"_source": "skills:77198:Daring Advance",
@@ -6530,12 +6538,12 @@
 		"specialization": 81
 	},
 	{
-		"id": null,
+		"id": 77052,
 		"name": "Plasmatic State",
 		"icon": "https://render.guildwars2.com/file/39A108CBE73734DF0A5CF34B0ED305C3D01CCABC/3680042.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
-		"maxDuration": null,
+		"maxDuration": 7,
 		"description": "Your damage is increased.",
 		"type": "Skill",
 		"_source": "skills:77209:Plasmatic State",
@@ -6545,19 +6553,19 @@
 		"specialization": 75
 	},
 	{
-		"id": null,
+		"id": 77835,
 		"name": "Mistburn Mortar",
 		"icon": "https://render.guildwars2.com/file/9C57E5B2EB6646E85C0DC646EBEC023156F44006/3713071.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your strikes additionally inflict burning on enemies.",
 		"type": "Skill",
 		"_source": "skills:77277:Mistburn Mortar",
 		"skill": 77277,
-		"slot": "Weapon_1",
+		"slot": "Profession_2",
 		"professions": ["Thief"],
-		"weapon_type": "Nothing",
+		"specialization": 77,
 		"_variants": [
 			{},
 			{
@@ -6575,10 +6583,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 76736,
 		"name": "Valorous Stance",
 		"icon": "https://render.guildwars2.com/file/7D246678672DAF3F941930A50EBCDB54A91C7D0F/3680155.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Heal allies when you grant them boons.",
@@ -6590,7 +6598,7 @@
 		"specialization": 81
 	},
 	{
-		"id": null,
+		"id": 76868,
 		"name": "Stalwart Stance",
 		"icon": "https://render.guildwars2.com/file/4770DFB6241311A7969E587B0B02BD672875F934/3680153.png",
 		"stacking": "Duration",
@@ -6605,19 +6613,20 @@
 		"specialization": 81
 	},
 	{
-		"id": null,
-		"name": "Cosmic Wisdom",
-		"icon": "https://render.guildwars2.com/file/5DA12A719EBDBFA95C7F416BAC7101D035DEBC22/3680202.png",
-		"stacking": "Duration",
+		"id": 76650,
+		"name": "Form of the Assassin",
+		"icon": "https://render.guildwars2.com/file/FA48DB2E91CC6C964B3B774C36B2CC6F12CA3205/3680045.png",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
-		"description": "Gain different forms depending on which legend you are currently embodying.",
+		"description": "Whenever you use a Legendary Assassin skill or while channeling Impossible Odds, fire enchanted daggers at nearby enemies.",
 		"type": "Skill",
 		"_source": "skills:77371:Cosmic Wisdom",
 		"skill": 77371,
 		"slot": "Profession_3",
 		"professions": ["Revenant"],
 		"specialization": 79,
+		"variantIds": [76691],
 		"_variants": [
 			{
 				"_source": "skills:78876:Cosmic Wisdom",
@@ -6625,5 +6634,69 @@
 				"professions": ["Revenant"]
 			}
 		]
+	},
+	{
+		"id": 77167,
+		"name": "Form of the Monk",
+		"icon": "https://render.guildwars2.com/file/43E1C29C447FFFFE067DB83CE53E099D3C091D2A/3680048.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Your Legendary Centaur skills are always empowered and do not consume the tranquil effect.",
+		"type": "Skill",
+		"_source": "skills:77371:Cosmic Wisdom",
+		"skill": 77371,
+		"slot": "Profession_3",
+		"professions": ["Revenant"],
+		"specialization": 79,
+		"variantIds": [76559]
+	},
+	{
+		"id": 76907,
+		"name": "Form of the Mesmer",
+		"icon": "https://render.guildwars2.com/file/FD11F430ACFE322E077AC1C503C9D11A42F8CB20/3680047.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Your Legendary Demon Stance skills have reduced energy costs, but your utility skills have increased cooldown.",
+		"type": "Skill",
+		"_source": "skills:77371:Cosmic Wisdom",
+		"skill": 77085,
+		"slot": "Profession_3",
+		"professions": ["Revenant"],
+		"specialization": 79,
+		"variantIds": [77085]
+	},
+	{
+		"id": 77100,
+		"name": "Form of the Warrior",
+		"icon": "https://render.guildwars2.com/file/08D392BC0416E0B9409A0CBFB7DA6E1ED80CDE30/3680049.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "While you have any unique Legendary Dwarf Stance beneficial effect active, deal damage to nearby enemies when you're attacked.",
+		"type": "Skill",
+		"_source": "skills:77371:Cosmic Wisdom",
+		"skill": 77085,
+		"slot": "Profession_3",
+		"professions": ["Revenant"],
+		"specialization": 79,
+		"variantIds": [77049]
+	},
+	{
+		"id": 76896,
+		"name": "Form of the Dervish",
+		"icon": "https://render.guildwars2.com/file/0CB866CA45E05F72B3B9CEDED5CAA1563FBD6B4A/3680046.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "When you use a Legendary Entity skill, a magical scythe appears and spins around you, dealing damage to enemies.",
+		"type": "Skill",
+		"_source": "skills:77371:Cosmic Wisdom",
+		"skill": 77085,
+		"slot": "Profession_3",
+		"professions": ["Revenant"],
+		"specialization": 79,
+		"variantIds": [77356]
 	}
 ]
