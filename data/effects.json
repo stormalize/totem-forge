@@ -4153,25 +4153,24 @@
 		"professions": ["Warrior"]
 	},
 	{
-		"id": null,
+		"id": 5601,
 		"name": "Whirlpool",
 		"icon": "https://render.guildwars2.com/file/D30CCEBC5B2A61039AFF0D691F46665B7E4F6B76/347235.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Transformed into a whirlpool.",
 		"type": "Skill",
-		"_source": "skills:20451:Elixir X",
-		"skill": 20451,
+		"_source": "skills:5602:Whirlpool",
+		"skill": 5602,
 		"slot": "Elite",
-		"professions": ["Engineer"],
-		"_variants": [{}]
+		"professions": ["Elementalist"]
 	},
 	{
-		"id": null,
+		"id": 10578,
 		"name": "Plague",
 		"icon": "https://render.guildwars2.com/file/97EC4B6E302F5D79639CA519D25F9A5C2A2DDEC1/103312.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Assumed the form of a moving plague.",
@@ -4179,14 +4178,13 @@
 		"_source": "skills:20451:Elixir X",
 		"skill": 20451,
 		"slot": "Elite",
-		"professions": ["Engineer"],
-		"_variants": [{}]
+		"professions": ["Engineer"]
 	},
 	{
-		"id": null,
+		"id": 21660,
 		"name": "A.E.D.",
 		"icon": "https://render.guildwars2.com/file/37E6184468482B012ACE173098B0784456CA31C5/699525.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Heals when the timer expires. If lethal damage is taken, the damage is negated, you are healed for a large amount, and conditions are removed.",
@@ -4209,10 +4207,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 21665,
 		"name": "Litany of Wrath",
 		"icon": "https://render.guildwars2.com/file/77077EDEB2AF1F3D4062E6428000F44F77616ADE/699527.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Gain health based on damage dealt to enemies.",
@@ -4226,10 +4224,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 21766,
 		"name": "Vampiric Mark",
 		"icon": "https://render.guildwars2.com/file/F62121A2D713A4CD5FDA3E5C734408EF3306BED4/699529.png",
-		"stacking": "Duration",
+		"stacking": "Intensity",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Life is siphoned when struck by players.",
@@ -4243,11 +4241,11 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 21780,
 		"name": "Skelk Venom",
 		"icon": "https://render.guildwars2.com/file/076DD1A71BE0B3474FC6516CC0ECE439BEAF9059/699532.png",
-		"stacking": "Duration",
-		"maxStacks": null,
+		"stacking": "Intensity",
+		"maxStacks": 25,
 		"maxDuration": null,
 		"description": "Striking an enemy heals you.",
 		"type": "Skill",
@@ -4257,10 +4255,10 @@
 		"professions": ["Thief"]
 	},
 	{
-		"id": null,
+		"id": 21816,
 		"name": "Defiant Stance",
 		"icon": "https://render.guildwars2.com/file/29C39009CD5230764480DC2404E740A49898AFA0/699533.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "All incoming attacks heal you.",
@@ -4268,39 +4266,13 @@
 		"_source": "skills:21815:Defiant Stance",
 		"skill": 21815,
 		"slot": "Heal",
-		"professions": ["Warrior"],
-		"_variants": [{}]
+		"professions": ["Warrior"]
 	},
 	{
-		"id": null,
-		"name": "Stun",
-		"icon": "https://render.guildwars2.com/file/1999B9DB355005D2DD19F66DFFBAA6D466057508/522727.png",
-		"stacking": "Duration",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Unable to act.",
-		"type": "Skill",
-		"_source": "skills:25480:Shocking Bolt",
-		"skill": 25480,
-		"slot": "Elite",
-		"professions": ["Elementalist"],
-		"_variants": [
-			{
-				"_source": "skills:30643:Tides of Time",
-				"skill": 30643,
-				"slot": "Weapon_5",
-				"professions": ["Mesmer"],
-				"specialization": 40,
-				"weapon_type": "Shield"
-			},
-			{ "_source": "skills:50970:Bloody Feed", "skill": 50970 }
-		]
-	},
-	{
-		"id": null,
+		"id": 27273,
 		"name": "Vengeful Hammers",
 		"icon": "https://render.guildwars2.com/file/04E220E8A8B4BD682B6A7D780D98B80FEDF5B410/961436.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "You take reduced physical and condition damage.",
@@ -4311,7 +4283,7 @@
 		"professions": ["Revenant"]
 	},
 	{
-		"id": null,
+		"id": 27608,
 		"name": "Forced Engagement",
 		"icon": "https://render.guildwars2.com/file/B244F19EA9F09D96D175BC0C2BC402A23D0EEFA5/961439.png",
 		"stacking": "Duration",
@@ -4322,14 +4294,13 @@
 		"_source": "skills:26679:Forced Engagement",
 		"skill": 26679,
 		"slot": "Utility",
-		"professions": ["Revenant"],
-		"_variants": [{}]
+		"professions": ["Revenant"]
 	},
 	{
-		"id": null,
+		"id": 27581,
 		"name": "Impossible Odds",
 		"icon": "https://render.guildwars2.com/file/D5479F5A43B3A1550EC0F457AA4ED79F93EF9A22/1013014.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your attacks gain a follow-up strike.",
@@ -4340,10 +4311,10 @@
 		"professions": ["Revenant"]
 	},
 	{
-		"id": null,
+		"id": 27737,
 		"name": "Infuse Light",
 		"icon": "https://render.guildwars2.com/file/051BD6BDCB2D451AB4E91F45F0DF339ACE12193E/1012990.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Inverts all incoming damage to healing.",
@@ -4355,10 +4326,10 @@
 		"specialization": 52
 	},
 	{
-		"id": null,
+		"id": 26596,
 		"name": "Rite of the Great Dwarf",
 		"icon": "https://render.guildwars2.com/file/D8AEB219F1A057F3F4E47E5E54A12BBABFC8474F/961437.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Gain 50% damage reduction. You are still susceptible to conditions and control effects.",
@@ -4366,13 +4337,14 @@
 		"_source": "skills:27975:Rite of the Great Dwarf",
 		"skill": 27975,
 		"slot": "Elite",
-		"professions": ["Revenant"]
+		"professions": ["Revenant"],
+		"variantIds": [33330]
 	},
 	{
-		"id": null,
+		"id": 51653,
 		"name": "Burst of Strength",
 		"icon": "https://render.guildwars2.com/file/91F9252B1F3C71C934B75502B8DD070A064115D8/1013008.png",
-		"stacking": "Duration",
+		"stacking": "Refresh",
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Inflict increased damage.",
@@ -4384,10 +4356,10 @@
 		"specialization": 52
 	},
 	{
-		"id": null,
+		"id": 28724,
 		"name": "Igniting Brand",
 		"icon": "https://render.guildwars2.com/file/06CBE0372AFC3AA3077DF9E57093724149EF54BA/961469.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Pulse burning over time. End connective throw early to shadowstep to the target.",
@@ -4399,10 +4371,10 @@
 		"weapon_type": "Spear"
 	},
 	{
-		"id": null,
+		"id": 68065,
 		"name": "Tranquil",
 		"icon": "https://render.guildwars2.com/file/01BC005B3C1F590D7075523EEA27361D31D69803/1012988.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your next centaur skill is empowered.",
@@ -4429,10 +4401,24 @@
 		]
 	},
 	{
-		"id": null,
-		"name": "Morphed",
+		"id": 10179,
+		"name": "Morphed (moa)",
+		"icon": "https://render.guildwars2.com/file/2F16BCE7E9345968585D43CD2AC1593118370FDF/103727.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Transformed into a moa fish.",
+		"type": "Skill",
+		"_source": "skills:29515:Toss Elixir X",
+		"skill": 29515,
+		"slot": "Toolbelt",
+		"professions": ["Engineer"]
+	},
+	{
+		"id": 15859,
+		"name": "Morphed (tuna)",
 		"icon": "https://render.guildwars2.com/file/395ED474E6F5E77D8036DD9222F95B66CCDC253C/103554.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Transformed into a tuna fish.",
@@ -4464,10 +4450,10 @@
 		]
 	},
 	{
-		"id": null,
+		"id": 29664,
 		"name": "Echo",
 		"icon": "https://render.guildwars2.com/file/1D2BA931036005D1D84D7212970064A0A66C4977/103774.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your next utility skill will recharge faster.",
@@ -4478,10 +4464,10 @@
 		"professions": ["Mesmer"]
 	},
 	{
-		"id": null,
+		"id": 31487,
 		"name": "Static Charge",
 		"icon": "https://render.guildwars2.com/file/592CC2A120322000BC7234B8522BBE7BAF2F4A57/1029987.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Your next attack delivers a lightning strike.",
