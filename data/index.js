@@ -72,6 +72,18 @@ effectGroups.set(`common`, {
 	effects: [],
 	profession: null,
 });
+effectGroups.set(`items:Sigil`, {
+	id: "sigils",
+	label: "Sigils",
+	effects: [],
+	profession: "items",
+});
+effectGroups.set(`items:Relic`, {
+	id: "relics",
+	label: "Relics",
+	effects: [],
+	profession: "items",
+});
 
 // sort effects into groups
 effects.forEach((effect) => {
@@ -92,6 +104,15 @@ effects.forEach((effect) => {
 			groupKey = "common";
 			break;
 
+		case "Item":
+			const subtype = effect.subtype;
+
+			if (subtype) {
+				groupKey = `items:${subtype}`;
+
+			}
+			break;
+
 		case "Trait":
 			groupKey = `specialization:${effect.specialization}`;
 			break;
@@ -102,7 +123,7 @@ effects.forEach((effect) => {
 				groupKey = `profession:${effect.professions[0]}`;
 			}
 			break;
-
+			
 		default:
 			break;
 	}
@@ -120,6 +141,7 @@ const effectGroupsFilter = [
 		return { value: profession.id, label: profession.name };
 	}),
 	{ value: "common", label: "Common" },
+	{ value: "items", label: "Items" },
 ];
 
 const getEffectObject = (id) => {

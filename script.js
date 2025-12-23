@@ -572,6 +572,8 @@ ${JSON.stringify(this.#reffectPackObject, null, 2)}</textarea
 			return false;
 		} else if ("common" === filter) {
 			return null !== groupProfession;
+		} else if ("items" === filter) {
+			return filter !== groupProfession;
 		} else {
 			return ![null, filter].includes(groupProfession);
 		}

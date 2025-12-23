@@ -386,6 +386,30 @@
 		"type": "Common"
 	},
 	{
+		"id": 76128,
+		"name": "Bloodstone Volatility",
+		"icon": "https://render.guildwars2.com/file/A7327A7EDB4705EA05261110526D72AFEAF7DAB4/3629397.png",
+		"stacking": "Intensity",
+		"maxStacks": 3,
+		"maxDuration": null,
+		"description": "Bloodstone energy is rising.",
+		"type": "Item",
+		"subtype": "Relic",
+		"item": 104800
+	},
+	{
+		"id": 76326,
+		"name": "Bloodstone Fervor",
+		"icon": "https://render.guildwars2.com/file/A7327A7EDB4705EA05261110526D72AFEAF7DAB4/3629397.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Your strike damage is increased.",
+		"type": "Item",
+		"subtype": "Relic",
+		"item": 104800
+	},
+	{
 		"id": 29485,
 		"name": "Force of Will",
 		"icon": "https://render.guildwars2.com/file/AA9EDC9B5B343F27372ADDBA320702D3A19CD7D5/1012410.png",
