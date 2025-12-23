@@ -162,6 +162,7 @@ totem-forge {
 		"actions"
 		"selected"
 		"outputheading"
+		"outputpreview"
 		"output"
 		"outputcontrols";
 
@@ -176,6 +177,7 @@ totem-forge {
 			"filter actions"
 			"library selected"
 			"outputheading outputheading"
+			"outputpreview outputpreview"
 			"output output"
 			"outputcontrols outputcontrols";
 	}
@@ -355,6 +357,46 @@ totem-forge {
 	grid-area: outputcontrols;
 	display: flex;
 	gap: 0.25rem;
+
+	> button {
+		width: 100%;
+		flex: 1;
+	}
+}
+
+.output-preview {
+	overflow: scroll;
+	max-width: 100%;
+	max-height: 25vh;
+	grid-area: outputpreview;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	padding: 2rem;
+	border-style: solid;
+	border-image-slice: 1;
+	border-width: 2px;
+	border-image-source: var(--grad-1-h);
+	background-color: var(--subsurface);
+
+	> * {
+		flex: 0 0 auto;
+	}
+
+	> div:not([class]) {
+		display: grid;
+		align-items: center;
+		justify-items: center;
+		> * {
+			grid-area: 1 / 1;
+		}
+	}
+
+	> .end {
+		display: flex;
+		gap: 0.25rem;
+		margin-inline-start: -30px;
+	}
 
 	> button {
 		width: 100%;

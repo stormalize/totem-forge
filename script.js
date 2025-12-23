@@ -12,6 +12,8 @@ function getURLParam(name) {
 }
 
 class TotemForge extends HTMLElement {
+	static GH_IMG_PREFIX =
+		"https://raw.githubusercontent.com/stormalize/totem/v0.1.0/icons/totem/";
 	static PACK_METRICS = {
 		// start icon
 		start: {
@@ -89,8 +91,11 @@ class TotemForge extends HTMLElement {
 	static effects = effects;
 
 	#direction;
+	#directionDir;
 	#name;
 	#effects;
+	#pinnedEffects;
+	#unpinnedEffects;
 	#selectedActiveEffects;
 	#dragoverIndex;
 	#dragoverBefore;
@@ -105,6 +110,11 @@ class TotemForge extends HTMLElement {
 	constructor() {
 		super();
 		this.#direction = signal(getURLParam("direction") ?? "r");
+		this.#directionDir = computed(() => {
+			return TotemForge.PACK_METRICS.iconDirs[
+				this.#direction.value
+			].toLowerCase();
+		});
 		this.#name = signal(getURLParam("name") ?? "my totem");
 
 		const pinIndex = getURLParam("pin") ?? 0;
@@ -114,6 +124,17 @@ class TotemForge extends HTMLElement {
 		);
 		this.#reffectPackObject = computed(() => {
 			return this.prepareReffectTemplate(this.#effects.value);
+		});
+		this.#pinnedEffects = computed(() => {
+			const pinIndex = this.#effects.value.findIndex((item) => "PIN" === item);
+
+			return this.#effects.value.filter((item, index) => index < pinIndex);
+		});
+
+		this.#unpinnedEffects = computed(() => {
+			const pinIndex = this.#effects.value.findIndex((item) => "PIN" === item);
+
+			return this.#effects.value.filter((item, index) => index > pinIndex);
 		});
 
 		this.#selectedActiveEffects = signal([]);
@@ -537,6 +558,56 @@ ${JSON.stringify(this.#reffectPackObject, null, 2)}</textarea
 						>
 							Copy to Clipboard
 						</button>
+					</div>
+					<div
+						class="output-preview"
+						dir=${["u", "l"].includes(this.#direction.value) ? "rtl" : "ltr"}
+						style=${`writing-mode: ${
+							["r", "l"].includes(this.#direction.value)
+								? "horizontal-tb"
+								: "vertical-rl"
+						}`}
+					>
+						<img
+							src=${`${TotemForge.GH_IMG_PREFIX}/${
+								this.#directionDir
+							}/totem-start.png`}
+						/>
+						${this.#pinnedEffects.value?.map(
+							(savedEffect, savedEffectIndex) => {
+								const effect = getEffectObject(savedEffect.id);
+
+								return html`<div>
+									<img
+										src=${`${TotemForge.GH_IMG_PREFIX}/${
+											this.#directionDir
+										}/totem-frame.png`}
+									/><img src=${effect.icon} width="32" height="32" />
+								</div>`;
+							}
+						)}
+						${this.#unpinnedEffects.value.length === 0
+							? html`<img
+									src=${`${TotemForge.GH_IMG_PREFIX}/${
+										this.#directionDir
+									}/totem-end.png`}
+							  />`
+							: html`<img
+									src=${`${TotemForge.GH_IMG_PREFIX}/${
+										this.#directionDir
+									}/totem-rest.png`}
+							  />`}
+						<div class="end">
+							${this.#unpinnedEffects.value?.map(
+								(savedEffect, savedEffectIndex) => {
+									const effect = getEffectObject(savedEffect.id);
+
+									return html`
+										<img src=${effect.icon} width="32" height="32" />
+									`;
+								}
+							)}
+						</div>
 					</div>`
 		);
 	}
@@ -796,7 +867,7 @@ ${JSON.stringify(this.#reffectPackObject, null, 2)}</textarea
 		const pinnedItemSize = SPECS.pinnedItem.sizeInline;
 
 		const direction = this.#direction.value;
-		const directionDir = SPECS.iconDirs[direction].toLowerCase();
+		const directionDir = this.#directionDir.value;
 		const packPosition = SPECS.packPosition[direction];
 
 		const INLINE_INDEX = ["r", "l"].includes(direction) ? 0 : 1;
