@@ -3290,6 +3290,19 @@
 		"specialization": 74
 	},
 	{
+		"id": 59579,
+		"name": "Explosive Entrance",
+		"icon": "https://render.guildwars2.com/file/61510F0752BC696F210F92CA0E13AD290F13AD33/2261507.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Your next attack will explode when it hits your target.",
+		"type": "Trait",
+		"_source": "traits:432:Explosive Entrance",
+		"trait": 432,
+		"specialization": 6
+	},
+	{
 		"id": 76519,
 		"name": "Grand Entrance",
 		"icon": "https://render.guildwars2.com/file/7093569DA52A64BE5C42AE0A0D0A700BAA320C0C/2261505.png",
