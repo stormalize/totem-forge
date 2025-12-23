@@ -529,7 +529,7 @@ class TotemForge extends HTMLElement {
 					</ul>
 					<h2 class="output-heading">
 						<img
-							src="/images/logo/totem-forge-icon-color-grad.svg"
+							src="images/logo/totem-forge-icon-color-grad.svg"
 							width="39"
 							height="44"
 						/>Generated Pack
