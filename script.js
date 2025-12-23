@@ -61,6 +61,12 @@ class TotemForge extends HTMLElement {
 			l: "Left",
 			u: "Up",
 		},
+		packPosition: {
+			r: [100, 250],
+			d: [400, -200],
+			l: [400, 250],
+			u: [400, 200],
+		},
 	};
 
 	static MASKS = {
@@ -791,6 +797,7 @@ ${JSON.stringify(this.#reffectPackObject, null, 2)}</textarea
 
 		const direction = this.#direction.value;
 		const directionDir = SPECS.iconDirs[direction].toLowerCase();
+		const packPosition = SPECS.packPosition[direction];
 
 		const INLINE_INDEX = ["r", "l"].includes(direction) ? 0 : 1;
 		const BLOCK_INDEX = ["d", "u"].includes(direction) ? 0 : 1;
@@ -798,6 +805,7 @@ ${JSON.stringify(this.#reffectPackObject, null, 2)}</textarea
 		const FLIP_OFFSET = ["l", "u"].includes(direction) ? -1 : 1;
 
 		// apply direction
+		pack.pos = packPosition;
 		packStart.icon.File = `totem\\${directionDir}\\totem-start.png`;
 		packStart.pos[INLINE_INDEX] = SPECS.start.offsetInline * FLIP_OFFSET;
 		packStart.pos[BLOCK_INDEX] = 0;
