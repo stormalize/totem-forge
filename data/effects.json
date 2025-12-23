@@ -690,6 +690,18 @@
 		"item": 102595
 	},
 	{
+		"id": 70767,
+		"name": "Relic of the Thief",
+		"icon": "https://render.guildwars2.com/file/3523AC08EB04347CF371E9A91F4B985D12FB4ED3/3122371.png",
+		"stacking": "Intensity",
+		"maxStacks": 5,
+		"maxDuration": 6,
+		"description": "Strike damage increased.",
+		"type": "Item",
+		"subtype": "Relic",
+		"item": 100916
+	},
+	{
 		"id": 70390,
 		"name": "Relic of the Weaver",
 		"icon": "https://render.guildwars2.com/file/12997110B0509463DD9F1364A92493B2C4309BE1/3122377.png",
@@ -1818,6 +1830,19 @@
 		"specialization": 12
 	},
 	{
+		"id": 48894,
+		"name": "Expose Defenses",
+		"icon": "https://render.guildwars2.com/file/B8463001BF6D75546EBB63E094720AF1EEA12E44/1029964.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Your next attack will inflict vulnerability.",
+		"type": "Trait",
+		"_source": "traits:1808:Expose Defenses",
+		"trait": 1808,
+		"specialization": 15
+	},
+	{
 		"id": 26646,
 		"name": "Battle Scars",
 		"icon": "https://render.guildwars2.com/file/395D7939C8DD48BE35012E319D039F545065F755/2261515.png",
@@ -2039,6 +2064,33 @@
 		"type": "Trait",
 		"_source": "traits:1716:Rising Momentum",
 		"trait": 1716,
+		"specialization": 52
+	},
+	{
+		"id": 28957,
+		"name": "Hardening Persistence",
+		"icon": "https://render.guildwars2.com/file/24682D5C432BB44FE807C5380DA4E8FAFC9FC678/1058537.png",
+		"stacking": "Intensity",
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Gain damage reduction for each point of upkeep currently in use.",
+		"type": "Trait",
+		"_source": "traits:1730:Hardening Persistence",
+		"trait": 1730,
+		"specialization": 52
+	},
+	{
+		"id": 27732,
+		"name": "Legendary Dragon Stance",
+		"icon": "https://render.guildwars2.com/file/27B5D1D4127A2EE73866E54F5A43E9102618B90B/1058605.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Currently invoking the power of Glint.",
+		"type": "Skill",
+		"skill": 28085,
+		"slot": "Profession_1",
+		"professions": ["Revenant"],
 		"specialization": 52
 	},
 	{
@@ -2349,6 +2401,20 @@
 		"specialization": 63
 	},
 	{
+		"id": 44272,
+		"name": "Legendary Renegade Stance",
+		"icon": "https://render.guildwars2.com/file/6B3205EF5ED0802DB74BBF7F0CAE04FAA2089B74/1770592.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Currently invoking the power of Kalla Scorchrazor.",
+		"type": "Skill",
+		"skill": 41858,
+		"slot": "Profession_1",
+		"professions": ["Revenant"],
+		"specialization": 63
+	},
+	{
 		"id": 45026,
 		"name": "Soulcleave's Summit",
 		"icon": "https://render.guildwars2.com/file/CFD1582E6B180CA2DE6AD205981CBBAFC7480294/1770589.png",
@@ -2411,6 +2477,20 @@
 				"skill": 62689
 			}
 		]
+	},
+	{
+		"id": 62919,
+		"name": "Legendary Alliance Stance",
+		"icon": "https://render.guildwars2.com/file/E1910F4C5C74E0B00AB262D2D3DBA3FB51BE90CA/2491626.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Currently invoking the power of Archemorus and Saint Viktor.",
+		"type": "Skill",
+		"skill": 62749,
+		"slot": "Profession_1",
+		"professions": ["Revenant"],
+		"specialization": 69
 	},
 	{
 		"id": 62819,
