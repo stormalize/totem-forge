@@ -446,7 +446,7 @@ totem-forge {
 			content: "";
 			flex: 1;
 			background-color: currentColor;
-			mask-image: url("/images/icons/drag-handle.svg");
+			mask-image: url("./images/icons/drag-handle.svg");
 			mask-position: center center;
 			mask-repeat: no-repeat;
 		}
