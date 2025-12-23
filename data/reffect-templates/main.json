@@ -18,7 +18,7 @@
 	},
 	"filter": {
 		"player": {
-			"combat": null,
+			"combat": true,
 			"specs": [],
 			"weapons": [],
 			"traits": [],
