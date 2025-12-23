@@ -895,6 +895,12 @@ ${JSON.stringify(this.#reffectPackObject, null, 2)}</textarea
 			(pinEndIndex * pinnedItemSize - pinnedItemSize / 2) * FLIP_OFFSET;
 		packEndGroup.pos[BLOCK_INDEX] = 0;
 
+		// toggle list or end, depending on if there are any non-pinned items
+		if (effectList.length === pinEndIndex + 1) {
+			packRestIcon.enabled = false;
+			packEndIcon.enabled = true;
+		}
+
 		return pack;
 	}
 
