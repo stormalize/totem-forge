@@ -1146,6 +1146,20 @@
 		"professions": ["Guardian"]
 	},
 	{
+		"id": 29633,
+		"name": "Signet of Courage",
+		"icon": "https://render.guildwars2.com/file/59C43DD96D4096AF5DF576182506A20765CAEF07/1012875.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Periodically heal allies in an area around you.",
+		"type": "Skill",
+		"_source": "skills:30461:Signet of Courage",
+		"skill": 30461,
+		"slot": "Elite",
+		"professions": ["Guardian"]
+	},
+	{
 		"id": 30232,
 		"name": "Justice (Dragonhunter)",
 		"icon": "https://render.guildwars2.com/file/77931F01AE91A00998BD286BA2930DCE1A354318/103677.png",
