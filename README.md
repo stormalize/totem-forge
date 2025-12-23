@@ -4,7 +4,7 @@
 
 Tool to build a custom Totem Reffect pack. Make sure you have downloaded the base pack at https://github.com/stormalize/totem in order to install the custom icons correctly.
 
-Then visit the Totem Forge and craft your own totem pack.
+Then visit the [Totem Forge](https://stormalize.github.io/totem-forge/) and craft your own totem pack.
 
 ## Preview
 
