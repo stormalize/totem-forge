@@ -385,7 +385,6 @@
 		"description": "Deals damage every second; stacks intensity; reduces incoming healing and barrier application by 70% per stack; damage is reduced by agony resistance.",
 		"type": "Common"
 	},
-	"CLASS: GUARDIAN /////////////////////////////////////////////",
 	{
 		"id": 29485,
 		"name": "Force of Will",
@@ -857,6 +856,36 @@
 		"specialization": 62
 	},
 	{
+		"id": 40530,
+		"name": "Tome of Justice",
+		"icon": "https://render.guildwars2.com/file/2710AF269B38A4A365089BC7B3C9389B354DE59D/1770472.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Cause burning every few attacks.",
+		"type": "Skill",
+		"_source": "skills:44364:Tome of Justice",
+		"skill": 44364,
+		"slot": "Profession_1",
+		"professions": ["Guardian"],
+		"specialization": 62
+	},
+	{
+		"id": 68607,
+		"name": "Dormant Justice",
+		"icon": "https://render.guildwars2.com/file/0A1A7614641DADEB09DF25E12BF4A8CA54A8EFF3/2779163.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Justice traits are recharging.",
+		"type": "Skill",
+		"_source": "skills:44364:Tome of Justice",
+		"skill": 44364,
+		"slot": "Profession_1",
+		"professions": ["Guardian"],
+		"specialization": 62
+	},
+	{
 		"id": 46298,
 		"name": "Tome of Resolve",
 		"icon": "https://render.guildwars2.com/file/E206770FD62BB63B71F56209F34BF99392BADF9E/1770478.png",
@@ -919,6 +948,36 @@
 				"professions": ["Guardian"]
 			}
 		]
+	},
+	{
+		"id": 43508,
+		"name": "Tome of Courage",
+		"icon": "https://render.guildwars2.com/file/49B3D2E829962602205B09619770E1650BF07108/1770466.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Gain aegis at lengthy intervals.",
+		"type": "Skill",
+		"_source": "skills:42259:Tome of Courage",
+		"skill": 42259,
+		"slot": "Profession_3",
+		"professions": ["Guardian"],
+		"specialization": 62
+	},
+	{
+		"id": 68585,
+		"name": "Dormant Courage",
+		"icon": "https://render.guildwars2.com/file/BB01170AD5B630DFBB6BEF79664B35D71DDDF299/2779162.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Courage traits are recharging.",
+		"type": "Skill",
+		"_source": "skills:42259:Tome of Courage",
+		"skill": 42259,
+		"slot": "Profession_3",
+		"professions": ["Guardian"],
+		"specialization": 62
 	},
 	{
 		"id": 62509,
@@ -1304,7 +1363,6 @@
 		"professions": ["Guardian"],
 		"specialization": 81
 	},
-	"CLASS: REVENANT /////////////////////////////////////////////",
 	{
 		"id": 74632,
 		"name": "Resolute Evasion",
@@ -1438,6 +1496,21 @@
 		"weapon_type": "Spear"
 	},
 	{
+		"id": 71887,
+		"name": "Blossoming Aura",
+		"icon": "https://render.guildwars2.com/file/0B604428F84A0A3DB0402FD6CBFB6AA859F33856/3240363.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Causes Abyssal Raze to have increased effect for each stack. Unleashes an Abyssal Raze when swapping weapons at maximum stacks.",
+		"type": "Skill",
+		"_source": "skills:71816:Blossoming Aura",
+		"skill": 71816,
+		"slot": "Weapon_2",
+		"professions": ["Revenant"],
+		"weapon_type": "Scepter"
+	},
+	{
 		"id": 72962,
 		"name": "Crushing Abyss",
 		"icon": "https://render.guildwars2.com/file/632F757C2309C12BCFE99FCCE4BB761FA59AECEE/3379187.png",
@@ -1481,6 +1554,20 @@
 				"specialization": 79
 			}
 		]
+	},
+	{
+		"id": 28557,
+		"name": "Enchanted Daggers",
+		"icon": "https://render.guildwars2.com/file/04E220E8A8B4BD682B6A7D780D98B80FEDF5B410/961436.png",
+		"stacking": "Intensity",
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Enchanted daggers will strike your target as you attack, siphoning life from the damaged foe.",
+		"type": "Skill",
+		"_source": "skills:26937:Enchanted Daggers",
+		"skill": 26937,
+		"slot": "Utility",
+		"professions": ["Revenant"]
 	},
 	{
 		"id": 27273,
@@ -2077,7 +2164,6 @@
 		"professions": ["Revenant"],
 		"specialization": 79
 	},
-	"CLASS: WARRIOR /////////////////////////////////////////////",
 	{
 		"id": 72970,
 		"name": "Heightened Focus",
@@ -2170,6 +2256,19 @@
 		"specialization": 4
 	},
 	{
+		"id": 58102,
+		"name": "Soldier's Focus",
+		"icon": "https://render.guildwars2.com/file/67472371DE0301250206D00047F7DDE82C439774/2207781.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Outgoing physical damage is increased.",
+		"type": "Trait",
+		"_source": "traits:1480:Soldier's Focus",
+		"trait": 1480,
+		"specialization": 11
+	},
+	{
 		"id": 71973,
 		"name": "Bullet Catcher",
 		"icon": "https://render.guildwars2.com/file/934CF9B2F451750E35CBFB6DC39734B2D05BBB17/3256404.png",
@@ -2183,6 +2282,21 @@
 		"slot": "Weapon_5",
 		"professions": ["Warrior"],
 		"weapon_type": "Staff"
+	},
+	{
+		"id": 14434,
+		"name": "Riposte",
+		"icon": "https://render.guildwars2.com/file/51163210A4C4A224903D14057C0018C91580FBA8/103099.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Block the next attack.",
+		"type": "Skill",
+		"_source": "skills:14400:Riposte",
+		"skill": 14400,
+		"slot": "Weapon_5",
+		"professions": ["Warrior"],
+		"weapon_type": "Sword"
 	},
 	{
 		"id": 786,
@@ -2374,6 +2488,20 @@
 		"type": "Trait",
 		"_source": "traits:1977:Savage Instinct",
 		"trait": 1977,
+		"specialization": 18
+	},
+	{
+		"id": 29502,
+		"name": "Berserk",
+		"icon": "https://render.guildwars2.com/file/1354D8FC07F9F859DC7F0E7B61C0724FD4927C4E/1058638.png",
+		"stacking": "Duration",
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "",
+		"type": "Skill",
+		"slot": "Profession_2",
+		"_source": "skills:30435:Berserk",
+		"skill": 30435,
 		"specialization": 18
 	},
 	{
@@ -2759,7 +2887,6 @@
 		"professions": ["Warrior"],
 		"specialization": 74
 	},
-	"CLASS: ENGINEER /////////////////////////////////////////////",
 	{
 		"id": 76519,
 		"name": "Grand Entrance",
@@ -2897,6 +3024,20 @@
 		]
 	},
 	{
+		"id": 5863,
+		"name": "Elixir S",
+		"icon": "https://render.guildwars2.com/file/0E9264100B0A6A13395EF6083534E6DFB64C0BD8/103415.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "You are very small and cannot be hit.",
+		"type": "Skill",
+		"_source": "skills:5861:Elixir S",
+		"skill": 5861,
+		"slot": "Utility",
+		"professions": ["Engineer"]
+	},
+	{
 		"id": 10578,
 		"name": "Plague",
 		"icon": "https://render.guildwars2.com/file/97EC4B6E302F5D79639CA519D25F9A5C2A2DDEC1/103312.png",
@@ -2985,6 +3126,20 @@
 		"specialization": 57
 	},
 	{
+		"id": 68612,
+		"name": "Mechanical Genius",
+		"icon": "https://render.guildwars2.com/file/E56C575C4703F3377FA8BE172656ABEA6B92DE4E/2503629.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Your mech is currently gaining the full effect of Mechanical Genius.",
+		"type": "Trait",
+		"_source": "traits:2291:Mechanical Genius",
+		"trait": 2291,
+		"specialization": 70,
+		"variantIds": [72040]
+	},
+	{
 		"id": 63361,
 		"name": "Exigency Protocols",
 		"icon": "https://render.guildwars2.com/file/D303A429CCF6B672E66DA12DD014FEF8A80335E7/2503631.png",
@@ -2995,6 +3150,21 @@
 		"type": "Trait",
 		"_source": "traits:2267:Exigency Protocols",
 		"trait": 2267,
+		"specialization": 70
+	},
+	{
+		"id": 63305,
+		"name": "Rectifier Signet",
+		"icon": "https://render.guildwars2.com/file/C1060E52F505962C04A32B0267CA0C75475D1105/2503669.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Heal yourself every second.",
+		"type": "Skill",
+		"_source": "skills:63049:Rectifier Signet",
+		"skill": 63049,
+		"slot": "Heal",
+		"professions": ["Engineer"],
 		"specialization": 70
 	},
 	{
@@ -3016,7 +3186,7 @@
 		"id": 63243,
 		"name": "Force Signet",
 		"icon": "https://render.guildwars2.com/file/C540CA603AE4BDE57698082CE62396075699DD63/2503690.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Increases strike damage dealt.",
@@ -3031,7 +3201,7 @@
 		"id": 63064,
 		"name": "Barrier Signet",
 		"icon": "https://render.guildwars2.com/file/EB737C0D4462F5C5572166DEC2801DD56148AFE6/2503688.png",
-		"stacking": "Duration",
+		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
 		"description": "Damage taken is reduced.",
@@ -3041,6 +3211,37 @@
 		"slot": "Utility",
 		"professions": ["Engineer"],
 		"specialization": 70
+	},
+	{
+		"id": 63068,
+		"name": "Shift Signet",
+		"icon": "https://render.guildwars2.com/file/EB1BBD04D00E70E40117034CE91F5DC2A9E3C334/2503689.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Your movement speed is increased.",
+		"type": "Skill",
+		"_source": "skills:63111:Shift Signet",
+		"skill": 63111,
+		"slot": "Utility",
+		"professions": ["Engineer"],
+		"specialization": 70
+	},
+	{
+		"id": 63059,
+		"name": "Overclock Signet",
+		"icon": "https://render.guildwars2.com/file/A82F0980D5ED24F305FA57F3A929C1E90D26327F/2503668.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Your movement speed is increased.",
+		"type": "Skill",
+		"_source": "skills:63095:Shift Signet",
+		"skill": 63095,
+		"slot": "Elite",
+		"professions": ["Engineer"],
+		"specialization": 70,
+		"variantIds": [63378]
 	},
 	{
 		"id": 76885,
@@ -3056,6 +3257,21 @@
 		"specialization": 75
 	},
 	{
+		"id": 77283,
+		"name": "Thorns",
+		"icon": "https://render.guildwars2.com/file/5B565BA46C111902EE65AB4592590442A5A6E754/3680135.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": 6,
+		"description": "Deal damage to nearby enemies when struck.",
+		"type": "Skill",
+		"_source": "skills:77163:Defensive Protocol: Thorns",
+		"skill": 77163,
+		"slot": "Profession_2",
+		"professions": ["Engineer"],
+		"specialization": 75
+	},
+	{
 		"id": 77008,
 		"name": "Evolved",
 		"icon": "https://render.guildwars2.com/file/AB3AECD2B14403E948785279971DECCA4A7846E0/3680040.png",
@@ -3063,6 +3279,94 @@
 		"maxStacks": null,
 		"maxDuration": 8,
 		"description": "Your attributes are increased. Gain additional effects based on the <c=@abilitytype>morph</c> skills you have slotted.",
+		"type": "Skill",
+		"_source": "skills:76642:Evolve",
+		"skill": 76642,
+		"slot": "Profession_5",
+		"professions": ["Engineer"],
+		"specialization": 75,
+		"_variants": [
+			{
+				"_source": "skills:76651:Evolve",
+				"skill": 76651,
+				"professions": ["Engineer"]
+			}
+		]
+	},
+	{
+		"id": 77232,
+		"name": "Replicating Strain",
+		"icon": "https://render.guildwars2.com/file/71A2EA9B60E691E61521C2B621E665146BF1D1DD/3680127.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": 8,
+		"description": "Heal over time.",
+		"type": "Skill",
+		"_source": "skills:76642:Evolve",
+		"skill": 76642,
+		"slot": "Profession_5",
+		"professions": ["Engineer"],
+		"specialization": 75,
+		"_variants": [
+			{
+				"_source": "skills:76651:Evolve",
+				"skill": 76651,
+				"professions": ["Engineer"]
+			}
+		]
+	},
+	{
+		"id": 76888,
+		"name": "Rapacious Strain",
+		"icon": "https://render.guildwars2.com/file/5B565BA46C111902EE65AB4592590442A5A6E754/3680135.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": 8,
+		"description": "Successfully hitting an enemy will cause an additional strike.",
+		"type": "Skill",
+		"_source": "skills:76642:Evolve",
+		"skill": 76642,
+		"slot": "Profession_5",
+		"professions": ["Engineer"],
+		"specialization": 75,
+		"_variants": [
+			{
+				"_source": "skills:76651:Evolve",
+				"skill": 76651,
+				"professions": ["Engineer"]
+			}
+		]
+	},
+	{
+		"id": 76667,
+		"name": "Berserker Strain",
+		"icon": "https://render.guildwars2.com/file/337E150FB638D080A5A845A73D06B3E3ED7494C7/3680128.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": 8,
+		"description": "Heal based on a percentage of damage dealt.",
+		"type": "Skill",
+		"_source": "skills:76642:Evolve",
+		"skill": 76642,
+		"slot": "Profession_5",
+		"professions": ["Engineer"],
+		"specialization": 75,
+		"_variants": [
+			{
+				"_source": "skills:76651:Evolve",
+				"skill": 76651,
+				"professions": ["Engineer"]
+			}
+		]
+	},
+	{
+		"id": 76871,
+		"name": "Titanic Strain",
+		"icon": "https://render.guildwars2.com/file/569A167830C12BFC730095C72F1D095A7323DC3D/3680130.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": 8,
+		"description": "Might grants increased power and condition damage.",
 		"type": "Skill",
 		"_source": "skills:76642:Evolve",
 		"skill": 76642,
@@ -3137,7 +3441,6 @@
 		"professions": ["Engineer"],
 		"specialization": 75
 	},
-	"CLASS: RANGER /////////////////////////////////////////////",
 	{
 		"id": 13988,
 		"name": "Opening Strike",
@@ -3338,6 +3641,20 @@
 		"slot": "Weapon_5",
 		"professions": ["Ranger"],
 		"weapon_type": "Spear"
+	},
+	{
+		"id": 12531,
+		"name": "Troll Unguent",
+		"icon": "https://render.guildwars2.com/file/5DBD13DA0EF70A3F0CA42857B72E950B6C76FDDC/103987.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "",
+		"type": "Skill",
+		"_source": "skills:12483:Troll Unguent",
+		"skill": 12483,
+		"slot": "Heal",
+		"professions": ["Ranger"]
 	},
 	{
 		"id": 12518,
@@ -3571,6 +3888,81 @@
 		"specialization": 55
 	},
 	{
+		"id": 40272,
+		"name": "Stout (Archetype)",
+		"icon": "https://render.guildwars2.com/file/905547F3499034F4680ADB272DE01FD2D45506DB/1770050.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Merging with a stout pet has improved your toughness and increased your vitality.",
+		"type": "Skill",
+		"_source": "skills:42944:Beastmode",
+		"skill": 42944,
+		"slot": "Profession_5",
+		"professions": ["Ranger"],
+		"specialization": 55
+	},
+	{
+		"id": 44932,
+		"name": "Deadly (Archetype)",
+		"icon": "https://render.guildwars2.com/file/905547F3499034F4680ADB272DE01FD2D45506DB/1770050.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Merging with a deadly pet has improved your condition damage and increased your precision.",
+		"type": "Skill",
+		"_source": "skills:42944:Beastmode",
+		"skill": 42944,
+		"slot": "Profession_5",
+		"professions": ["Ranger"],
+		"specialization": 55
+	},
+	{
+		"id": 44693,
+		"name": "Versatile (Archetype)",
+		"icon": "https://render.guildwars2.com/file/905547F3499034F4680ADB272DE01FD2D45506DB/1770050.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Merging with a versatile pet has improved your health and increased your concentration.",
+		"type": "Skill",
+		"_source": "skills:42944:Beastmode",
+		"skill": 42944,
+		"slot": "Profession_5",
+		"professions": ["Ranger"],
+		"specialization": 55
+	},
+	{
+		"id": 41720,
+		"name": "Ferocious (Archetype)",
+		"icon": "https://render.guildwars2.com/file/905547F3499034F4680ADB272DE01FD2D45506DB/1770050.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Merging with a versatile pet has improved your health and increased your concentration.",
+		"type": "Skill",
+		"_source": "skills:42944:Beastmode",
+		"skill": 42944,
+		"slot": "Profession_5",
+		"professions": ["Ranger"],
+		"specialization": 55
+	},
+	{
+		"id": 40069,
+		"name": "Supportive (Archetype)",
+		"icon": "https://render.guildwars2.com/file/905547F3499034F4680ADB272DE01FD2D45506DB/1770050.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Merging with a supportive pet has improved your health and increased your ability to heal others.",
+		"type": "Skill",
+		"_source": "skills:42944:Beastmode",
+		"skill": 42944,
+		"slot": "Profession_5",
+		"professions": ["Ranger"],
+		"specialization": 55
+	},
+	{
 		"id": 40045,
 		"name": "Bear Stance",
 		"icon": "https://render.guildwars2.com/file/07944CB363A391A26B21C16F76F52111B32D96CD/1770561.png",
@@ -3661,6 +4053,19 @@
 		"specialization": 55
 	},
 	{
+		"id": 63404,
+		"name": "Unleashed Power",
+		"icon": "https://render.guildwars2.com/file/985312115044390876A0D309CD7E05E124E2D90E/2503641.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "The next time you unleash, gain access to Unleashed Ambush skills.",
+		"type": "Trait",
+		"_source": "traits:2268:Unleashed Power",
+		"trait": 2268,
+		"specialization": 72
+	},
+	{
 		"id": 63191,
 		"name": "Ferocious Symbiosis",
 		"icon": "https://render.guildwars2.com/file/B367DF25F5F07C51CE5BD280C35A0E7BB19B98A3/2503640.png",
@@ -3675,12 +4080,12 @@
 	},
 	{
 		"id": 69193,
-		"name": "Biorhythm",
-		"icon": "https://render.guildwars2.com/file/44B8970EAEBCFC14E11A910C5B5D0FC512FEEBE5/2503639.png",
-		"stacking": "Intensity",
-		"maxStacks": 5,
+		"name": "Vow of the Untamed",
+		"icon": "https://render.guildwars2.com/file/6C71F5D550E3CBACBB067376F52DE40A0148776F/2503643.png",
+		"stacking": false,
+		"maxStacks": null,
 		"maxDuration": null,
-		"description": "Heal for a percentage of your outgoing damage.",
+		"description": "Your outgoing strike damage is increased, and your incoming strike damage is reduced.",
 		"type": "Trait",
 		"_source": "traits:2283:Biorhythm",
 		"trait": 2283,
@@ -3688,12 +4093,12 @@
 	},
 	{
 		"id": 69193,
-		"name": "Vow of the Untamed",
-		"icon": "https://render.guildwars2.com/file/6C71F5D550E3CBACBB067376F52DE40A0148776F/2503643.png",
-		"stacking": false,
-		"maxStacks": null,
+		"name": "Biorhythm",
+		"icon": "https://render.guildwars2.com/file/44B8970EAEBCFC14E11A910C5B5D0FC512FEEBE5/2503639.png",
+		"stacking": "Intensity",
+		"maxStacks": 5,
 		"maxDuration": null,
-		"description": "Your outgoing strike damage is increased, and your incoming strike damage is reduced.",
+		"description": "Heal for a percentage of your outgoing damage.",
 		"type": "Trait",
 		"_source": "traits:2283:Biorhythm",
 		"trait": 2283,
@@ -3731,21 +4136,6 @@
 		"professions": ["Ranger"]
 	},
 	{
-		"id": 63240,
-		"name": "Forest's Fortification",
-		"icon": "https://render.guildwars2.com/file/387423FEEF4639CFF0A4532C06CBCB5701933331/2503712.png",
-		"stacking": false,
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Reduce incoming damage by 50%. Striking an enemy reduces the recharge of Forest's Fortification.",
-		"type": "Skill",
-		"_source": "skills:63163:Forest's Fortification",
-		"skill": 63163,
-		"slot": "Elite",
-		"professions": ["Ranger"],
-		"specialization": 72
-	},
-	{
 		"id": 63284,
 		"name": "Perilous Gift",
 		"icon": "https://render.guildwars2.com/file/CF914B52D8B0B47D19245203726BF6C7366F33B5/2503724.png",
@@ -3757,6 +4147,21 @@
 		"_source": "skills:63319:Perilous Gift",
 		"skill": 63319,
 		"slot": "Heal",
+		"professions": ["Ranger"],
+		"specialization": 72
+	},
+	{
+		"id": 63240,
+		"name": "Forest's Fortification",
+		"icon": "https://render.guildwars2.com/file/387423FEEF4639CFF0A4532C06CBCB5701933331/2503712.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Reduce incoming damage by 50%. Striking an enemy reduces the recharge of Forest's Fortification.",
+		"type": "Skill",
+		"_source": "skills:63163:Forest's Fortification",
+		"skill": 63163,
+		"slot": "Elite",
 		"professions": ["Ranger"],
 		"specialization": 72
 	},
@@ -3887,7 +4292,6 @@
 			}
 		]
 	},
-	"CLASS: THIEF /////////////////////////////////////////////",
 	{
 		"id": 34283,
 		"name": "Instant Reflexes",
@@ -3957,6 +4361,36 @@
 		"weapon_type": "Pistol"
 	},
 	{
+		"id": 13127,
+		"name": "Infiltration",
+		"icon": "https://render.guildwars2.com/file/4475472B04350267D4DEECECFD53085DA5580D9A/104108.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "",
+		"type": "Skill",
+		"_source": "skills:13015:Infiltrator's Strike",
+		"skill": 13015,
+		"slot": "Weapon_2",
+		"professions": ["Thief"],
+		"weapon_type": "Sword"
+	},
+	{
+		"id": 18831,
+		"name": "Larcenous Strike",
+		"icon": "https://render.guildwars2.com/file/01E5F13EA2E13B0A01540BFF9837299FEF20CF2C/575653.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "",
+		"type": "Skill",
+		"_source": "skills:13016:Flanking Strike",
+		"skill": 13016,
+		"slot": "Weapon_3",
+		"professions": ["Thief"],
+		"weapon_type": "Sword"
+	},
+	{
 		"id": 73119,
 		"name": "Distracting Throw",
 		"icon": "https://render.guildwars2.com/file/D778C3EF460E2F960DA2153F7A3326C13DAD18E7/3379195.png",
@@ -3970,6 +4404,22 @@
 		"slot": "Weapon_4",
 		"professions": ["Thief"],
 		"weapon_type": "Spear"
+	},
+	{
+		"id": 73034,
+		"name": "Shadow Veil",
+		"icon": "https://render.guildwars2.com/file/97B9B5EC330C0780DB7DE0AA0FE4B0713F3F92D2/3379196.png",
+		"stacking": "Intensity",
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Blocks attacks.",
+		"type": "Skill",
+		"_source": "skills:72991:Shadow Veil",
+		"skill": 72991,
+		"slot": "Weapon_5",
+		"professions": ["Thief"],
+		"weapon_type": "Spear",
+		"variantIds": [73134]
 	},
 	{
 		"id": 50489,
@@ -3997,6 +4447,20 @@
 		"type": "Skill",
 		"_source": "skills:21778:Skelk Venom",
 		"skill": 21778,
+		"slot": "Heal",
+		"professions": ["Thief"]
+	},
+	{
+		"id": 13049,
+		"name": "Signet of Malice",
+		"icon": "https://render.guildwars2.com/file/D6640348CA7573A86818B9B4B00F0C0CC2FF5FDF/104077.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Gain health when you attack.",
+		"type": "Skill",
+		"_source": "skills:13050:Signet of Malice",
+		"skill": 13050,
 		"slot": "Heal",
 		"professions": ["Thief"]
 	},
@@ -4029,16 +4493,16 @@
 		"professions": ["Thief"]
 	},
 	{
-		"id": 13054,
-		"name": "Skale Venom",
-		"icon": "https://render.guildwars2.com/file/A71B05C116B677EF620780B3D5BC58287EBC6D4B/104078.png",
-		"stacking": "Intensity",
-		"maxStacks": 25,
+		"id": 13063,
+		"name": "Infiltrator's Signet",
+		"icon": "https://render.guildwars2.com/file/EEB01E570A64D061E3CDD76BD802DA02B1B3970A/104080.png",
+		"stacking": false,
+		"maxStacks": null,
 		"maxDuration": null,
-		"description": "Your attacks inflict vulnerability and torment.",
+		"description": "Increased initiative regeneration.",
 		"type": "Skill",
-		"_source": "skills:13055:Skale Venom",
-		"skill": 13055,
+		"_source": "skills:13064:Infiltrator's Signet",
+		"skill": 13064,
 		"slot": "Utility",
 		"professions": ["Thief"]
 	},
@@ -4053,6 +4517,48 @@
 		"type": "Skill",
 		"_source": "skills:13062:Signet of Agility",
 		"skill": 13062,
+		"slot": "Utility",
+		"professions": ["Thief"]
+	},
+	{
+		"id": 13061,
+		"name": "Signet of Shadows",
+		"icon": "https://render.guildwars2.com/file/EEB01E570A64D061E3CDD76BD802DA02B1B3970A/104080.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Increased movement speed.",
+		"type": "Skill",
+		"_source": "skills:13060:Signet of Shadows",
+		"skill": 13060,
+		"slot": "Utility",
+		"professions": ["Thief"]
+	},
+	{
+		"id": 13135,
+		"name": "Infiltration",
+		"icon": "https://render.guildwars2.com/file/09C411D598E942F21FD64D1353B3725DFDFEF5CF/103286.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Able to shadowstep to original location.",
+		"type": "Skill",
+		"_source": "skills:13002:Shadowstep",
+		"skill": 13002,
+		"slot": "Utility",
+		"professions": ["Thief"]
+	},
+	{
+		"id": 13054,
+		"name": "Skale Venom",
+		"icon": "https://render.guildwars2.com/file/A71B05C116B677EF620780B3D5BC58287EBC6D4B/104078.png",
+		"stacking": "Intensity",
+		"maxStacks": 25,
+		"maxDuration": null,
+		"description": "Your attacks inflict vulnerability and torment.",
+		"type": "Skill",
+		"_source": "skills:13055:Skale Venom",
+		"skill": 13055,
 		"slot": "Utility",
 		"professions": ["Thief"]
 	},
@@ -4122,19 +4628,6 @@
 		"professions": ["Thief"]
 	},
 	{
-		"id": 32200,
-		"name": "Lotus Training",
-		"icon": "https://render.guildwars2.com/file/E5724D46CEE62333E00CE26905C5FDD5439F6667/1058552.png",
-		"stacking": "Refresh",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Condition damage is increased.",
-		"type": "Trait",
-		"_source": "traits:1833:Lotus Training",
-		"trait": 1833,
-		"specialization": 7
-	},
-	{
 		"id": 34081,
 		"name": "Weakening Strikes",
 		"icon": "https://render.guildwars2.com/file/140F77BB56B93C32BFDAC30CB332FCBAAF0921A5/1058547.png",
@@ -4145,6 +4638,19 @@
 		"type": "Trait",
 		"_source": "traits:1887:Weakening Strikes",
 		"trait": 1887,
+		"specialization": 7
+	},
+	{
+		"id": 32200,
+		"name": "Lotus Training",
+		"icon": "https://render.guildwars2.com/file/E5724D46CEE62333E00CE26905C5FDD5439F6667/1058552.png",
+		"stacking": "Refresh",
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Condition damage is increased.",
+		"type": "Trait",
+		"_source": "traits:1833:Lotus Training",
+		"trait": 1833,
 		"specialization": 7
 	},
 	{
@@ -4171,6 +4677,19 @@
 		"type": "Trait",
 		"_source": "traits:2047:Bounding Dodger",
 		"trait": 2047,
+		"specialization": 7
+	},
+	{
+		"id": 46842,
+		"name": "Exhaustion",
+		"icon": "https://render.guildwars2.com/file/C86F3DF92CC1CB66D9B1F90B02C2FBAEC276BC44/1876876.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "-100% Endurance Regeneration",
+		"type": "Trait",
+		"_source": "traits:1964:Unhindered Combatant",
+		"trait": 1964,
 		"specialization": 7
 	},
 	{
@@ -4246,6 +4765,22 @@
 		"type": "Trait",
 		"_source": "traits:2272:Dark Sentry",
 		"trait": 2272,
+		"specialization": 71
+	},
+	{
+		"id": 63358,
+		"name": "Endless Night",
+		"icon": "https://render.guildwars2.com/file/15BE9504ACEED3C462F7173D63E44836BFA2F934/2503736.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "",
+		"type": "Skill",
+		"_source": "skills:63267:Measured Shot",
+		"skill": 63267,
+		"slot": "Weapon_3",
+		"professions": ["Thief"],
+		"weapon_type": "Scepter",
 		"specialization": 71
 	},
 	{
@@ -4530,7 +5065,6 @@
 			}
 		]
 	},
-	"CLASS: ELEMENTALIST /////////////////////////////////////////////",
 	{
 		"id": 13423,
 		"name": "Arcane Lightning",
@@ -4757,6 +5291,21 @@
 		"weapon_type": "Spear"
 	},
 	{
+		"id": 5543,
+		"name": "Mist Form",
+		"icon": "https://render.guildwars2.com/file/0A1E58F3900AB25D79A7A9FDF343F1742915775C/103341.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Invulnerable; increased movement speed.",
+		"type": "Skill",
+		"_source": "skills:5554:Mist Form",
+		"skill": 5554,
+		"slot": "Utility",
+		"professions": ["Elementalist"],
+		"variantIds": [19718]
+	},
+	{
 		"id": 15789,
 		"name": "Conjure Flame Attributes",
 		"icon": "https://render.guildwars2.com/file/D171D89609420B0C11B52FD8632897B76D60F305/103338.png",
@@ -4889,6 +5438,34 @@
 		]
 	},
 	{
+		"id": 739,
+		"name": "Signet of Restoration",
+		"icon": "https://render.guildwars2.com/file/3FA4D3DCA80A06036E7F6C77E84D94466D157766/103321.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "You gain health every time you cast a spell.",
+		"type": "Skill",
+		"_source": "skills:5503:Signet of Restoration",
+		"skill": 5503,
+		"slot": "Heal",
+		"professions": ["Elementalist"]
+	},
+	{
+		"id": 909,
+		"name": "Aura of Restoration",
+		"icon": "https://render.guildwars2.com/file/3FA4D3DCA80A06036E7F6C77E84D94466D157766/103321.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "You gain health every time you cast a spell.",
+		"type": "Skill",
+		"_source": "skills:5503:Signet of Restoration",
+		"skill": 5503,
+		"slot": "Heal",
+		"professions": ["Elementalist"]
+	},
+	{
 		"id": 5544,
 		"name": "Signet of Fire",
 		"icon": "https://render.guildwars2.com/file/78F000A3121FCFF9B56EA62625186F0E06D8A458/103340.png",
@@ -4956,6 +5533,62 @@
 		"variantIds": [5797]
 	},
 	{
+		"id": 25479,
+		"name": "Lesser Fire Elemental Summoned",
+		"icon": "https://render.guildwars2.com/file/0DB6250806EEE1F020543290797C4AA36A90EC07/867435.png",
+		"stacking": "Intensity",
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "",
+		"type": "Skill",
+		"_source": "skills:25486:Glyph of Lesser Elementals",
+		"skill": 25486,
+		"slot": "Utility",
+		"professions": ["Elementalist"]
+	},
+	{
+		"id": 25483,
+		"name": "Lesser Water Elemental Summoned",
+		"icon": "https://render.guildwars2.com/file/2247E9650C3DBFA8DDF7B267DECE09972D91CF67/867436.png",
+		"stacking": "Intensity",
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "",
+		"type": "Skill",
+		"_source": "skills:25487:Glyph of Lesser Elementals",
+		"skill": 25487,
+		"slot": "Utility",
+		"professions": ["Elementalist"]
+	},
+	{
+		"id": 25481,
+		"name": "Lesser Air Elemental Summoned",
+		"icon": "https://render.guildwars2.com/file/B52E7C27039C6F41E0AB261A36074590CE715F49/867443.png",
+		"stacking": "Intensity",
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "",
+		"type": "Skill",
+		"_source": "skills:25495:Glyph of Lesser Elementals",
+		"skill": 25495,
+		"slot": "Utility",
+		"professions": ["Elementalist"]
+	},
+	{
+		"id": 25484,
+		"name": "Lesser Earth Elemental Summoned",
+		"icon": "https://render.guildwars2.com/file/6A55FE7F31A994FC1923D3A1CBEC15035A5EE837/867444.png",
+		"stacking": "Intensity",
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "",
+		"type": "Skill",
+		"_source": "skills:25497:Glyph of Lesser Elementals",
+		"skill": 25497,
+		"slot": "Utility",
+		"professions": ["Elementalist"]
+	},
+	{
 		"id": 76507,
 		"name": "Arcane Echo",
 		"icon": "https://render.guildwars2.com/file/AD24BD1B231424D2A8F223A6F899AC34D6AAAB26/103356.png",
@@ -5009,6 +5642,21 @@
 		]
 	},
 	{
+		"id": 25475,
+		"name": "Glyph of Elementals",
+		"icon": "https://render.guildwars2.com/file/011D983FEAFB946EF0F45E7F290838CFA31D63D0/103380.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "",
+		"type": "Skill",
+		"_source": "skills:5666:Glyph of Elementals",
+		"skill": 5666,
+		"slot": "Elite",
+		"professions": ["Elementalist"],
+		"variantIds": [25493, 25496, 25477]
+	},
+	{
 		"id": 5583,
 		"name": "Tornado",
 		"icon": "https://render.guildwars2.com/file/22EDF7A7D620040CE1520552F45DE962AA625DA6/103281.png",
@@ -5051,19 +5699,6 @@
 		"professions": ["Elementalist"]
 	},
 	{
-		"id": 31353,
-		"name": "Transcendent Tempest",
-		"icon": "https://render.guildwars2.com/file/0C79A761B446E53CAB6DA4B320D12D656B5E1151/2207773.png",
-		"stacking": "Refresh",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Your damage is increased.",
-		"type": "Trait",
-		"_source": "traits:1839:Transcendent Tempest",
-		"trait": 1839,
-		"specialization": 48
-	},
-	{
 		"id": 69427,
 		"name": "Tempestuous Aria",
 		"icon": "https://render.guildwars2.com/file/0C2A72B848A7FBB596DE6096B4C45814D3266EEB/1029946.png",
@@ -5074,6 +5709,19 @@
 		"type": "Trait",
 		"_source": "traits:1891:Tempestuous Aria",
 		"trait": 1891,
+		"specialization": 48
+	},
+	{
+		"id": 31353,
+		"name": "Transcendent Tempest",
+		"icon": "https://render.guildwars2.com/file/0C79A761B446E53CAB6DA4B320D12D656B5E1151/2207773.png",
+		"stacking": "Refresh",
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Your damage is increased.",
+		"type": "Trait",
+		"_source": "traits:1839:Transcendent Tempest",
+		"trait": 1839,
 		"specialization": 48
 	},
 	{
@@ -5106,19 +5754,6 @@
 		"specialization": 48
 	},
 	{
-		"id": 42416,
-		"name": "Elements of Rage",
-		"icon": "https://render.guildwars2.com/file/4269910A34FB0FB861DAE2A13229D594523B0BA0/1769921.png",
-		"stacking": "Refresh",
-		"maxStacks": null,
-		"maxDuration": null,
-		"description": "Your damage is increased.",
-		"type": "Trait",
-		"_source": "traits:2131:Elements of Rage",
-		"trait": 2131,
-		"specialization": 56
-	},
-	{
 		"id": 42061,
 		"name": "Weaver's Prowess",
 		"icon": "https://render.guildwars2.com/file/78DA4AC17D4EBDA04BBBD325A024C346F59ED150/1769918.png",
@@ -5129,6 +5764,19 @@
 		"type": "Trait",
 		"_source": "traits:2180:Weaver's Prowess",
 		"trait": 2180,
+		"specialization": 56
+	},
+	{
+		"id": 42416,
+		"name": "Elements of Rage",
+		"icon": "https://render.guildwars2.com/file/4269910A34FB0FB861DAE2A13229D594523B0BA0/1769921.png",
+		"stacking": "Refresh",
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Your damage is increased.",
+		"type": "Trait",
+		"_source": "traits:2131:Elements of Rage",
+		"trait": 2131,
 		"specialization": 56
 	},
 	{
@@ -5609,7 +6257,6 @@
 		"professions": ["Elementalist"],
 		"specialization": 80
 	},
-	"CLASS: MESMER /////////////////////////////////////////////",
 	{
 		"id": 76074,
 		"name": "Illusionary Membrane",
@@ -5669,6 +6316,7 @@
 		"stacking": "Intensity",
 		"maxStacks": 25,
 		"maxDuration": null,
+		"target": 2,
 		"description": "Phantasm damage increased per stack.",
 		"type": "Trait",
 		"_source": "traits:733:Phantasmal Force",
@@ -5797,6 +6445,21 @@
 		]
 	},
 	{
+		"id": 10278,
+		"name": "Illusionary Counter",
+		"icon": "https://render.guildwars2.com/file/C1135A9C6D504426132CCB6200DAB6C66A756709/103766.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Blocks attacks.",
+		"type": "Skill",
+		"_source": "skills:10276:Illusionary Counter",
+		"skill": 10276,
+		"slot": "Weapon_2",
+		"professions": ["Mesmer"],
+		"weapon_type": "Scepter"
+	},
+	{
 		"id": 73048,
 		"name": "Clarity",
 		"icon": "https://render.guildwars2.com/file/A45B1CCBE523E6A13D05E4C1BBE769ED0C18C993/3379004.png",
@@ -5836,6 +6499,21 @@
 		]
 	},
 	{
+		"id": 10279,
+		"name": "Riposte (Mesmer)",
+		"icon": "https://render.guildwars2.com/file/AED869739FD016F10AEFE4520B155DEE731005A0/103767.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Blocks attacks.",
+		"type": "Skill",
+		"_source": "skills:10280:Illusionary Riposte",
+		"skill": 10280,
+		"slot": "Weapon_4",
+		"professions": ["Mesmer"],
+		"weapon_type": "Sword"
+	},
+	{
 		"id": 10357,
 		"name": "Mirror",
 		"icon": "https://render.guildwars2.com/file/CED3F1AE9294F9C5045DA8017F25170CE87C0AE2/103726.png",
@@ -5848,6 +6526,28 @@
 		"skill": 10177,
 		"slot": "Heal",
 		"professions": ["Mesmer"]
+	},
+	{
+		"id": 21751,
+		"name": "Signet of the Ether",
+		"icon": "https://render.guildwars2.com/file/EE5271572B2B10FBCE95097ECD54775832E8B9EF/699528.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Heal yourself whenever you summon an illusion.",
+		"type": "Skill",
+		"skill": 21750,
+		"slot": "Heal",
+		"professions": ["Mesmer"],
+		"_variants": [
+			{
+				"description": "Increases healing.",
+				"type": "Trait",
+				"_source": "traits:752:Blurred Inscriptions",
+				"trait": 752,
+				"specialization": 23
+			}
+		]
 	},
 	{
 		"id": 10346,
@@ -5890,26 +6590,32 @@
 		"professions": ["Mesmer"]
 	},
 	{
-		"id": 21751,
-		"name": "Signet of the Ether",
-		"icon": "https://render.guildwars2.com/file/EE5271572B2B10FBCE95097ECD54775832E8B9EF/699528.png",
+		"id": 10198,
+		"name": "Portal Weaving",
+		"icon": "https://render.guildwars2.com/file/BB7D7902B947C52DF3FC340AA66697F0CE669E31/103558.png",
 		"stacking": false,
 		"maxStacks": null,
 		"maxDuration": null,
-		"description": "Heal yourself whenever you summon an illusion.",
+		"description": "You can place an exit portal.",
 		"type": "Skill",
-		"skill": 21750,
-		"slot": "Heal",
-		"professions": ["Mesmer"],
-		"_variants": [
-			{
-				"description": "Increases healing.",
-				"type": "Trait",
-				"_source": "traits:752:Blurred Inscriptions",
-				"trait": 752,
-				"specialization": 23
-			}
-		]
+		"_source": "skills:10197:Portal Entre",
+		"skill": 10197,
+		"slot": "Utility",
+		"professions": ["Mesmer"]
+	},
+	{
+		"id": 10198,
+		"name": "Portal Uses",
+		"icon": "https://render.guildwars2.com/file/AB225850554A994ACADC3EE21A6D59EC3F0FDE91/103734.png",
+		"stacking": "Intensity",
+		"maxStacks": 20,
+		"maxDuration": 10,
+		"description": "Number of uses remaining.",
+		"type": "Skill",
+		"_source": "skills:10199:Portal Exeunt",
+		"skill": 10199,
+		"slot": "Utility",
+		"professions": ["Mesmer"]
 	},
 	{
 		"id": 10231,
@@ -6081,6 +6787,21 @@
 		]
 	},
 	{
+		"id": 40802,
+		"name": "False Oasis",
+		"icon": "https://render.guildwars2.com/file/CAF16BD2E1C1D1E263B46E702FD3AF9821C59FED/1770506.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Regenerate health every second.",
+		"type": "Skill",
+		"_source": "skills:40200:False Oasis",
+		"skill": 40200,
+		"slot": "Heal",
+		"professions": ["Mesmer"],
+		"specialization": 59
+	},
+	{
 		"id": 63409,
 		"name": "Deadly Blades",
 		"icon": "https://render.guildwars2.com/file/C4AFBAAA039152A302C15B805CAD980EA9B5D006/2479337.png",
@@ -6195,7 +6916,21 @@
 			}
 		]
 	},
-	"CLASS: NECROMANCER /////////////////////////////////////////////",
+	{
+		"id": 76595,
+		"name": "Scion's Reprieve",
+		"icon": "https://render.guildwars2.com/file/F12BF59E070FB12D2EAAA209596C52C4D76C4E97/3680158.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Healing you receive is more powerful.",
+		"type": "Skill",
+		"_source": "skills:76695:Tale of the Second Scion",
+		"skill": 76695,
+		"slot": "Heal",
+		"professions": ["Mesmer"],
+		"specialization": 73
+	},
 	{
 		"id": 30845,
 		"name": "Death's Carapace",
@@ -6330,6 +7065,19 @@
 		"specialization": 19
 	},
 	{
+		"id": 53489,
+		"name": "Soul Barbs",
+		"icon": "https://render.guildwars2.com/file/59A0DA7819F43F1B5E689B14CE0D0ABCC0EF3173/1012585.png",
+		"stacking": "Refresh",
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "...",
+		"type": "Trait",
+		"_source": "traits:894:Soul Barbs",
+		"trait": 894,
+		"specialization": 50
+	},
+	{
 		"id": 72975,
 		"name": "Soul Shards",
 		"icon": "https://render.guildwars2.com/file/7FD7260567C1DAD4A2ACE5B6E8B57078E17A3E0A/3379000.png",
@@ -6371,6 +7119,21 @@
 		]
 	},
 	{
+		"id": 72976,
+		"name": "Distress",
+		"icon": "https://render.guildwars2.com/file/08B9D63645B11ACD3404B2F50539EDE8916CEE25/3379165.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Teleport to the foe marked by Isolate",
+		"type": "Skill",
+		"_source": "skills:73107:Isolate",
+		"skill": 73107,
+		"slot": "Weapon_4",
+		"professions": ["Necromancer"],
+		"weapon_type": "Spear"
+	},
+	{
 		"id": 72941,
 		"name": "Extirpation",
 		"icon": "https://render.guildwars2.com/file/7209CFEA65160A2F0154D015B12167744AD814FC/3379166.png",
@@ -6384,6 +7147,21 @@
 		"slot": "Weapon_5",
 		"professions": ["Necromancer"],
 		"weapon_type": "Spear"
+	},
+	{
+		"id": 10567,
+		"name": "Locust Swarm",
+		"icon": "https://render.guildwars2.com/file/1E2D4A00340B96CAE9A1E19F2B07B35A01741B14/103809.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Followed by a swarm of locusts that cripple nearby foes.",
+		"type": "Skill",
+		"_source": "skills:10557:Locust Swarm",
+		"skill": 10557,
+		"slot": "Weapon_5",
+		"professions": ["Necromancer"],
+		"weapon_type": "Warhorn"
 	},
 	{
 		"id": 21766,
@@ -6445,6 +7223,20 @@
 		"professions": ["Necromancer"]
 	},
 	{
+		"id": 10610,
+		"name": "Signet of Undeath",
+		"icon": "https://render.guildwars2.com/file/71931FADB11260EDB2770DF23054DC9970D35734/103826.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Gain life force every three seconds while in combat.",
+		"type": "Skill",
+		"_source": "skills:10611:Signet of Undeath",
+		"skill": 10611,
+		"slot": "Utility",
+		"professions": ["Necromancer"]
+	},
+	{
 		"id": 15083,
 		"name": "Spectral Walk",
 		"icon": "https://render.guildwars2.com/file/5C04E817070BDB27A4196C9AD5CFB0AE059FFC54/103846.png",
@@ -6501,6 +7293,36 @@
 		"skill": 10632,
 		"slot": "Weapon_5",
 		"professions": ["Necromancer"]
+	},
+	{
+		"id": 30129,
+		"name": "Infusing Terror",
+		"icon": "https://render.guildwars2.com/file/9D599AB94261527E79969E35AB6519D9C0396102/1012935.png",
+		"stacking": "Duration",
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "Infusing terror gives stability while reducing incoming damage.",
+		"type": "Skill",
+		"_source": "skills:29958:Infusing Terror",
+		"skill": 29958,
+		"slot": "Weapon_3",
+		"professions": ["Necromancer"],
+		"specialization": 34
+	},
+	{
+		"id": 31247,
+		"name": "Dark Bond",
+		"icon": "https://render.guildwars2.com/file/EE1C060DCC3E764730737C446408EF9DD813E7A6/1012949.png",
+		"stacking": false,
+		"maxStacks": null,
+		"maxDuration": null,
+		"description": "A portion of incoming damage is transferred to one of your minions.",
+		"type": "Skill",
+		"_source": "skills:30772:\"Rise!\"",
+		"skill": 30772,
+		"slot": "Utility",
+		"professions": ["Necromancer"],
+		"specialization": 34
 	},
 	{
 		"id": 73113,
