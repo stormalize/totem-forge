@@ -12,7 +12,7 @@ Then visit the [Totem Forge](https://stormalize.github.io/totem-forge/) and craf
 
 ## Development
 
-**Effects data is up to date for game update: December 16, 2025**
+**Effects data is up to date for game update: January 13, 2026**
 
 Data on traits, specializations, professions, and effects is stored in `/data`. Since there is no effect endpoint in the GW2 API, I started with a simple script that goes through all skills and traits and looks for `Buff" tooltip facts. From that generated list I did some transforms and then ended up doing a lot of manual editing to add in the effect IDs as well as entire effects that were not listed in a tooltip.
 
